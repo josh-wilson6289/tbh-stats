@@ -1,16 +1,16 @@
 import React from "react";
 
 
-const PlayerRow = () => {
+const PlayerRow = (props) => {
   return (
     <tr>
-    <td data-label="Player">Josh Wilson</td>
-    <td data-label="Team">Blue</td>
-    <td data-label="Goals">24</td>
-    <td data-label="Assists">25</td>
-    <td data-label="Points">49</td>
-    <td data-label="PIM">10</td>
-    <td data-label="PPG">20</td>
+    <td data-label="Player">{props.name}</td>
+    <td data-label="Team">{props.team}</td>
+    <td data-label="Goals">{props.goals}</td>
+    <td data-label="Assists">{props.assists}</td>
+    <td data-label="Points">{props.points}</td>
+    <td data-label="PIM">{props.pim}</td>
+    <td data-label="PPG">{props.ppg}</td>
   </tr>
   );
 };
