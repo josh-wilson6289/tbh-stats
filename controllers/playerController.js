@@ -2,7 +2,9 @@ const db = require("../models");
 
 module.exports = {
   findAll: function(req, res) {
-    db.Player.find(req.query)
+    db.Player
+      .find(req.query)
+      .sort({ points: "desc" })
       .then(dbPlayers => res.json(dbPlayers))
       .catch(err => res.status(422).json(err));
   },

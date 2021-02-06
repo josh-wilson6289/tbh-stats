@@ -1,10 +1,12 @@
 import React from "react";
+import Popup from "./Popup";
+import Search from "./Search";
 
 const Navbar = () => {
   
-    return (
+return (
 <div className="navbar">
-<div className="ui pointing menu">
+<div className="ui menu">
   <a className="active item">
     Player
   </a>
@@ -14,15 +16,15 @@ const Navbar = () => {
   <a className="item">
     Team
   </a>
+ 
+  <Popup />
+
   <div className="right menu">
     <div className="item">
-      <div className="ui transparent icon input">
-        <input type="text" placeholder="Search..." />
-        <i className="search link icon"></i>
+  <Search />
       </div>
     </div>
   </div>
-</div>
 </div>
   );
 };
