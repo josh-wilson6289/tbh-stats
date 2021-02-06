@@ -1,0 +1,18 @@
+.navbar {
+  padding-bottom: 10px;
+}
+
+.jumbotron {
+  background-color: #8e2742;
+  height: 400px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.logo {
+  height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+}

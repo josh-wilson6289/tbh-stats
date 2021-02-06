@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./components/Navbar";
+import Table from "./components/Table";
+import Jumbotron from "./components/Jumbotron";
+import "./style.css";
+ 
 
-function App() {
+export default () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <Jumbotron />
+    <div className="ui container">
+      <Navbar />
+      <br></br>
+      <Table />
     </div>
+  </div>
   );
-}
-
-export default App;
+};
