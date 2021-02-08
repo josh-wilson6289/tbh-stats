@@ -49,6 +49,9 @@ table {
 	border-spacing: 0;
 }
 
+
+/* Custom Styling */
+
 .navbar {
   padding-bottom: 10px;
 }
@@ -67,3 +70,19 @@ table {
   margin-right: auto;
   padding-top: 100px;
 }
+/* 
+This may be needed to get pop ups to work */
+
+/* $('.example .menu .browse').popup({
+  inline   : true,
+  hoverable: true,
+  position : 'bottom left',
+  delay: {
+    show: 300,
+    hide: 800
+   }
+   }); */
+/* 
+   http://semantic-ui.com/modules/popup.html#/examples
+
+   http://semantic-ui.com/collections/menu.html#popup-menu */

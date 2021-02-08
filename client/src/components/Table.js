@@ -5,6 +5,7 @@ import PlayerRow from "./PlayerRow";
 const Table = () => {
 
   const [tableData, setTableData] = useState([]);
+  const [seasonQuery, setQuerySeason] = useState("q1 2021");
 
   useEffect(() => {
       loadPlayers()
@@ -12,8 +13,24 @@ const Table = () => {
 
 
     function loadPlayers() {
+      // need to add a switch statement query the database given which tab
+      // and season are checked
+      
       API.getPlayers()
-        .then(players => setTableData(players.data)
+        .then(players => 
+        // setTableData(players.data)
+        players.data.map((player) => {
+          player.seasons.map((season) => {
+            if (season.season === seasonQuery) {
+              console.log(season);
+            }
+          })
+        })
+        // players.data.seasons.map((season) => {
+        //   if (season === seasonQuery) {
+        //     console.log(season);
+        //   }
+        // })
         ) 
       .catch(err => console.log(err));
     }
@@ -21,14 +38,14 @@ const Table = () => {
 
   let renderedPlayers = tableData.map((player) => {
     return <PlayerRow
-      key={player.name}
+      key={player._id}
       name={player.name}
-      team={player.team}
-      goals={player.goals}
-      assists={player.assists}
-      points={player.points}
-      pim={player.pim}
-      ppg={player.ppg}
+      team={player.seasons.season.team}
+      goals={player.seasons.season.goals}
+      assists={player.seasons.season.assists}
+      points={player.seasons.season.points}
+      pim={player.seasons.season.pim}
+      ppg={player.seasons.season.ppg}
     />
   });
   

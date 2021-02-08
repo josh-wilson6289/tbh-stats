@@ -6,34 +6,46 @@ const playerSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  team: {
-    type: String,
-    required: true
-  },
-  goals: {
-    type: Number,
-    default: 0
-  },
-  assists: {
-    type: Number,
-    default: 0
-  },
-  points: {
-    type: Number,
-    default: 0
-  },
-  pim: {
-    type: Number,
-    default: 0
-  },
-  ppg: {
-    type: Number,
-    default: 0
-  },
-  season: {
-    type: String,
-    required: true
+  seasons: [
+    {
+      season: {
+        type: String,
+        required: true
+      },
+      current: {
+        type: Boolean,
+        required: true
+      },
+      team: {
+        type: String,
+        required: true
+      },
+      gamesPlayed: {
+        type: Number,
+        default: 0
+      },
+      goals: {
+        type: Number,
+        default: 0
+      },
+      assists: {
+        type: Number,
+        default: 0
+      },
+      points: {
+        type: Number,
+        default: 0
+      },
+      pim: {
+        type: Number,
+        default: 0
+      },
+      ppg: {
+        type: Number,
+        default: 0
+     }
   }
+  ]
 });
 
 const Player = mongoose.model("Player", playerSchema);
