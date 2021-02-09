@@ -75,6 +75,20 @@ table {
   text-align: center;
 }
 
+.ui.inverted.menu {
+  background-color: #8e2742;
+  flex-shrink: 0;
+  border-radius: 0px;
+  margin: 0px;
+}
+
+.footer-text {
+  text-align: center;
+}
+
+.th {
+  text-align: center;
+}
 
 /* 
 This may be needed to get pop ups to work */
