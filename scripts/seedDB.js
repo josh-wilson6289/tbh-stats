@@ -12,7 +12,7 @@ const playersSeed = [
     name: "Lemar O",
     seasons: [
       {
-        season: "q1 2021",
+        season: "Q1 2021",
         current: true,
         team: "Grey",
         gamesPlayed: 3,
@@ -28,7 +28,7 @@ const playersSeed = [
       name: "Adam J",
       seasons: [
         {
-          season: "q1 2021",
+          season: "Q1 2021",
           current: true,
           team: "Grey",
           gamesPlayed: 3,
@@ -39,7 +39,7 @@ const playersSeed = [
           ppg: 0.33,
         },
         {
-          season: "q1 2020",
+          season: "Q1 2020",
           current: false,
           team: "Red",
           gamesPlayed: 6,
@@ -55,7 +55,7 @@ const playersSeed = [
     name: "Mike B",
     seasons: [
       {
-        season: "q1 2021",
+        season: "Q1 2021",
         current: true,
         team: "Orange",
         gamesPlayed: 3,
@@ -66,7 +66,7 @@ const playersSeed = [
         ppg: 1.67,
       },
       {
-        season: "q1 2020",
+        season: "Q1 2020",
         current: false,
         team: "Red",
         gamesPlayed: 4,
@@ -82,7 +82,7 @@ const playersSeed = [
     name: "Josh W",
     seasons: [
       {
-        season: "q1 2020",
+        season: "Q1 2020",
         current: false,
         team: "Teal",
         gamesPlayed: 9,

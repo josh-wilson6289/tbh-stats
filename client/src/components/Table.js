@@ -5,42 +5,24 @@ import PlayerRow from "./PlayerRow";
 const Table = () => {
 
   const [tableData, setTableData] = useState([]);
-  const [viewSeason, setViewSeason] = useState("q1 2021");
+  const [viewSeason, setViewSeason] = useState("Q1 2021");
 
 
 useEffect(() => {
 
+  // calls api for any player that has participated in viewSeason
   API.getPlayers(viewSeason)
     .then(players => {
       const allPlayers = players.data
+      // filters through the seasons array, and returns only the season being viewed currently
+      // that way, when rendering the playerRow the current season will always be at index [0]
       const filteredPlayers = allPlayers.map((player) => {
         return {...player, seasons: player.seasons.filter((seasons) => seasons.season === viewSeason)}
       })
       setTableData(filteredPlayers);
 
-        // player.seasons.filter((season) => {
-        //   // if (season===viewSeason) {
-        //     return season === viewSeason;
-          // return {
-            // _id: player._id,
-            // name: player.name,
-            // team: player.seasons.season.team,
-            // goals: player.seasons.season.goals,
-            // assists: player.seasons.season.assists,
-            // points: player.seasons.season.points,
-            // pim: player.seasons.season.pim,
-            // ppg: player.seasons.season.ppg
-          // }
-        // }
-    //     })
-    //   })
     })
 }, [tableData]);
-
-    // function handleSeasons(allPlayers) {
-    //   // filter out non-current seasons and set tableData state.
-    //   // may have an issue with feedback loop, since tableData will keep getting changed?
-    // }
 
     const renderedPlayers = tableData.map((player) => {
 
@@ -60,6 +42,13 @@ useEffect(() => {
   
 
   return (
+    <div>
+    <div className="ui container">
+        <div className="current-season-header">
+          {viewSeason}
+        </div>
+    </div>
+    
     <table className="ui celled table">
       <thead>
         <tr>
@@ -92,6 +81,7 @@ useEffect(() => {
       </tbody>
 
     </table>
+    </div>
   );
 };
 

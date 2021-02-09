@@ -70,6 +70,12 @@ table {
   margin-right: auto;
   padding-top: 100px;
 }
+
+.current-season-header {
+  text-align: center;
+}
+
+
 /* 
 This may be needed to get pop ups to work */
 
