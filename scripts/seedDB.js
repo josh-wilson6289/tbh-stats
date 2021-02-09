@@ -77,7 +77,23 @@ const playersSeed = [
         ppg: 3.5,
       }
     ]
-  }
+  },
+  { 
+    name: "Josh W",
+    seasons: [
+      {
+        season: "q1 2020",
+        current: false,
+        team: "Teal",
+        gamesPlayed: 9,
+        goals: 3,
+        assists: 5,
+        points: 8,
+        pim: 2,
+        ppg: 0.89,
+      }
+    ]
+  }  
 ]
 
 db.Player.remove({})
