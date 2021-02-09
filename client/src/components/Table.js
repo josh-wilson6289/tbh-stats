@@ -2,69 +2,53 @@ import React, { useState, useEffect } from "react";
 import API from "../utils/API";
 import PlayerRow from "./PlayerRow";
 
-// generic player array
-// const players = [
-//   {
-//     name: "Lemar O",
-//     team: "Grey",
-//     goals: 2,
-//     assists: 5,
-//     points: 7,
-//     pim: 0,
-//     ppg: 2.33
-//   },
-//   {
-//     name: "Adam J",
-//     team: "Grey",
-//     goals: 0,
-//     assists: 1,
-//     points: 1,
-//     pim: 0,
-//     ppg: 0.33
-//   },
-//   { 
-//     name: "Mike B",
-//     team: "Orange",
-//     goals: 4,
-//     assists: 1,
-//     points: 5,
-//     pim: 0,
-//     ppg: 1.67
-//   }
-// ]
-
 const Table = () => {
 
   const [tableData, setTableData] = useState([]);
-
-  useEffect(() => {
-      loadPlayers()
-    },[]);
+  const [viewSeason, setViewSeason] = useState("Q1 2021");
 
 
-    function loadPlayers() {
-      API.getPlayers()
-        .then(players => setTableData(players.data)
-        ) 
-      .catch(err => console.log(err));
-    }
- 
+useEffect(() => {
 
-  let renderedPlayers = tableData.map((player) => {
-    return <PlayerRow
-      key={player.name}
-      name={player.name}
-      team={player.team}
-      goals={player.goals}
-      assists={player.assists}
-      points={player.points}
-      pim={player.pim}
-      ppg={player.ppg}
-    />
-  });
+  // calls api for any player that has participated in viewSeason
+  API.getPlayers(viewSeason)
+    .then(players => {
+      const allPlayers = players.data
+      // filters through the seasons array, and returns only the season being viewed currently
+      // that way, when rendering the playerRow the current season will always be at index [0]
+      const filteredPlayers = allPlayers.map((player) => {
+        return {...player, seasons: player.seasons.filter((seasons) => seasons.season === viewSeason)}
+      })
+      setTableData(filteredPlayers);
+
+    })
+}, [tableData]);
+
+    const renderedPlayers = tableData.map((player) => {
+
+      return (
+      <PlayerRow
+        key={player._id}
+        name={player.name}
+        team={player.seasons[0].team}
+        goals={player.seasons[0].goals}
+        assists={player.seasons[0].assists}
+        points={player.seasons[0].points}
+        pim={player.seasons[0].pim}
+        ppg={player.seasons[0].ppg}
+      />
+      )
+    });
   
 
   return (
+    <div>
+    <div className="ui container">
+        <div className="current-season-header">
+          {viewSeason}
+        </div>
+    </div>
+    
     <table className="ui celled table">
       <thead>
         <tr>
@@ -75,7 +59,7 @@ const Table = () => {
 
           </th>
           <th>Goals
-    
+
           </th>
           <th>Assists
 
@@ -97,6 +81,7 @@ const Table = () => {
       </tbody>
 
     </table>
+    </div>
   );
 };
 

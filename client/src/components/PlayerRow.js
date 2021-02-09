@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const PlayerRow = ({ name, team, goals, assists, points, pim, ppg }) => {
+const PlayerRow = ({ _id, name, team, goals, assists, points, pim, ppg }) => {
   return (
     <tr>
     <td data-label="Player">{name}</td>

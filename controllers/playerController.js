@@ -1,8 +1,25 @@
 const db = require("../models");
+const { where } = require("../models/player");
 
 module.exports = {
   findAll: function(req, res) {
-    db.Player.find(req.query)
+    
+    db.Player.aggregate([
+      // { $match: { "seasons.season": req.query.season }},
+      // { $project: {
+      //   seasons: { $filter: {
+      //     input: "$seasons",
+      //     as: "seasons",
+      //     cond: { $eq: ["$$seasons.season", req.query.season]}
+      //   }},
+      //   _id: 0
+      // }}
+
+      { $match: { "seasons.season": req.query.season }}
+    ])
+      // .find({
+      //   seasons: {$elemMatch: { season: req.query.season }}
+      // })
       .then(dbPlayers => res.json(dbPlayers))
       .catch(err => res.status(422).json(err));
   },
