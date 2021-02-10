@@ -16,6 +16,10 @@ const playerSchema = new mongoose.Schema({
         type: Boolean,
         required: true
       },
+      goalie: {
+        type: Boolean,
+        required: true
+      },
       team: {
         type: String,
         required: true
@@ -43,7 +47,38 @@ const playerSchema = new mongoose.Schema({
       ppg: {
         type: Number,
         default: 0
-     }
+     },
+     wins: {
+       type: Number,
+       default: 0
+     },
+     losses: {
+      type: Number,
+      default: 0
+    },
+    sol: {
+      type: Number,
+      default: 0
+    },
+    winPerc: {
+      type: Number,
+      default: 0
+    },
+    ga: {
+      type: Number,
+      default: 0
+    },
+    gaa: {
+      type: Number,
+      default: 0
+    },
+    so: {
+      type: Number,
+      default: 0
+    }
+    
+
+
   }
   ]
 });

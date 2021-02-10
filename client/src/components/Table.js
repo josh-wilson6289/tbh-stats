@@ -6,8 +6,9 @@ const Table = () => {
 
   const [tableData, setTableData] = useState([]);
   const [viewSeason, setViewSeason] = useState("Q1 2021");
-
-
+  const [sortField, setSortField] = useState("points");
+  const [sortedTableData, setSortedTableData] = useState([]);
+  const [sortDirection, setSortDirection] = useState("descending");
 useEffect(() => {
 
   // calls api for any player that has participated in viewSeason
@@ -19,34 +20,75 @@ useEffect(() => {
       const filteredPlayers = allPlayers.map((player) => {
         return {...player, seasons: player.seasons.filter((seasons) => seasons.season === viewSeason)}
       })
-      setTableData(filteredPlayers);
+
+      // removes the seasons array, since we only need the current season in state
+      const adjustedPlayers = filteredPlayers.map((player) => {
+        return {
+          _id: player._id,
+          name: player.name,
+          team: player.seasons[0].team,
+          goals: player.seasons[0].goals,
+          assists: player.seasons[0].assists,
+          points: player.seasons[0].points,
+          pim: player.seasons[0].pim,
+          ppg: player.seasons[0].ppg
+        }
+      })
+      setTableData(adjustedPlayers);
 
     })
 }, [tableData]);
 
-    const renderedPlayers = tableData.map((player) => {
+
+useEffect(() => {
+  let sortedTableData = [...tableData];
+  if (sortDirection === "ascending") {
+  sortedTableData.sort((a, b) => {
+    if (a[sortField] < b[sortField]) {
+  return -1;
+  }
+  if (a[sortField] > b[sortField]) {
+    return 1;
+  }
+  return 0;  
+});
+  }
+  else {
+    sortedTableData.sort((a, b) => {
+      if (a[sortField] < b[sortField]) {
+        return 1;
+      }
+      if (a[sortField] > b[sortField]) {
+        return -1;
+      }
+      return 0;
+    });
+  }
+  setSortedTableData(sortedTableData)
+
+}, [sortField, sortDirection, tableData])
+
+
+    const renderedPlayers = sortedTableData.map((player) => {
 
       return (
       <PlayerRow
         key={player._id}
         name={player.name}
-        team={player.seasons[0].team}
-        goals={player.seasons[0].goals}
-        assists={player.seasons[0].assists}
-        points={player.seasons[0].points}
-        pim={player.seasons[0].pim}
-        ppg={player.seasons[0].ppg}
+        team={player.team}
+        goals={player.goals}
+        assists={player.assists}
+        points={player.points}
+        pim={player.pim}
+        ppg={player.ppg}
       />
       )
     });
   
-
   return (
     <div>
     <div className="ui container">
-        <div className="current-season-header">
-          {viewSeason}
-        </div>
+      <h1 className="ui center aligned header">{viewSeason}</h1>
     </div>
     
     <table className="ui celled table">
@@ -55,10 +97,10 @@ useEffect(() => {
           <th>Player
 
           </th>
-          <th>Team
+          <th >Team
 
           </th>
-          <th>Goals
+          <th value="goals" onClick={(e) => setSortField(e.target.value)}>Goals
 
           </th>
           <th>Assists
