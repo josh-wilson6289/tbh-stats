@@ -58,7 +58,8 @@ table {
 
 .jumbotron {
   background-color: #8e2742;
-  height: 400px;
+  justify-content: center;
+  height: 350px;
   width: 100%;
   margin-bottom: 15px;
 }
@@ -68,7 +69,7 @@ table {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 100px;
+  padding-top: 30px;
 }
 
 .current-season-header {
