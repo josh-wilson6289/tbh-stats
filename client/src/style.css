@@ -90,6 +90,10 @@ table {
   text-align: center;
 }
 
+.pages {
+  padding: 5px;
+  float: right;
+}
 /* 
 This may be needed to get pop ups to work */
 

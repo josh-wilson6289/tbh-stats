@@ -8,7 +8,7 @@ const Table = () => {
   const [viewSeason, setViewSeason] = useState("Q1 2021");
   const [sortField, setSortField] = useState("points");
   const [sortedTableData, setSortedTableData] = useState([]);
-
+  const [sortDirection, setSortDirection] = useState("descending");
 useEffect(() => {
 
   // calls api for any player that has participated in viewSeason
@@ -41,8 +41,8 @@ useEffect(() => {
 
 
 useEffect(() => {
-
   let sortedTableData = [...tableData];
+  if (sortDirection === "ascending") {
   sortedTableData.sort((a, b) => {
     if (a[sortField] < b[sortField]) {
   return -1;
@@ -50,11 +50,24 @@ useEffect(() => {
   if (a[sortField] > b[sortField]) {
     return 1;
   }
-  return 0;
+  return 0;  
 });
+  }
+  else {
+    sortedTableData.sort((a, b) => {
+      if (a[sortField] < b[sortField]) {
+        return 1;
+      }
+      if (a[sortField] > b[sortField]) {
+        return -1;
+      }
+      return 0;
+    });
+  }
   setSortedTableData(sortedTableData)
 
-}, [sortField, tableData])
+}, [sortField, sortDirection, tableData])
+
 
     const renderedPlayers = sortedTableData.map((player) => {
 
