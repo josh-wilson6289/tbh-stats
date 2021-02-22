@@ -21,6 +21,11 @@ mongoose.connect(
   { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true, useFindAndModify: false }
 );
 
+// mongoose.connect(
+//   process.env.MONGODB_URI || "mongodb+srv://jwilson6289:JOSHjosh6289!!@cluster0.i4dpu.mongodb.net/tbhstats?retryWrites=true&w=majority",
+//   { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true, useFindAndModify: false }
+// );
+
 app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
