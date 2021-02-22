@@ -18,7 +18,7 @@ app.use(routes);
 
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/tbhstats",
-  { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true }
+  { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true, useFindAndModify: false }
 );
 
 app.get("*", function(req, res) {
