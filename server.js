@@ -16,6 +16,8 @@ if (process.env.NODE_ENV === "production") {
 
 app.use(routes);
 
+console.log("This is the MONGODB_URI: " + process.env.MONGODB_URI)
+
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/tbhstats",
   { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true, useFindAndModify: false }
@@ -28,3 +30,5 @@ app.get("*", function(req, res) {
 app.listen(PORT, function() {
   console.log("Listening on PORT " + PORT);
 });
+
+console.log("This is the MONGODB_URI: " + process.env.MONGODB_URI)
