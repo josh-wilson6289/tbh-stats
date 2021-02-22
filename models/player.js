@@ -77,7 +77,7 @@ const playerSchema = new mongoose.Schema({
       default: 0
     }
   }
-  ]
+]
 });
 
 const Player = mongoose.model("Player", playerSchema);
