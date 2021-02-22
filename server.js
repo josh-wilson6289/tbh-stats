@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const path = require("path");
 const routes = require("./routes");
@@ -16,6 +17,8 @@ if (process.env.NODE_ENV === "production") {
 
 app.use(routes);
 
+console.log("This is the MONGODB_URI before connecting: " + process.env.MONGODB_URI)
+
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/tbhstats",
   { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true, useFindAndModify: false }
@@ -28,3 +31,5 @@ app.get("*", function(req, res) {
 app.listen(PORT, function() {
   console.log("Listening on PORT " + PORT);
 });
+
+console.log("This is the MONGODB_URI after connecting: " + process.env.MONGODB_URI)
