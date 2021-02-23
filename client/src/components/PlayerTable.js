@@ -2,14 +2,15 @@ import React, { useState, useEffect } from "react";
 import API from "../utils/API";
 import PlayerRow from "./PlayerRow";
 
-const Table = () => {
+const PlayerTable = () => {
 
   const [tableData, setTableData] = useState([]);
   const [viewSeason, setViewSeason] = useState("Q1 2021");
   const [sortField, setSortField] = useState("points");
   const [sortedTableData, setSortedTableData] = useState([]);
   const [sortDirection, setSortDirection] = useState("descending");
-useEffect(() => {
+
+  useEffect(() => {
 
   // calls api for any player that has participated in viewSeason
   API.getPlayers(viewSeason)
@@ -31,7 +32,14 @@ useEffect(() => {
           assists: player.seasons[0].assists,
           points: player.seasons[0].points,
           pim: player.seasons[0].pim,
-          ppg: player.seasons[0].ppg
+          ppg: player.seasons[0].ppg,
+          wins: player.seasons[0].wins,
+          losses: player.seasons[0].losses,
+          sol: player.seasons[0].sol,
+          winPerc: player.seasons[0].winPerc,
+          ga: player.seasons[0].ga,
+          gaa: player.seasons[0].gaa,
+          so: player.seasons[0].so
         }
       })
       setTableData(adjustedPlayers);
@@ -45,23 +53,23 @@ useEffect(() => {
   if (sortDirection === "ascending") {
   sortedTableData.sort((a, b) => {
     if (a[sortField] < b[sortField]) {
-  return -1;
-  }
-  if (a[sortField] > b[sortField]) {
-    return 1;
-  }
-  return 0;  
+      return -1;
+    }
+    if (a[sortField] > b[sortField]) {
+      return 1;
+    }
+      return 0;  
 });
   }
-  else {
-    sortedTableData.sort((a, b) => {
-      if (a[sortField] < b[sortField]) {
-        return 1;
+    else {
+      sortedTableData.sort((a, b) => {
+        if (a[sortField] < b[sortField]) {
+          return 1;
       }
-      if (a[sortField] > b[sortField]) {
-        return -1;
+        if (a[sortField] > b[sortField]) {
+          return -1;
       }
-      return 0;
+        return 0;
     });
   }
   setSortedTableData(sortedTableData)
@@ -90,7 +98,6 @@ useEffect(() => {
     <div className="ui container">
       <h1 className="ui center aligned header">{viewSeason}</h1>
     </div>
-    
     <table className="ui celled table">
       <thead>
         <tr>
@@ -123,8 +130,8 @@ useEffect(() => {
       </tbody>
 
     </table>
-    </div>
+   </div>
   );
 };
 
-export default Table;
+export default PlayerTable;
