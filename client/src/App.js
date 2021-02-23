@@ -1,14 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import PlayerPage from "./pages/PlayerPage";
-import GoaliePage from "./pages/GoaliePage";
-import TeamPage from "./pages/TeamPage";
 import Jumbotron from "./components/Jumbotron";
 import Footer from "./components/Footer";
 import Pagination from "./components/Pagination";
+import PlayerTable from "./components/PlayerTable";
+import GoalieTable from "./components/GoalieTable";
+import TeamTable from "./components/TeamTable";
 import "./style.css";
- 
 
 export default () => {
   return (
@@ -18,12 +17,10 @@ export default () => {
     <div className="ui container">
       <Navbar />
       <br></br>
-        <Route exact path="/" component={PlayerPage} />
-        <Route exact path="/players" component={PlayerPage} />
-        <Route exact path="/goalies" component={GoaliePage} />
-        <Route exact path="/teams" component={TeamPage} />
-
-      {/* <PlayerTable /> */}
+        <Route exact path="/" component={PlayerTable} />
+        <Route exact path="/players" component={PlayerTable} />
+        <Route exact path="/goalies" component={GoalieTable} />
+        <Route exact path="/teams" component={TeamTable} />
       <br></br>
       <Pagination />
       <br></br>

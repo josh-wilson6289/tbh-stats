@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../style.css";
 
 const GoalieRow = ({ _id, name, team, wins, losses, sol, winPerc, ga, gaa, so }) => {
   return (
