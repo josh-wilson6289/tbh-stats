@@ -22,8 +22,9 @@ export default () => {
       <br></br>
       <br></br>
       <br></br>
-      <Footer />
+    
     </div>
+      <Footer />
   </div>
   );
 };

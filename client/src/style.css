@@ -61,7 +61,7 @@ table {
   justify-content: center;
   height: 350px;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 3%;
 }
 
 .logo {
@@ -76,15 +76,17 @@ table {
   text-align: center;
 }
 
-.ui.inverted.menu {
-  background-color: #8e2742;
-  flex-shrink: 0;
-  border-radius: 0px;
-  margin: 0px;
-}
 
-.footer-text {
-  text-align: center;
+.footer-bg {
+  left: 0 !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  height: 80px !important;
+  background-color: #8e2742 !important;
+  color: white;
+  text-align: center !important;
+  font-family: 'Coustard', serif;
+  padding-top: 10px;
 }
 
 .th {
