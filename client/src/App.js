@@ -7,6 +7,7 @@ import Pagination from "./components/Pagination";
 import PlayerTable from "./components/PlayerTable";
 import GoalieTable from "./components/GoalieTable";
 import TeamTable from "./components/TeamTable";
+import Dropdown from "./components/Dropdown";
 import "./style.css";
 
 export default () => {
@@ -22,6 +23,7 @@ export default () => {
         <Route exact path="/goalies" component={GoalieTable} />
         <Route exact path="/teams" component={TeamTable} />
       <br></br>
+      <Dropdown />
       <Pagination />
       <br></br>
       <br></br>

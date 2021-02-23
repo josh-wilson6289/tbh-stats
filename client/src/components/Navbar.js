@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
-import Popup from "./Popup";
+import Dropdown from "./Dropdown";
 import Search from "./Search";
 
 const Navbar = () => {
@@ -20,7 +20,7 @@ function handleDisplay() {
 return (
 <div className="navbar">
 <div className="ui pointing menu">
-  <a>
+  
     <Link 
       to="/"
       className={
@@ -31,8 +31,7 @@ return (
       >
     Player
     </Link>
-  </a>
-  <a>
+
     <Link
       to="/goalies"
       className={
@@ -40,8 +39,6 @@ return (
       >
     Goalie
     </Link>
-  </a>
-  <a>
     <Link
       to="/teams"
       className={
@@ -49,13 +46,13 @@ return (
     >
       Team
     </Link>
-  </a>
  
-  <Popup />
+ <Dropdown />
+ 
 
-  <div className="right menu">
-    <div className="item">
-  <Search />
+    <div className="right menu">
+      <div className="item">
+    <Search />
       </div>
     </div>
   </div>
