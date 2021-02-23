@@ -11,7 +11,7 @@ const PlayerTable = () => {
   const [sortDirection, setSortDirection] = useState("descending");
 
   useEffect(() => {
-
+  // need to add cleanup function
   // calls api for any player that has participated in viewSeason
   API.getPlayers(viewSeason)
     .then(players => {
@@ -22,6 +22,7 @@ const PlayerTable = () => {
         return {...player, seasons: player.seasons.filter((seasons) => seasons.season === viewSeason)}
       })
 
+      
       // removes the seasons array, since we only need the current season in state
       const adjustedPlayers = filteredPlayers.map((player) => {
         return {
@@ -33,16 +34,14 @@ const PlayerTable = () => {
           points: player.seasons[0].points,
           pim: player.seasons[0].pim,
           ppg: player.seasons[0].ppg,
-          wins: player.seasons[0].wins,
-          losses: player.seasons[0].losses,
-          sol: player.seasons[0].sol,
-          winPerc: player.seasons[0].winPerc,
-          ga: player.seasons[0].ga,
-          gaa: player.seasons[0].gaa,
-          so: player.seasons[0].so
+          goalie: player.seasons[0].goalie
         }
+        
       })
-      setTableData(adjustedPlayers);
+
+      const filteredGoalies = adjustedPlayers.filter(player => player.goalie === false);
+
+      setTableData(filteredGoalies);
 
     })
 }, [tableData]);

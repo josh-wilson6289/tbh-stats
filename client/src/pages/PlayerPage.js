@@ -3,6 +3,7 @@ import "../style.css";
 import PlayerTable from "../components/PlayerTable";
 
 const PlayerPage = () => {
+
   return (
     <PlayerTable />
   )
