@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import API from "../utils/API";
-import PlayerRow from "./PlayerRow";
 import PlayerTable from "./PlayerTable";
+import GoalieTable from "./GoalieTable";
+import TeamTable from "./TeamTable";
 
 const Table = ({ table, season }) => {
 
@@ -39,9 +40,6 @@ const Table = ({ table, season }) => {
         
       })
 
-      // const filteredGoalies = currentSeasonPlayers.filter(player => player.goalie === false);
-
-      // setTableData(filteredGoalies);
       setTableData(currentSeasonPlayers);
 
     });
@@ -75,6 +73,7 @@ useEffect(() => {
   setSortedTableData(sortedTableData)
 
 }, [sortField, sortDirection, tableData])
+
 
   return (
     <PlayerTable tableData={tableData}/>
