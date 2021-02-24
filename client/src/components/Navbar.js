@@ -5,47 +5,34 @@ import Search from "./Search";
 
 const Navbar = () => {
 
-
-const [page, setPage] = useState("player");
+const [page, setPage] = useState("players");
 const [season, setSeason] = useState("Q1 2021");
 const [searchTerm, setSearchTerm] = useState("");
 
   // this will check for the player, season, or team tab for a particular season
 // this function is passed down as props to the tabledisplay, which will call 
 // the loadplayers() function with the correct params
-function handleDisplay() {
-
+const handleDisplay = (e) => {
+e.preventDefault();
+console.log(e.target.getAttribute("value"));
+setPage(e.target.getAttribute("value"));
 }  
 
 return (
 <div className="navbar">
-<div className="ui pointing menu">
-  
-    <Link 
-      to="/"
-      className={
-        window.location.pathname === "/" || window.location.pathname === "/players"
-        ? "active item"
-        : "item"
-      }
-      >
-    Player
-    </Link>
-
-    <Link
-      to="/goalies"
-      className={
-        window.location.pathname === "/goalies" ? "active item" : "item"}
-      >
-    Goalie
-    </Link>
-    <Link
-      to="/teams"
-      className={
-        window.location.pathname === "/teams" ? "active item" : "item"}
-    >
-      Team
-    </Link>
+<div className="ui menu">
+ 
+      <div className="active item"
+      value="players"
+      onClick={handleDisplay}>Player</div>
+    
+      <div className="item"
+      value="goalies"
+      onClick={handleDisplay}>Goalie</div>
+    
+      <div className="item"
+      value="teams"
+      onClick={handleDisplay}>Team</div>
  
  <Dropdown />
  

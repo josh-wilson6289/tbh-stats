@@ -23,7 +23,6 @@ export default () => {
         <Route exact path="/goalies" component={GoalieTable} />
         <Route exact path="/teams" component={TeamTable} />
       <br></br>
-      <Dropdown />
       <Pagination />
       <br></br>
       <br></br>

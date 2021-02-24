@@ -12,19 +12,20 @@ const GoalieTable = () => {
 
   useEffect(() => {
   // need to add cleanup function
+
   // calls api for any player that has participated in viewSeason
   API.getPlayers(viewSeason)
     .then(players => {
       const allPlayers = players.data
       // filters through the seasons array, and returns only the season being viewed currently
       // that way, when rendering the playerRow the current season will always be at index [0]
-      const filteredPlayers = allPlayers.map((player) => {
+      const filteredPlayersBySeason = allPlayers.map((player) => {
         return {...player, seasons: player.seasons.filter((seasons) => seasons.season === viewSeason)}
       })
 
       
       // removes the seasons array, since we only need the current season in state
-      const adjustedPlayers = filteredPlayers.map((player) => {
+      const currentSeasonPlayers = filteredPlayersBySeason.map((player) => {
         return {
           _id: player._id,
           name: player.name,
@@ -41,11 +42,13 @@ const GoalieTable = () => {
         
       })
 
-      const filteredGoalies = adjustedPlayers.filter(player => player.goalie === true);
+      const filteredGoalies = currentSeasonPlayers.filter(player => player.goalie === true);
 
       setTableData(filteredGoalies);
-
-    })
+      return () => {
+        console.log("cleanup")
+      };
+    });
 }, [tableData]);
 
 

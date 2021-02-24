@@ -1,16 +1,49 @@
-import React from "react";
-import "../style.css";
+import React from 'react'
+import { Dropdown, Menu } from 'semantic-ui-react'
 
-const Dropdown = () => {
-  return (
+const SeasonsDropdown = () => (
+ 
+    <Dropdown text='Seasons' pointing className='link item'>
+      <Dropdown.Menu>
+        <Dropdown.Header>Seasons</Dropdown.Header>
+        <Dropdown.Item>
+          <Dropdown text='2021'>
+            <Dropdown.Menu>
+              <Dropdown.Item>Q1</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+        </Dropdown.Item>
+        <Dropdown.Item>
+          <Dropdown text='2020'>
+            <Dropdown.Menu>
+              <Dropdown.Item>Q1</Dropdown.Item>
+              <Dropdown.Item>Q2</Dropdown.Item>
+              <Dropdown.Item>Q3</Dropdown.Item>
+              <Dropdown.Item>Q4</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+        </Dropdown.Item>
+        <Dropdown.Item>
+          <Dropdown text='2019'>
+            <Dropdown.Menu>
+              <Dropdown.Item>Q1</Dropdown.Item>
+              <Dropdown.Item>Q2</Dropdown.Item>
+              <Dropdown.Item>Q3</Dropdown.Item>
+              <Dropdown.Item>Q4</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+        </Dropdown.Item>
+        <Dropdown.Item>
+          <Dropdown text='2018'>
+            <Dropdown.Menu>
+              <Dropdown.Item>Q3</Dropdown.Item>
+              <Dropdown.Item>Q4</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+        </Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
 
-<select className="ui selection dropdown">
-  <input type="hidden" name="season"></input>
-  <option valueName="">Season</option>
-  <option valueName="Q1 2021">Q1 2021</option>
-  <option valueName="Q1 2020">Q1 2020</option>
-</select>
-  );
-};
+)
 
-export default Dropdown;
+export default SeasonsDropdown;
