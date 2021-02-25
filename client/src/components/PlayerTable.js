@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import API from "../utils/API";
+import React from "react";
 import PlayerRow from "./PlayerRow";
 
 const PlayerTable = ({tableData, season}) => {
@@ -25,7 +24,7 @@ const PlayerTable = ({tableData, season}) => {
 
   return (
     <div>
-      <h1>{season}</h1>
+      <h1 className="ui center aligned header">{season}</h1>
   
     <table className="ui celled table">
       <thead>

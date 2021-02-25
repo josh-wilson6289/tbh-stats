@@ -16,12 +16,12 @@ const [searchTerm, setSearchTerm] = useState("");
 // the loadplayers() function with the correct params
 const handleTable = (e) => {
 e.preventDefault();
-setTable(e.target.getAttribute("tableValue"));
+setTable(e.target.getAttribute("tablevalue"));
 }  
 
 const handleSeason = (e) => {
   e.preventDefault();
-  setSeason(e.target.getAttribute("seasonValue"));
+  setSeason(e.target.getAttribute("seasonvalue"));
 }
   return (
     <div>

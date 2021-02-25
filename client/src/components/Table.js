@@ -34,7 +34,14 @@ const Table = ({ table, season }) => {
           points: player.seasons[0].points,
           pim: player.seasons[0].pim,
           ppg: player.seasons[0].ppg,
-          goalie: player.seasons[0].goalie
+          goalie: player.seasons[0].goalie,
+          wins: player.seasons[0].wins,
+          losses: player.seasons[0].losses,
+          sol: player.seasons[0].sol,
+          winPerc: player.seasons[0].winPerc,
+          ga: player.seasons[0].ga,
+          gaa: player.seasons[0].gaa,
+          so: player.seasons[0].so
         }
         
       })
