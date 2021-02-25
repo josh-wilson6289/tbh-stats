@@ -12,11 +12,12 @@ const Table = ({ table, season }) => {
   const [sortDirection, setSortDirection] = useState("descending");
   
   useEffect(() => {
-  // need to add cleanup function
+    console.log("api call");
   // calls api for any player that has participated in season
   API.getPlayers(season)
     .then(players => {
       const allPlayers = players.data
+
       // filters through the seasons array, and returns only the season being viewed currently
       // that way, when rendering the playerRow the current season will always be at index [0]
       const filteredPlayersBySeason = allPlayers.map((player) => {
@@ -46,39 +47,40 @@ const Table = ({ table, season }) => {
         
       })
       
+      // sets table data state
       setTableData(currentSeasonPlayers);
       
     });
-}, [tableData]);
+}, [season]);
 
 
-useEffect(() => {
-  let sortedTableData = [...tableData];
-  if (sortDirection === "ascending") {
-  sortedTableData.sort((a, b) => {
-    if (a[sortField] < b[sortField]) {
-      return -1;
-    }
-    if (a[sortField] > b[sortField]) {
-      return 1;
-    }
-      return 0;  
-});
-  }
-    else {
-      sortedTableData.sort((a, b) => {
-        if (a[sortField] < b[sortField]) {
-          return 1;
-      }
-        if (a[sortField] > b[sortField]) {
-          return -1;
-      }
-        return 0;
-    });
-  }
-  setSortedTableData(sortedTableData)
+// useEffect(() => {
+//   let sortedTableData = [...tableData];
+//   if (sortDirection === "ascending") {
+//   sortedTableData.sort((a, b) => {
+//     if (a[sortField] < b[sortField]) {
+//       return -1;
+//     }
+//     if (a[sortField] > b[sortField]) {
+//       return 1;
+//     }
+//       return 0;  
+// });
+//   }
+//     else {
+//       sortedTableData.sort((a, b) => {
+//         if (a[sortField] < b[sortField]) {
+//           return 1;
+//       }
+//         if (a[sortField] > b[sortField]) {
+//           return -1;
+//       }
+//         return 0;
+//     });
+//   }
+//   setSortedTableData(sortedTableData)
 
-}, [sortField, sortDirection])
+// }, [sortField, sortDirection])
 
 let renderedTable;
 
