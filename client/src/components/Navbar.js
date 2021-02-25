@@ -1,34 +1,31 @@
-import React from "react";
-import Popup from "./Popup";
+import React, {useState} from "react";
+import { Link } from "react-router-dom";
+import Dropdown from "./Dropdown";
 import Search from "./Search";
 
-const Navbar = () => {
-
-// this will check for the player, season, or team tab for a particular season
-// this function is passed down as props to the tabledisplay, which will call 
-// the loadplayers() function with the correct params
-function handleDisplay() {
-
-}  
+const Navbar = ({ handleTable, handleSeason }) => {
 
 return (
 <div className="navbar">
 <div className="ui menu">
-  <a className="active item">
-    Player
-  </a>
-  <a className="item" onClick={handleDisplay}>
-    Goalie
-  </a>
-  <a className="item">
-    Team
-  </a>
- 
-  <Popup />
+    
+      <div className="active item"
+      tableValue="players"
+      onClick={handleTable}>Player</div>
+    
+      <div className="item"
+      tableValue="goalies"
+      onClick={handleTable}>Goalie</div>
+    
+      <div className="item"
+      tableValue="teams"
+      onClick={handleTable}>Team</div>
 
-  <div className="right menu">
-    <div className="item">
-  <Search />
+ <Dropdown handleSeason={handleSeason} />
+ 
+    <div className="right menu">
+      <div className="item">
+    <Search />
       </div>
     </div>
   </div>
