@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import API from "../utils/API";
 import PlayerRow from "./PlayerRow";
 
-const PlayerTable = ({tableData}) => {
+const PlayerTable = ({tableData, season}) => {
   
   const filteredGoalies = tableData.filter(player => player.goalie === false);
   
@@ -24,7 +24,9 @@ const PlayerTable = ({tableData}) => {
   });
 
   return (
-
+    <div>
+      <h1>{season}</h1>
+  
     <table className="ui celled table">
       <thead>
         <tr>
@@ -57,6 +59,7 @@ const PlayerTable = ({tableData}) => {
       </tbody>
 
     </table>
+    </div>
 
   );
 };

@@ -76,7 +76,7 @@ useEffect(() => {
 
 
   return (
-    <PlayerTable tableData={tableData}/>
+    <PlayerTable tableData={tableData} season={season}/>
   );
 };
 
