@@ -250,3 +250,49 @@ db.Player.remove({})
     console.error(err);
     process.exit(1);
   });
+  
+  const teamSeed = [
+    {
+      name: "Navy",
+      season: "Q1 2021",
+      wins: 0,
+      losses: 5,
+      goalsFor: 11,
+      goalsAgainst: 10
+    },
+    {
+      name: "Olive",
+      season: "Q1 2021",
+      wins: 3,
+      losses: 2,
+      goalsFor: 19,
+      goalsAgainst: 10,
+    },
+    {
+      name: "Grey",
+      season: "Q1 2021",
+      wins: 5,
+      losses: 0,
+      goalsFor: 17,
+      goalsAgainst: 10
+    },
+    {
+      name: "Orange",
+      season: "Q1 2021",
+      wins: 1,
+      losses: 4,
+      goalsFor: 17,
+      goalsAgainst: 10
+    }
+  ]
+
+  db.Team.remove({})
+  .then(() => db.Team.collection.insertMany(teamSeed))
+  .then(data => {
+    console.log(data.result.n + " records inserted!");
+    process.exit(0);
+  })
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });

@@ -1,12 +1,25 @@
 import axios from "axios";
 
 export default {
-  // all players
-  getPlayers: function (viewSeason) {
-    return axios.get("/api/player", {params: {season: viewSeason}});
+  // all players for given season
+  getPlayers: function (season) {
+    return axios.get("/api/player", {params: {season: season}});
   },
   // one player by id
   getPlayer: function(id) {
-    return axios.get("api/player/" + id);
+    return axios.get("/api/player/" + id);
   },
+  // get all teams for given season
+  getTeams: function (season) {
+    return axios.get("/api/team", {params: {season: season}});
+  },
+  // get single team info
+  getTeam: function(id) {
+    return axios.get("/api/team" + id);
+  },
+  // create team
+  createTeam: function (teamData) {
+    return axios.post("/api/team", teamData);
+  }
+
 };

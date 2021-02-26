@@ -2,29 +2,22 @@ import React from "react";
 import TeamRow from "./TeamRow";
 import "../style.css";
 
-const TeamTable = ({ season, tableData, handleSort }) => {
+const TeamTable = ({ season, tableData, setSortField, handleSort }) => {
 
-  const findTeams = (tableData) => {
-
-    // empty array to dump all the teams for a given season
-    const teams = [];
-
-    // maps over players and pushes team names to teams array
-    tableData.map((player) => {
-      teams.push(player.team)
-    })
-    // removes all duplicate teams
-    const setTeams = [...new Set(teams)];
-    createTeams(setTeams, tableData);
-  } 
-
-  const createTeams = (setTeams, tableData) => {
-    console.log(tableData);
-  }
-
-  findTeams(tableData);
-  
-
+const renderedTeams = tableData.map((team) => {
+  return (
+    <TeamRow
+    key={team._id}
+    name={team.name}
+    wins={team.wins}
+    losses={team.losses}
+    points={team.points}
+    goalsFor={team.goalsFor}
+    goalsAgainst={team.goalsAgainst}
+  />
+  );
+});
+    
   
   return (
     <div>
@@ -37,29 +30,27 @@ const TeamTable = ({ season, tableData, handleSort }) => {
           <th onClick={handleSort} columnvalue="team">Team
 
           </th>
-          {/* <th onClick={handleSort} columnvalue="team">Team
+          <th onClick={handleSort} columnvalue="wins">Wins
 
           </th>
-          <th onClick={handleSort} columnvalue="winPerc">Record
+          <th onClick={handleSort} columnvalue="losses">Losses
 
           </th>
-          <th onClick={handleSort} columnvalue="winPerc">Win Percentage
+          <th onClick={handleSort} columnvalue="points">Points
 
           </th>
-          <th onClick={handleSort} columnvalue="ga">Goals Against
+          <th onClick={handleSort} columnvalue="goalsFor">Goals For
 
           </th>
-          <th onClick={handleSort} columnvalue="gaa">GAA
+          <th onClick={handleSort} columnvalue="goalsAgainst">Goals Against
 
           </th>
-          <th onClick={handleSort} columnvalue="so">Shut Outs
-
-          </th> */}
+          
         </tr>
       </thead>
       
       <tbody>
-        {/* {renderedTeams} */}
+        {renderedTeams}
       </tbody>
 
     </table>
