@@ -55,15 +55,17 @@ const Table = ({ table, season }) => {
 
 const handleSort = (e) => {
   e.preventDefault();
-  setSortField(e.target.getAttribute("columnvalue"));
-  if (sortDirection==="descending") {
+  const field = e.target.getAttribute("columnvalue");
+  if (sortDirection === "descending" && field === sortField) {
     setSortDirection("ascending");
   }
-  else {
-    setSortDirection("descending");
-  }
-  console.log(sortDirection);
-}
+ else if (sortDirection === "ascending" && field === sortField) {
+   setSortDirection("descending");
+ }
+ else {
+    setSortField(field)
+ }
+};
 
 useEffect(() => {
   console.log("sort");
@@ -93,7 +95,7 @@ useEffect(() => {
 
   setSortedTableData(sortedTableData)
 
-}, [sortField, sortDirection, tableData])
+}, [sortField, sortDirection])
 
 
 let renderedTable;

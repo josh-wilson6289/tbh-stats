@@ -1,7 +1,7 @@
 import React from "react";
 import GoalieRow from "./GoalieRow";
 
-const GoalieTable = ({tableData, season, handleSort}) => {
+const GoalieTable = ({ tableData, season, handleSort }) => {
 
  const filteredGoalies = tableData.filter(player => player.goalie === true);
   
@@ -33,25 +33,25 @@ const GoalieTable = ({tableData, season, handleSort}) => {
     <table className="ui celled table">
       <thead>
         <tr>
-          <th onClick={handleSort} columnvalue="player">Player
+          <th onClick={handleSort} columnvalue="name">Player
 
           </th>
           <th onClick={handleSort} columnvalue="team">Team
 
           </th>
-          <th onClick={handleSort} columnvalue="winpercentage">Record
+          <th onClick={handleSort} columnvalue="winPerc">Record
 
           </th>
-          <th onClick={handleSort} columnvalue="winpercentage">Win Percentage
+          <th onClick={handleSort} columnvalue="winPerc">Win Percentage
 
           </th>
-          <th onClick={handleSort} columnvalue="goalsagainst">Goals Against
+          <th onClick={handleSort} columnvalue="ga">Goals Against
 
           </th>
           <th onClick={handleSort} columnvalue="gaa">GAA
 
           </th>
-          <th onClick={handleSort} columnvalue="shutouts">Shut Outs
+          <th onClick={handleSort} columnvalue="so">Shut Outs
 
           </th>
         </tr>
