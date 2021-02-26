@@ -1,18 +1,22 @@
-import React, {useEffect} from "react";
+import React from "react";
 import TeamRow from "./TeamRow";
-import API from "../utils/API";
 import "../style.css";
 
-const TeamTable = ({ season, tableData, handleSort }) => {
+const TeamTable = ({ season, tableData, setSortField, handleSort }) => {
 
-useEffect(() => {
-  API.getTeams(season)
-    .then(teams => {
-      const allTeams = teams.data;
-      console.log(allTeams);
-    })
-})
-
+const renderedTeams = tableData.map((team) => {
+  return (
+    <TeamRow
+    key={team._id}
+    name={team.name}
+    wins={team.wins}
+    losses={team.losses}
+    points={team.points}
+    goalsFor={team.goalsFor}
+    goalsAgainst={team.goalsAgainst}
+  />
+  );
+});
     
   
   return (
@@ -26,29 +30,27 @@ useEffect(() => {
           <th onClick={handleSort} columnvalue="team">Team
 
           </th>
-          {/* <th onClick={handleSort} columnvalue="team">Team
+          <th onClick={handleSort} columnvalue="wins">Wins
 
           </th>
-          <th onClick={handleSort} columnvalue="winPerc">Record
+          <th onClick={handleSort} columnvalue="losses">Losses
 
           </th>
-          <th onClick={handleSort} columnvalue="winPerc">Win Percentage
+          <th onClick={handleSort} columnvalue="points">Points
 
           </th>
-          <th onClick={handleSort} columnvalue="ga">Goals Against
+          <th onClick={handleSort} columnvalue="goalsFor">Goals For
 
           </th>
-          <th onClick={handleSort} columnvalue="gaa">GAA
+          <th onClick={handleSort} columnvalue="goalsAgainst">Goals Against
 
           </th>
-          <th onClick={handleSort} columnvalue="so">Shut Outs
-
-          </th> */}
+          
         </tr>
       </thead>
       
       <tbody>
-        {/* {renderedTeams} */}
+        {renderedTeams}
       </tbody>
 
     </table>
