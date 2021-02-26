@@ -12,7 +12,7 @@ const Table = ({ table, season }) => {
   const [sortDirection, setSortDirection] = useState("descending");
   
   useEffect(() => {
-    console.log("api call");
+
   // calls api for any player that has participated in season
   API.getPlayers(season)
     .then(players => {
@@ -53,45 +53,62 @@ const Table = ({ table, season }) => {
     });
 }, [season]);
 
+const handleSort = (e) => {
+  e.preventDefault();
+  const field = e.target.getAttribute("columnvalue");
+  console.log(field);
+  if (sortDirection === "descending" && field === sortField) {
+    setSortDirection("ascending");
+  }
+ else if (sortDirection === "ascending" && field === sortField) {
+   setSortDirection("descending");
+ }
+ else {
+    setSortField(field)
+ }
+};
 
-// useEffect(() => {
-//   let sortedTableData = [...tableData];
-//   if (sortDirection === "ascending") {
-//   sortedTableData.sort((a, b) => {
-//     if (a[sortField] < b[sortField]) {
-//       return -1;
-//     }
-//     if (a[sortField] > b[sortField]) {
-//       return 1;
-//     }
-//       return 0;  
-// });
-//   }
-//     else {
-//       sortedTableData.sort((a, b) => {
-//         if (a[sortField] < b[sortField]) {
-//           return 1;
-//       }
-//         if (a[sortField] > b[sortField]) {
-//           return -1;
-//       }
-//         return 0;
-//     });
-//   }
-//   setSortedTableData(sortedTableData)
+useEffect(() => {
+  let sortedTableData = [...tableData];
+  
+  if (sortDirection === "ascending") {
+  sortedTableData.sort((a, b) => {
+    if (a[sortField] < b[sortField]) {
+      return -1;
+    }
+    if (a[sortField] > b[sortField]) {
+      return 1;
+    }
+      return 0;  
+});
+  }
+    else {
+      sortedTableData.sort((a, b) => {
+        if (a[sortField] < b[sortField]) {
+          return 1;
+      }
+        if (a[sortField] > b[sortField]) {
+          return -1;
+      }
+        return 0;
+    });
+  }
 
-// }, [sortField, sortDirection])
+  setSortedTableData(sortedTableData)
+  
+}, [sortField, sortDirection, tableData])
+
 
 let renderedTable;
 
 if (table==="players") {
-  renderedTable = <PlayerTable tableData={tableData} season={season} />;
+  renderedTable = <PlayerTable tableData={sortedTableData} season={season} handleSort={handleSort}/>;
 }
 else if (table==="goalies") {
-  renderedTable = <GoalieTable tableData={tableData} season={season} />;
+  renderedTable = <GoalieTable tableData={sortedTableData} season={season} handleSort={handleSort} />;
 }
 else {
-  renderedTable = <TeamTable tableData={tableData} season={season} />;
+  renderedTable = <TeamTable tableData={sortedTableData} season={season} handleSort={handleSort} />;
 }
 
   return (
