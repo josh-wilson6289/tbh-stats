@@ -28,20 +28,22 @@ const Table = ({ table, season }) => {
       const currentSeasonPlayers = filteredPlayersBySeason.map((player) => {
         return {
           _id: player._id,
-          name: player.name,
+          firstName: player.firstName,
+          lastName: player.lastName,
           team: player.seasons[0].team,
+          gamesPlayed: player.seasons[0].gamesPlayed,
           goals: player.seasons[0].goals,
           assists: player.seasons[0].assists,
-          points: player.seasons[0].points,
+          points: player.seasons[0].goals + player.seasons[0].assists,
           pim: player.seasons[0].pim,
-          ppg: player.seasons[0].ppg,
+          ppg: (player.seasons[0].goals + player.seasons[0].assists) / player.seasons[0].gamesPlayed,
           goalie: player.seasons[0].goalie,
           wins: player.seasons[0].wins,
           losses: player.seasons[0].losses,
           sol: player.seasons[0].sol,
-          winPerc: player.seasons[0].winPerc,
+          winPerc: (player.seasons[0].wins / player.seasons[0].gamesPlayed) * 100,
           ga: player.seasons[0].ga,
-          gaa: player.seasons[0].gaa,
+          gaa: player.seasons[0].ga / player.seasons[0].gamesPlayed,
           so: player.seasons[0].so
         }
       })
@@ -76,8 +78,10 @@ const handleSort = (e) => {
 // sorts players
 useEffect(() => {
   let sortedPlayerData = [...playerData];  
+
   if (sortDirection === "ascending") {
   sortedPlayerData.sort((a, b) => {
+
     if (a[sortField] < b[sortField]) {
       return -1;
     }
@@ -98,38 +102,39 @@ useEffect(() => {
         return 0;
     });
   }
+  console.log(sortedPlayerData);
   setSortedPlayerData(sortedPlayerData)
   
 }, [sortField, sortDirection, playerData])
 
 // sorts teams
-useEffect(() => {
-  let sortedTeamData = [...teamData];  
-  if (sortDirection === "ascending") {
-  sortedTeamData.sort((a, b) => {
-    if (a[sortField] < b[sortField]) {
-      return -1;
-    }
-    if (a[sortField] > b[sortField]) {
-      return 1;
-    }
-      return 0;  
-});
-  }
-    else {
-      sortedTeamData.sort((a, b) => {
-        if (a[sortField] < b[sortField]) {
-          return 1;
-      }
-        if (a[sortField] > b[sortField]) {
-          return -1;
-      }
-        return 0;
-    });
-  }
-  setSortedTeamData(sortedTeamData)
+// useEffect(() => {
+//   let sortedTeamData = [...teamData];  
+//   if (sortDirection === "ascending") {
+//   sortedTeamData.sort((a, b) => {
+//     if (a[sortField] < b[sortField]) {
+//       return -1;
+//     }
+//     if (a[sortField] > b[sortField]) {
+//       return 1;
+//     }
+//       return 0;  
+// });
+//   }
+//     else {
+//       sortedTeamData.sort((a, b) => {
+//         if (a[sortField] < b[sortField]) {
+//           return 1;
+//       }
+//         if (a[sortField] > b[sortField]) {
+//           return -1;
+//       }
+//         return 0;
+//     });
+//   }
+//   setSortedTeamData(sortedTeamData)
   
-}, [sortField, sortDirection, teamData])
+// }, [sortField, sortDirection, teamData])
 
 let renderedTable;
 

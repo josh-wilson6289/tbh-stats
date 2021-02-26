@@ -10,13 +10,15 @@ const PlayerTable = ({ tableData, season, handleSort }) => {
     return (
     <PlayerRow
       key={player._id}
-      name={player.name}
+      firstName={player.firstName}
+      lastName={player.lastName}
       team={player.team}
+      gamesPlayed={player.gamesPlayed}
       goals={player.goals}
       assists={player.assists}
       points={player.points}
       pim={player.pim}
-      ppg={player.ppg}
+      ppg={Math.round(100*player.ppg)/100}
     />
     );
 
@@ -29,10 +31,13 @@ const PlayerTable = ({ tableData, season, handleSort }) => {
     <table className="ui celled table">
       <thead>
         <tr>
-          <th onClick={handleSort} columnvalue="name">Player
+          <th onClick={handleSort} columnvalue="lastName">Player
 
           </th>
           <th onClick={handleSort} columnvalue="team">Team
+
+          </th>
+          <th onClick={handleSort} columnvalue="gamesPlayed">Games Played
 
           </th>
           <th onClick={handleSort} columnvalue="goals">Goals
