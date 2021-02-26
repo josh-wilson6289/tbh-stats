@@ -7,31 +7,30 @@ module.exports = {
       { $match: { "seasons.season": req.query.season }}
         
     ])
-
-      .then(dbPlayers => res.json(dbPlayers))
+      .then(dbPlayer => res.json(dbPlayer))
       .catch(err => res.status(422).json(err));
   },
 
   create: function(req, res) {
     db.Player.create(req.body)
-      .then(dbPlayers => res.json(dbPlayers))
+      .then(dbPlayer => res.json(dbPlayer))
       .catch(err => res.status(422).json(err));
   },
 
   findById: function(req, res) {
     db.Player.findById(req.params.id) 
-      .then(dbPlayers => res.json(dbPlayers))
+      .then(dbPlayer => res.json(dbPlayer))
       .catch(err => res.status(422).json(err));
   },
   update: function(req, res) {
     db.Player.findOneAndUpdate({ id: req.params.id }, req.body)
-    .then(dbPlayers => res.json(dbPlayers))
+    .then(dbPlayer => res.json(dbPlayer))
     .catch(err => res.status(422).json(err));
   },
   remove: function(req, res) {
     db.Player.findById(req.params.id) 
-    .then(dbPlayers => dbPlayers.remove())
-    .then(dbPlayers => res.json(dbPlayers))
+    .then(dbPlayer => dbPlayer.remove())
+    .then(dbPlayer => res.json(dbPlayer))
     .catch(err => res.status(422).json(err));
   }
 };
