@@ -11,14 +11,16 @@ const GoalieTable = ({ tableData, season, handleSort }) => {
       return (
       <GoalieRow
         key={player._id}
-        name={player.name}
+        firstName={player.firstName}
+        lastName={player.lastName}
         team={player.team}
+        gamesPlayed={player.gamesPlayed}
         wins={player.wins}
         losses={player.losses}
         sol={player.sol}
-        winPerc={player.winPerc}
+        winPerc={Math.round(100*player.winPerc)/100 + "%"}
         ga={player.ga}
-        gaa={player.gaa}
+        gaa={Math.round(100*player.gaa)/100}
         so={player.so}
       />
       )
@@ -33,10 +35,13 @@ const GoalieTable = ({ tableData, season, handleSort }) => {
     <table className="ui celled table">
       <thead>
         <tr>
-          <th onClick={handleSort} columnvalue="name">Player
+          <th onClick={handleSort} columnvalue="lastName">Player
 
           </th>
           <th onClick={handleSort} columnvalue="team">Team
+
+          </th>
+          <th onClick={handleSort} columnvalue="gamesPlayed">Games Played
 
           </th>
           <th onClick={handleSort} columnvalue="winPerc">Record
