@@ -26,52 +26,27 @@ const Table = ({ table, season }) => {
       })
       // removes the seasons array, since we only need the current season in state
       const currentSeasonPlayers = filteredPlayersBySeason.map((player) => {
-        if (player.goale === false) {
-          return {
-            _id: player._id,
-            firstName: player.firstName,
-            lastName: player.lastName,
-            team: player.seasons[0].team,
-            gamesPlayed: player.seasons[0].gamesPlayed,
-            goals: player.seasons[0].goals,
-            assists: player.seasons[0].assists,
-            points: player.seasons[0].goals + player.seasons[0].assists,
-            pim: player.seasons[0].pim,
-            ppg: (player.seasons[0].goals + player.seasons[0].assists) / player.seasons[0].gamesPlayed,
-            goalie: player.seasons[0].goalie,
-            wins: 0,
-            losses: 0,
-            sol: 0,
-            winPerc: 0,
-            ga: 0,
-            gaa: 0,
-            so: 0
-          }
-       } 
-        else {
-          return {
-            _id: player._id,
-            firstName: player.firstName,
-            lastName: player.lastName,
-            team: player.seasons[0].team,
-            gamesPlayed: player.seasons[0].gamesPlayed,
-            goals: 0,
-            assists: 0,
-            points: 0,
-            pim: 0,
-            ppg: 0,
-            goalie: player.seasons[0].goalie,
-            wins: player.seasons[0].wins,
-            losses: player.seasons[0].losses,
-            sol: player.seasons[0].sol,
-            winPerc: (player.seasons[0].wins / player.seasons[0].gamesPlayed) * 100,
-            ga: player.seasons[0].ga,
-            gaa: player.seasons[0].ga / player.seasons[0].gamesPlayed,
-            so: player.seasons[0].so
-          }
+        return {
+          _id: player._id,
+          firstName: player.firstName,
+          lastName: player.lastName,
+          team: player.seasons[0].team,
+          gamesPlayed: player.seasons[0].gamesPlayed,
+          goals: player.seasons[0].goals,
+          assists: player.seasons[0].assists,
+          points: player.seasons[0].goals + player.seasons[0].assists,
+          pim: player.seasons[0].pim,
+          ppg: (player.seasons[0].goals + player.seasons[0].assists) / player.seasons[0].gamesPlayed,
+          goalie: player.seasons[0].goalie,
+          wins: player.seasons[0].wins,
+          losses: player.seasons[0].losses,
+          sol: player.seasons[0].sol,
+          winPerc: (player.seasons[0].wins / player.seasons[0].gamesPlayed) * 100,
+          ga: player.seasons[0].ga,
+          gaa: player.seasons[0].ga / player.seasons[0].gamesPlayed,
+          so: player.seasons[0].so
         }
-      });
-      
+      })
       // sets table data state
       setPlayerData(currentSeasonPlayers);
     });
