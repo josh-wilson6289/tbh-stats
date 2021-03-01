@@ -1,12 +1,11 @@
 import React, {useState} from "react";
-import { Link } from "react-router-dom";
 import Dropdown from "./Dropdown";
 import Search from "./Search";
 
 const Navbar = ({ handleTable, handleSeason }) => {
 
 return (
-<div className="navbar">
+
 <div className="ui menu">
     
       <div className="active item"
@@ -29,7 +28,7 @@ return (
       </div>
     </div>
   </div>
-</div>
+
   );
 };
 

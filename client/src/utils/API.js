@@ -21,5 +21,4 @@ export default {
   createTeam: function (teamData) {
     return axios.post("/api/team", teamData);
   }
-
 };

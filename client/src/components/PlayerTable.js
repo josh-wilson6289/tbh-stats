@@ -3,9 +3,7 @@ import PlayerRow from "./PlayerRow";
 
 const PlayerTable = ({ tableData, season, handleSort }) => {
   
-  const filteredGoalies = tableData.filter(player => player.goalie === false);
-  
-  const renderedPlayers = filteredGoalies.map((player) => {
+  const renderedPlayers = tableData.map((player) => {
 
     return (
     <PlayerRow
@@ -26,37 +24,20 @@ const PlayerTable = ({ tableData, season, handleSort }) => {
 
   return (
     <div>
-      <h1 className="ui center aligned header">{season}</h1>
-  
-    <table className="ui celled table">
-      <thead>
-        <tr>
-          <th onClick={handleSort} columnvalue="lastName">Player
-
-          </th>
-          <th onClick={handleSort} columnvalue="team">Team
-
-          </th>
-          <th onClick={handleSort} columnvalue="gamesPlayed">Games Played
-
-          </th>
-          <th onClick={handleSort} columnvalue="goals">Goals
-
-          </th>
-          <th onClick={handleSort} columnvalue="assists">Assists
-
-          </th>
-          <th onClick={handleSort} columnvalue="points">Points
-
-          </th>
-          <th onClick={handleSort} columnvalue="pim">PIM
-
-          </th>
-          <th onClick={handleSort} columnvalue="ppg">PPG
-
-          </th>
-        </tr>
-      </thead>
+    <h1 className="ui center aligned header">{season}</h1>
+  <table className="table table-bordered">
+    <thead className="thead-light">
+      <tr>
+        <th scope="col" onClick={handleSort} columnvalue="lastName">Player</th>
+        <th scope="col" onClick={handleSort} columnvalue="team">Team</th>
+        <th scope="col" onClick={handleSort} columnvalue="gamesPlayed">Games Played</th>
+        <th scope="col" onClick={handleSort} columnvalue="goals">Goals</th>
+        <th scope="col" onClick={handleSort} columnvalue="assists">Assists</th>
+        <th scope="col" onClick={handleSort} columnvalue="points">Points</th>
+        <th scope="col" onClick={handleSort} columnvalue="pim">PIM</th>
+        <th scope="col" onClick={handleSort} columnvalue="ppg">PPG</th>
+      </tr>
+    </thead>
       
       <tbody>
         {renderedPlayers}

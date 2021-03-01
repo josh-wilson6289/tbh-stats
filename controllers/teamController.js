@@ -4,7 +4,7 @@ const { where } = require("../models/team");
 module.exports = {
   findAll: function (req, res) {
     db.Team.aggregate([
-      { $match: { "season": season }} 
+      { $match: { "season": req.query.season }} 
     ])
       .then(dbTeam => res.json(dbTeam))
       .catch(err => res.status(422).json(err));
