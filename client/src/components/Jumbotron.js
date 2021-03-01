@@ -5,7 +5,7 @@ const Jumbotron = () => {
 
   return (
 
-    <div className="jumbotron">
+    <div className="jumbo">
     <img src={TbhLogo} alt="Texas Ball Hockey Logo" className="logo"></img>
     </div>
     

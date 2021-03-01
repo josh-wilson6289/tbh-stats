@@ -7,7 +7,9 @@ import TeamTable from "./TeamTable";
 const Table = ({ table, season }) => {
 
   const [playerData, setPlayerData] = useState([]);
-  const [sortedPlayerData, setSortedPlayerData] = useState([playerData]);
+  const [sortedPlayerData, setSortedPlayerData] = useState([]);
+  const [goalieData, setGoalieData] = useState([]);
+  const [sortedGoalieData, setSortedGoalieData] = useState([]);
   const [teamData, setTeamData] = useState([]);
   const [sortedTeamData, setSortedTeamData] = useState([]);
   const [sortField, setSortField] = useState("points");
@@ -24,8 +26,12 @@ const Table = ({ table, season }) => {
       const filteredPlayersBySeason = allPlayers.map((player) => {
         return {...player, seasons: player.seasons.filter((seasons) => seasons.season === season)}
       })
+      
+      const goaliesBySeason = filteredPlayersBySeason.filter(player => player.seasons[0].goalie === true);
+      const playersBySeason = filteredPlayersBySeason.filter(player => player.seasons[0].goalie === false);
+
       // removes the seasons array, since we only need the current season in state
-      const currentSeasonPlayers = filteredPlayersBySeason.map((player) => {
+      const currentSeasonPlayers = playersBySeason.map((player) => {
         return {
           _id: player._id,
           firstName: player.firstName,
@@ -36,7 +42,20 @@ const Table = ({ table, season }) => {
           assists: player.seasons[0].assists,
           points: player.seasons[0].goals + player.seasons[0].assists,
           pim: player.seasons[0].pim,
-          ppg: (player.seasons[0].goals + player.seasons[0].assists) / player.seasons[0].gamesPlayed,
+          ppg: (player.seasons[0].goals + player.seasons[0].assists) / player.seasons[0].gamesPlayed
+        }
+      })
+      // sets table data state
+     
+      setPlayerData(currentSeasonPlayers);
+
+      const currentSeasonGoalies = goaliesBySeason.map((player) => {
+        return {
+          _id: player._id,
+          firstName: player.firstName,
+          lastName: player.lastName,
+          team: player.seasons[0].team,
+          gamesPlayed: player.seasons[0].gamesPlayed,
           goalie: player.seasons[0].goalie,
           wins: player.seasons[0].wins,
           losses: player.seasons[0].losses,
@@ -48,7 +67,7 @@ const Table = ({ table, season }) => {
         }
       })
       // sets table data state
-      setPlayerData(currentSeasonPlayers);
+      setGoalieData(currentSeasonGoalies);
     });
 }, [season]);
 
@@ -56,14 +75,15 @@ const Table = ({ table, season }) => {
 useEffect(() => {
   API.getTeams(season)
     .then(teams => {
-      setTeamData(teams.data);
+      const allTeams = teams.data;
+      setTeamData(allTeams);
     })
 }, [season])
 
 const handleSort = (e) => {
   e.preventDefault();
   const field = e.target.getAttribute("columnvalue");
-  console.log(field);
+  
   if (sortDirection === "descending" && field === sortField) {
     setSortDirection("ascending");
   }
@@ -79,18 +99,43 @@ const handleSort = (e) => {
 useEffect(() => {
 
   let sortedPlayerData = [...playerData];  
+  let sortedTeamData = [...teamData];
+  let sortedGoalieData = [...goalieData]
 
   if (sortDirection === "ascending") {
   sortedPlayerData.sort((a, b) => {
-
     if (a[sortField] < b[sortField]) {
       return -1;
     }
     if (a[sortField] > b[sortField]) {
       return 1;
     }
-      return 0;  
+    else {
+      return 0;
+    }
 });
+sortedTeamData.sort((a,b) => {
+    if (a[sortField] < b[sortField]) {
+      return -1;
+    }
+    if (a[sortField] > b[sortField]) {
+      return 1;
+    }
+    else {
+      return 0;
+    }
+});  
+sortedGoalieData.sort((a,b) => {
+  if (a[sortField] < b[sortField]) {
+    return -1;
+  }
+  if (a[sortField] > b[sortField]) {
+    return 1;
+  }
+  else {
+    return 0;
+  }
+});  
   }
     else {
       sortedPlayerData.sort((a, b) => {
@@ -100,41 +145,41 @@ useEffect(() => {
         if (a[sortField] > b[sortField]) {
           return -1;
       }
+      else {
         return 0;
+      }
+    });
+    
+    sortedTeamData.sort((a, b) => {
+      if (a[sortField] < b[sortField]) {
+        return 1;
+      }
+      if (a[sortField] > b[sortField]) {
+        return -1;
+      }
+      else {
+        return 0;
+      }
+    });
+
+    sortedGoalieData.sort((a, b) => {
+      if (a[sortField] < b[sortField]) {
+        return 1;
+      }
+      if (a[sortField] > b[sortField]) {
+        return -1;
+      }
+      else {
+        return 0;
+      }
     });
   }
-  setSortedPlayerData(sortedPlayerData)
-  
-}, [sortField, sortDirection, playerData])
 
-// sorts teams
-// useEffect(() => {
-//   let sortedTeamData = [...teamData];  
-//   if (sortDirection === "ascending") {
-//   sortedTeamData.sort((a, b) => {
-//     if (a[sortField] < b[sortField]) {
-//       return -1;
-//     }
-//     if (a[sortField] > b[sortField]) {
-//       return 1;
-//     }
-//       return 0;  
-// });
-//   }
-//     else {
-//       sortedTeamData.sort((a, b) => {
-//         if (a[sortField] < b[sortField]) {
-//           return 1;
-//       }
-//         if (a[sortField] > b[sortField]) {
-//           return -1;
-//       }
-//         return 0;
-//     });
-//   }
-//   setSortedTeamData(sortedTeamData)
+  setSortedPlayerData(sortedPlayerData);
+  setSortedTeamData(sortedTeamData);
+  setSortedGoalieData(sortedGoalieData);
   
-// }, [sortField, sortDirection, teamData])
+}, [sortField, sortDirection, playerData, teamData, goalieData])
 
 let renderedTable;
 
@@ -142,10 +187,10 @@ if (table==="players") {
   renderedTable = <PlayerTable tableData={sortedPlayerData} season={season} handleSort={handleSort}/>;
 }
 else if (table==="goalies") {
-  renderedTable = <GoalieTable tableData={sortedPlayerData} season={season} handleSort={handleSort} />;
+  renderedTable = <GoalieTable tableData={sortedGoalieData} season={season} handleSort={handleSort} />;
 }
 else {
-  renderedTable = <TeamTable tableData={sortedTeamData} setSortField={setSortField} season={season} handleSort={handleSort} />;
+  renderedTable = <TeamTable tableData={sortedTeamData} season={season} handleSort={handleSort} />;
 }
 
   return (

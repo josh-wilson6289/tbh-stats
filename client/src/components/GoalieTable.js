@@ -3,10 +3,7 @@ import GoalieRow from "./GoalieRow";
 
 const GoalieTable = ({ tableData, season, handleSort }) => {
 
- const filteredGoalies = tableData.filter(player => player.goalie === true);
-  
-  
-  const renderedPlayers = filteredGoalies.map((player) => {
+  const renderedPlayers = tableData.map((player) => {
 
       return (
       <GoalieRow
@@ -28,39 +25,21 @@ const GoalieTable = ({ tableData, season, handleSort }) => {
 
 
   return (
-    <div>
-    <div className="ui container">
-      <h1 className="ui center aligned header">{season}</h1>
-    </div>
-    <table className="ui celled table">
-      <thead>
-        <tr>
-          <th onClick={handleSort} columnvalue="lastName">Player
-
-          </th>
-          <th onClick={handleSort} columnvalue="team">Team
-
-          </th>
-          <th onClick={handleSort} columnvalue="gamesPlayed">Games Played
-
-          </th>
-          <th onClick={handleSort} columnvalue="winPerc">Record
-
-          </th>
-          <th onClick={handleSort} columnvalue="winPerc">Win Percentage
-
-          </th>
-          <th onClick={handleSort} columnvalue="ga">Goals Against
-
-          </th>
-          <th onClick={handleSort} columnvalue="gaa">GAA
-
-          </th>
-          <th onClick={handleSort} columnvalue="so">Shut Outs
-
-          </th>
-        </tr>
-      </thead>
+  <div>
+    <h1 className="ui center aligned header">{season}</h1>
+  <table className="table table-bordered">
+    <thead className="thead-light">
+      <tr>
+        <th scope="col" onClick={handleSort} columnvalue="lastName">Player</th>
+        <th scope="col" onClick={handleSort} columnvalue="team">Team</th>
+        <th scope="col" onClick={handleSort} columnvalue="gamesPlayed">Games Played</th>
+        <th scope="col" onClick={handleSort} columnvalue="winPerc">Record</th>
+        <th scope="col" onClick={handleSort} columnvalue="winPerc">Win Percentage</th>
+        <th scope="col" onClick={handleSort} columnvalue="ga">Goals Against</th>
+        <th scope="col" onClick={handleSort} columnvalue="gaa">GAA</th>
+        <th scope="col" onClick={handleSort} columnvalue="so">Shutouts</th>
+      </tr>
+    </thead>
       
       <tbody>
         {renderedPlayers}
