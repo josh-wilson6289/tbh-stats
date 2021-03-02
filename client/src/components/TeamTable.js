@@ -24,8 +24,10 @@ const renderedTeams = tableData.map((team) => {
   
   return (
   <div>
-    <br></br>
+    <div className="container">
   <h1 className="ui center aligned header">{season}</h1>
+  </div>
+  <br></br>
 <table className="table table-bordered">
   <thead className="thead-light">
     <tr>
