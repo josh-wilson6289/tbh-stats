@@ -27,7 +27,8 @@ const Caret = ({ handleSort, value, sortDirection, sortField }) => {
       width="16" height="16" 
       fill="currentColor" 
       className={`bi bi-caret-${direction}-fill`} 
-      viewBox="0 0 16 16">
+      viewBox="0 0 16 16"
+      id="sorticon">
     <path 
       d={d}
       onClick={handleSort} 
