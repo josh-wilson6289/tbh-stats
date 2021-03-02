@@ -1,7 +1,8 @@
 import React from "react";
 import GoalieRow from "./GoalieRow";
+import Caret from "./Caret";
 
-const GoalieTable = ({ tableData, season, handleSort }) => {
+const GoalieTable = ({ tableData, season, handleSort, sortField, sortDirection }) => {
 
   const renderedPlayers = tableData.map((player) => {
 
@@ -26,18 +27,21 @@ const GoalieTable = ({ tableData, season, handleSort }) => {
 
   return (
   <div>
+    <div className="container">
     <h1 className="ui center aligned header">{season}</h1>
+    </div>
+    <br></br>
   <table className="table table-bordered">
     <thead className="thead-light">
       <tr>
-        <th scope="col" onClick={handleSort} columnvalue="lastName">Player</th>
-        <th scope="col" onClick={handleSort} columnvalue="team">Team</th>
-        <th scope="col" onClick={handleSort} columnvalue="gamesPlayed">Games Played</th>
-        <th scope="col" onClick={handleSort} columnvalue="winPerc">Record</th>
-        <th scope="col" onClick={handleSort} columnvalue="winPerc">Win Percentage</th>
-        <th scope="col" onClick={handleSort} columnvalue="ga">Goals Against</th>
-        <th scope="col" onClick={handleSort} columnvalue="gaa">GAA</th>
-        <th scope="col" onClick={handleSort} columnvalue="so">Shutouts</th>
+        <th scope="col">Player <Caret handleSort={handleSort} sortDirection={sortDirection} sortField={sortField} value="lastName" /></th>
+        <th scope="col">Team <Caret handleSort={handleSort} sortDirection={sortDirection} sortField={sortField} value="team"/></th>
+        <th scope="col">Games Played <Caret handleSort={handleSort} sortDirection={sortDirection} sortField={sortField} value="gamesPlayed" /></th>
+        <th scope="col">Record <Caret handleSort={handleSort} sortDirection={sortDirection} sortField={sortField} value="wins" /></th>
+        <th scope="col">Win Percentage <Caret handleSort={handleSort} sortDirection={sortDirection} sortField={sortField} value="winPerc" /></th>
+        <th scope="col">Goals Against <Caret  handleSort={handleSort} sortDirection={sortDirection} sortField={sortField} value="ga" /></th>
+        <th scope="col">GAA <Caret handleSort={handleSort} sortDirection={sortDirection} sortField={sortField} value="gaa" /></th>
+        <th scope="col">Shutouts <Caret handleSort={handleSort} sortDirection={sortDirection} sortField={sortField} value="so" /></th>
       </tr>
     </thead>
       

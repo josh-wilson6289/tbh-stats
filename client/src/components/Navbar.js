@@ -5,10 +5,10 @@ import Search from "./Search";
 const Navbar = ({ handleTable, handleSeason }) => {
 
 return (
-
+<div className="container-fluid">
 <div className="ui menu">
     
-      <div className="active item"
+      <div pointing className="active item"
       tableValue="players"
       onClick={handleTable}>Player</div>
     
@@ -28,7 +28,7 @@ return (
       </div>
     </div>
   </div>
-
+  </div>
   );
 };
 

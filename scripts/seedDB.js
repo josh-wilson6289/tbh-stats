@@ -257,6 +257,7 @@ db.Player.remove({})
       season: "Q1 2021",
       wins: 0,
       losses: 5,
+      points: 0,
       goalsFor: 11,
       goalsAgainst: 10
     },
@@ -265,6 +266,7 @@ db.Player.remove({})
       season: "Q1 2021",
       wins: 3,
       losses: 2,
+      points: 6,
       goalsFor: 19,
       goalsAgainst: 10,
     },
@@ -273,6 +275,7 @@ db.Player.remove({})
       season: "Q1 2021",
       wins: 5,
       losses: 0,
+      points: 10,
       goalsFor: 17,
       goalsAgainst: 10
     },
@@ -281,6 +284,7 @@ db.Player.remove({})
       season: "Q1 2021",
       wins: 1,
       losses: 4,
+      points: 2,
       goalsFor: 17,
       goalsAgainst: 10
     }
