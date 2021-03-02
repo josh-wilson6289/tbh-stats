@@ -2,13 +2,21 @@ const db = require("../models");
 const { where } = require("../models/player");
 
 module.exports = {
-  findAll: function(req, res) {
+  findPlayersBySeason: function(req, res) {
     db.Player.aggregate([
       { $match: { "seasons.season": req.query.season }}
         
     ])
+      .sort({ lastName: 1 })
       .then(dbPlayer => res.json(dbPlayer))
       .catch(err => res.status(422).json(err));
+  },
+
+  findAllPlayers: function(req, res) {
+    db.Player.find(req.query)
+    .sort({ name: -1 })
+    .then(dbPlayer => res.json(dbPlayer))
+    .catch(err => res.status(422).json(err));
   },
 
   create: function(req, res) {

@@ -2,9 +2,14 @@ import axios from "axios";
 
 export default {
   // all players for given season
-  getPlayers: function (season) {
-    return axios.get("/api/player", {params: {season: season}});
+  getPlayersBySeason: function (season) {
+    return axios.get("/api/player/" + season, {params: {season: season}});
   },
+
+  getAllPlayers: function () {
+    return axios.get("api/player")
+  },
+  
   // one player by id
   getPlayer: function(id) {
     return axios.get("/api/player/" + id);
