@@ -24,10 +24,9 @@ const handleSeason = (e) => {
   setSeason(e.target.getAttribute("seasonvalue"));
 }
   return (
-    <div>
+    <div> 
     <Jumbotron />
-  
-    <div className="ui container">
+    <div className="container-fluid">
       <Navbar 
         handleTable={handleTable}
         handleSeason={handleSeason}/>

@@ -1256,7 +1256,7 @@ const playersSeed = [
       pim: 0
     }
   ]
-},
+}
 ]
 
 // {

@@ -21,16 +21,18 @@ const Table = ({ table, season }) => {
   API.getPlayers(season)
     .then(players => {
       const allPlayers = players.data
+      
       // filters through the seasons array, and returns only the season being viewed currently
       // that way, when rendering the playerRow the current season will always be at index [0]
       const filteredPlayersBySeason = allPlayers.map((player) => {
         return {...player, seasons: player.seasons.filter((seasons) => seasons.season === season)}
       })
       
+      // sets up goalie and player arrays
       const goaliesBySeason = filteredPlayersBySeason.filter(player => player.seasons[0].goalie === true);
       const playersBySeason = filteredPlayersBySeason.filter(player => player.seasons[0].goalie === false);
 
-      // removes the seasons array, since we only need the current season in state
+      // removes the seasons array, sets player data 
       const currentSeasonPlayers = playersBySeason.map((player) => {
         return {
           _id: player._id,
@@ -46,9 +48,9 @@ const Table = ({ table, season }) => {
         }
       })
       // sets table data state
-     
       setPlayerData(currentSeasonPlayers);
 
+      // removes the seasons array, sets goalie data
       const currentSeasonGoalies = goaliesBySeason.map((player) => {
         return {
           _id: player._id,
@@ -69,9 +71,10 @@ const Table = ({ table, season }) => {
       // sets table data state
       setGoalieData(currentSeasonGoalies);
     });
+
 }, [season]);
 
-
+// loads teams from current season and sets state
 useEffect(() => {
   API.getTeams(season)
     .then(teams => {
@@ -82,8 +85,8 @@ useEffect(() => {
 
 const handleSort = (e) => {
   e.preventDefault();
-  const field = e.target.getAttribute("columnvalue");
-  
+  const field = e.target.getAttribute("value");
+
   if (sortDirection === "descending" && field === sortField) {
     setSortDirection("ascending");
   }
@@ -95,7 +98,7 @@ const handleSort = (e) => {
  }
 };
 
-// sorts players
+// sorts players, goalies, and teams
 useEffect(() => {
 
   let sortedPlayerData = [...playerData];  
@@ -184,13 +187,13 @@ sortedGoalieData.sort((a,b) => {
 let renderedTable;
 
 if (table==="players") {
-  renderedTable = <PlayerTable tableData={sortedPlayerData} season={season} handleSort={handleSort}/>;
+  renderedTable = <PlayerTable tableData={sortedPlayerData} season={season} handleSort={handleSort} sortDirection={sortDirection} sortField={sortField} />;
 }
 else if (table==="goalies") {
-  renderedTable = <GoalieTable tableData={sortedGoalieData} season={season} handleSort={handleSort} />;
+  renderedTable = <GoalieTable tableData={sortedGoalieData} season={season} handleSort={handleSort} sortDirection={sortDirection} sortField={sortField} />;
 }
 else {
-  renderedTable = <TeamTable tableData={sortedTeamData} season={season} handleSort={handleSort} />;
+  renderedTable = <TeamTable tableData={sortedTeamData} season={season} handleSort={handleSort} sortDirection={sortDirection} sortField={sortField} />;
 }
 
   return (

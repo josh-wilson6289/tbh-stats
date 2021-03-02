@@ -97,6 +97,11 @@ table {
   padding: 5px;
   float: right;
 }
+
+#sorticon {
+  float: right;
+  size: 10px;
+}
 /* 
 This may be needed to get pop ups to work */
 
