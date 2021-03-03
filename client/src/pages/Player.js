@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import Table from "../components/Table";
 import API from "../utils/API";
 
-
 const Player = ({ season, page }) => {
 
   const [tableData, setTableData] = useState([]);
   const [sortField, setSortField] = useState("");
   const [sortDirection, setSortDirection] = useState("");
+  const [currentSeason, setcurrentSeason] = useState("")
 
   function loadPlayerStatsBySeason(season) {
       // calls api for any player that has participated in season
@@ -43,6 +43,7 @@ const Player = ({ season, page }) => {
         setTableData(currentSeasonPlayers);
         setSortField("points");
         setSortDirection("descending");
+        setcurrentSeason(season);
   
       });
   }
@@ -68,7 +69,7 @@ const Player = ({ season, page }) => {
     <Table
       tableData={tableData} 
       setTableData={setTableData}
-      season={season}
+      season={currentSeason}
       page={page}
       sortField={sortField}
       setSortField={setSortField}

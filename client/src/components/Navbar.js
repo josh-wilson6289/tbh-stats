@@ -29,12 +29,15 @@ return (
  
 
  <Dropdown handleSeason={handleSeason} />
- 
+ </div>
+
+  <div id="searchbox" className="ui menu">
     <div className="right menu">
       <div className="item">
     <Search />
-      </div>
+    
     </div>
+  </div>
   </div>
 </nav>
 

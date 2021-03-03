@@ -9,8 +9,9 @@ import TableBody from "./TableBody";
 const Table = ({ tableData, setTableData, sortField, setSortField, sortDirection, setSortDirection, season, page }) => {
 
   useEffect(() => { 
+    console.log("useEffect", tableData, sortField, sortDirection)
     sortData(tableData, sortField, sortDirection)
-  },[sortDirection]);
+  },[sortDirection, page, season]);
 
   const handleSort = (e) => {
     e.preventDefault();

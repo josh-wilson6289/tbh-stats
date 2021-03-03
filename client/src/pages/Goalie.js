@@ -7,7 +7,8 @@ const Goalie = ({ season, page }) => {
   const [tableData, setTableData] = useState([]);
   const [sortField, setSortField] = useState("");
   const [sortDirection, setSortDirection] = useState("");
- 
+  const [currentSeason, setCurrentSeason] = useState("");
+
   function loadPlayerStatsBySeason(season) {
       // calls api for any player that has participated in season
       API.getPlayersBySeason(season)
@@ -43,6 +44,7 @@ const Goalie = ({ season, page }) => {
         setTableData(currentSeasonGoalies);
         setSortField("winPerc");
         setSortDirection("descending");
+        setCurrentSeason(season)
       });
   }
 
@@ -67,7 +69,7 @@ const Goalie = ({ season, page }) => {
     <Table
       tableData={tableData} 
       setTableData={setTableData}
-      season={season}
+      season={currentSeason}
       page={page}
       sortField={sortField}
       setSortField={setSortField}

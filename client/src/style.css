@@ -56,20 +56,25 @@ table {
   padding-bottom: 10px;
 }
 
-.jumbo {
-  background-color: #8e2742;
+.jumbotron {
+  background-color: #8e2742 !important;
   justify-content: center;
-  height: 350px;
-  width: 100%;
+  width: 100% !important;
+  height: 300px;
+  min-width: 100%;
   margin-bottom: 3%;
+  padding: 0 !important;
 }
 
 .logo {
-  height: 300px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 30px;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 280px;
+  padding-top: 20px;
+  
 }
 
 .current-season-header {
@@ -87,6 +92,7 @@ table {
   text-align: center !important;
   font-family: 'Coustard', serif;
   padding-top: 10px;
+  width: 100% !important
 }
 
 .th {
@@ -103,7 +109,11 @@ table {
   size: 10px;
 }
 
-
+#searchbox {
+  margin-bottom: 14px !important;
+  padding: 0px !important;
+  margin-top: 0 !important;
+}
 
 /* 
 This may be needed to get pop ups to work */
