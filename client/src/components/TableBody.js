@@ -2,6 +2,7 @@ import React from "react";
 import Table from "./Table";
 import PlayerRow from "./PlayerRow";
 import GoalieRow from "./GoalieRow";
+import TeamRow from "./TeamRow";
 
 const TableBody = ({ tableData, page }) => {
 
@@ -49,7 +50,16 @@ else if (page === "goalies") {
 }
 else {
   renderedData = tableData.map((data) => {
-    return data.name;
+    return (
+      <TeamRow 
+        name={data.name}
+        wins={data.wins}
+        losses={data.losses}
+        points={data.points}
+        goalsFor={data.goalsFor}
+        goalsAgainst={data.goalsAgainst}
+      />
+    )
   })
 }
   return (

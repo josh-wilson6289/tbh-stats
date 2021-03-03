@@ -15,7 +15,7 @@ export default {
     return axios.get("/api/player/" + id);
   },
   // get all teams for given season
-  getTeams: function (season) {
+  getTeamsBySeason: function (season) {
     return axios.get("/api/team", {params: {season: season}});
   },
   // get single team info

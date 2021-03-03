@@ -20,6 +20,7 @@ const Goalie = ({ season, page }) => {
           return {...player, seasons: player.seasons.filter((seasons) => seasons.season === season)}
         })
         
+        // filters out all except goalies
         const goaliesBySeason = filteredPlayersBySeason.filter(player => player.seasons[0].goalie === true);
 
         // removes the seasons array, sets goalie data

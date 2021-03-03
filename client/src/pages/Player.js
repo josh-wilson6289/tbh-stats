@@ -7,7 +7,7 @@ const Player = ({ season, page }) => {
   const [tableData, setTableData] = useState([]);
   const [sortField, setSortField] = useState("");
   const [sortDirection, setSortDirection] = useState("");
-  const [currentSeason, setcurrentSeason] = useState("")
+  const [currentSeason, setCurrentSeason] = useState("")
 
   function loadPlayerStatsBySeason(season) {
       // calls api for any player that has participated in season
@@ -20,8 +20,7 @@ const Player = ({ season, page }) => {
           return {...player, seasons: player.seasons.filter((seasons) => seasons.season === season)}
         })
         
-        // sets up goalie and player arrays
-        // const goaliesBySeason = filteredPlayersBySeason.filter(player => player.seasons[0].goalie === true);
+        // filter out goalies
         const playersBySeason = filteredPlayersBySeason.filter(player => player.seasons[0].goalie === false);
   
         // removes the seasons array, sets player data 
@@ -43,7 +42,7 @@ const Player = ({ season, page }) => {
         setTableData(currentSeasonPlayers);
         setSortField("points");
         setSortDirection("descending");
-        setcurrentSeason(season);
+        setCurrentSeason(season);
   
       });
   }

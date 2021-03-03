@@ -31,6 +31,16 @@ const setHeaders = (page) => {
       {name: "Shutouts", value: "so"}
     ]
   }
+  else {
+    columns = [
+      {name: "Team", value: "name"},
+      {name: "Wins", value: "wins"},
+      {name: "Losses", value: "losses"},
+      {name: "Points", value: "points"},
+      {name: "Goals For", value: "goalsFor"},
+      {name: "Goals Against", value: "goalsAgainst"}
+    ]
+  }
 }
 
 setHeaders(page);
