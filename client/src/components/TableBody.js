@@ -1,6 +1,7 @@
 import React from "react";
 import Table from "./Table";
 import PlayerRow from "./PlayerRow";
+import GoalieRow from "./GoalieRow";
 
 const TableBody = ({ tableData, page }) => {
 
@@ -27,7 +28,23 @@ if (page === "players") {
 }
 else if (page === "goalies") {
   renderedData = tableData.map((data) => {
-    return data.lastName;
+    return (
+      <GoalieRow 
+        key={data._id}
+        _id={data._id}
+        firstName={data.firstName}
+        lastName={data.lastName}
+        team={data.team}
+        gamesPlayed={data.gamesPlayed}
+        wins={data.wins}
+        losses={data.losses}
+        sol={data.sol}
+        winPerc={Math.round(100*data.winPerc)/100 + "%"}
+        ga={data.ga}
+        gaa={Math.round(100*data.gaa)/100}
+        so={data.so}
+      />
+    );
   });
 }
 else {

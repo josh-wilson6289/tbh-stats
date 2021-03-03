@@ -19,6 +19,18 @@ const setHeaders = (page) => {
       {name: "PPG", value: "ppg"},
     ]
   }
+  else if (page === "goalies") {
+    columns = [
+      {name: "Player", value: "lastName"},
+      {name: "Team", value: "team"},
+      {name: "Games Played", value: "gamesPlayed"},
+      {name: "Record", value: "wins"},
+      {name: "Win Percentage", value: "winPerc"},
+      {name: "Goals Against", value: "ga"},
+      {name: "GAA", value: "gaa"},
+      {name: "Shutouts", value: "so"}
+    ]
+  }
 }
 
 setHeaders(page);

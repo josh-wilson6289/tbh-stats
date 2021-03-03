@@ -8,8 +8,20 @@ import TableBody from "./TableBody";
 
 const Table = ({ tableData, setTableData, season, page }) => {
 
-  const [sortField, setSortField] = useState("points");
-  const [sortDirection, setSortDirection] = useState("descending");
+  let sort;
+  let direction;
+
+  if (page === "players") {
+    sort="points";
+    direction="descending"
+  }
+  else if (page === "goalies") {
+    sort="winPerc"
+    direction="descending"
+  }
+
+  const [sortField, setSortField] = useState(sort);
+  const [sortDirection, setSortDirection] = useState(direction);
   
   const handleSort = (e) => {
     e.preventDefault();
