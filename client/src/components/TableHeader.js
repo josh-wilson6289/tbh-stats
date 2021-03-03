@@ -42,26 +42,6 @@ const renderedHeaders = columns.map((column) => {
   );
 });
 
-
-  // const renderedData = tableData.map((player) => {
-
-  //   return (
-  //   <PlayerRow
-  //     key={player._id}
-  //     firstName={player.firstName}
-  //     lastName={player.lastName}
-  //     team={player.team}
-  //     gamesPlayed={player.gamesPlayed}
-  //     goals={player.goals}
-  //     assists={player.assists}
-  //     points={player.points}
-  //     pim={player.pim}
-  //     ppg={Math.round(100*player.ppg)/100}
-  //   />
-  //   );
-
-  // });
-  
   return (
       <tr>
       {renderedHeaders}

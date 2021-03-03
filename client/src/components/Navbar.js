@@ -2,16 +2,17 @@ import React, {useState} from "react";
 import Dropdown from "./Dropdown";
 import Search from "./Search";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import "../style.css";
 
-const Navbar = ({ handleTable, handleSeason }) => {
+const Navbar = ({ handleSeason }) => {
 
 return (
-<div className="container-fluid">
-<div className="ui menu">
+<nav className="navbar">
+  <div className="ui menu">
     <Link
       to="/players"
-      pointing className="active item"
-      tableValue="players">Player
+      className="active item"
+      tablevalue="players">Player
       </Link>
   
     <Link 
@@ -35,7 +36,8 @@ return (
       </div>
     </div>
   </div>
-  </div>
+</nav>
+
   );
 };
 

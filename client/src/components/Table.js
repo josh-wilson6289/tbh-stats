@@ -8,75 +8,74 @@ import TableBody from "./TableBody";
 
 const Table = ({ tableData, setTableData, season, page }) => {
 
-  let sort;
-  let direction;
+//   let sort;
+//   let direction;
 
-  if (page === "players") {
-    sort="points";
-    direction="descending"
-  }
-  else if (page === "goalies") {
-    sort="winPerc"
-    direction="descending"
-  }
+//   useEffect(() => 
+//   {
+//   if (page === "players") {
+//     sort="points";
+//     direction="descending"
+//   }
+//   if (page === "goalies") {
+//     sort="winPerc"
+//     direction="descending"
+//   }
+// }, [page])
 
-  const [sortField, setSortField] = useState(sort);
-  const [sortDirection, setSortDirection] = useState(direction);
+  const [sortField, setSortField] = useState("points");
+  const [sortDirection, setSortDirection] = useState("descending");
   
   const handleSort = (e) => {
     e.preventDefault();
     const field = e.target.getAttribute("value");
-    
-    if (sortDirection === "descending") {
-      setSortField(field);
+    setSortField(field);
+    if (sortDirection === "descending" && field===sortField) { 
       setSortDirection("ascending");
     }
-   if (sortDirection === "ascending") {
-    setSortField(field); 
+   else if (sortDirection === "ascending" && field===sortField) {
     setSortDirection("descending");
    }
-  //  else {
-  //     setSortField(field)
-  //  }
-   sortData(tableData);
+   else if (sortDirection === "descending" && field !==sortField) {
+     setSortDirection("ascending");
+   }
+   else {
+     setSortDirection("descending");
+   }
+
+
+   let sortedData = [...tableData];
+   if (sortDirection === "ascending") {
+     sortedData.sort((a, b) => {
+       if (a[field] > b[field]) {
+         return -1;
+       }
+       else if (a[field] < b[field]) {
+         return 1;
+       }
+       else {
+         return 0;
+       }
+     });
+   }
+   else {
+     sortedData.sort((a, b) => {
+       if (a[field] > b[field]) {
+         return 1;
+       }
+       else if (a[field] < b[field]) {
+         return -1;
+       }
+       else {
+         return 0;
+       }
+     });
+   }
+   console.log("sorted " + field)
+   setTableData(sortedData);
   };
   
-  const sortData = (tableData) => {
-    let sortedData = [...tableData];
-    if (sortDirection === "ascending") {
-      sortedData.sort((a, b) => {
-        if (a[sortField] > b[sortField]) {
-          return -1;
-        }
-        else if (a[sortField] < b[sortField]) {
-          return 1;
-        }
-        else {
-          return 0;
-        }
-      });
-    }
-    else {
-      sortedData.sort((a, b) => {
-        if (a[sortField] > b[sortField]) {
-          return 1;
-        }
-        else if (a[sortField] < b[sortField]) {
-          return -1;
-        }
-        else {
-          return 0;
-        }
-      });
-    }
-    setTableData(sortedData);
-  }
 
-  // useEffect(() => {
-  //   sortData(sortedData);
-  // }, [tableData]);
-
-  
 // // loads teams from current season and sets state
 // useEffect(() => {
 //   API.getTeams(season)
@@ -106,7 +105,7 @@ const Table = ({ tableData, setTableData, season, page }) => {
   />
   </thead>
 
-    <TableBody tableData={tableData} page={page} />
+  <TableBody tableData={tableData} page={page} />
 
   </table>
   </div>
