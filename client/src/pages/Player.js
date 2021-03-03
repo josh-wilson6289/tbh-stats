@@ -6,7 +6,9 @@ import API from "../utils/API";
 const Player = ({ season, page }) => {
 
   const [tableData, setTableData] = useState([]);
- 
+  const [sortField, setSortField] = useState("");
+  const [sortDirection, setSortDirection] = useState("");
+
   function loadPlayerStatsBySeason(season) {
       // calls api for any player that has participated in season
       API.getPlayersBySeason(season)
@@ -39,6 +41,8 @@ const Player = ({ season, page }) => {
         })
         // sets table data state
         setTableData(currentSeasonPlayers);
+        setSortField("points");
+        setSortDirection("descending");
   
       });
   }
@@ -66,6 +70,10 @@ const Player = ({ season, page }) => {
       setTableData={setTableData}
       season={season}
       page={page}
+      sortField={sortField}
+      setSortField={setSortField}
+      sortDirection={sortDirection}
+      setSortDirection={setSortDirection}
     />
   );
 };

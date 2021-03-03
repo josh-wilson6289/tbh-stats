@@ -6,26 +6,12 @@ import TeamTable from "./TeamTable";
 import TableHeader from "./TableHeader";
 import TableBody from "./TableBody";
 
-const Table = ({ tableData, setTableData, season, page }) => {
+const Table = ({ tableData, setTableData, sortField, setSortField, sortDirection, setSortDirection, season, page }) => {
 
-//   let sort;
-//   let direction;
+  useEffect(() => { 
+    sortData(tableData, sortField, sortDirection)
+  },[sortDirection]);
 
-//   useEffect(() => 
-//   {
-//   if (page === "players") {
-//     sort="points";
-//     direction="descending"
-//   }
-//   if (page === "goalies") {
-//     sort="winPerc"
-//     direction="descending"
-//   }
-// }, [page])
-
-  const [sortField, setSortField] = useState("points");
-  const [sortDirection, setSortDirection] = useState("descending");
-  
   const handleSort = (e) => {
     e.preventDefault();
     const field = e.target.getAttribute("value");
@@ -42,15 +28,17 @@ const Table = ({ tableData, setTableData, season, page }) => {
    else {
      setSortDirection("descending");
    }
+   sortData(tableData, field, sortDirection);
+  }
 
-
-   let sortedData = [...tableData];
+  const sortData = (tableData, field, sortDirection) => {
+  let sortedData = [...tableData];
    if (sortDirection === "ascending") {
      sortedData.sort((a, b) => {
-       if (a[field] > b[field]) {
+       if (a[field] < b[field]) {
          return -1;
        }
-       else if (a[field] < b[field]) {
+       else if (a[field] > b[field]) {
          return 1;
        }
        else {
@@ -60,10 +48,10 @@ const Table = ({ tableData, setTableData, season, page }) => {
    }
    else {
      sortedData.sort((a, b) => {
-       if (a[field] > b[field]) {
+       if (a[field] < b[field]) {
          return 1;
        }
-       else if (a[field] < b[field]) {
+       else if (a[field] > b[field]) {
          return -1;
        }
        else {
@@ -71,11 +59,9 @@ const Table = ({ tableData, setTableData, season, page }) => {
        }
      });
    }
-   console.log("sorted " + field)
    setTableData(sortedData);
   };
   
-
 // // loads teams from current season and sets state
 // useEffect(() => {
 //   API.getTeams(season)
