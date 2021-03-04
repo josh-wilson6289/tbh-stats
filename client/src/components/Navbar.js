@@ -1,34 +1,46 @@
 import React, {useState} from "react";
 import Dropdown from "./Dropdown";
 import Search from "./Search";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import "../style.css";
 
-const Navbar = ({ handleTable, handleSeason }) => {
+const Navbar = ({ handleSeason }) => {
 
 return (
-<div className="container-fluid">
-<div className="ui menu">
-    
-      <div pointing className="active item"
-      tableValue="players"
-      onClick={handleTable}>Player</div>
-    
-      <div className="item"
-      tableValue="goalies"
-      onClick={handleTable}>Goalie</div>
-    
-      <div className="item"
-      tableValue="teams"
-      onClick={handleTable}>Team</div>
+<nav className="navbar">
+  <div className="ui menu">
+    <Link
+      to="/players"
+      className="active item"
+      tablevalue="players">Player
+      </Link>
+  
+    <Link 
+      to="/goalies"
+      className="item"
+      tableValue="goalies">Goalie
+    </Link>
+   
+   <Link
+      to="/teams"
+      className="item"
+      tableValue="teams">Team
+    </Link>
+ 
 
  <Dropdown handleSeason={handleSeason} />
- 
+ </div>
+
+  <div id="searchbox" className="ui menu">
     <div className="right menu">
       <div className="item">
     <Search />
-      </div>
+    
     </div>
   </div>
   </div>
+</nav>
+
   );
 };
 

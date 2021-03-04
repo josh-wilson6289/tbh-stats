@@ -2,7 +2,7 @@ const db = require("../models");
 const { where } = require("../models/team");
 
 module.exports = {
-  findAll: function (req, res) {
+  findTeamsBySeason: function (req, res) {
     db.Team.aggregate([
       { $match: { "season": req.query.season }} 
     ])
@@ -10,6 +10,13 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
 
+  findAllTeams: function(req, res) {
+    db.Team.find(req.query)
+    .sort({ points: -1 })
+    .then(dbTeam => res.json(dbTeam))
+    .catch(err => res.status(422).json(err));
+  },
+  
   create: function (req, res) {
     db.Team.create(req.body)
       .then(dbTeam => res.json(dbTeam))

@@ -20,3 +20,4 @@ const PlayerRow = ({ _id, firstName, lastName, gamesPlayed, team, goals, assists
 };
 
 export default PlayerRow;
+

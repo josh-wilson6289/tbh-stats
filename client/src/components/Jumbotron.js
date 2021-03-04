@@ -5,10 +5,12 @@ const Jumbotron = () => {
 
   return (
 
-    <div className="jumbo">
+    <div id="jumbo" className="jumbotron jumbotron-fluid">
+  
     <img src={TbhLogo} alt="Texas Ball Hockey Logo" className="logo"></img>
+
     </div>
-    
+
   );
 };
 
