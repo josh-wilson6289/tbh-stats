@@ -9,7 +9,16 @@ const Goalie = ({ season, page }) => {
   const [sortDirection, setSortDirection] = useState("");
   const [currentSeason, setCurrentSeason] = useState("");
 
-  function loadPlayerStatsBySeason(season) {
+  useEffect(() => {
+    if (season === "Career") {
+      loadGoalieCareerStats();
+    }
+    else {
+      loadGoalieStatsBySeason(season)
+    }
+  }, [season]);
+
+  function loadGoalieStatsBySeason(season) {
       // calls api for any player that has participated in season
       API.getPlayersBySeason(season)
       .then(players => {
@@ -49,22 +58,13 @@ const Goalie = ({ season, page }) => {
       });
   }
 
-  function loadPlayerCareerStats() {
+  function loadGoalieCareerStats() {
     API.getAllPlayers()
       .then(players=> {
         const allPlayers = players.data;
         console.log(allPlayers);
       })
   }
-
-  useEffect(() => {
-    if (season === "career") {
-      loadPlayerCareerStats();
-    }
-    else {
-      loadPlayerStatsBySeason(season);
-    }
-  }, [season]);
 
   return (
     <Table

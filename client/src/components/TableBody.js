@@ -3,7 +3,7 @@ import PlayerRow from "./PlayerRow";
 import GoalieRow from "./GoalieRow";
 import TeamRow from "./TeamRow";
 
-const TableBody = ({ tableData, page }) => {
+const TableBody = ({ tableData, page, season }) => {
 
 let renderedData;
 
@@ -58,6 +58,7 @@ else {
         points={data.points}
         goalsFor={data.goalsFor}
         goalsAgainst={data.goalsAgainst}
+        season={season}
       />
     )
   })

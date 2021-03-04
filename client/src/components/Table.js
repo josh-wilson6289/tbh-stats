@@ -5,8 +5,6 @@ import TableBody from "./TableBody";
 const Table = ({ tableData, setTableData, sortField, setSortField, sortDirection, setSortDirection, season, page }) => {
 
   useEffect(() => { 
-    console.log(season)
-    console.log(tableData);
     sortData(tableData, sortField, sortDirection)
   },[sortDirection, season]);
 
@@ -26,7 +24,6 @@ const Table = ({ tableData, setTableData, sortField, setSortField, sortDirection
    else {
      setSortDirection("descending");
    }
-   console.log("handleSort", tableData, field, sortDirection)
    sortData(tableData, field, sortDirection);
   }
 
@@ -58,7 +55,6 @@ const Table = ({ tableData, setTableData, sortField, setSortField, sortDirection
        }
      });
    }
-   console.log(sortedData);
    setTableData(sortedData);
   };
   
@@ -82,7 +78,11 @@ const Table = ({ tableData, setTableData, sortField, setSortField, sortDirection
   />
   </thead>
 
-  <TableBody tableData={tableData} page={page} />
+  <TableBody 
+    tableData={tableData} 
+    page={page} 
+    season={season} 
+  />
 
   </table>
   </div>

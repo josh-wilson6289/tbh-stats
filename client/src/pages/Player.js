@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Table from "../components/Table";
 import API from "../utils/API";
 
-const Player = ({ season, setSeason, page }) => {
+const Player = ({ season, page }) => {
 
   const [tableData, setTableData] = useState([]);
   const [sortField, setSortField] = useState("");
@@ -57,13 +57,13 @@ const Player = ({ season, setSeason, page }) => {
   }
 
   function loadPlayerCareerStats() {
-    console.log("loadPlayerCareerStats");
+
     API.getAllPlayers()
       .then(players => {
           const removeGoalieSeasons = players.data.map((player) => {
             return {...player, seasons: player.seasons.filter((season) => season.goalie === false)}
           }); 
-     
+          
           const removeGoalies = removeGoalieSeasons.filter((player) => player.seasons.length !== 0);
             
           const combineSeasons = removeGoalies.map((player) => {
@@ -75,7 +75,6 @@ const Player = ({ season, setSeason, page }) => {
             _id: player.id,
             firstName: player.firstName,
             lastName: player.lastName,
-            team: player.seasons[0].team,
             gamesPlayed: player.seasons[0].gamesPlayed,
             goals: player.seasons[0].goals,
             assists: player.seasons[0].assists,

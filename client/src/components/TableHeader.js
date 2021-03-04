@@ -2,12 +2,23 @@ import React from "react";
 import Caret from "./Caret";
 
 
-const TableHeader = ({ handleSort, sortField, sortDirection, tableData, page }) => {
+const TableHeader = ({ handleSort, sortField, sortDirection, page, season }) => {
 
 let columns = [];
 
 const setHeaders = (page) => {
-  if (page === "players") {
+  if (page === "players" && season === "Career") {
+    columns = [
+      {name: "Player", value: "lastName"}, 
+      {name: "Games Played", value: "gamesPlayed"},
+      {name: "Goals", value: "goals"},
+      {name: "Assists", value: "assists"},
+      {name: "Points", value: "points"},
+      {name: "PIM", value: "pim"},
+      {name: "PPG", value: "ppg"},
+    ]
+  }
+  else if (page === "players" && season !== "Career") {
     columns = [
       {name: "Player", value: "lastName"}, 
       {name: "Team", value: "team"},
@@ -19,7 +30,18 @@ const setHeaders = (page) => {
       {name: "PPG", value: "ppg"},
     ]
   }
-  else if (page === "goalies") {
+  else if (page === "goalies" && season === "Career") {
+    columns = [
+      {name: "Player", value: "lastName"},
+      {name: "Games Played", value: "gamesPlayed"},
+      {name: "Record", value: "wins"},
+      {name: "Win Percentage", value: "winPerc"},
+      {name: "Goals Against", value: "ga"},
+      {name: "GAA", value: "gaa"},
+      {name: "Shutouts", value: "so"}
+    ]
+  }
+  else if (page ==="goalies" && season !== "Career") {
     columns = [
       {name: "Player", value: "lastName"},
       {name: "Team", value: "team"},
