@@ -1,6 +1,6 @@
 import React from "react";
 import Caret from "./Caret";
-import TableBody from "./TableBody";
+
 
 const TableHeader = ({ handleSort, sortField, sortDirection, tableData, page }) => {
 

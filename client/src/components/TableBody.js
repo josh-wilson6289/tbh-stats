@@ -1,5 +1,4 @@
 import React from "react";
-import Table from "./Table";
 import PlayerRow from "./PlayerRow";
 import GoalieRow from "./GoalieRow";
 import TeamRow from "./TeamRow";
@@ -52,6 +51,7 @@ else {
   renderedData = tableData.map((data) => {
     return (
       <TeamRow 
+        key={data.name}
         name={data.name}
         wins={data.wins}
         losses={data.losses}

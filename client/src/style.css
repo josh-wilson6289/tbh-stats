@@ -52,6 +52,10 @@ table {
 
 /* Custom Styling */
 
+body {
+  font-family: 'Lato', sans-serif !important;
+}
+
 .navbar {
   padding-bottom: 10px;
 }
