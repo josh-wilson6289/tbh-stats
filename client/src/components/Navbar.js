@@ -18,13 +18,13 @@ return (
     <Link 
       to="/goalies"
       className="item"
-      tableValue="goalies">Goalie
+      tablevalue="goalies">Goalie
     </Link>
    
    <Link
       to="/teams"
       className="item"
-      tableValue="teams">Team
+      tablevalue="teams">Team
     </Link>
  
 

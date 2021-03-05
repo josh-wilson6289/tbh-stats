@@ -9,6 +9,16 @@ const Player = ({ season, page }) => {
   const [sortDirection, setSortDirection] = useState("");
   const [currentSeason, setCurrentSeason] = useState("")
 
+  useEffect(() => {
+    if (season === "Career") {
+      loadPlayerCareerStats();
+    }
+    else {
+      loadPlayerStatsBySeason(season);
+    }
+  }, [season]);
+
+
   function loadPlayerStatsBySeason(season) {
       // calls api for any player that has participated in season
       API.getPlayersBySeason(season)
@@ -43,26 +53,58 @@ const Player = ({ season, page }) => {
         setSortField("points");
         setSortDirection("descending");
         setCurrentSeason(season);
-  
       });
   }
 
   function loadPlayerCareerStats() {
+
     API.getAllPlayers()
-      .then(players=> {
-        const allPlayers = players.data;
-        console.log(allPlayers);
-      })
+      .then(players => {
+          const removeGoalieSeasons = players.data.map((player) => {
+            return {...player, seasons: player.seasons.filter((season) => season.goalie === false)}
+          }); 
+          
+          const removeGoalies = removeGoalieSeasons.filter((player) => player.seasons.length !== 0);
+            
+          const combineSeasons = removeGoalies.map((player) => {
+            return {...player, seasons: [addObjValues(player.seasons)]}  
+        })
+
+        const playerCareer = combineSeasons.map((player) => {
+          return {
+            _id: player.id,
+            firstName: player.firstName,
+            lastName: player.lastName,
+            gamesPlayed: player.seasons[0].gamesPlayed,
+            goals: player.seasons[0].goals,
+            assists: player.seasons[0].assists,
+            points: player.seasons[0].goals + player.seasons[0].assists,
+            pim: player.seasons[0].pim,
+            ppg: (player.seasons[0].goals + player.seasons[0].assists) / player.seasons[0].gamesPlayed
+          }
+        })
+        setTableData(playerCareer);
+        setSortField("points");
+        setSortDirection("descending");
+        setCurrentSeason(season)
+      });
   }
   
-  useEffect(() => {
-    if (season === "career") {
-      loadPlayerCareerStats();
-    }
-    else {
-      loadPlayerStatsBySeason(season);
-    }
-  }, [season]);
+  function addObjValues(data) {
+    const result = {};
+
+    data.forEach(season => {
+      for (let [key, value] of Object.entries(season)) {
+        if (result[key]) {
+          result[key]+= value;
+        }
+        else {
+          result[key] = value;
+        }
+      }
+    });
+    return result;
+  };
 
   return (
     <Table

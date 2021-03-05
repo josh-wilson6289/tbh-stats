@@ -1,17 +1,12 @@
 import React, { useState, useEffect } from "react";
-import API from "../utils/API";
-import PlayerTable from "./PlayerTable";
-import GoalieTable from "./GoalieTable";
-import TeamTable from "./TeamTable";
 import TableHeader from "./TableHeader";
 import TableBody from "./TableBody";
 
 const Table = ({ tableData, setTableData, sortField, setSortField, sortDirection, setSortDirection, season, page }) => {
 
   useEffect(() => { 
-    console.log("useEffect", tableData, sortField, sortDirection)
     sortData(tableData, sortField, sortDirection)
-  },[sortDirection, page, season]);
+  },[sortDirection, season]);
 
   const handleSort = (e) => {
     e.preventDefault();
@@ -63,15 +58,6 @@ const Table = ({ tableData, setTableData, sortField, setSortField, sortDirection
    setTableData(sortedData);
   };
   
-// // loads teams from current season and sets state
-// useEffect(() => {
-//   API.getTeams(season)
-//     .then(teams => {
-//       const allTeams = teams.data;
-//       setTeamData(allTeams);
-//     })
-// }, [season])
-
   return (
     <div>
     <div className="container">
@@ -92,7 +78,11 @@ const Table = ({ tableData, setTableData, sortField, setSortField, sortDirection
   />
   </thead>
 
-  <TableBody tableData={tableData} page={page} />
+  <TableBody 
+    tableData={tableData} 
+    page={page} 
+    season={season} 
+  />
 
   </table>
   </div>

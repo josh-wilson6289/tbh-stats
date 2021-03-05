@@ -15,14 +15,10 @@ export default () => {
 
 const [season, setSeason] = useState("Q1 2021");
 
-// const handleTable = (e) => {
-// e.preventDefault();
-// setTable(e.target.getAttribute("tablevalue"));
-// }  
-
 const handleSeason = (e) => {
   e.preventDefault();
-  setSeason(e.target.getAttribute("seasonvalue"));
+  let currentSeason = (e.target.getAttribute("seasonvalue"));
+  setSeason(currentSeason);
 }
 
   return (
@@ -37,6 +33,7 @@ const handleSeason = (e) => {
         <Route exact path={["/", "/players"]}>
           <Player 
             season={season}
+            setSeason={setSeason}
             page="players"
           />
         </Route>
@@ -54,7 +51,6 @@ const handleSeason = (e) => {
         </Route>
       </Switch>
   
-      {/* <Table table={table} season={season} /> */}
       <br></br>
 
       <br></br>
