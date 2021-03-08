@@ -3,6 +3,7 @@ import PlayerRow from "./PlayerRow";
 import GoalieRow from "./GoalieRow";
 import TeamRow from "./TeamRow";
 import CareerPlayerRow from "./CareerPlayerRow";
+import CareerGoalieRow from "./CareerGoalieRow";
 
 const TableBody = ({ tableData, page, season }) => {
 
@@ -45,7 +46,7 @@ else if (page === "players" && season === "Career") {
     )
   })
 }
-else if (page === "goalies") {
+else if (page === "goalies" && season !== "Career") {
   renderedData = tableData.map((data) => {
     return (
       <GoalieRow 
@@ -54,6 +55,27 @@ else if (page === "goalies") {
         firstName={data.firstName}
         lastName={data.lastName}
         team={data.team}
+        gamesPlayed={data.gamesPlayed}
+        wins={data.wins}
+        losses={data.losses}
+        sol={data.sol}
+        winPerc={Math.round(100*data.winPerc)/100 + "%"}
+        ga={data.ga}
+        gaa={Math.round(100*data.gaa)/100}
+        so={data.so}
+        season={season}
+      />
+    );
+  });
+}
+else if (page === "goalies" && season === "Career") {
+  renderedData = tableData.map((data) => {
+    return (
+      <CareerGoalieRow 
+        key={data._id}
+        _id={data._id}
+        firstName={data.firstName}
+        lastName={data.lastName}
         gamesPlayed={data.gamesPlayed}
         wins={data.wins}
         losses={data.losses}
