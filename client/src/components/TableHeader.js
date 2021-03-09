@@ -7,7 +7,7 @@ const TableHeader = ({ handleSort, sortField, sortDirection, page, season }) => 
 let columns = [];
 
 const setHeaders = (page) => {
-  if (page === "players" && season === "Career") {
+  if (page === "players" && season === "All Time") {
     columns = [
       {name: "Player", value: "lastName"}, 
       {name: "Games Played", value: "gamesPlayed"},
@@ -18,7 +18,7 @@ const setHeaders = (page) => {
       {name: "PPG", value: "ppg"},
     ]
   }
-  else if (page === "players" && season !== "Career") {
+  else if (page === "players" && season !== "All Time") {
     columns = [
       {name: "Player", value: "lastName"}, 
       {name: "Team", value: "team"},
@@ -30,7 +30,7 @@ const setHeaders = (page) => {
       {name: "PPG", value: "ppg"},
     ]
   }
-  else if (page === "goalies" && season === "Career") {
+  else if (page === "goalies" && season === "All Time") {
     columns = [
       {name: "Player", value: "lastName"},
       {name: "Games Played", value: "gamesPlayed"},
@@ -41,7 +41,7 @@ const setHeaders = (page) => {
       {name: "Shutouts", value: "so"}
     ]
   }
-  else if (page ==="goalies" && season !== "Career") {
+  else if (page ==="goalies" && season !== "All Time") {
     columns = [
       {name: "Player", value: "lastName"},
       {name: "Team", value: "team"},
@@ -51,16 +51,27 @@ const setHeaders = (page) => {
       {name: "Goals Against", value: "ga"},
       {name: "GAA", value: "gaa"},
       {name: "Shutouts", value: "so"}
+    ]
+  }
+  else if (page === "teams" && season !== "All Time") {
+    columns = [
+      {name: "Team", value: "name"},
+      {name: "Record", value: "wins"},
+      {name: "Points", value: "points"},
+      {name: "Goals For", value: "goalsFor"},
+      {name: "Goals Against", value: "goalsAgainst"},
+      {name: "Goal Differential", value: "goalDiff"}
     ]
   }
   else {
     columns = [
       {name: "Team", value: "name"},
-      {name: "Wins", value: "wins"},
-      {name: "Losses", value: "losses"},
+      {name: "Season", value: "season"},
+      {name: "Record", value: "wins"},
       {name: "Points", value: "points"},
       {name: "Goals For", value: "goalsFor"},
-      {name: "Goals Against", value: "goalsAgainst"}
+      {name: "Goals Against", value: "goalsAgainst"},
+      {name: "Goal Differential", value: "goalDiff"}
     ]
   }
 }

@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const TeamRow = ({ _id, name, record, points, goalsFor, goalsAgainst, goalDiff}) => {
+const AllTimeTeamRow = ({ _id, name, season, record, points, goalsFor, goalsAgainst, goalDiff}) => {
   
   const checkGoalDiff = (goalDiff) => {
     if (goalDiff > 0) {
@@ -15,6 +15,7 @@ const TeamRow = ({ _id, name, record, points, goalsFor, goalsAgainst, goalDiff})
   return (
   <tr>
   <th scope="row">{name}</th>
+  <td>{season}</td>
   <td>{record}</td>
   <td>{points}</td>
   <td>{goalsFor}</td>
@@ -25,4 +26,4 @@ const TeamRow = ({ _id, name, record, points, goalsFor, goalsAgainst, goalDiff})
   );
 };
 
-export default TeamRow;
+export default AllTimeTeamRow;

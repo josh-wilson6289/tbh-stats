@@ -18,6 +18,14 @@ const teamSchema = new mongoose.Schema({
     type: Number,
     default: 0
   },
+  sow: {
+    type: Number,
+    default: 0
+  },
+  sol: {
+    type: Number,
+    default: 0
+  },
   points : {
     type: Number,
     default: 0

@@ -10,7 +10,7 @@ const Goalie = ({ season, page }) => {
   const [currentSeason, setCurrentSeason] = useState("");
 
   useEffect(() => {
-    if (season === "Career") {
+    if (season === "All Time") {
       loadGoalieCareerStats();
     }
     else {
@@ -33,21 +33,22 @@ const Goalie = ({ season, page }) => {
         const goaliesBySeason = filteredPlayersBySeason.filter(player => player.seasons[0].goalie === true);
 
         // removes the seasons array, sets goalie data
-        const currentSeasonGoalies = goaliesBySeason.map((player) => {
+        const currentSeasonGoalies = goaliesBySeason.map((goalie) => {
           return {
-            _id: player._id,
-            firstName: player.firstName,
-            lastName: player.lastName,
-            team: player.seasons[0].team,
-            gamesPlayed: player.seasons[0].gamesPlayed,
-            goalie: player.seasons[0].goalie,
-            wins: player.seasons[0].wins,
-            losses: player.seasons[0].losses,
-            sol: player.seasons[0].sol,
-            winPerc: (player.seasons[0].wins / player.seasons[0].gamesPlayed) * 100,
-            ga: player.seasons[0].ga,
-            gaa: player.seasons[0].ga / player.seasons[0].gamesPlayed,
-            so: player.seasons[0].so
+            key: goalie._id,
+            _id: goalie._id,
+            firstName: goalie.firstName,
+            lastName: goalie.lastName,
+            team: goalie.seasons[0].team,
+            gamesPlayed: goalie.seasons[0].gamesPlayed,
+            goalie: goalie.seasons[0].goalie,
+            wins: goalie.seasons[0].wins,
+            losses: goalie.seasons[0].losses,
+            sol: goalie.seasons[0].sol,
+            winPerc: (goalie.seasons[0].wins / goalie.seasons[0].gamesPlayed) * 100,
+            ga: goalie.seasons[0].ga,
+            gaa: goalie.seasons[0].ga / goalie.seasons[0].gamesPlayed,
+            so: goalie.seasons[0].so
           }
         })
         // sets table data state
@@ -61,10 +62,56 @@ const Goalie = ({ season, page }) => {
   function loadGoalieCareerStats() {
     API.getAllPlayers()
       .then(players=> {
-        const allPlayers = players.data;
-        console.log(allPlayers);
-      })
+        const removePlayerSeasons = players.data.map((player) => {
+          return {...player, seasons: player.seasons.filter((season) => season.goalie === true)}
+        });
+
+        const removePlayers = removePlayerSeasons.filter((player) => player.seasons.length !== 0);
+
+        const combineSeasons = removePlayers.map((goalie) => {
+          return{...goalie, seasons: [addObjValues(goalie.seasons)]}
+        });
+
+        const goalieCareer = combineSeasons.map((goalie) => {
+          return {
+            key: goalie._id,
+            _id: goalie._id,
+            firstName: goalie.firstName,
+            lastName: goalie.lastName,
+            team: goalie.seasons[0].team,
+            gamesPlayed: goalie.seasons[0].gamesPlayed,
+            goalie: goalie.seasons[0].goalie,
+            wins: goalie.seasons[0].wins,
+            losses: goalie.seasons[0].losses,
+            sol: goalie.seasons[0].sol,
+            winPerc: (goalie.seasons[0].wins / goalie.seasons[0].gamesPlayed) * 100,
+            ga: goalie.seasons[0].ga,
+            gaa: goalie.seasons[0].ga / goalie.seasons[0].gamesPlayed,
+            so: goalie.seasons[0].so
+          }
+        })
+        setTableData(goalieCareer);
+        setSortField("winPerc");
+        setSortDirection("descending");
+        setCurrentSeason(season);
+      });
   }
+
+    function addObjValues(data) {
+    const result = {};
+
+    data.forEach(season => {
+      for (let [key, value] of Object.entries(season)) {
+        if (result[key]) {
+          result[key]+= value;
+        }
+        else {
+          result[key] = value;
+        }
+      }
+    });
+    return result;
+  };
 
   return (
     <Table

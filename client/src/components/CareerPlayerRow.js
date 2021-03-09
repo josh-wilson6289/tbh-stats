@@ -1,12 +1,8 @@
-import React from "react";
-
-
-const PlayerRow = ({ _id, firstName, lastName, gamesPlayed, team, goals, assists, points, pim, ppg }) => {
+const CareerPlayerRow = ({ _id, firstName, lastName, gamesPlayed, team, goals, assists, points, pim, ppg }) => {
 
   return (
     <tr>
       <th scope="row">{`${firstName} ${lastName}`}</th>
-      <td>{team}</td>
       <td>{gamesPlayed}</td>
       <td>{goals}</td>
       <td>{assists}</td>
@@ -18,5 +14,4 @@ const PlayerRow = ({ _id, firstName, lastName, gamesPlayed, team, goals, assists
   );
 };
 
-export default PlayerRow;
-
+export default CareerPlayerRow;

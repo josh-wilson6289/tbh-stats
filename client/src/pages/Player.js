@@ -10,7 +10,7 @@ const Player = ({ season, page }) => {
   const [currentSeason, setCurrentSeason] = useState("")
 
   useEffect(() => {
-    if (season === "Career") {
+    if (season === "All Time") {
       loadPlayerCareerStats();
     }
     else {
@@ -72,7 +72,8 @@ const Player = ({ season, page }) => {
 
         const playerCareer = combineSeasons.map((player) => {
           return {
-            _id: player.id,
+            key: player._id,
+            _id: player._id,
             firstName: player.firstName,
             lastName: player.lastName,
             gamesPlayed: player.seasons[0].gamesPlayed,
@@ -86,7 +87,7 @@ const Player = ({ season, page }) => {
         setTableData(playerCareer);
         setSortField("points");
         setSortDirection("descending");
-        setCurrentSeason(season)
+        setCurrentSeason(season);
       });
   }
   
