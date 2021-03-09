@@ -10,7 +10,7 @@ const Player = ({ season, page }) => {
   const [currentSeason, setCurrentSeason] = useState("")
 
   useEffect(() => {
-    if (season === "Career") {
+    if (season === "All Time") {
       loadPlayerCareerStats();
     }
     else {

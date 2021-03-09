@@ -7,20 +7,40 @@ const playersSeed = [
         season: "Q1 2021",
         current: true,
         goalie: false,
-        team: "Navy",
-        gamesPlayed: 5,
+        team: "North Kariya",
+        gamesPlayed: 7,
         goals: 3,
-        assists: 2,
+        assists: 4,
         pim: 2
       },
       {
         season: "Q1 2020",
         current: false,
         goalie: false,
-        team: "Red",
+        team: "The Solo Cups",
         gamesPlayed: 10,
         goals: 6,
         assists: 4,
+        pim: 0
+      },
+      {
+        season: "Q4 2019",
+        current: false,
+        goalie: false,
+        team: "Pink Cobras",
+        gamesPlayed: 11,
+        goals: 7,
+        assists: 10,
+        pim: 2
+      },
+      {
+        season: "Q3 2019",
+        current: false,
+        goalie: false,
+        team: "Purple Reign",
+        gamesPlayed: 9,
+        goals: 5,
+        assists: 2,
         pim: 0
       }
     ]
@@ -33,10 +53,10 @@ const playersSeed = [
         season: "Q1 2021",
         current: true,
         goalie: false,
-        team: "Navy",
-        gamesPlayed: 4,
-        goals: 5,
-        assists: 1,
+        team: "North Kariya",
+        gamesPlayed: 6,
+        goals: 8,
+        assists: 3,
         pim: 2
       }
     ]
@@ -49,20 +69,50 @@ const playersSeed = [
         season: "Q1 2021",
         current: true,
         goalie: false,
-        team: "Navy",
-        gamesPlayed: 5,
-        goals: 1,
-        assists: 1,
+        team: "North Kariya",
+        gamesPlayed: 7,
+        goals: 2,
+        assists: 2,
         pim: 0
       },
       {
         season: "Q1 2020",
         current: false,
         goalie: false,
-        team: "Black",
+        team: "The Empire Strikes Black",
         gamesPlayed: 10,
         goals: 3,
         assists: 3,
+        pim: 0
+      },
+      {
+        season: "Q2 2019",
+        current: false,
+        goalie: false,
+        team: "Black Magic Badgers",
+        gamesPlayed: 7,
+        goals: 3,
+        assists: 7,
+        pim: 0
+      },
+      {
+        season: "Q1 2019",
+        current: false,
+        goalie: false,
+        team: "Baby Got Black",
+        gamesPlayed: 4,
+        goals: 3,
+        assists: 1,
+        pim: 0
+      },
+      {
+        season: "Q4 2018",
+        current: false,
+        goalie: false,
+        team: "Toby's Red Rockets",
+        gamesPlayed: 5,
+        goals: 5,
+        assists: 2,
         pim: 0
       }
     ]
@@ -75,21 +125,81 @@ const playersSeed = [
         season: "Q1 2021",
         current: true,
         goalie: false,
-        team: "Navy",
-        gamesPlayed: 5,
-        goals: 1,
+        team: "North Kariya",
+        gamesPlayed: 6,
+        goals: 2,
         assists: 3,
-        pim: 0
+        pim: 2
       },
       {
         season: "Q1 2020",
         current: false,
         goalie: false,
-        team: "Red",
+        team: "The Solo Cups",
         gamesPlayed: 9,
         goals: 5,
         assists: 3,
         pim: 4
+      },
+      {
+        season: "Q4 2019",
+        current: false,
+        goalie: false,
+        team: "Pink Cobras",
+        gamesPlayed: 11,
+        goals: 6,
+        assists: 8,
+        pim: 2
+      },
+      {
+        season: "Q4 2019",
+        current: false,
+        goalie: false,
+        team: "Spray Tan Aftermath",
+        gamesPlayed: 5,
+        goals: 0,
+        assists: 1,
+        pim: 0
+      },
+      {
+        season: "Q3 2019",
+        current: false,
+        goalie: false,
+        team: "Gritty's Goons",
+        gamesPlayed: 8,
+        goals: 1,
+        assists: 1,
+        pim: 7
+      },
+      {
+        season: "Q2 2019",
+        current: false,
+        goalie: false,
+        team: "The Second Worst Team in Texas",
+        gamesPlayed: 6,
+        goals: 1,
+        assists: 3,
+        pim: 6
+      },
+      {
+        season: "Q1 2019",
+        current: false,
+        goalie: false,
+        team: "The Worst Team in Texas",
+        gamesPlayed: 2,
+        goals: 0,
+        assists: 0,
+        pim: 0
+      },
+      {
+        season: "Q4 2018",
+        current: false,
+        goalie: false,
+        team: "Victorious Secret",
+        gamesPlayed: 3,
+        goals: 1,
+        assists: 3,
+        pim: 0
       }
     ]
   },
@@ -101,7 +211,7 @@ const playersSeed = [
         season: "Q1 2021",
         current: true,
         goalie: false,
-        team: "Navy",
+        team: "North Kariya",
         gamesPlayed: 5,
         goals: 0,
         assists: 1,
@@ -111,11 +221,51 @@ const playersSeed = [
         season: "Q1 2020",
         current: false,
         goalie: false,
-        team: "Black",
+        team: "The Empire Strikes Black",
         gamesPlayed: 9,
         goals: 1,
         assists: 0,
         pim: 6
+      },
+      {
+        season: "Q4 2019",
+        current: false,
+        goalie: false,
+        team: "Nick's Wonder Friends",
+        gamesPlayed: 8,
+        goals: 0,
+        assists: 4,
+        pim: 2
+      },
+      {
+        season: "Q3 2019",
+        current: false,
+        goalie: false,
+        team: "Goldmembers",
+        gamesPlayed: 6,
+        goals: 0,
+        assists: 0,
+        pim: 4
+      },
+      {
+        season: "Q1 2019",
+        current: false,
+        goalie: false,
+        team: "Richards Le Rouge",
+        gamesPlayed: 5,
+        goals: 0,
+        assists: 0,
+        pim: 0
+      },
+      {
+        season: "Q4 2018",
+        current: false,
+        goalie: false,
+        team: "Toby's Red Rockets",
+        gamesPlayed: 2,
+        goals: 0,
+        assists: 2,
+        pim: 4
       }
     ]
   },
@@ -127,8 +277,8 @@ const playersSeed = [
         season: "Q1 2021",
         current: true,
         goalie: false,
-        team: "Navy",
-        gamesPlayed: 5,
+        team: "North Kariya",
+        gamesPlayed: 7,
         goals: 0,
         assists: 0,
         pim: 0
@@ -143,11 +293,31 @@ const playersSeed = [
         season: "Q1 2021",
         current: true,
         goalie: false,
-        team: "Navy",
-        gamesPlayed: 5,
-        goals: 1,
+        team: "North Kariya",
+        gamesPlayed: 7,
+        goals: 2,
         assists: 0,
         pim: 0
+      },
+      {
+        season: "Q3 2019",
+        current: false,
+        goalie: false,
+        team: "Ashholes",
+        gamesPlayed: 5,
+        goals: 0,
+        assists: 1,
+        pim: 0
+      },
+      {
+        season: "Q2 2019",
+        current: false,
+        goalie: false,
+        team: "Agent Orange",
+        gamesPlayed: 9,
+        goals: 0,
+        assists: 2,
+        pim: 2
       }
     ]
   },
@@ -159,24 +329,84 @@ const playersSeed = [
         season: "Q1 2021",
         current: true,
         goalie: true,
-        team: "Navy",
-        gamesPlayed: 5,
-        wins: 0,
-        losses: 5,
+        team: "North Kariya",
+        gamesPlayed: 7,
+        wins: 1,
+        losses: 6,
         sol: 0,
-        ga: 22,
+        ga: 30,
         so: 0
       },
       {
         season: "Q1 2020",
         current: false,
         goalie: true,
-        team: "Blue",
+        team: "Blue Cross Blue Shield",
         gamesPlayed: 9,
         wins: 7,
         losses: 2,
         sol: 0,
         ga: 28,
+        so: 1
+      },
+      {
+        season: "Q4 2019",
+        current: false,
+        goalie: true,
+        team: "Nick's Wonder Friends",
+        gamesPlayed: 11,
+        wins: 6,
+        losses: 5,
+        sol: 0,
+        ga: 44,
+        so: 0
+      },
+      {
+        season: "Q3 2019",
+        current: false,
+        goalie: true,
+        team: "Ashholes",
+        gamesPlayed: 9,
+        wins: 6,
+        losses: 3,
+        sol: 0,
+        ga: 22,
+        so: 0
+      },
+      {
+        season: "Q2 2019",
+        current: false,
+        goalie: true,
+        team: "The Second Worst Team in Texas",
+        gamesPlayed: 7,
+        wins: 4,
+        losses: 3,
+        sol: 0,
+        ga: 19,
+        so: 1
+      },
+      {
+        season: "Q1 2019",
+        current: false,
+        goalie: true,
+        team: "The Worst Team in Texas",
+        gamesPlayed: 5,
+        wins: 4,
+        losses: 0,
+        sol: 1,
+        ga: 8,
+        so: 1
+      },
+      {
+        season: "Q4 2018",
+        current: false,
+        goalie: true,
+        team: "Puckin Spice",
+        gamesPlayed: 10,
+        wins: 8,
+        losses: 2,
+        sol: 0,
+        ga: 34,
         so: 0
       }
     ]
@@ -189,36 +419,76 @@ const playersSeed = [
         season: "Q1 2021",
         current: true,
         goalie: false,
-        team: "Olive",
-        gamesPlayed: 5,
-        goals: 4,
-        assists: 4,
-        pim: 0
+        team: "Los Greengoes",
+        gamesPlayed: 7,
+        goals: 6,
+        assists: 5,
+        pim: 2
       },
       {
         season: "Q1 2020",
         current: false,
         goalie: false,
-        team: "Blue",
+        team: "Blue Cross Blue Shield",
         gamesPlayed: 8,
         goals: 13,
         assists: 10,
         pim: 4
+      },
+      {
+        season: "Q4 2019",
+        current: false,
+        goalie: false,
+        team: "Nick's Wonder Friends",
+        gamesPlayed: 4,
+        goals: 6,
+        assists: 6,
+        pim: 2
+      },
+      {
+        season: "Q2 2019",
+        current: false,
+        goalie: false,
+        team: "Black Magic Badgers",
+        gamesPlayed: 7,
+        goals: 10,
+        assists: 4,
+        pim: 6
+      },
+      {
+        season: "Q1 2019",
+        current: false,
+        goalie: false,
+        team: "Baby Got Black",
+        gamesPlayed: 4,
+        goals: 5,
+        assists: 6,
+        pim: 0
+      },
+      {
+        season: "Q4 2018",
+        current: false,
+        goalie: false,
+        team: "Puckin Spice",
+        gamesPlayed: 8,
+        goals: 14,
+        assists: 5,
+        pim: 0
       }
     ]
   },
   {
     firstName: "Michael",
-    lastName: "T",
+    lastName: "Thistle",
     seasons: [
       {
         season: "Q1 2021",
         current: true,
         goalie: false,
-        team: "Olive",
-        gamesPlayed: 5,
-        goals: 6,
-        assists: 6,
+        team: "Los Greengoes",
+        gamesPlayed: 7,
+        goals: 8,
+        assists: 8,
         pim: 2
       }
     ]
@@ -231,21 +501,71 @@ const playersSeed = [
         season: "Q1 2021",
         current: true,
         goalie: false,
-        team: "Olive",
-        gamesPlayed: 4,
+        team: "Los Greengoes",
+        gamesPlayed: 6,
         goals: 2,
         assists: 3,
-        pim: 4
+        pim: 6
       },
       {
         season: "Q1 2020",
         current: false,
         goalie: false,
-        team: "Black",
+        team: "The Empire Strikes Black",
         gamesPlayed: 7,
         goals: 2,
         assists: 4,
         pim: 2
+      },
+      {
+        season: "Q4 2019",
+        current: false,
+        goalie: false,
+        team: "Red Army",
+        gamesPlayed: 7,
+        goals: 4,
+        assists: 7,
+        pim: 10
+      },
+      {
+        season: "Q3 2019",
+        current: false,
+        goalie: false,
+        team: "Goldmembers",
+        gamesPlayed: 7,
+        goals: 11,
+        assists: 3,
+        pim: 6
+      },
+      {
+        season: "Q2 2019",
+        current: false,
+        goalie: false,
+        team: "Agent Orange",
+        gamesPlayed: 8,
+        goals: 10,
+        assists: 7,
+        pim: 2
+      },
+      {
+        season: "Q1 2019",
+        current: false,
+        goalie: false,
+        team: "The Cocks",
+        gamesPlayed: 5,
+        goals: 4,
+        assists: 4,
+        pim: 0
+      },
+      {
+        season: "Q4 2018",
+        current: false,
+        goalie: false,
+        team: "Puckin Spice",
+        gamesPlayed: 8,
+        goals: 7,
+        assists: 6,
+        pim: 0
       }
     ]
   },
@@ -257,33 +577,83 @@ const playersSeed = [
         season: "Q1 2021",
         current: true,
         goalie: false,
-        team: "Olive",
-        gamesPlayed: 5,
-        goals: 5,
-        assists: 2,
+        team: "Los Greengoes",
+        gamesPlayed: 7,
+        goals: 6,
+        assists: 3,
         pim: 2
       },
       {
         season: "Q1 2020",
         current: false,
         goalie: false,
-        team: "Teal",
+        team: "Blades of Teal",
         gamesPlayed: 10,
         goals: 15,
         assists: 11,
         pim: 2
       },
+      {
+        season: "Q4 2019",
+        current: false,
+        goalie: false,
+        team: "Spray Tan Aftermath",
+        gamesPlayed: 10,
+        goals: 8,
+        assists: 3,
+        pim: 4
+      },
+      {
+        season: "Q3 2019",
+        current: false,
+        goalie: false,
+        team: "Gritty's Goons",
+        gamesPlayed: 9,
+        goals: 2,
+        assists: 4,
+        pim: 2
+      },
+      {
+        season: "Q2 2019",
+        current: false,
+        goalie: false,
+        team: "Pucks Capacitors",
+        gamesPlayed: 7,
+        goals: 5,
+        assists: 3,
+        pim: 0
+      },
+      {
+        season: "Q1 2019",
+        current: false,
+        goalie: false,
+        team: "The Cocks",
+        gamesPlayed: 5,
+        goals: 2,
+        assists: 8,
+        pim: 0
+      },
+      {
+        season: "Q4 2018",
+        current: false,
+        goalie: false,
+        team: "Toby's Red Rockets",
+        gamesPlayed: 7,
+        goals: 4,
+        assists: 5,
+        pim: 2  
+      }
     ]
   },
   {
     firstName: "Fry",
-    lastName: "J",
+    lastName: "Jones",
     seasons: [
       {
         season: "Q1 2021",
         current: true,
         goalie: false,
-        team: "Olive",
+        team: "Los Greengoes",
         gamesPlayed: 3,
         goals: 1,
         assists: 1,
@@ -299,9 +669,49 @@ const playersSeed = [
         season: "Q1 2021",
         current: true,
         goalie: false,
-        team: "Olive",
-        gamesPlayed: 5,
+        team: "Los Greengoes",
+        gamesPlayed: 7,
         goals: 1,
+        assists: 1,
+        pim: 4
+      },
+      {
+        season: "Q3 2019",
+        current: false,
+        goalie: false,
+        team: "Goldmembers",
+        gamesPlayed: 8,
+        goals: 1,
+        assists: 2,
+        pim: 8
+      },
+      {
+        season: "Q2 2019",
+        current: false,
+        goalie: false,
+        team: "Agent Orange",
+        gamesPlayed: 8,
+        goals: 1,
+        assists: 1,
+        pim: 2
+      },
+      {
+        season: "Q1 2019",
+        current: false,
+        goalie: false,
+        team: "The Cocks",
+        gamesPlayed: 4,
+        goals: 0,
+        assists: 2,
+        pim: 0
+      },
+      {
+        season: "Q4 2018",
+        current: false,
+        goalie: false,
+        team: "Puckin Spice",
+        gamesPlayed: 5,
+        goals: 0,
         assists: 1,
         pim: 0
       }
@@ -309,14 +719,14 @@ const playersSeed = [
   },
   {
     firstName: "Steve",
-    lastName: "I",
+    lastName: "Ingenito",
     seasons: [
       {
         season: "Q1 2021",
         current: true,
         goalie: false,
-        team: "Olive",
-        gamesPlayed: 5,
+        team: "Los Greengoes",
+        gamesPlayed: 7,
         goals: 0,
         assists: 0,
         pim: 2
@@ -331,25 +741,79 @@ const playersSeed = [
         season: "Q1 2021",
         current: true,
         goalie: true,
-        team: "Olive",
-        gamesPlayed: 5,
-        wins: 3,
-        losses: 2,
+        team: "Los Greengoes",
+        gamesPlayed: 7,
+        wins: 4,
+        losses: 3,
         sol: 0,
-        ga: 15,
+        ga: 21,
         so: 0
       },
       {
         season: "Q1 2020",
         current: false,
         goalie: true,
-        team: "Black",
+        team: "The Empire Strikes Black",
         gamesPlayed: 10,
         wins: 0,
         losses: 10,
         sol: 0,
         ga: 58,
         so: 0
+      },
+      {
+        season: "Q4 2019",
+        current: false,
+        goalie: true,
+        team: "Pink Cobras",
+        gamesPlayed: 11,
+        wins: 4,
+        losses: 7,
+        sol: 0,
+        ga: 56,
+        so: 0
+      },
+      {
+        season: "Q3 2019",
+        current: false,
+        goalie: true,
+        team: "Goldmembers",
+        gamesPlayed: 9,
+        wins: 6,
+        losses: 3,
+        sol: 0,
+        ga: 34,
+        so: 0
+      },
+      {
+        season: "Q2 2019",
+        current: false,
+        goalie: false,
+        team: "Black Magic Badgers",
+        gamesPlayed: 8,
+        goals: 0,
+        assists: 0,
+        pim: 2
+      },
+      {
+        season: "Q1 2019",
+        current: false,
+        goalie: false,
+        team: "Baby Got Black",
+        gamesPlayed: 5,
+        goals: 1,
+        assists: 2,
+        pim: 0
+      },
+      {
+        season: "Q4 2018",
+        current: false,
+        goalie: false,
+        team: "Puckin Spice",
+        gamesPlayed: 10,
+        goals: 1,
+        assists: 6,
+        pim: 0
       }
     ]
   },
@@ -361,9 +825,59 @@ const playersSeed = [
         season: "Q1 2021",
         current: true,
         goalie: false,
-        team: "Grey",
-        gamesPlayed: 5,
+        team: "The Gray Borques",
+        gamesPlayed: 7,
+        goals: 6,
+        assists: 8,
+        pim: 0
+      },
+      {
+        season: "Q4 2019",
+        current: false,
+        goalie: false,
+        team: "Gold on the Ceiling",
+        gamesPlayed: 10,
+        goals: 11,
+        assists: 16,
+        pim: 0
+      },
+      {
+        season: "Q3 2019",
+        current: false,
+        goalie: false,
+        team: "Purple Reign",
+        gamesPlayed: 6,
+        goals: 2,
+        assists: 4,
+        pim: 0
+      },
+      {
+        season: "Q2 2019",
+        current: false,
+        goalie: false,
+        team: "The Second Worst Team in Texas",
+        gamesPlayed: 6,
+        goals: 11,
+        assists: 15,
+        pim: 2
+      },
+      {
+        season: "Q1 2019",
+        current: false,
+        goalie: false,
+        team: "The Worst Team in Texas",
+        gamesPlayed: 4,
         goals: 5,
+        assists: 5,
+        pim: 0
+      },
+      {
+        season: "Q4 2018",
+        current: false,
+        goalie: false,
+        team: "Victorious Secret",
+        gamesPlayed: 9,
+        goals: 9,
         assists: 7,
         pim: 0
       }
@@ -377,21 +891,41 @@ const playersSeed = [
         season: "Q1 2021",
         current: true,
         goalie: false,
-        team: "Grey",
-        gamesPlayed: 5,
-        goals: 10,
-        assists: 3,
-        pim: 0,
+        team: "The Gray Borques",
+        gamesPlayed: 7,
+        goals: 11,
+        assists: 5,
+        pim: 2,
       },
       {
         season: "Q1 2020",
         current: false,
         goalie: false,
-        team: "Teal",
+        team: "Blades of Teal",
         gamesPlayed: 4,
         goals: 3,
         assists: 4,
         pim: 2
+      },
+      {
+        season: "Q1 2019",
+        current: false,
+        goalie: false,
+        team: "Blue Wave",
+        gamesPlayed: 4,
+        goals: 4,
+        assists: 3,
+        pim: 0
+      },
+      {
+        season: "Q4 2018",
+        current: false,
+        goalie: false,
+        team: "Coors Light Silver Bullet Love Train",
+        gamesPlayed: 10,
+        goals: 19,
+        assists: 6,
+        pim: 0
       }
     ]
   },
@@ -403,9 +937,9 @@ const playersSeed = [
         season: "Q1 2021",
         current: true,
         goalie: false,
-        team: "Grey",
-        gamesPlayed: 5,
-        goals: 1,
+        team: "The Gray Borques",
+        gamesPlayed: 6,
+        goals: 2,
         assists: 2,
         pim: 0
       },
@@ -413,10 +947,60 @@ const playersSeed = [
         season: "Q1 2020",
         current: false,
         goalie: false,
-        team: "Red",
+        team: "The Solo Cups",
         gamesPlayed: 6,
         goals: 5,
         assists: 7,
+        pim: 0
+      },
+      {
+        season: "Q4 2019",
+        current: false,
+        goalie: false,
+        team: "Pink Cobras",
+        gamesPlayed: 9,
+        goals: 8,
+        assists: 4,
+        pim: 2
+      },
+      {
+        season: "Q3 2019",
+        current: false,
+        goalie: false,
+        team: "Ashholes",
+        gamesPlayed: 7,
+        goals: 1,
+        assists: 6,
+        pim: 0
+      },
+      {
+        season: "Q2 2019",
+        current: false,
+        goalie: false,
+        team: "Dekes of Hazzard",
+        gamesPlayed: 3,
+        goals: 2,
+        assists: 1,
+        pim: 0
+      },
+      {
+        season: "Q1 2019",
+        current: false,
+        goalie: false,
+        team: "Richards Le Rouge",
+        gamesPlayed: 3,
+        goals: 3,
+        assists: 1,
+        pim: 0
+      },
+      {
+        season: "Q4 2018",
+        current: false,
+        goalie: false,
+        team: "Labattshitcrazies",
+        gamesPlayed: 5,
+        goals: 7,
+        assists: 2,
         pim: 0
       }
     ]
@@ -429,8 +1013,8 @@ const playersSeed = [
         season: "Q1 2021",
         current: true,
         goalie: false,
-        team: "Grey",
-        gamesPlayed: 5,
+        team: "The Gray Borques",
+        gamesPlayed: 7,
         goals: 1,
         assists: 2,
         pim: 0
@@ -439,24 +1023,64 @@ const playersSeed = [
         season: "Q1 2020",
         current: false,
         goalie: false,
-        team: "Teal",
+        team: "Blades of Teal",
         gamesPlayed: 10,
         goals: 1,
         assists: 4,
         pim: 6
+      },
+      {
+        season: "Q3 2019",
+        current: false,
+        goalie: false,
+        team: "Gritty's Goons",
+        gamesPlayed: 9,
+        goals: 0,
+        assists: 1,
+        pim: 2
+      },
+      {
+        season: "Q2 2019",
+        current: false,
+        goalie: false,
+        team: "The Second Worst Team in Texas",
+        gamesPlayed: 4,
+        goals: 0,
+        assists: 1,
+        pim: 2
+      },
+      {
+        season: "Q1 2019",
+        current: false,
+        goalie: false,
+        team: "Silver Foxes",
+        gamesPlayed: 5,
+        goals: 0,
+        assists: 2,
+        pim: 0
+      },
+      {
+        season: "Q4 2018",
+        current: false,
+        goalie: false,
+        team: "Victorious Secret",
+        gamesPlayed: 4,
+        goals: 1,
+        assists: 2,
+        pim: 2
       }
     ]
   },
   {
     firstName: "Corey",
-    lastName: "M",
+    lastName: "Medeiros",
     seasons: [
       {
         season: "Q1 2021",
         current: true,
         goalie: false,
-        team: "Grey",
-        gamesPlayed: 4,
+        team: "The Gray Borques",
+        gamesPlayed: 6,
         goals: 0,
         assists: 1,
         pim: 0
@@ -471,9 +1095,9 @@ const playersSeed = [
         season: "Q1 2021",
         current: true,
         goalie: false,
-        team: "Grey",
-        gamesPlayed: 3,
-        goals: 0,
+        team: "The Gray Borques",
+        gamesPlayed: 4,
+        goals: 1,
         assists: 0,
         pim: 0
       },
@@ -481,10 +1105,60 @@ const playersSeed = [
         season: "Q1 2020",
         current: false,
         goalie: false,
-        team: "Black",
+        team: "The Empire Strikes Black",
         gamesPlayed: 8,
         goals: 2,
         assists: 0,
+        pim: 0
+      },
+      {
+        season: "Q4 2019",
+        current: false,
+        goalie: false,
+        team: "Pink Cobras",
+        gamesPlayed: 10,
+        goals: 3,
+        assists: 3,
+        pim: 0
+      },
+      {
+        season: "Q3 2019",
+        current: false,
+        goalie: false,
+        team: "Ashholes",
+        gamesPlayed: 6,
+        goals: 2,
+        assists: 1,
+        pim: 0
+      },
+      {
+        season: "Q2 2019",
+        current: false,
+        goalie: false,
+        team: "Dekes of Hazzard",
+        gamesPlayed: 7,
+        goals: 1,
+        assists: 3,
+        pim: 0
+      },
+      {
+        season: "Q1 2019",
+        current: false,
+        goalie: false,
+        team: "Richards Le Rouge",
+        gamesPlayed: 4,
+        goals: 0,
+        assists: 0,
+        pim: 0
+      },
+      {
+        season: "Q4 2018",
+        current: false,
+        goalie: false,
+        team: "Labattshitcrazies",
+        gamesPlayed: 3,
+        goals: 0,
+        assists: 2,
         pim: 0
       }
     ]
@@ -497,8 +1171,8 @@ const playersSeed = [
         season: "Q1 2021",
         current: true,
         goalie: false,
-        team: "Grey",
-        gamesPlayed: 5,
+        team: "The Gray Borques",
+        gamesPlayed: 7,
         goals: 0,
         assists: 0,
         pim: 0
@@ -507,11 +1181,21 @@ const playersSeed = [
         season: "Q1 2020",
         current: false,
         goalie: false,
-        team: "Black",
+        team: "The Empire Strikes Black",
         gamesPlayed: 10,
         goals: 4,
         assists: 1,
         pim: 4
+      },
+      {
+        season: "Q4 2019",
+        current: false,
+        goalie: false,
+        team: "Nick's Wonder Friends",
+        gamesPlayed: 11,
+        goals: 1,
+        assists: 5,
+        pim: 2
       }
     ]
   },
@@ -523,12 +1207,12 @@ const playersSeed = [
         season: "Q1 2021",
         current: true,
         goalie: true,
-        team: "Grey",
-        gamesPlayed: 5,
+        team: "The Gray Borques",
+        gamesPlayed: 6,
         wins: 5,
         losses: 0,
-        sol: 0,
-        ga: 7,
+        sol: 1,
+        ga: 9,
         so: 0
       }
     ]
@@ -541,20 +1225,60 @@ const playersSeed = [
         season: "Q1 2021",
         current: true,
         goalie: false,
-        team: "Orange",
-        gamesPlayed: 3,
-        goals: 4,
-        assists: 1,
+        team: "Gritty Goons",
+        gamesPlayed: 7,
+        goals: 11,
+        assists: 7,
         pim: 0
       },
       {
         season: "Q1 2020",
         current: false,
         goalie: false,
-        team: "Red",
+        team: "The Solo Cups",
         gamesPlayed: 4,
         goals: 7,
         assists: 7,
+        pim: 0
+      },
+      {
+        season: "Q4 2019",
+        current: false,
+        goalie: false,
+        team: "Red Army",
+        gamesPlayed: 10,
+        goals: 25,
+        assists: 12,
+        pim: 2
+      },
+      {
+        season: "Q3 2019",
+        current: false,
+        goalie: false,
+        team: "Gritty's Goons",
+        gamesPlayed: 8,
+        goals: 18,
+        assists: 2,
+        pim: 2
+      },
+      {
+        season: "Q1 2019",
+        current: false,
+        goalie: false,
+        team: "The Cocks",
+        gamesPlayed: 5,
+        goals: 16,
+        assists: 1,
+        pim: 0
+      },
+      {
+        season: "Q4 2018",
+        current: false,
+        goalie: false,
+        team: "Puckin Spice",
+        gamesPlayed: 10,
+        goals: 22,
+        assists: 14,
         pim: 0
       }
     ]
@@ -567,11 +1291,61 @@ const playersSeed = [
         season: "Q1 2021",
         current: true,
         goalie: false,
-        team: "Orange",
-        gamesPlayed: 4,
-        goals: 6,
+        team: "Gritty Goons",
+        gamesPlayed: 6,
+        goals: 11,
+        assists: 4,
+        pim: 0
+      },
+      {
+        season: "Q4 2019",
+        current: false,
+        goalie: false,
+        team: "Gold on the Ceiling",
+        gamesPlayed: 11,
+        goals: 27,
+        assists: 16,
+        pim: 2
+      },
+      {
+        season: "Q3 2019",
+        current: false,
+        goalie: false,
+        team: "Ashholes",
+        gamesPlayed: 8,
+        goals: 13,
         assists: 3,
         pim: 0
+      },
+      {
+        season: "Q2 2019",
+        current: false,
+        goalie: false,
+        team: "Dekes of Hazzard",
+        gamesPlayed: 3,
+        goals: 3,
+        assists: 2,
+        pim: 2
+      },
+      {
+        season: "Q1 2019",
+        current: false,
+        goalie: false,
+        team: "Silver Foxes",
+        gamesPlayed: 4,
+        goals: 7,
+        assists: 3,
+        pim: 0
+      },
+      {
+        season: "Q4 2018",
+        current: false,
+        goalie: false,
+        team: "Victorious Secret",
+        gamesPlayed: 9,
+        goals: 20,
+        assists: 10,
+        pim: 2
       }
     ]
   },
@@ -583,34 +1357,54 @@ const playersSeed = [
         season: "Q1 2021",
         current: true,
         goalie: false,
-        team: "Orange",
-        gamesPlayed: 5,
+        team: "Gritty Goons",
+        gamesPlayed: 7,
         goals: 2,
         assists: 3,
-        pim: 0
+        pim: 2
       },
       {
         season: "Q1 2020",
         current: false,
         goalie: false,
-        team: "Teal",
+        team: "Blades of Teal",
         gamesPlayed: 10,
         goals: 3,
         assists: 8,
         pim: 6
+      },
+      {
+        season: "Q4 2019",
+        current: false,
+        goalie: false,
+        team: "Red Army",
+        gamesPlayed: 10,
+        goals: 1,
+        assists: 3,
+        pim: 10
+      },
+      {
+        season: "Q3 2019",
+        current: false,
+        goalie: false,
+        team: "Purple Reign",
+        gamesPlayed: 9,
+        goals: 0,
+        assists: 1,
+        pim: 0
       }
     ]
   },
   { 
     firstName: "Nathan",
-    lastName: "L",
+    lastName: "Lewellen",
     seasons: [
       {
         season: "Q1 2021",
         current: true,
         goalie: false,
-        team: "Orange",
-        gamesPlayed: 5,
+        team: "Gritty Goons",
+        gamesPlayed: 7,
         goals: 0,
         assists: 2,
         pim: 0
@@ -625,8 +1419,8 @@ const playersSeed = [
         season: "Q1 2021",
         current: true,
         goalie: false,
-        team: "Orange",
-        gamesPlayed: 4,
+        team: "Gritty Goons",
+        gamesPlayed: 6,
         goals: 0,
         assists: 2,
         pim: 4
@@ -635,10 +1429,30 @@ const playersSeed = [
         season: "Q1 2020",
         current: false,
         goalie: false,
-        team: "Black",
+        team: "The Empire Strikes Black",
         gamesPlayed: 9,
         goals: 0,
         assists: 2,
+        pim: 0
+      },
+      {
+        season: "Q3 2019",
+        current: false,
+        goalie: false,
+        team: "Gritty's Goons",
+        gamesPlayed: 7,
+        goals: 0,
+        assists: 1,
+        pim: 2
+      },
+      {
+        season: "Q4 2018",
+        current: false,
+        goalie: false,
+        team: "Toby's Red Rockets",
+        gamesPlayed: 4,
+        goals: 0,
+        assists: 0,
         pim: 0
       }
     ]
@@ -651,8 +1465,8 @@ const playersSeed = [
         season: "Q1 2021",
         current: true,
         goalie: false,
-        team: "Orange",
-        gamesPlayed: 5,
+        team: "Gritty Goons",
+        gamesPlayed: 7,
         goals: 0,
         assists: 1,
         pim: 0
@@ -661,11 +1475,51 @@ const playersSeed = [
         season: "Q1 2020",
         current: false,
         goalie: false,
-        team: "Red",
+        team: "The Solo Cups",
         gamesPlayed: 10,
         goals: 2,
         assists: 0,
         pim: 2
+      },
+      {
+        season: "Q4 2019",
+        current: false,
+        goalie: false,
+        team: "Spray Tan Aftermath",
+        gamesPlayed: 9,
+        goals: 3,
+        assists: 6,
+        pim: 0
+      },
+      {
+        season: "Q3 2019",
+        current: false,
+        goalie: false,
+        team: "Purple Reign",
+        gamesPlayed: 9,
+        goals: 0,
+        assists: 0,
+        pim: 0
+      },
+      {
+        season: "Q2 2019",
+        current: false,
+        goalie: false,
+        team: "Agent Orange",
+        gamesPlayed: 7,
+        goals: 0,
+        assists: 0,
+        pim: 2
+      },
+      {
+        season: "Q4 2018",
+        current: false,
+        goalie: false,
+        team: "Puckin Spice",
+        gamesPlayed: 8,
+        goals: 2,
+        assists: 1,
+        pim: 0
       }
     ]
   },
@@ -677,8 +1531,8 @@ const playersSeed = [
         season: "Q1 2021",
         current: true,
         goalie: false,
-        team: "Orange",
-        gamesPlayed: 4,
+        team: "Gritty Goons",
+        gamesPlayed: 6,
         goals: 0,
         assists: 1,
         pim: 0
@@ -693,20 +1547,70 @@ const playersSeed = [
         season: "Q1 2021",
         current: true,
         goalie: false,
-        team: "Orange",
-        gamesPlayed: 5,
+        team: "Gritty Goons",
+        gamesPlayed: 7,
         goals: 0,
-        assists: 1,
+        assists: 3,
         pim: 0
       },
       {
         season: "Q1 2020",
         current: false,
         goalie: false,
-        team: "Pink",
+        team: "Pinkie and the Brian...Chambers",
         gamesPlayed: 5,
         goals: 9,
         assists: 2,
+        pim: 0
+      },
+      {
+        season: "Q4 2019",
+        current: false,
+        goalie: false,
+        team: "Nick's Wonder Friends",
+        gamesPlayed: 9,
+        goals: 10,
+        assists: 5,
+        pim: 4
+      },
+      {
+        season: "Q3 2019",
+        current: false,
+        goalie: false,
+        team: "Purple Reign",
+        gamesPlayed: 7,
+        goals: 5,
+        assists: 2,
+        pim: 2
+      },
+      {
+        season: "Q2 2019",
+        current: false,
+        goalie: false,
+        team: "The Second Worst Team in Texas",
+        gamesPlayed: 5,
+        goals: 9,
+        assists: 4,
+        pim: 8
+      },
+      {
+        season: "Q1 2019",
+        current: false,
+        goalie: false,
+        team: "The Worst Team in Texas",
+        gamesPlayed: 5,
+        goals: 1,
+        assists: 4,
+        pim: 0
+      },
+      {
+        season: "Q4 2018",
+        current: false,
+        goalie: false,
+        team: "Black Squoose",
+        gamesPlayed: 6,
+        goals: 5,
+        assists: 7,
         pim: 0
       }
     ]
@@ -719,7 +1623,7 @@ const playersSeed = [
         season: "Q1 2021",
         current: true,
         goalie: true,
-        team: "Orange",
+        team: "Gritty Goons",
         gamesPlayed: 4,
         wins: 1,
         losses: 3,
@@ -728,15 +1632,75 @@ const playersSeed = [
         so: 0
       },
       {
-        season: "Q1 2021",
+        season: "Q1 2020",
         current: false,
         goalie: true,
-        team: "Red",
+        team: "The Solo Cups",
         gamesPlayed: 9,
         wins: 6,
         losses: 3,
         sol: 0,
         ga: 21,
+        so: 2
+      },
+      {
+        season: "Q4 2019",
+        current: false,
+        goalie: true,
+        team: "Red Army",
+        gamesPlayed: 10,
+        wins: 5,
+        losses: 5,
+        sol: 0,
+        ga: 45,
+        so: 0
+      },
+      {
+        season: "Q3 2019",
+        current: false,
+        goalie: true,
+        team: "Gritty's Goons",
+        gamesPlayed: 9,
+        wins: 6,
+        losses: 3,
+        sol: 0,
+        ga: 26,
+        so: 1
+      },
+      {
+        season: "Q2 2019",
+        current: false,
+        goalie: true,
+        team: "Agent Orange",
+        gamesPlayed: 7,
+        wins: 6,
+        losses: 1,
+        sol: 0,
+        ga: 14,
+        so: 0
+      },
+      {
+        season: "Q1 2019",
+        current: false,
+        goalie: true,
+        team: "The Cocks",
+        gamesPlayed: 5,
+        wins: 4,
+        losses: 1,
+        sol: 0,
+        ga: 8,
+        so: 1
+      },
+      {
+        season: "Q4 2018",
+        current: false,
+        goalie: true,
+        team: "Labbatshitcrazies",
+        gamesPlayed: 7,
+        wins: 2,
+        losses: 5,
+        sol: 1,
+        ga: 33,
         so: 0
       }
     ]
@@ -749,9 +1713,39 @@ const playersSeed = [
         season: "Q1 2020",
         current: false,
         goalie: false,
-        team: "Pink",
+        team: "Pinkie and the Brian...Chambers",
         gamesPlayed: 9,
         goals: 0,
+        assists: 0,
+        pim: 0
+      },
+      {
+        season: "Q4 2019",
+        current: false,
+        goalie: false,
+        team: "Nick's Wonder Friends",
+        gamesPlayed: 10,
+        goals: 0,
+        assists: 0,
+        pim: 2
+      },
+      {
+        season: "Q3 2019",
+        current: false,
+        goalie: false,
+        team: "Goldmembers",
+        gamesPlayed: 9,
+        goals: 0,
+        assists: 1,
+        pim: 0
+      },
+      {
+        season: "Q2 2019",
+        current: false,
+        goalie: false,
+        team: "The Second Worst Team in Texas",
+        gamesPlayed: 5,
+        goals: 1,
         assists: 0,
         pim: 0
       }
@@ -765,10 +1759,20 @@ const playersSeed = [
       season: "Q1 2020",
       current: false,
       goalie: false,
-      team: "Pink",
+      team: "Pinkie and the Brian...Chambers",
       gamesPlayed: 9,
       goals: 8,
       assists: 9,
+      pim: 0
+    },
+    {
+      season: "Q4 2019",
+      current: false,
+      goalie: false,
+      team: "Nick's Wonder Friends",
+      gamesPlayed: 11,
+      goals: 13,
+      assists: 12,
       pim: 0
     }
   ]
@@ -781,7 +1785,7 @@ const playersSeed = [
       season: "Q1 2020",
       current: false,
       goalie: false,
-      team: "Pink",
+      team: "Pinkie and the Brian...Chambers",
       gamesPlayed: 5,
       goals: 7,
       assists: 3,
@@ -791,13 +1795,13 @@ const playersSeed = [
 },
 {
   firstName: "Josh",
-  lastName: "K",
+  lastName: "King",
   seasons: [
     {
       season: "Q1 2020",
       current: false,
       goalie: false,
-      team: "Pink",
+      team: "Pinkie and the Brian...Chambers",
       gamesPlayed: 9,
       goals: 0,
       assists: 1,
@@ -810,10 +1814,20 @@ const playersSeed = [
   lastName: "Walter",
   seasons: [
     {
+      season: "Q1 2021",
+      current: true,
+      goalie: false,
+      team: "The Gray Borques",
+      gamesPlayed: 0,
+      goals: 0,
+      assists: 0,
+      pim: 0
+    },
+    {
       season: "Q1 2020",
       current: false,
       goalie: false,
-      team: "Pink",
+      team: "Pinkie and the Brian...Chambers",
       gamesPlayed: 8,
       goals: 0,
       assists: 0,
@@ -823,16 +1837,26 @@ const playersSeed = [
 },
 {
   firstName: "Jason",
-  lastName: "W",
+  lastName: "Wasserman",
   seasons: [
     {
       season: "Q1 2020",
       current: false,
       goalie: false,
-      team: "Pink",
+      team: "Pinkie and the Brian...Chambers",
       gamesPlayed: 8,
       goals: 2,
       assists: 2,
+      pim: 0
+    },
+    {
+      season: "Q4 2019",
+      current: false,
+      goalie: false,
+      team: "Spray Tan Aftermath",
+      gamesPlayed: 4,
+      goals: 4,
+      assists: 1,
       pim: 0
     }
   ]
@@ -845,10 +1869,50 @@ const playersSeed = [
       season: "Q1 2020",
       current: false,
       goalie: false,
-      team: "Pink",
+      team: "Pinkie and the Brian...Chambers",
       gamesPlayed: 7,
       goals: 0,
       assists: 2,
+      pim: 0
+    },
+    {
+      season: "Q4 2019",
+      current: false,
+      goalie: false,
+      team: "Nick's Wonder Friends",
+      gamesPlayed: 8,
+      goals: 2,
+      assists: 1,
+      pim: 4
+    },
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "Pucks Capacitors",
+      gamesPlayed: 4,
+      goals: 0,
+      assists: 2,
+      pim: 0
+    },
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: false,
+      team: "Blue Wave",
+      gamesPlayed: 5,
+      goals: 0,
+      assists: 0,
+      pim: 0
+    },
+    {
+      season: "Q4 2018",
+      current: false,
+      goalie: false,
+      team: "Labattshitcrazies",
+      gamesPlayed: 4,
+      goals: 1,
+      assists: 3,
       pim: 0
     }
   ]
@@ -861,8 +1925,28 @@ const playersSeed = [
       season: "Q1 2020",
       current: false,
       goalie: false,
-      team: "Pink",
+      team: "Pinkie and the Brian...Chambers",
       gamesPlayed: 6,
+      goals: 0,
+      assists: 0,
+      pim: 0
+    },
+    {
+      season: "Q4 2019",
+      current: false,
+      goalie: false,
+      team: "Gold on the Ceiling",
+      gamesPlayed: 7,
+      goals: 1,
+      assists: 2,
+      pim: 0
+    },
+    {
+      season: "Q4 2018",
+      current: false,
+      goalie: false,
+      team: "Victorious Secret",
+      gamesPlayed: 1,
       goals: 0,
       assists: 0,
       pim: 0
@@ -877,7 +1961,7 @@ const playersSeed = [
       season: "Q1 2020",
       current: false,
       goalie: false,
-      team: "Pink",
+      team: "Pinkie and the Brian...Chambers",
       gamesPlayed: 3,
       goals: 3,
       assists: 0,
@@ -887,20 +1971,52 @@ const playersSeed = [
 },
 {
   firstName: "Nick",
-  lastName: "Paul",
+  lastName: "Olynyk",
   seasons: [
     {
       season: "Q1 2020",
       current: false,
       goalie: true,
-      team: "Pink",
+      team: "Pinkie and the Brian...Chambers",
       gamesPlayed: 6,
       wins: 3,
       losses: 3,
       sol: 0,
       ga: 19,
       so: 0
-    }
+    },
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "Dekes of Hazzard",
+      gamesPlayed: 4,
+      goals: 4,
+      assists: 0,
+      pim: 4
+    },
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: false,
+      team: "Richards Le Rouge",
+      gamesPlayed: 5,
+      goals: 3,
+      assists: 1,
+      pim: 0
+    },
+    {
+      season: "Q4 2018",
+      current: false,
+      goalie: true,
+      team: "Victorious Secret",
+      gamesPlayed: 8,
+      wins: 6,
+      losses: 2,
+      sol: 0,
+      ga: 24,
+      so: 0
+    },
   ]
 },
 {
@@ -911,11 +2027,41 @@ const playersSeed = [
       season: "Q1 2020",
       current: false,
       goalie: false,
-      team: "Teal",
+      team: "Blades of Teal",
       gamesPlayed: 6,
       goals: 22,
       assists: 6,
       pim: 0
+    },
+    {
+      season: "Q4 2019",
+      current: false,
+      goalie: false,
+      team: "Spray Tan Aftermath",
+      gamesPlayed: 3,
+      goals: 5,
+      assists: 5,
+      pim: 0
+    },
+    {
+      season: "Q3 2019",
+      current: false,
+      goalie: false,
+      team: "Goldmembers",
+      gamesPlayed: 6,
+      goals: 13,
+      assists: 12,
+      pim: 0
+    },
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "Agent Orange",
+      gamesPlayed: 6,
+      goals: 19,
+      assists: 7,
+      pim: 4
     }
   ]
 },
@@ -927,10 +2073,60 @@ const playersSeed = [
       season: "Q1 2020",
       current: false,
       goalie: false,
-      team: "Teal",
+      team: "Blades of Teal",
       gamesPlayed: 7,
       goals: 3,
       assists: 6,
+      pim: 0
+    },
+    {
+      season: "Q4 2019",
+      current: false,
+      goalie: false,
+      team: "Red Army",
+      gamesPlayed: 10,
+      goals: 16,
+      assists: 6,
+      pim: 14
+    },
+    {
+      season: "Q3 2019",
+      current: false,
+      goalie: false,
+      team: "Goldmembers",
+      gamesPlayed: 8,
+      goals: 8,
+      assists: 5,
+      pim: 0
+    },
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "Agent Orange",
+      gamesPlayed: 9,
+      goals: 10,
+      assists: 8,
+      pim: 8
+    },
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: false,
+      team: "Blue Wave",
+      gamesPlayed: 5,
+      goals: 5,
+      assists: 3,
+      pim: 0
+    },
+    {
+      season: "Q4 2018",
+      current: false,
+      goalie: false,
+      team: "Toby's Red Rockets",
+      gamesPlayed: 4,
+      goals: 3,
+      assists: 2,
       pim: 0
     }
   ]
@@ -943,11 +2139,21 @@ const playersSeed = [
       season: "Q1 2020",
       current: false,
       goalie: false,
-      team: "Teal",
+      team: "Blades of Teal",
       gamesPlayed: 9,
       goals: 1,
       assists: 4,
       pim: 0
+    },
+    {
+      season: "Q3 2019",
+      current: false,
+      goalie: false,
+      team: "Purple Reign",
+      gamesPlayed: 8,
+      goals: 3,
+      assists: 0,
+      pim: 4
     }
   ]
 },
@@ -959,11 +2165,61 @@ const playersSeed = [
       season: "Q1 2020",
       current: false,
       goalie: false,
-      team: "Teal",
+      team: "Blades of Teal",
       gamesPlayed: 9,
       goals: 3,
       assists: 5,
       pim: 2
+    },
+    {
+      season: "Q4 2019",
+      current: false,
+      goalie: false,
+      team: "Nick's Wonder Friends",
+      gamesPlayed: 10,
+      goals: 4,
+      assists: 3,
+      pim: 8
+    },
+    {
+      season: "Q3 2019",
+      current: false,
+      goalie: false,
+      team: "Ashholes",
+      gamesPlayed: 8,
+      goals: 6,
+      assists: 7,
+      pim: 2
+    },
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "Pucks Capacitors",
+      gamesPlayed: 6,
+      goals: 1,
+      assists: 3,
+      pim: 2
+    },
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: false,
+      team: "Silver Foxes",
+      gamesPlayed: 4,
+      goals: 1,
+      assists: 1,
+      pim: 0
+    },
+    {
+      season: "Q4 2018",
+      current: false,
+      goalie: false,
+      team: "Coors Light Silver Bullet Love Train",
+      gamesPlayed: 8,
+      goals: 7,
+      assists: 11,
+      pim: 0
     }
   ]
 },
@@ -975,10 +2231,68 @@ const playersSeed = [
       season: "Q1 2020",
       current: false,
       goalie: false,
-      team: "Teal",
+      team: "Blades of Teal",
       gamesPlayed: 9,
       goals: 6,
       assists: 1,
+      pim: 0
+    },
+    {
+      season: "Q4 2019",
+      current: false,
+      goalie: true,
+      team: "Spray Tan Aftermath",
+      gamesPlayed: 9,
+      wins: 4,
+      losses: 5,
+      sol: 0,
+      ga: 46,
+      so: 0
+    },
+    {
+      season: "Q3 2019",
+      current: false,
+      goalie: true,
+      team: "Purple Reign",
+      gamesPlayed: 9,
+      wins: 0,
+      losses: 8,
+      sol: 1,
+      ga: 52,
+      so: 0
+    },
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: true,
+      team: "Dekes of Hazzard",
+      gamesPlayed: 7,
+      wins: 1,
+      losses: 6,
+      sol: 0,
+      ga: 25,
+      so: 0
+    },
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: true,
+      team: "Blue Wave",
+      gamesPlayed: 5,
+      wins: 1,
+      losses: 4,
+      sol: 0,
+      ga: 19,
+      so: 0
+    },
+    {
+      season: "Q4 2018",
+      current: false,
+      goalie: false,
+      team: "Labattshitcrazies",
+      gamesPlayed: 5,
+      goals: 2,
+      assists: 0,
       pim: 0
     }
   ]
@@ -991,12 +2305,60 @@ const playersSeed = [
       season: "Q1 2020",
       current: false,
       goalie: true,
-      team: "Teal",
+      team: "Blades of Teal",
       gamesPlayed: 6,
       wins: 5,
       losses: 2,
       sol: 0,
       ga: 23,
+      so: 1
+    },
+    {
+      season: "Q4 2019",
+      current: false,
+      goalie: true,
+      team: "Gold on the Ceiling",
+      gamesPlayed: 8,
+      wins: 4,
+      losses: 4,
+      sol: 0,
+      ga: 29,
+      so: 0
+    },
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: true,
+      team: "Pucks Capacitors",
+      gamesPlayed: 5,
+      wins: 1,
+      losses: 4,
+      sol: 0,
+      ga: 32,
+      so: 0
+    },
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: true,
+      team: "Silver Foxes",
+      gamesPlayed: 4,
+      wins: 2,
+      losses: 2,
+      sol: 0,
+      ga: 11,
+      so: 0
+    },
+    {
+      season: "Q4 2018",
+      current: false,
+      goalie: true,
+      team: "Toby's Red Rockets",
+      gamesPlayed: 7,
+      wins: 2,
+      losses: 5,
+      sol: 0,
+      ga: 36,
       so: 0
     }
   ]
@@ -1009,23 +2371,73 @@ const playersSeed = [
       season: "Q1 2020",
       current: false,
       goalie: false,
-      team: "Black",
+      team: "The Empire Strikes Black",
       gamesPlayed: 9,
       goals: 0,
       assists: 2,
+      pim: 0
+    },
+    {
+      season: "Q4 2019",
+      current: false,
+      goalie: false,
+      team: "Red Army",
+      gamesPlayed: 9,
+      goals: 2,
+      assists: 3,
+      pim: 4
+    },
+    {
+      season: "Q3 2019",
+      current: false,
+      goalie: false,
+      team: "Gritty's Goons",
+      gamesPlayed: 6,
+      goals: 1,
+      assists: 2,
+      pim: 6
+    },
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "Dekes of Hazzard",
+      gamesPlayed: 7,
+      goals: 1,
+      assists: 0,
+      pim: 0
+    },
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: false,
+      team: "Richards Le Rouge",
+      gamesPlayed: 5,
+      goals: 0,
+      assists: 1,
+      pim: 0
+    },
+    {
+      season: "Q4 2018",
+      current: false,
+      goalie: false,
+      team: "Toby's Red Rockets",
+      gamesPlayed: 6,
+      goals: 3,
+      assists: 5,
       pim: 0
     }
   ]
 },
 {
   firstName: "Christian",
-  lastName: "C",
+  lastName: "Chase",
   seasons: [
     {
       season: "Q1 2020",
       current: false,
       goalie: false,
-      team: "Black",
+      team: "The Empire Strikes Black",
       gamesPlayed: 9,
       goals: 1,
       assists: 0,
@@ -1041,25 +2453,29 @@ const playersSeed = [
       season: "Q1 2020",
       current: false,
       goalie: false,
-      team: "Black",
+      team: "The Empire Strikes Black",
       gamesPlayed: 10,
       goals: 1,
       assists: 0,
       pim: 0
-    }
-  ]
-},
-{
-  firstName: "Sean",
-  lastName: "Crowley",
-  seasons: [
+    },
     {
-      season: "Q1 2020",
+      season: "Q1 2019",
       current: false,
       goalie: false,
-      team: "Black",
+      team: "Blue Wave",
       gamesPlayed: 4,
-      goals: 1,
+      goals: 0,
+      assists: 0,
+      pim: 0
+    },
+    {
+      season: "Q4 2018",
+      current: false,
+      goalie: false,
+      team: "Toby's Red Rockets",
+      gamesPlayed: 2,
+      goals: 0,
       assists: 0,
       pim: 0
     }
@@ -1073,12 +2489,22 @@ const playersSeed = [
       season: "Q1 2020",
       current: false,
       goalie: false,
-      team: "Black",
+      team: "The Empire Strikes Black",
       gamesPlayed: 4,
       goals: 1,
       assists: 0,
       pim: 0
-    }
+    },
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "Dekes of Hazzard",
+      gamesPlayed: 7,
+      goals: 2,
+      assists: 1,
+      pim: 2
+    },
   ]
 },
 {
@@ -1089,11 +2515,31 @@ const playersSeed = [
       season: "Q1 2020",
       current: false,
       goalie: false,
-      team: "Red",
+      team: "The Solo Cups",
       gamesPlayed: 9,
       goals: 7,
       assists: 3,
       pim: 0
+    },
+    {
+      season: "Q4 2019",
+      current: false,
+      goalie: false,
+      team: "Pink Cobras",
+      gamesPlayed: 10,
+      goals: 7,
+      assists: 4,
+      pim: 4
+    },
+    {
+      season: "Q3 2019",
+      current: false,
+      goalie: false,
+      team: "Purple Reign",
+      gamesPlayed: 8,
+      goals: 1,
+      assists: 4,
+      pim: 2
     }
   ]
 },
@@ -1105,10 +2551,60 @@ const playersSeed = [
       season: "Q1 2020",
       current: false,
       goalie: false,
-      team: "Red",
+      team: "The Solo Cups",
       gamesPlayed: 9,
       goals: 2,
       assists: 2,
+      pim: 0
+    },
+    {
+      season: "Q4 2019",
+      current: false,
+      goalie: false,
+      team: "Spray Tan Aftermath",
+      gamesPlayed: 10,
+      goals: 2,
+      assists: 3,
+      pim: 0
+    },
+    {
+      season: "Q3 2019",
+      current: false,
+      goalie: false,
+      team: "Ashholes",
+      gamesPlayed: 8,
+      goals: 1,
+      assists: 2,
+      pim: 4
+    },
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "Pucks Capacitors",
+      gamesPlayed: 6,
+      goals: 1,
+      assists: 2,
+      pim: 0
+    },
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: false,
+      team: "Silver Foxes",
+      gamesPlayed: 5,
+      goals: 0,
+      assists: 1,
+      pim: 0
+    },
+    {
+      season: "Q4 2018",
+      current: false,
+      goalie: false,
+      team: "Coors Light Silver Bullet Love Train",
+      gamesPlayed: 5,
+      goals: 0,
+      assists: 1,
       pim: 0
     }
   ]
@@ -1121,7 +2617,7 @@ const playersSeed = [
       season: "Q1 2020",
       current: false,
       goalie: false,
-      team: "Red",
+      team: "The Solo Cups",
       gamesPlayed: 10,
       goals: 4,
       assists: 3,
@@ -1137,12 +2633,22 @@ const playersSeed = [
       season: "Q1 2020",
       current: false,
       goalie: false,
-      team: "Red",
+      team: "The Solo Cups",
       gamesPlayed: 10,
       goals: 0,
       assists: 2,
       pim: 2
-    }
+    },
+    {
+      season: "Q4 2019",
+      current: false,
+      goalie: false,
+      team: "Spray Tan Aftermath",
+      gamesPlayed: 9,
+      goals: 0,
+      assists: 3,
+      pim: 2
+    },
   ]
 },
 {
@@ -1153,9 +2659,49 @@ const playersSeed = [
       season: "Q1 2020",
       current: false,
       goalie: false,
-      team: "Blue",
+      team: "Blue Cross Blue Shield",
       gamesPlayed: 9,
       goals: 8,
+      assists: 2,
+      pim: 0
+    },
+    {
+      season: "Q4 2019",
+      current: false,
+      goalie: false,
+      team: "Gold on the Ceiling",
+      gamesPlayed: 11,
+      goals: 4,
+      assists: 6,
+      pim: 6
+    },
+    {
+      season: "Q3 2019",
+      current: false,
+      goalie: false,
+      team: "Purple Reign",
+      gamesPlayed: 3,
+      goals: 0,
+      assists: 0,
+      pim: 0
+    },
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "The Second Worst Team in Texas",
+      gamesPlayed: 3,
+      goals: 1,
+      assists: 1,
+      pim: 0
+    },
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: false,
+      team: "The Worst Team in Texas",
+      gamesPlayed: 5,
+      goals: 5,
       assists: 2,
       pim: 0
     }
@@ -1169,10 +2715,50 @@ const playersSeed = [
       season: "Q1 2020",
       current: false,
       goalie: false,
-      team: "Blue",
+      team: "Blue Cross Blue Shield",
       gamesPlayed: 8,
       goals: 7,
       assists: 10,
+      pim: 0
+    },
+    {
+      season: "Q4 2019",
+      current: false,
+      goalie: false,
+      team: "Nick's Wonder Friends",
+      gamesPlayed: 8,
+      goals: 5,
+      assists: 5,
+      pim: 0
+    },
+    {
+      season: "Q3 2019",
+      current: false,
+      goalie: false,
+      team: "Gritty's Goons",
+      gamesPlayed: 9,
+      goals: 5,
+      assists: 6,
+      pim: 0
+    },
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "The Second Worst Team in Texas",
+      gamesPlayed: 6,
+      goals: 2,
+      assists: 3,
+      pim: 2
+    },
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: false,
+      team: "The Worst Team in Texas",
+      gamesPlayed: 5,
+      goals: 5,
+      assists: 3,
       pim: 0
     }
   ]
@@ -1185,9 +2771,39 @@ const playersSeed = [
       season: "Q1 2020",
       current: false,
       goalie: false,
-      team: "Blue",
+      team: "Blue Cross Blue Shield",
       gamesPlayed: 9,
       goals: 5,
+      assists: 1,
+      pim: 4
+    },
+    {
+      season: "Q4 2019",
+      current: false,
+      goalie: false,
+      team: "Pink Cobras",
+      gamesPlayed: 9,
+      goals: 2,
+      assists: 3,
+      pim: 0
+    },
+    {
+      season: "Q3 2019",
+      current: false,
+      goalie: false,
+      team: "Ashholes",
+      gamesPlayed: 8,
+      goals: 8,
+      assists: 4,
+      pim: 2
+    },
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "Pucks Capacitors",
+      gamesPlayed: 6,
+      goals: 0,
       assists: 1,
       pim: 4
     }
@@ -1195,13 +2811,13 @@ const playersSeed = [
 },
 {
   firstName: "Brandon",
-  lastName: "H",
+  lastName: "Hunt",
   seasons: [
     {
       season: "Q1 2020",
       current: false,
       goalie: false,
-      team: "Blue",
+      team: "Blue Cross Blue Shield",
       gamesPlayed: 9,
       goals: 2,
       assists: 2,
@@ -1217,9 +2833,59 @@ const playersSeed = [
       season: "Q1 2020",
       current: false,
       goalie: false,
-      team: "Blue",
+      team: "Blue Cross Blue Shield",
       gamesPlayed: 7,
       goals: 2,
+      assists: 1,
+      pim: 0
+    },
+    {
+      season: "Q4 2019",
+      current: false,
+      goalie: false,
+      team: "Pink Cobras",
+      gamesPlayed: 9,
+      goals: 0,
+      assists: 0,
+      pim: 0
+    },
+    {
+      season: "Q3 2019",
+      current: false,
+      goalie: false,
+      team: "Goldmembers",
+      gamesPlayed: 7,
+      goals: 0,
+      assists: 0,
+      pim: 0
+    },
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "Agent Orange",
+      gamesPlayed: 5,
+      goals: 0,
+      assists: 0,
+      pim: 0
+    },
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: false,
+      team: "The Cocks",
+      gamesPlayed: 4,
+      goals: 0,
+      assists: 1,
+      pim: 0
+    },
+    {
+      season: "Q4 2018",
+      current: false,
+      goalie: false,
+      team: "Coors Light Silver Bullet Love Train",
+      gamesPlayed: 2,
+      goals: 0,
       assists: 1,
       pim: 0
     }
@@ -1233,10 +2899,20 @@ const playersSeed = [
       season: "Q1 2020",
       current: false,
       goalie: false,
-      team: "Blue",
+      team: "Blue Cross Blue Shield",
       gamesPlayed: 9,
       goals: 2,
       assists: 3,
+      pim: 0
+    },
+    {
+      season: "Q3 2019",
+      current: false,
+      goalie: false,
+      team: "Gritty's Goons",
+      gamesPlayed: 9,
+      goals: 0,
+      assists: 1,
       pim: 0
     }
   ]
@@ -1246,17 +2922,1430 @@ const playersSeed = [
   lastName: "Fisher",
   seasons: [
     {
+      season: "Q1 2021",
+      current: true,
+      goalie: false,
+      team: "Gritty Goons",
+      gamesPlayed: 1,
+      goals: 0,
+      assists: 0,
+      pim: 0
+    },
+    {
       season: "Q1 2020",
       current: false,
       goalie: false,
-      team: "Blue",
+      team: "Blue Cross Blue Shield",
       gamesPlayed: 3,
       goals: 4,
       assists: 1,
       pim: 0
+    },
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "The Second Worst Team in Texas",
+      gamesPlayed: 1,
+      goals: 0,
+      assists: 1,
+      pim: 0
+    },
+    {
+      season: "Q4 2018",
+      current: false,
+      goalie: false,
+      team: "Coors Light Silver Bullet Love Train",
+      gamesPlayed: 6,
+      goals: 7,
+      assists: 3,
+      pim: 0
     }
   ]
+}, 
+{
+  firstName: "Arthur",
+  lastName: "Narup",
+  seasons: [
+    {
+      season: "Q4 2019",
+      current: false,
+      goalie: false,
+      team: "Pink Cobras",
+      gamesPlayed: 10,
+      goals: 10,
+      assists: 5,
+      pim: 2
+    },
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "Dekes of Hazzard",
+      gamesPlayed: 8,
+      goals: 3,
+      assists: 7,
+      pim: 0
+    },
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: false,
+      team: "Richards Le Rouge",
+      gamesPlayed: 5,
+      goals: 1,
+      assists: 1,
+      pim: 0
+    },
+    {
+      season: "Q4 2018",
+      current: false,
+      goalie: false,
+      team: "Black Squoose",
+      gamesPlayed: 5,
+      goals: 5,
+      assists: 6,
+      pim: 0
+    }
+  ]
+}, 
+{
+  firstName: "Pat",
+  lastName: "Ortiz",
+  seasons: [
+    {
+      season: "Q4 2019",
+      current: false,
+      goalie: false,
+      team: "Spray Tan Aftermath",
+      gamesPlayed: 6,
+      goals: 4,
+      assists: 1,
+      pim: 0
+    },
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "Black Magic Badgers",
+      gamesPlayed: 6,
+      goals: 3,
+      assists: 7,
+      pim: 10
+    },
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: true,
+      team: "Black Magic Badgers",
+      gamesPlayed: 2,
+      wins: 2,
+      losses: 0,
+      sol: 0,
+      ga: 4,
+      so: 0
+    },
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: false,
+      team: "Baby Got Black",
+      gamesPlayed: 5,
+      goals: 1,
+      assists: 2,
+      pim: 0
+    },
+    {
+      season: "Q4 2018",
+      current: false,
+      goalie: false,
+      team: "Black Squoose",
+      gamesPlayed: 9,
+      goals: 8,
+      assists: 9,
+      pim: 0
+    }
+  ]
+}, 
+{
+  firstName: "Bryan",
+  lastName: "Shaffar",
+  seasons: [
+    {
+      season: "Q4 2019",
+      current: false,
+      goalie: false,
+      team: "Spray Tan Aftermath",
+      gamesPlayed: 9,
+      goals: 2,
+      assists: 0,
+      pim: 0
+    },
+    {
+      season: "Q3 2019",
+      current: false,
+      goalie: false,
+      team: "Ashholes",
+      gamesPlayed: 9,
+      goals: 0,
+      assists: 0,
+      pim: 2
+    },
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "Agent Orange",
+      gamesPlayed: 8,
+      goals: 1,
+      assists: 2,
+      pim: 0
+    },
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: false,
+      team: "The Cocks",
+      gamesPlayed: 4,
+      goals: 0,
+      assists: 0,
+      pim: 0
+    },
+    {
+      season: "Q4 2018",
+      current: false,
+      goalie: false,
+      team: "Coors Light Silver Bullet Love Train",
+      gamesPlayed: 4,
+      goals: 1,
+      assists: 2,
+      pim: 0
+    }
+  ]
+}, 
+{
+  firstName: "Drew",
+  lastName: "Glapa",
+  seasons: [
+    {
+      season: "Q4 2019",
+      current: false,
+      goalie: false,
+      team: "Gold on the Ceiling",
+      gamesPlayed: 9,
+      goals: 17,
+      assists: 2,
+      pim: 2
+    },
+    {
+      season: "Q3 2019",
+      current: false,
+      goalie: false,
+      team: "Goldmembers",
+      gamesPlayed: 9,
+      goals: 10,
+      assists: 6,
+      pim: 0
+    }
+  ]
+},
+{
+  firstName: "Brittney",
+  lastName: "Bobst",
+  seasons: [
+    {
+      season: "Q4 2019",
+      current: false,
+      goalie: false,
+      team: "Gold on the Ceiling",
+      gamesPlayed: 7,
+      goals: 0,
+      assists: 1,
+      pim: 2
+    },
+    {
+      season: "Q3 2019",
+      current: false,
+      goalie: false,
+      team: "Ashholes",
+      gamesPlayed: 7,
+      goals: 0,
+      assists: 0,
+      pim: 0
+    },
+  ]
+},
+{
+  firstName: "Steve",
+  lastName: "Zielke",
+  seasons: [
+    {
+      season: "Q4 2019",
+      current: false,
+      goalie: false,
+      team: "Gold on the Ceiling",
+      gamesPlayed: 6,
+      goals: 2,
+      assists: 3,
+      pim: 0
+    },
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "The Second Worst Team in Texas",
+      gamesPlayed: 3,
+      goals: 13,
+      assists: 3,
+      pim: 0
+    },
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: false,
+      team: "Blue Wave",
+      gamesPlayed: 4,
+      goals: 1,
+      assists: 0,
+      pim: 0
+    },
+    {
+      season: "Q4 2018",
+      current: false,
+      goalie: false,
+      team: "Black Squoose",
+      gamesPlayed: 6,
+      goals: 7,
+      assists: 5,
+      pim: 0
+    }
+  ]
+},
+{
+  firstName: "Hussam",
+  lastName: "Alqassem",
+  seasons: [
+    {
+      season: "Q4 2019",
+      current: false,
+      goalie: false,
+      team: "Gold on the Ceiling",
+      gamesPlayed: 7,
+      goals: 1,
+      assists: 0,
+      pim: 2
+    },
+    {
+      season: "Q3 2019",
+      current: false,
+      goalie: false,
+      team: "Purple Reign",
+      gamesPlayed: 9,
+      goals: 0,
+      assists: 0,
+      pim: 2
+    }
+  ]
+},
+{
+  firstName: "Richard",
+  lastName: "Baldwin",
+  seasons: [
+    {
+      season: "Q4 2019",
+      current: false,
+      goalie: false,
+      team: "Red Army",
+      gamesPlayed: 7,
+      goals: 0,
+      assists: 1,
+      pim: 2
+    },
+    {
+      season: "Q3 2019",
+      current: false,
+      goalie: false,
+      team: "Purple Reign",
+      gamesPlayed: 9,
+      goals: 1,
+      assists: 4,
+      pim: 0
+    },
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "Pucks Capacitors",
+      gamesPlayed: 3,
+      goals: 3,
+      assists: 0,
+      pim: 4
+    },
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: false,
+      team: "Baby Got Black",
+      gamesPlayed: 5,
+      goals: 3,
+      assists: 0,
+      pim: 0
+    },
+    {
+      season: "Q4 2018",
+      current: false,
+      goalie: false,
+      team: "Victorious Secret",
+      gamesPlayed: 4,
+      goals: 1,
+      assists: 2,
+      pim: 2
+    }
+  ]
+},
+{
+  firstName: "Sam",
+  lastName: "Remington",
+  seasons: [
+    {
+      season: "Q4 2019",
+      current: false,
+      goalie: false,
+      team: "Red Army",
+      gamesPlayed: 7,
+      goals: 0,
+      assists: 1,
+      pim: 0
+    },
+    {
+      season: "Q3 2019",
+      current: false,
+      goalie: false,
+      team: "Gritty's Goons",
+      gamesPlayed: 8,
+      goals: 0,
+      assists: 3,
+      pim: 4
+    },
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "Agent Orange",
+      gamesPlayed: 7,
+      goals: 0,
+      assists: 0,
+      pim: 2
+    },
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: false,
+      team: "The Cocks",
+      gamesPlayed: 4,
+      goals: 1,
+      assists: 0,
+      pim: 0
+    },
+    {
+      season: "Q4 2018",
+      current: false,
+      goalie: false,
+      team: "Victorious Secret",
+      gamesPlayed: 4,
+      goals: 0,
+      assists: 2,
+      pim: 0
+    }
+  ]
+},
+{
+  firstName: "Spencer",
+  lastName: "Fox",
+  seasons: [
+    {
+      season: "Q4 2019",
+      current: false,
+      goalie: false,
+      team: "Red Army",
+      gamesPlayed: 6,
+      goals: 0,
+      assists: 0,
+      pim: 0
+    }
+  ]
+},
+{
+  firstName: "Paul",
+  lastName: "Cauduro",
+  seasons: [
+    {
+      season: "Q4 2019",
+      current: false,
+      goalie: false,
+      team: "Red Army",
+      gamesPlayed: 10,
+      goals: 0,
+      assists: 4,
+      pim: 0
+    },
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "Pucks Capacitors",
+      gamesPlayed: 7,
+      goals: 0,
+      assists: 0,
+      pim: 0
+    },
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: false,
+      team: "Silver Foxes",
+      gamesPlayed: 4,
+      goals: 0,
+      assists: 1,
+      pim: 0
+    },
+    {
+      season: "Q4 2018",
+      current: false,
+      goalie: false,
+      team: "Labattshitcrazies",
+      gamesPlayed: 3,
+      goals: 0,
+      assists: 1,
+      pim: 0
+    }
+  ]
+},
+{
+  firstName: "John",
+  lastName: "Ortiz",
+  seasons: [
+    {
+      season: "Q4 2019",
+      current: false,
+      goalie: false,
+      team: "Nick's Wonder Friends",
+      gamesPlayed: 5,
+      goals: 2,
+      assists: 1,
+      pim: 2
+    }
+  ]
+},
+{
+  firstName: "Carson",
+  lastName: "Rowland",
+  seasons: [
+    {
+      season: "Q3 2019",
+      current: false,
+      goalie: false,
+      team: "Purple Reign",
+      gamesPlayed: 8,
+      goals: 1,
+      assists: 0,
+      pim: 0
+    },
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "Dekes of Hazzard",
+      gamesPlayed: 8,
+      goals: 2,
+      assists: 0,
+      pim: 2
+    },
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: false,
+      team: "Blue Wave",
+      gamesPlayed: 5,
+      goals: 0,
+      assists: 2,
+      pim: 0
+    }
+  ]
+},
+{
+  firstName: "Geanine",
+  lastName: "Mazerolle",
+  seasons: [
+    {
+      season: "Q3 2019",
+      current: false,
+      goalie: false,
+      team: "Purple Reign",
+      gamesPlayed: 8,
+      goals: 1,
+      assists: 0,
+      pim: 0
+    }
+  ]
+},
+{
+  firstName: "Richard",
+  lastName: "Reedy",
+  seasons: [
+    {
+      season: "Q3 2019",
+      current: false,
+      goalie: false,
+      team: "Gritty's Goons",
+      gamesPlayed: 6,
+      goals: 0,
+      assists: 0,
+      pim: 0
+    },
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "The Second Worst Team in Texas",
+      gamesPlayed: 3,
+      goals: 1,
+      assists: 2,
+      pim: 0
+    }
+  ]
+},
+{
+  firstName: "Mike",
+  lastName: "Correa",
+  seasons: [
+    {
+      season: "Q3 2019",
+      current: false,
+      goalie: false,
+      team: "Gritty's Goons",
+      gamesPlayed: 8,
+      goals: 0,
+      assists: 0,
+      pim: 0
+    },
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: true,
+      team: "Richards Le Rouge",
+      gamesPlayed: 5,
+      wins: 1,
+      losses: 3,
+      sol: 1,
+      ga: 22,
+      so: 1
+    }
+  ]
+},
+{
+  firstName: "Martin",
+  lastName: "Witt",
+  seasons: [
+    {
+      season: "Q3 2019",
+      current: false,
+      goalie: false,
+      team: "Goldmembers",
+      gamesPlayed: 7,
+      goals: 2,
+      assists: 4,
+      pim: 2
+    },
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "Agent Orange",
+      gamesPlayed: 7,
+      goals: 2,
+      assists: 3,
+      pim: 4
+    },
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: false,
+      team: "The Cocks",
+      gamesPlayed: 4,
+      goals: 0,
+      assists: 1,
+      pim: 0
+    },
+    {
+      season: "Q4 2018",
+      current: false,
+      goalie: false,
+      team: "Black Squoose",
+      gamesPlayed: 3,
+      goals: 2,
+      assists: 1,
+      pim: 0
+    }
+  ]
+},
+{
+  firstName: "Wade",
+  lastName: "Munger",
+  seasons: [
+    {
+      season: "Q3 2019",
+      current: false,
+      goalie: false,
+      team: "Goldmembers",
+      gamesPlayed: 8,
+      goals: 0,
+      assists: 4,
+      pim: 0
+    },
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "Agent Orange",
+      gamesPlayed: 7,
+      goals: 1,
+      assists: 4,
+      pim: 0
+    }
+  ]
+},
+{
+  firstName: "Drake",
+  lastName: "Fierge",
+  seasons: [
+    {
+      season: "Q3 2019",
+      current: false,
+      goalie: false,
+      team: "Goldmembers",
+      gamesPlayed: 3,
+      goals: 1,
+      assists: 1,
+      pim: 2
+    }
+  ]
+},
+{
+  firstName: "Jim",
+  lastName: "Nicholson",
+  seasons: [
+    {
+      season: "Q3 2019",
+      current: false,
+      goalie: false,
+      team: "Goldmembers",
+      gamesPlayed: 6,
+      goals: 0,
+      assists: 0,
+      pim: 0
+    },
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "Dekes of Hazzard",
+      gamesPlayed: 6,
+      goals: 1,
+      assists: 2,
+      pim: 0
+    },
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: false,
+      team: "Silver Foxes",
+      gamesPlayed: 4,
+      goals: 0,
+      assists: 1,
+      pim: 0
+    },
+    {
+      season: "Q4 2018",
+      current: false,
+      goalie: false,
+      team: "Toby's Red Rockets",
+      gamesPlayed: 2,
+      goals: 0,
+      assists: 1,
+      pim: 0
+    }
+  ]
+},
+{
+  firstName: "Nathan",
+  lastName: "Hardy",
+  seasons: [
+    {
+      season: "Q3 2019",
+      current: false,
+      goalie: false,
+      team: "Ashholes",
+      gamesPlayed: 8,
+      goals: 6,
+      assists: 4,
+      pim: 8
+    },
+  ]
+},
+{
+  firstName: "Kyle",
+  lastName: "Flett",
+  seasons: [
+    {
+      season: "Q3 2019",
+      current: false,
+      goalie: false,
+      team: "Ashholes",
+      gamesPlayed: 9,
+      goals: 3,
+      assists: 1,
+      pim: 2
+    },
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "Agent Orange",
+      gamesPlayed: 3,
+      goals: 1,
+      assists: 2,
+      pim: 0
+    }
+  ]
+},
+{
+  firstName: "Craig",
+  lastName: "Laurenson",
+  seasons: [
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "Pucks Capacitors",
+      gamesPlayed: 6,
+      goals: 5,
+      assists: 2,
+      pim: 2
+    },
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: false,
+      team: "Silver Foxes",
+      gamesPlayed: 4,
+      goals: 3,
+      assists: 2,
+      pim: 0
+    },
+    {
+      season: "Q4 2018",
+      current: false,
+      goalie: false,
+      team: "Labattshitcrazies",
+      gamesPlayed: 4,
+      goals: 4,
+      assists: 4,
+      pim: 0
+    }
+  ]
+},
+{
+  firstName: "Mohit",
+  lastName: "Raghunathan",
+  seasons: [
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "Pucks Capacitors",
+      gamesPlayed: 4,
+      goals: 0,
+      assists: 0,
+      pim: 0
+    },
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: false,
+      team: "Silver Foxes",
+      gamesPlayed: 3,
+      goals: 0,
+      assists: 0,
+      pim: 0
+    },
+    {
+      season: "Q4 2018",
+      current: false,
+      goalie: false,
+      team: "Coors Light Silver Bullet Love Train",
+      gamesPlayed: 6,
+      goals: 1,
+      assists: 2,
+      pim: 0
+    }
+  ]
+},
+{
+  firstName: "Paul",
+  lastName: "Nye",
+  seasons: [
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "Pucks Capacitors",
+      gamesPlayed: 2,
+      goals: 1,
+      assists: 1,
+      pim: 0
+    },
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: false,
+      team: "Baby Got Black",
+      gamesPlayed: 5,
+      goals: 0,
+      assists: 0,
+      pim: 0
+    }
+  ]
+},
+{
+  firstName: "Patrick",
+  lastName: "Brady",
+  seasons: [
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "Pucks Capacitors",
+      gamesPlayed: 2,
+      goals: 0,
+      assists: 0,
+      pim: 2
+    }
+  ]
+},
+{
+  firstName: "Mark",
+  lastName: "Ott",
+  seasons: [
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "Dekes of Hazzard",
+      gamesPlayed: 4,
+      goals: 0,
+      assists: 2,
+      pim: 0
+    },
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: false,
+      team: "Richards Le Rouge",
+      gamesPlayed: 5,
+      goals: 3,
+      assists: 4,
+      pim: 0
+    },
+    {
+      season: "Q4 2018",
+      current: false,
+      goalie: false,
+      team: "Labattshitcrazies",
+      gamesPlayed: 7,
+      goals: 6,
+      assists: 5,
+      pim: 0
+    }
+  ]
+},
+{
+  firstName: "Kyle",
+  lastName: "Schutt",
+  seasons: [
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "Black Magic Badgers",
+      gamesPlayed: 1,
+      goals: 0,
+      assists: 0,
+      pim: 0
+    }
+  ]
+},
+{
+  firstName: "Austin",
+  lastName: "Peele",
+  seasons: [
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "Black Magic Badgers",
+      gamesPlayed: 3,
+      goals: 3,
+      assists: 0,
+      pim: 2
+    }
+  ]
+},
+{
+  firstName: "Kelly",
+  lastName: "Vann",
+  seasons: [
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "Black Magic Badgers",
+      gamesPlayed: 8,
+      goals: 4,
+      assists: 1,
+      pim: 2
+    },
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: false,
+      team: "Baby Got Black",
+      gamesPlayed: 5,
+      goals: 0,
+      assists: 0,
+      pim: 0
+    }
+  ]
+},
+{
+  firstName: "Jimmy",
+  lastName: "Sedota",
+  seasons: [
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "Black Magic Badgers",
+      gamesPlayed: 5,
+      goals: 1,
+      assists: 0,
+      pim: 2
+    },
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: false,
+      team: "Baby Got Black",
+      gamesPlayed: 5,
+      goals: 0,
+      assists: 2,
+      pim: 0
+    }
+  ]
+},
+{
+  firstName: "Melanie",
+  lastName: "Pati",
+  seasons: [
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "Black Magic Badgers",
+      gamesPlayed: 4,
+      goals: 0,
+      assists: 0,
+      pim: 0
+    }
+  ]
+},
+{
+  firstName: "Doug",
+  lastName: "Ford",
+  seasons: [
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "Black Magic Badgers",
+      gamesPlayed: 2,
+      goals: 1,
+      assists: 0,
+      pim: 0
+    }
+  ]
+},
+{
+  firstName: "Jon",
+  lastName: "Kalinowski",
+  seasons: [
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: false,
+      team: "Black Magic Badgers",
+      gamesPlayed: 2,
+      goals: 0,
+      assists: 0,
+      pim: 0
+    }
+  ]
+},
+{
+  firstName: "Austin",
+  lastName: "Spiess",
+  seasons: [
+    {
+      season: "Q2 2019",
+      current: false,
+      goalie: true,
+      team: "Black Magic Badgers",
+      gamesPlayed: 3,
+      wins: 3,
+      losses: 0,
+      sol: 0,
+      ga: 5,
+      so: 0
+    },
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: true,
+      team: "Baby Got Black",
+      gamesPlayed: 5,
+      wins: 3,
+      losses: 1,
+      sol: 1,
+      ga: 9,
+      so: 0
+    },
+    {
+      season: "Q4 2018",
+      current: false,
+      goalie: true,
+      team: "Coors Light Silver Bullet Love Train",
+      gamesPlayed: 5,
+      wins: 5,
+      losses: 4,
+      sol: 0,
+      ga: 29,
+      so: 1
+    }
+  ]
+},
+{
+  firstName: "Eric",
+  lastName: "Hiatt",
+  seasons: [
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: false,
+      team: "Blue Wave",
+      gamesPlayed: 4,
+      goals: 0,
+      assists: 1,
+      pim: 0
+    },
+    {
+      season: "Q4 2018",
+      current: false,
+      goalie: false,
+      team: "Coors Light Silver Bullet Love Train",
+      gamesPlayed: 5,
+      goals: 0,
+      assists: 4,
+      pim: 0
+    }
+  ]
+},
+{
+  firstName: "Dustin",
+  lastName: "Sprague",
+  seasons: [
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: false,
+      team: "Blue Wave",
+      gamesPlayed: 5,
+      goals: 0,
+      assists: 0,
+      pim: 0
+    },
+    {
+      season: "Q4 2018",
+      current: false,
+      goalie: false,
+      team: "Victorious Secret",
+      gamesPlayed: 1,
+      goals: 1,
+      assists: 0,
+      pim: 0
+    }
+  ]
+},
+{
+  firstName: "Adam",
+  lastName: "Licata",
+  seasons: [
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: false,
+      team: "The Worst Team in Texas",
+      gamesPlayed: 3,
+      goals: 4,
+      assists: 3,
+      pim: 0
+    }
+  ]
+},
+{
+  firstName: "Jack",
+  lastName: "Cook",
+  seasons: [
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: false,
+      team: "The Worst Team in Texas",
+      gamesPlayed: 5,
+      goals: 5,
+      assists: 2,
+      pim: 0
+    }
+  ]
+},
+{
+  firstName: "Ishtel",
+  lastName: "Uddin",
+  seasons: [
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: false,
+      team: "The Worst Team in Texas",
+      gamesPlayed: 4,
+      goals: 1,
+      assists: 1,
+      pim: 0
+    },
+    {
+      season: "Q4 2018",
+      current: false,
+      goalie: false,
+      team: "Black Squoose",
+      gamesPlayed: 1,
+      goals: 1,
+      assists: 1,
+      pim: 0
+    }
+  ]
+},
+{
+  firstName: "Eric",
+  lastName: "Thomas",
+  seasons: [
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: false,
+      team: "The Cocks",
+      gamesPlayed: 3,
+      goals: 0,
+      assists: 0,
+      pim: 0
+    },
+    {
+      season: "Q4 2018",
+      current: false,
+      goalie: false,
+      team: "Puckin Spice",
+      gamesPlayed: 2,
+      goals: 2,
+      assists: 0,
+      pim: 0
+    }
+  ]
+},
+{
+  firstName: "Rett",
+  lastName: "Watts",
+  seasons: [
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: false,
+      team: "Richards Le Rouge",
+      gamesPlayed: 5,
+      goals: 2,
+      assists: 0,
+      pim: 0
+    },
+    {
+      season: "Q4 2018",
+      current: false,
+      goalie: false,
+      team: "Black Squoose",
+      gamesPlayed: 0,
+      goals: 0,
+      assists: 0,
+      pim: 0
+    }
+  ]
+},
+{
+  firstName: "Travis",
+  lastName: "Cox",
+  seasons: [
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: false,
+      team: "Richards Le Rouge",
+      gamesPlayed: 2,
+      goals: 0,
+      assists: 0,
+      pim: 0
+    },
+    {
+      season: "Q4 2018",
+      current: false,
+      goalie: false,
+      team: "Toby's Red Rockets",
+      gamesPlayed: 2,
+      goals: 0,
+      assists: 1,
+      pim: 0
+    }
+  ]
+},
+{
+  firstName: "Brian",
+  lastName: "Delumpa",
+  seasons: [
+    {
+      season: "Q1 2019",
+      current: false,
+      goalie: false,
+      team: "Silver Foxes",
+      gamesPlayed: 3,
+      goals: 0,
+      assists: 0,
+      pim: 0
+    }
+  ]
+},
+{
+  firstName: "AJ",
+  lastName: "Abruzzese",
+  seasons: [
+    {
+      season: "Q4 2018",
+      current: false,
+      goalie: false,
+      team: "Black Squoose",
+      gamesPlayed: 8,
+      goals: 10,
+      assists: 4,
+      pim: 2
+    }
+  ]
+},
+{
+  firstName: "Mike",
+  lastName: "Jessmer",
+  seasons: [
+    {
+      season: "Q4 2018",
+      current: false,
+      goalie: true,
+      team: "Black Squoose",
+      gamesPlayed: 6,
+      wins: 3,
+      losses: 3,
+      sol: 2,
+      ga: 27,
+      so: 0
+    }
+  ]
+},
+{
+  firstName: "Adam",
+  lastName: "Robertson",
+  seasons: [
+    {
+      season: "Q4 2018",
+      current: false,
+      goalie: false,
+      team: "Puckin Spice",
+      gamesPlayed: 4,
+      goals: 0,
+      assists: 1,
+      pim: 2
+    }
+  ]
+},
+{
+  firstName: "Chris",
+  lastName: "Splendoria",
+  seasons: [
+    {
+      season: "Q4 2018",
+      current: false,
+      goalie: false,
+      team: "Victorious Secret",
+      gamesPlayed: 9,
+      goals: 7,
+      assists: 9,
+      pim: 0
+    }
+  ]
+},
+{
+  firstName: "Brandon",
+  lastName: "Christiano",
+  seasons: [
+    {
+      season: "Q1 2021",
+      current: true,
+      goalie: false,
+      team: "North Kariya",
+      gamesPlayed: 2,
+      goals: 1,
+      assists: 0,
+      pim: 0
+    },
+  ]
+},
+{
+  firstName: "Eric",
+  lastName: "Wynn",
+  seasons: [
+    {
+      season: "Q1 2021",
+      current: true,
+      goalie: false,
+      team: "North Kariya",
+      gamesPlayed: 2,
+      goals: 0,
+      assists: 1,
+      pim: 0
+    },
+  ]
 }
+
 ]
 
 // {
@@ -1277,3 +4366,429 @@ const playersSeed = [
 //     }
 //   ]
 // },
+
+
+
+  [
+    {
+      name: "The Gray Borques",
+      season: "Q1 2021",
+      gamesPlayed: 7,
+      wins: 5,
+      losses: 0,
+      sol: 2,
+      points: 17,
+      goalsFor: 21,
+      goalsAgainst: 13
+     
+    },
+    {
+      name: "Los Greengoes",
+      season: "Q1 2021",
+      gamesPlayed: 7,
+      wins: 3,
+      losses: 3,
+      sow: 1,
+      sol: 0,
+      points: 11,
+      goalsFor: 25,
+      goalsAgainst: 21
+    },
+    {
+      name: "Gritty Goons",
+      season: "Q1 2021",
+      gamesPlayed: 7,
+      wins: 3,
+      losses: 3,
+      sow: 1,
+      sol: 0,
+      points: 25,
+      goalsFor: 25,
+      goalsAgainst: 21
+    },
+    {
+      name: "North Kariya",
+      season: "Q1 2021",
+      gamesPlayed: 7,
+      wins: 1,
+      losses: 6,
+      sow: 0,
+      sol: 0,
+      points: 3,
+      goalsFor: 18,
+      goalsAgainst: 30
+    },
+    {
+      name: "Pinkie and the Brian...Chambers",
+      season: "Q1 2020",
+      gamesPlayed: 9,
+      wins: 4,
+      losses: 5,
+      sow: 0,
+      sol: 0,
+      points: 12,
+      goalsFor: 29,
+      goalsAgainst: 38
+    },
+    {
+      name: "Blades of Teal",
+      season: "Q1 2020",
+      gamesPlayed: 10,
+      wins: 8,
+      losses: 2,
+      sow: 0,
+      sol: 0,
+      points: 24,
+      goalsFor: 59,
+      goalsAgainst: 29
+    },
+    {
+      name: "Blue Cross Blue Shield",
+      season: "Q1 2020",
+      gamesPlayed: 9,
+      wins: 7,
+      losses: 2,
+      sow: 0,
+      sol: 0,
+      points: 21,
+      goalsFor: 43,
+      goalsAgainst: 28
+    },
+    {
+      name: "The Solo Cups",
+      season: "Q1 2020",
+      gamesPlayed: 10,
+      wins: 5,
+      losses: 5,
+      sow: 0,
+      sol: 0,
+      points: 15,
+      goalsFor: 38,
+      goalsAgainst: 31
+    },
+    {
+      name: "The Empire Strikes Black",
+      season: "Q1 2020",
+      gamesPlayed: 10,
+      wins: 0,
+      losses: 10,
+      sow: 0,
+      sol: 0,
+      points: 0,
+      goalsFor: 15,
+      goalsAgainst: 58
+     
+    },
+    {
+      name: "Nick's Wonder Friends",
+      season: "Q4 2019",
+      gamesPlayed: 12,
+      wins: 7,
+      losses: 5,
+      sow: 0,
+      sol: 0,
+      points: 21,
+      goalsFor: 54,
+      goalsAgainst: 48
+    },
+    {
+      name: "Red Army",
+      season: "Q4 2019",
+      gamesPlayed: 12,
+      wins: 7,
+      losses: 5,
+      sow: 1,
+      sol: 0,
+      points: 21,
+      goalsFor: 53,
+      goalsAgainst: 53
+    },
+    {
+      name: "Gold on the Ceiling",
+      season: "Q4 2019",
+      gamesPlayed: 12,
+      wins: 6,
+      losses: 5,
+      sow: 0,
+      sol: 1,
+      points: 20,
+      goalsFor: 68,
+      goalsAgainst: 43
+    },
+    {
+      name: "Pink Cobras",
+      season: "Q4 2019",
+      gamesPlayed: 12,
+      wins: 5,
+      losses: 7,
+      sow: 0,
+      sol: 0,
+      points: 19,
+      goalsFor: 51,
+      goalsAgainst: 61
+    },
+    {
+      name: "Spray Tan Aftermath",
+      season: "Q4 2019",
+      gamesPlayed: 12,
+      wins: 5,
+      losses: 7,
+      sow: 0,
+      sol: 0,
+      points: 15,
+      goalsFor: 37,
+      goalsAgainst: 58
+    },
+    {
+      name: "Ashholes",
+      season: "Q3 2019",
+      gamesPlayed: 9,
+      wins: 6,
+      losses: 3,
+      sow: 0,
+      sol: 0,
+      points: 18,
+      goalsFor: 41,
+      goalsAgainst: 22
+    },
+    {
+      name: "Goldmembers",
+      season: "Q3 2019",
+      gamesPlayed: 9,
+      wins: 6,
+      losses: 3,
+      sow: 0,
+      sol: 0,
+      points: 18,
+      goalsFor: 47,
+      goalsAgainst: 34
+    },
+    {
+      name: "Gritty's Goons",
+      season: "Q3 2019",
+      gamesPlayed: 9,
+      wins: 6,
+      losses: 3,
+      sow: 1,
+      sol: 0,
+      points: 17,
+      goalsFor: 28,
+      goalsAgainst: 26
+    },
+    {
+      name: "Purple Reign",
+      season: "Q3 2019",
+      gamesPlayed: 9,
+      wins: 0,
+      losses: 8,
+      sow: 0,
+      sol: 1,
+      points: 1,
+      goalsFor: 20,
+      goalsAgainst: 54
+    },
+    {
+      name: "Agent Orange",
+      season: "Q2 2019",
+      gamesPlayed: 11,
+      wins: 7,
+      losses: 3,
+      sow: 0,
+      sol: 1,
+      points: 22,
+      goalsFor: 55,
+      goalsAgainst: 42
+    },
+    {
+      name: "Black Magic Badgers",
+      season: "Q2 2019",
+      gamesPlayed: 11,
+      wins: 7,
+      losses: 4,
+      sow: 0,
+      sol: 0,
+      points: 21,
+      goalsFor: 40,
+      goalsAgainst: 42
+    },
+    {
+      name: "The Second Worst Team in Texas",
+      season: "Q2 2019",
+      gamesPlayed: 11,
+      wins: 7,
+      losses: 4,
+      sow: 0,
+      sol: 0,
+      points: 21,
+      goalsFor: 53,
+      goalsAgainst: 31
+    },
+    {
+      name: "Pucks Capacitors",
+      season: "Q2 2019",
+      gamesPlayed: 11,
+      wins: 5,
+      losses: 6,
+      sow: 0,
+      sol: 0,
+      points: 14,
+      goalsFor: 23,
+      goalsAgainst: 46
+    },
+    {
+      name: "Dekes of Hazzard",
+      season: "Q2 2019",
+      gamesPlayed: 11,
+      wins: 2,
+      losses: 9,
+      sow: 0,
+      sol: 0,
+      points: 6,
+      goalsFor: 28,
+      goalsAgainst: 38
+    },
+    {
+      name: "The Worst Team in Texas",
+      season: "Q1 2019",
+      gamesPlayed: 10,
+      wins: 9,
+      losses: 1,
+      sow: 2,
+      sol: 0,
+      points: 25,
+      goalsFor: 49,
+      goalsAgainst: 27
+    },
+    {
+      name: "The Cocks",
+      season: "Q1 2019",
+      gamesPlayed: 10,
+      wins: 8,
+      losses: 2,
+      sow: 0,
+      sol: 0,
+      points: 25,
+      goalsFor: 53,
+      goalsAgainst: 20
+    },
+    {
+      name: "Baby Got Black",
+      season: "Q1 2019",
+      gamesPlayed: 10,
+      wins: 6,
+      losses: 3,
+      sow: 0,
+      sol: 1,
+      points: 19,
+      goalsFor: 39,
+      goalsAgainst: 25
+    },
+    {
+      name: "Silver Foxes",
+      season: "Q1 2019",
+      gamesPlayed: 10,
+      wins: 4,
+      losses: 6,
+      sow: 0,
+      sol: 0,
+      points: 12,
+      goalsFor: 32,
+      goalsAgainst: 43
+    },
+    {
+      name: "Richards Le Rouge",
+      season: "Q1 2019",
+      gamesPlayed: 10,
+      wins: 2,
+      losses: 8,
+      sow: 0,
+      sol: 2,
+      points: 8,
+      goalsFor: 30,
+      goalsAgainst: 49
+    },
+    {
+      name: "Blue Wave",
+      season: "Q1 2019",
+      gamesPlayed: 10,
+      wins: 1,
+      losses: 9,
+      sow: 1,
+      sol: 0,
+      points: 2,
+      goalsFor: 22,
+      goalsAgainst: 61
+    },
+    {
+      name: "Puckin Spice",
+      season: "Q4 2018",
+      gamesPlayed: 10,
+      wins: 8,
+      losses: 2,
+      sow: 3,
+      sol: 0,
+      points: 21,
+      goalsFor: 49,
+      goalsAgainst: 34
+    },
+    {
+      name: "Victorious Secret",
+      season: "Q4 2018",
+      gamesPlayed: 10,
+      wins: 7,
+      losses: 3,
+      sow: 1,
+      sol: 0,
+      points: 20,
+      goalsFor: 42,
+      goalsAgainst: 33
+    },
+    {
+      name: "Coors Light Silver Bullet Love Train",
+      season: "Q4 2018",
+      gamesPlayed: 10,
+      wins: 5,
+      losses: 5,
+      sow: 0,
+      sol: 0,
+      points: 15,
+      goalsFor: 37,
+      goalsAgainst: 34
+    },
+    {
+      name: "Black Squoose",
+      season: "Q4 2018",
+      gamesPlayed: 10,
+      wins: 4,
+      losses: 4,
+      sow: 0,
+      sol: 2,
+      points: 14,
+      goalsFor: 40,
+      goalsAgainst: 33
+    },
+    {
+      name: "Toby's Red Rockets",
+      season: "Q4 2018",
+      gamesPlayed: 10,
+      wins: 3,
+      losses: 6,
+      sow: 0,
+      sol: 0,
+      points: 9,
+      goalsFor: 21,
+      goalsAgainst: 45
+    },
+    {
+      name: "Labattschitcrazies",
+      season: "Q4 2018",
+      gamesPlayed: 10,
+      wins: 2,
+      losses: 5,
+      sow: 0,
+      sol: 2,
+      points: 8,
+      goalsFor: 27,
+      goalsAgainst: 37
+    }
+  ]

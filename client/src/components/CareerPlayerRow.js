@@ -1,4 +1,4 @@
-const PlayerRow = ({ _id, firstName, lastName, gamesPlayed, team, goals, assists, points, pim, ppg }) => {
+const CareerPlayerRow = ({ _id, firstName, lastName, gamesPlayed, team, goals, assists, points, pim, ppg }) => {
 
   return (
     <tr>
@@ -14,4 +14,4 @@ const PlayerRow = ({ _id, firstName, lastName, gamesPlayed, team, goals, assists
   );
 };
 
-export default PlayerRow;
+export default CareerPlayerRow;

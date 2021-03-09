@@ -1,7 +1,7 @@
 import React from "react";
 import "../style.css";
 
-const GoalieRow = ({ _id, firstName, lastName, gamesPlayed, team, wins, losses, sol, winPerc, ga, gaa, so }) => {
+const CareerGoalieRow = ({ _id, firstName, lastName, gamesPlayed, team, wins, losses, sol, winPerc, ga, gaa, so }) => {
   return (
 
     <tr>
@@ -17,4 +17,4 @@ const GoalieRow = ({ _id, firstName, lastName, gamesPlayed, team, wins, losses, 
   );
 };
 
-export default GoalieRow;
+export default CareerGoalieRow;

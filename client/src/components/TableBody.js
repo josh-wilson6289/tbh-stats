@@ -4,12 +4,13 @@ import GoalieRow from "./GoalieRow";
 import TeamRow from "./TeamRow";
 import CareerPlayerRow from "./CareerPlayerRow";
 import CareerGoalieRow from "./CareerGoalieRow";
+import AllTimeTeamRow from "./AllTimeTeamRow";
 
 const TableBody = ({ tableData, page, season }) => {
 
 let renderedData;
 
-if (page === "players" && season !== "Career") {  
+if (page === "players" && season !== "All Time") {  
   renderedData = tableData.map((data) => {
     return (
       <PlayerRow 
@@ -28,7 +29,7 @@ if (page === "players" && season !== "Career") {
     );
 });
 }
-else if (page === "players" && season === "Career") {
+else if (page === "players" && season === "All Time") {
   renderedData = tableData.map((data) => {
     return (
       <CareerPlayerRow 
@@ -46,7 +47,7 @@ else if (page === "players" && season === "Career") {
     )
   })
 }
-else if (page === "goalies" && season !== "Career") {
+else if (page === "goalies" && season !== "All Time") {
   renderedData = tableData.map((data) => {
     return (
       <GoalieRow 
@@ -68,7 +69,7 @@ else if (page === "goalies" && season !== "Career") {
     );
   });
 }
-else if (page === "goalies" && season === "Career") {
+else if (page === "goalies" && season === "All Time") {
   renderedData = tableData.map((data) => {
     return (
       <CareerGoalieRow 
@@ -89,18 +90,34 @@ else if (page === "goalies" && season === "Career") {
     );
   });
 }
-else {
+else if (page === "teams" && season !== "All Time") {
   renderedData = tableData.map((data) => {
     return (
       <TeamRow 
-        key={data.name}
+        key={data._id}
         name={data.name}
-        wins={data.wins}
-        losses={data.losses}
+        record={`${data.wins}-${data.losses}-${data.sol}`}
         points={data.points}
         goalsFor={data.goalsFor}
         goalsAgainst={data.goalsAgainst}
+        goalDiff={data.goalDiff}
         season={season}
+      />
+    )
+  })
+}
+else {
+  renderedData = tableData.map((data) => {
+    return (
+      <AllTimeTeamRow 
+        key={data._id}
+        name={data.name}
+        season={data.season}
+        record={`${data.wins}-${data.losses}-${data.sol}`}
+        points={data.points}
+        goalsFor={data.goalsFor}
+        goalsAgainst={data.goalsAgainst}
+        goalDiff={data.goalDiff}
       />
     )
   })
