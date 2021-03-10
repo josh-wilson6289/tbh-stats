@@ -10,12 +10,19 @@ In order to run this app locally, you'll first need to download mongoDB and Node
 
 ## Technologies Used
 [React](https://reactjs.org/)
+
 [MongoDB](https://www.mongodb.com/)
+
 [Mongoose](https://mongoosejs.com/)
+
 [Express](https://expressjs.com/)
+
 [Node](https://nodejs.org/en/)
+
 [Axios](https://www.npmjs.com/package/axios)
+
 [Bootstrap](https://getbootstrap.com/)
+
 [Semantic-UI](https://semantic-ui.com/)
 
 ## Deployed App
