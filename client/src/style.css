@@ -62,12 +62,15 @@ body {
 
 .jumbotron {
   background-color: #8e2742 !important;
-  justify-content: center;
+  /* justify-content: center;
   width: 100% !important;
   height: 300px;
-  min-width: 100%;
+  min-width: 100% !important;
+  padding: 0 !important; */
   margin-bottom: 3%;
-  padding: 0 !important;
+  width: 100% !important;
+  clear: both;
+  
 }
 
 .logo {
@@ -79,24 +82,23 @@ body {
   height: 280px;
   padding-top: 20px;
   
-}
+} 
 
 .current-season-header {
   text-align: center;
 }
 
-
-.footer-bg {
+.footer {
   left: 0 !important;
+  right: 0 !important;
   bottom: 0 !important;
   width: 100% !important;
   height: 80px !important;
+  position: absolute i !important;
   background-color: #8e2742 !important;
   color: white;
   text-align: center !important;
-  font-family: 'Coustard', serif;
   padding-top: 10px;
-  width: 100% !important
 }
 
 .th {

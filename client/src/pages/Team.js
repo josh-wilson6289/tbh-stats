@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import Table from "../components/Table";
 import API from "../utils/API";
 
-const Team = ( {season, page} ) => {
+const Team = ({ season, page, setPage }) => {
 
   const [tableData, setTableData] = useState([]);
   const [sortField, setSortField] = useState("");
@@ -18,6 +18,10 @@ const Team = ( {season, page} ) => {
     }
   }, [season]);
 
+  useEffect(() => {
+    setPage("teams")
+  }, [page]);
+  
   function loadTeamStatsBySeason(season) {
 
     API.getTeamsBySeason(season)

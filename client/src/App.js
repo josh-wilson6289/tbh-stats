@@ -7,61 +7,62 @@ import Table from "./components/Table";
 import Player from "./pages/Player";
 import Goalie from "./pages/Goalie";
 import Team from "./pages/Team";
-
 import "./style.css";
 
 export default () => {
 
-
 const [season, setSeason] = useState("Q1 2021");
+const [page, setPage] = useState("players");
 
 const handleSeason = (e) => {
   e.preventDefault();
   let currentSeason = (e.target.getAttribute("seasonvalue"));
   setSeason(currentSeason);
 }
-
   return (
-    <Router>
-    <div> 
+    <div>
+    <div className="container-fluid"> 
+  <Router>
+
     <Jumbotron />
-    <div className="container-fluid">
+
       <Navbar 
-        handleSeason={handleSeason}/>
-      <br></br>
+        handleSeason={handleSeason}
+        page={page}
+        />
+  
+      <div className="row"></div>
       <Switch>
         <Route exact path={["/", "/players"]}>
           <Player 
             season={season}
-            setSeason={setSeason}
-            page="players"
+            page={page}
+            setPage={setPage}
           />
         </Route>
         <Route exact path={"/goalies"}>
           <Goalie 
             season={season}
-            page="goalies"
+            page={page}
+            setPage={setPage}
           />
         </Route>
         <Route exact path="/teams">
           <Team 
             season={season}
-            page="teams"
+            page={page}
+            setPage={setPage}
           />
         </Route>
       </Switch>
-  
-      <br></br>
 
       <br></br>
       <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-    </div>
-  
+ 
       <Footer />
-  </div>
+
   </Router>
+  </div>
+  </div>
   );
 };
