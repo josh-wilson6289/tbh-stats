@@ -4,26 +4,26 @@ import Search from "./Search";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import "../style.css";
 
-const Navbar = ({ handleSeason }) => {
+const Navbar = ({ handleSeason, page }) => {
 
 return (
 <nav className="navbar">
   <div className="ui menu">
     <Link
       to="/players"
-      className="active item"
+      className={page === "players" ? "active item" : "item"}
       tablevalue="players">Player
       </Link>
   
     <Link 
       to="/goalies"
-      className="item"
+      className={page === "goalies" ? "active item" : "item"}
       tablevalue="goalies">Goalie
     </Link>
    
    <Link
       to="/teams"
-      className="item"
+      className={page === "teams" ? "active item" : "item"}
       tablevalue="teams">Team
     </Link>
  

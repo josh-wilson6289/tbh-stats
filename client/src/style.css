@@ -65,7 +65,7 @@ body {
   justify-content: center;
   width: 100% !important;
   height: 300px;
-  min-width: 100%;
+  min-width: 100% !important;
   margin-bottom: 3%;
   padding: 0 !important;
 }
@@ -79,12 +79,11 @@ body {
   height: 280px;
   padding-top: 20px;
   
-}
+} 
 
 .current-season-header {
   text-align: center;
 }
-
 
 .footer-bg {
   left: 0 !important;

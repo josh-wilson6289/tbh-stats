@@ -14,39 +14,43 @@ export default () => {
 
 
 const [season, setSeason] = useState("Q1 2021");
+const [page, setPage] = useState("players");
 
 const handleSeason = (e) => {
   e.preventDefault();
   let currentSeason = (e.target.getAttribute("seasonvalue"));
   setSeason(currentSeason);
 }
-
   return (
     <Router>
     <div> 
     <Jumbotron />
     <div className="container-fluid">
       <Navbar 
-        handleSeason={handleSeason}/>
+        handleSeason={handleSeason}
+        page={page}
+        />
       <br></br>
       <Switch>
         <Route exact path={["/", "/players"]}>
           <Player 
             season={season}
-            setSeason={setSeason}
-            page="players"
+            page={page}
+            setPage={setPage}
           />
         </Route>
         <Route exact path={"/goalies"}>
           <Goalie 
             season={season}
-            page="goalies"
+            page={page}
+            setPage={setPage}
           />
         </Route>
         <Route exact path="/teams">
           <Team 
             season={season}
-            page="teams"
+            page={page}
+            setPage={setPage}
           />
         </Route>
       </Switch>
