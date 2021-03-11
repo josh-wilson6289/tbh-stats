@@ -29,7 +29,7 @@ const Caret = ({ handleSort, value, sortDirection, sortField }) => {
       id="sorticon">
     <path 
       d={d}
-      onClick={handleSort} 
+   
       value={value}/>
     </svg>
   );
