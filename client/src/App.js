@@ -7,11 +7,9 @@ import Table from "./components/Table";
 import Player from "./pages/Player";
 import Goalie from "./pages/Goalie";
 import Team from "./pages/Team";
-
 import "./style.css";
 
 export default () => {
-
 
 const [season, setSeason] = useState("Q1 2021");
 const [page, setPage] = useState("players");
@@ -22,15 +20,18 @@ const handleSeason = (e) => {
   setSeason(currentSeason);
 }
   return (
-    <Router>
-    <div> 
+    <div>
+    <div className="container-fluid"> 
+  <Router>
+
     <Jumbotron />
-    <div className="container-fluid">
+
       <Navbar 
         handleSeason={handleSeason}
         page={page}
         />
-      <br></br>
+  
+      <div className="row"></div>
       <Switch>
         <Route exact path={["/", "/players"]}>
           <Player 
@@ -54,18 +55,14 @@ const handleSeason = (e) => {
           />
         </Route>
       </Switch>
-  
-      <br></br>
 
       <br></br>
       <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-    </div>
-  
+ 
       <Footer />
-  </div>
+
   </Router>
+  </div>
+  </div>
   );
 };
