@@ -4,7 +4,7 @@ import Search from "./Search";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import "../style.css";
 
-const Navbar = ({ handleSeason, page }) => {
+const Navbar = ({ handleSeason, handleSearch, page }) => {
 
 return (
 <nav className="navbar">
@@ -34,7 +34,9 @@ return (
   <div id="searchbox" className="ui menu">
     <div className="right menu">
       <div className="item">
-    <Search />
+    <Search 
+      handleSearch={handleSearch}
+    />
     
     </div>
   </div>

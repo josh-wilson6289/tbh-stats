@@ -13,12 +13,18 @@ export default () => {
 
 const [season, setSeason] = useState("Q1 2021");
 const [page, setPage] = useState("players");
+const [searchTerm, setSearchTerm] = useState("");
 
 const handleSeason = (e) => {
   e.preventDefault();
   let currentSeason = (e.target.getAttribute("seasonvalue"));
   setSeason(currentSeason);
 }
+
+const handleSearch = (e) => {
+  setSearchTerm(e.target.value)
+}
+
   return (
     <div>
     <div className="container-fluid"> 
@@ -29,6 +35,7 @@ const handleSeason = (e) => {
       <Navbar 
         handleSeason={handleSeason}
         page={page}
+        handleSearch={handleSearch}
         />
   
       <div className="row"></div>
@@ -38,6 +45,7 @@ const handleSeason = (e) => {
             season={season}
             page={page}
             setPage={setPage}
+            searchTerm={searchTerm}
           />
         </Route>
         <Route exact path={"/goalies"}>
@@ -45,6 +53,7 @@ const handleSeason = (e) => {
             season={season}
             page={page}
             setPage={setPage}
+            searchTerm={searchTerm}
           />
         </Route>
         <Route exact path="/teams">
@@ -52,6 +61,7 @@ const handleSeason = (e) => {
             season={season}
             page={page}
             setPage={setPage}
+            searchTerm={searchTerm}
           />
         </Route>
       </Switch>
