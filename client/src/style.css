@@ -81,7 +81,6 @@ body {
   margin-bottom: auto;
   height: 280px;
   padding-top: 20px;
-  
 } 
 
 .current-season-header {
@@ -89,22 +88,60 @@ body {
 }
 
 .footer {
-  left: 0 !important;
-  right: 0 !important;
-  bottom: 0 !important;
-  width: 100% !important;
-  height: 80px !important;
-  position: absolute i !important;
-  background-color: #8e2742 !important;
-  color: white;
-  text-align: center !important;
-  padding-top: 10px;
+  background-color: #8e2742;
+  padding: 30px;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+
+  text-align: center;
 }
 
+.logo-footer img {
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.footer a {
+  color: #fff;
+}
 .th {
   text-align: center;
 }
 
+.footer .col-sm-12 {
+  margin-bottom: 25px;
+}
+
+.footer h2 {
+  color: #fff;
+
+  font-size: 30px;
+}
+
+.footer .location {
+  margin-top: 15px;
+  color: #fff;
+}
+
+.footer .newsletter {
+  text-align: left;
+}
+
+.footer .newsletter .btn {
+  color: #8e2742;
+  background-color: #fff;
+  margin-top: 10px
+}
+
+.footer p {
+  color: #fff;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
 .pages {
   padding: 5px;
   float: right;
@@ -115,25 +152,42 @@ body {
   size: 10px;
 }
 
+
+.footer-social {
+  float: right;
+  position: relative;
+  left: -50%;
+  text-align: left;
+}
+.footer .footer-social ul {
+  /* clear: both;
+  display: block; */
+  /* justify-content: center;
+  vertical-align: auto;
+  align-items:center; */
+  list-style: none;
+  position: relative;
+  left: 50%;
+}
+
+.footer .footer-social li {
+  font-size: 20px;
+  margin: 10px;
+  float: left;
+  text-align: center;
+  /* float: left; */
+  /* float: left; */
+}
+
+.fab {
+  font-family: "Font Awesome 5 Brands";
+  padding: 10px;
+  
+}
+
 #searchbox {
   margin-bottom: 14px !important;
   padding: 0px !important;
   margin-top: 0 !important;
 }
 
-/* 
-This may be needed to get pop ups to work */
-
-/* $('.example .menu .browse').popup({
-  inline   : true,
-  hoverable: true,
-  position : 'bottom left',
-  delay: {
-    show: 300,
-    hide: 800
-   }
-   }); */
-/* 
-   http://semantic-ui.com/modules/popup.html#/examples
-
-   http://semantic-ui.com/collections/menu.html#popup-menu */
