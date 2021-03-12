@@ -8,6 +8,7 @@ const Team = ({ season, page, setPage }) => {
   const [sortField, setSortField] = useState("");
   const [sortDirection, setSortDirection] = useState("");
   const [currentSeason, setCurrentSeason] = useState("")
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     if (season === "All Time") {
@@ -23,7 +24,7 @@ const Team = ({ season, page, setPage }) => {
   }, [page]);
   
   function loadTeamStatsBySeason(season) {
-
+    setIsLoading(true);
     API.getTeamsBySeason(season)
       .then(teams => {
         const allTeams = teams.data;
@@ -45,10 +46,12 @@ const Team = ({ season, page, setPage }) => {
         setSortField("points");
         setSortDirection("descending");
         setCurrentSeason(season);
+        setIsLoading(false);
       })  
   }
 
   const loadAllTeamStats = () => {
+    setIsLoading(true);
     API.getAllTeams()
       .then(teams => {
         const allTeams = teams.data;
@@ -72,6 +75,7 @@ const Team = ({ season, page, setPage }) => {
         setSortField("points");
         setSortDirection("descending");
         setCurrentSeason(season);
+        setIsLoading(false);
       })  
   }
 
@@ -86,6 +90,8 @@ const Team = ({ season, page, setPage }) => {
       setSortField={setSortField}
       sortDirection={sortDirection}
       setSortDirection={setSortDirection}
+      isLoading={isLoading}
+      setIsLoading={setIsLoading}
     />
   );
 };

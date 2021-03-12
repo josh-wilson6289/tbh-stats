@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import TableHeader from "./TableHeader";
 import TableBody from "./TableBody";
+import Spinner from "./Spinner";
 
-const Table = ({ tableData, setTableData, sortField, setSortField, sortDirection, setSortDirection, season, page }) => {
+const Table = ({ tableData, setTableData, sortField, setSortField, sortDirection, setSortDirection, season, page, isLoading, setIsLoading }) => {
 
   useEffect(() => { 
     sortData(tableData, sortField, sortDirection)
@@ -10,6 +11,7 @@ const Table = ({ tableData, setTableData, sortField, setSortField, sortDirection
 
   const handleSort = (e) => {
     e.preventDefault();
+    setIsLoading(true)
     const field = e.target.getAttribute("value");
     setSortField(field);
     if (sortDirection === "descending" && field===sortField) { 
@@ -56,6 +58,7 @@ const Table = ({ tableData, setTableData, sortField, setSortField, sortDirection
      });
    }
    setTableData(sortedData);
+   setIsLoading(false);
   };
   
   return (
@@ -65,8 +68,10 @@ const Table = ({ tableData, setTableData, sortField, setSortField, sortDirection
   </div>
   <br></br>
   <div className="container-fluid">
-<table className="table table-bordered">
-<thead className="thead-light">
+    {isLoading ?
+      <Spinner /> :
+<table className="table table-hover">
+<thead>
 
   <TableHeader 
     handleSort={handleSort} 
@@ -84,10 +89,9 @@ const Table = ({ tableData, setTableData, sortField, setSortField, sortDirection
     season={season} 
   />
 
-  </table>
+  </table>}
   </div>
   </div>
-
   );
 };
 
