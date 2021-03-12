@@ -1,13 +1,24 @@
 import React from "react";
+import { DebounceInput } from "react-debounce-input";
 import "../style.css";
 
-const Search = () => {
+const Search = ({ handleSearch }) => {
 
 return (
   
   <div className="ui transparent icon input">
-    <input type="text" placeholder="Search..." />
-    <i className="search link icon"></i>
+   
+    {/* <input type="text" placeholder="Search..." /> */}
+    <DebounceInput 
+      type="text"
+      placeholder="Search"
+      minLength={2}
+      debounceTimeout={300}
+      onChange={handleSearch}
+      />
+    
+    {/* <i className="search link icon" onClick={handleSearch}></i> */}
+
   </div>
 
   );

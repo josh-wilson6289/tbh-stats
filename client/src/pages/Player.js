@@ -2,13 +2,14 @@ import React, { useState, useEffect } from "react";
 import Table from "../components/Table";
 import API from "../utils/API";
 
-const Player = ({ season, page, setPage }) => {
+const Player = ({ season, page, setPage, searchTerm }) => {
 
   const [tableData, setTableData] = useState([]);
   const [sortField, setSortField] = useState("");
   const [sortDirection, setSortDirection] = useState("");
   const [currentSeason, setCurrentSeason] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+
 
   useEffect(() => {
     if (season === "All Time") {
@@ -22,6 +23,16 @@ const Player = ({ season, page, setPage }) => {
   useEffect(() => {
     setPage("players")
   }, [page]);
+
+  useEffect(() => {
+    console.log(searchTerm);
+    let search = new RegExp(searchTerm+'.+$', 'i');
+    let searchFirstName = tableData.filter((player) => (player.firstName).match(search));
+    let searchLastName = tableData.filter((player) => (player.lastName).match(search));
+    let filteredSearch = searchFirstName.concat(searchLastName);
+    setTableData(filteredSearch);
+    
+  }, [searchTerm]);
 
   function loadPlayerStatsBySeason(season) {
       // calls api for any player that has participated in season
