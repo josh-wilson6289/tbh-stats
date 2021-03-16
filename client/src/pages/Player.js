@@ -29,11 +29,12 @@ const Player = ({ season, page, setPage, searchTerm, isSearching, setIsSearching
   }, [searchTerm]);
   
   function searchPlayer(searchTerm) {
+    if (searchTerm !== "") {
     API.searchPlayer(searchTerm)
       .then(players => {
-        console.log(players);
-        
+        console.log(players.data);
       })
+    }
   }
 
   function loadPlayerStatsBySeason(season) {
