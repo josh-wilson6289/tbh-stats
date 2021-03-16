@@ -17,7 +17,7 @@ return (
       onChange={handleSearch}
       />
     
-    {/* <i className="search link icon" onClick={handleSearch}></i> */}
+    <i className="search link icon"></i>
 
   </div>
 

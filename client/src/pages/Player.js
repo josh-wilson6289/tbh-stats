@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Table from "../components/Table";
 import API from "../utils/API";
 
-const Player = ({ season, page, setPage, searchTerm }) => {
+const Player = ({ season, page, setPage, searchTerm, isSearching, setIsSearching }) => {
 
   const [tableData, setTableData] = useState([]);
   const [sortField, setSortField] = useState("");
@@ -25,14 +25,16 @@ const Player = ({ season, page, setPage, searchTerm }) => {
   }, [page]);
 
   useEffect(() => {
-    console.log(searchTerm);
-    let search = new RegExp(searchTerm+'.+$', 'i');
-    let searchFirstName = tableData.filter((player) => (player.firstName).match(search));
-    let searchLastName = tableData.filter((player) => (player.lastName).match(search));
-    let filteredSearch = searchFirstName.concat(searchLastName);
-    setTableData(filteredSearch);
-    
+    searchPlayer(searchTerm)
   }, [searchTerm]);
+  
+  function searchPlayer(searchTerm) {
+    API.searchPlayer(searchTerm)
+      .then(players => {
+        console.log(players);
+        
+      })
+  }
 
   function loadPlayerStatsBySeason(season) {
       // calls api for any player that has participated in season
@@ -40,6 +42,7 @@ const Player = ({ season, page, setPage, searchTerm }) => {
       API.getPlayersBySeason(season)
       .then(players => {
         const allPlayers = players.data
+        console.log(players)
         // filters through the seasons array, and returns only the season being viewed currently
         // that way, when rendering the playerRow the current season will always be at index [0]
         const filteredPlayersBySeason = allPlayers.map((player) => {

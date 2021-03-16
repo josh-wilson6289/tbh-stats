@@ -9,6 +9,10 @@ export default {
   getAllPlayers: function () {
     return axios.get("api/player")
   },
+
+  searchPlayer: function(search) {
+    return axios.get("/api/search/" + search, {params: {search: search}});
+  },
   
   // one player by id
   getPlayer: function(id) {
