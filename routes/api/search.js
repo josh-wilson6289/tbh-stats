@@ -1,12 +1,10 @@
 const router = require("express").Router();
 const playerController = require("../../controllers/playerController");
 
-router.route("/")
-  .get(playerController.findAllPlayers)
-  .post(playerController.create);
+  router.route("/")
+  .get(playerController.searchPlayer);
 
   router.route("/:season")
-  .get(playerController.findPlayersBySeason);
-
+  .get(playerController.searchPlayerBySeason);
 
 module.exports = router;

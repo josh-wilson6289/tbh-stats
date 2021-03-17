@@ -15,6 +15,7 @@ const [season, setSeason] = useState("Q1 2021");
 const [page, setPage] = useState("players");
 const [searchTerm, setSearchTerm] = useState("");
 
+
 const handleSeason = (e) => {
   e.preventDefault();
   let currentSeason = (e.target.getAttribute("seasonvalue"));
@@ -46,6 +47,7 @@ const handleSearch = (e) => {
             page={page}
             setPage={setPage}
             searchTerm={searchTerm}
+
           />
         </Route>
         <Route exact path={"/goalies"}>

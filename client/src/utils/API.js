@@ -9,7 +9,14 @@ export default {
   getAllPlayers: function () {
     return axios.get("api/player")
   },
+
+  searchPlayer: function(search) {
+    return axios.get("/api/search", {params: {search: search}});
+  },
   
+  searchPlayerBySeason: function(season, search) {
+    return axios.get("/api/search/" + season, {params: {season: season, search: search}});
+  },
   // one player by id
   getPlayer: function(id) {
     return axios.get("/api/player/" + id);
