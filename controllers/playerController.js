@@ -4,7 +4,7 @@ const { where } = require("../models/player");
 module.exports = {
   findPlayersBySeason: function(req, res) {
     db.Player.aggregate([
-      { $match: { "seasons.season": req.query.season }}   
+      { $match: { "seasons.season": req.params.season }}   
     ])
       .sort({ lastName: 1 })
       .then(dbPlayer => res.json(dbPlayer))
@@ -26,7 +26,10 @@ module.exports = {
   },
 
   searchPlayerBySeason: function(req, res) {
-    db.Player.find( { $or: [{ firstName: req.query.search}, {lastName: req.query.search} ]})
+    db.Player.aggregate([
+      { $match: { "seasons.season": req.query.season }},
+      { $match: {$or: [{ firstName: req.query.search}, {lastName: req.query.search} ]}}   
+    ]) 
     .sort({lastName: 1})
     .then(dbPlayer => res.json(dbPlayer))
     .catch(err => res.status(422).json(err));

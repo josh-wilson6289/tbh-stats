@@ -36,18 +36,25 @@ const Player = ({ season, page, setPage, searchTerm, isSearching, setIsSearching
       API.searchPlayer(searchTerm)
         .then(players => {
           const searchedPlayers = players.data;
-          console.log(players.data);  
+          console.log(players);  
           formatPlayersByCareer(searchedPlayers);
         })
     }
-    else {
+    else if (searchTerm !== "" && season !== "All Time") {
       API.searchPlayerBySeason(season, searchTerm) 
         .then(players => {
           const searchedPlayers = players.data;
-          console.log(searchedPlayers);
+          formatPlayersBySeason(searchedPlayers);
         })       
+    }
+    else if (searchTerm === "" && season === "All Time") {
+      loadPlayerCareerStats();
     }   
+    else if (searchTerm === "" && season !== "All Time") {
+      loadPlayerStatsBySeason(season);
+    }
   }
+  
 
   // Loads the player stats by season and calls the formatting function
   function loadPlayerStatsBySeason(season) {
