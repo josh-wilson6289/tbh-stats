@@ -11,9 +11,12 @@ export default {
   },
 
   searchPlayer: function(search) {
-    return axios.get("/api/search/" + search, {params: {search: search}});
+    return axios.get("/api/search", {params: {search: search}});
   },
   
+  searchPlayerBySeason: function(search, season) {
+    return axios.get("/api/search/" + season, {params: {search: search, season: season}});
+  },
   // one player by id
   getPlayer: function(id) {
     return axios.get("/api/player/" + id);

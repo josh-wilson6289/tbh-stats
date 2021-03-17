@@ -21,7 +21,13 @@ module.exports = {
   searchPlayer: function(req, res) {
     db.Player.find( { $or: [{ firstName: req.query.search}, {lastName: req.query.search} ]})
     .sort({lastName: 1 })
-    .then(console.log("search player"))
+    .then(dbPlayer => res.json(dbPlayer))
+    .catch(err => res.status(422).json(err));
+  },
+
+  searchPlayerBySeason: function(req, res) {
+    db.Player.find( { $or: [{ firstName: req.query.search}, {lastName: req.query.search} ]})
+    .sort({lastName: 1})
     .then(dbPlayer => res.json(dbPlayer))
     .catch(err => res.status(422).json(err));
   },

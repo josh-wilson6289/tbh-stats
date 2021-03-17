@@ -8,9 +8,5 @@ router.route("/")
   router.route("/:season")
   .get(playerController.findPlayersBySeason);
 
-  router.route("/:search")
-  .get(playerController.searchPlayer);
-
-
 
 module.exports = router;
