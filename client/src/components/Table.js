@@ -3,11 +3,11 @@ import TableHeader from "./TableHeader";
 import TableBody from "./TableBody";
 import Spinner from "./Spinner";
 
-const Table = ({ tableData, setTableData, sortField, setSortField, sortDirection, setSortDirection, season, page, isLoading, setIsLoading }) => {
+const Table = ({ tableData, setTableData, sortField, setSortField, sortDirection, setSortDirection, season, page, isLoading, setIsLoading, searchTerm }) => {
 
   useEffect(() => { 
     sortData(tableData, sortField, sortDirection)
-  },[sortDirection, season]);
+  },[sortDirection, season, searchTerm]);
 
   const handleSort = (e) => {
     e.preventDefault();

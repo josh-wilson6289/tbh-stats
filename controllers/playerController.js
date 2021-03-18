@@ -19,7 +19,13 @@ module.exports = {
   },
 
   searchPlayer: function(req, res) {
-    db.Player.find( { $or: [{ firstName: req.query.search}, {lastName: req.query.search} ]})
+    db.Player.aggregate([
+      { $addFields: {fullName: {$concat: ["$firstName", " ", "$lastName"]}}},
+      { $match: {fullName: {$regex: req.query.search, $options: "i"}}}
+    ])
+    
+    
+    // .find( { $or: [{ firstName: req.query.search}, {lastName: req.query.search} ]})
     .sort({lastName: 1 })
     .then(dbPlayer => res.json(dbPlayer))
     .catch(err => res.status(422).json(err));
@@ -28,7 +34,10 @@ module.exports = {
   searchPlayerBySeason: function(req, res) {
     db.Player.aggregate([
       { $match: { "seasons.season": req.query.season }},
-      { $match: {$or: [{ firstName: req.query.search}, {lastName: req.query.search} ]}}   
+      // { $match: {$or: [{ {firstName: {$regex: req.query.search, $options:"x"}}, {lastName: {$regex: req.query.search, $options:"x"}} ]}}   
+      { $addFields: {fullName: {$concat: ["$firstName", " ", "$lastName"]}}}, 
+      { $match: {fullName: {$regex: req.query.search, $options: "i"}}}
+      // { $expr: { $regexMatch: {input: {$concat: ["$firstName","$lastName"] }, regex: req.query.search, options: "i" }}}
     ]) 
     .sort({lastName: 1})
     .then(dbPlayer => res.json(dbPlayer))

@@ -8,7 +8,6 @@ return (
   
   <div className="ui transparent icon input">
    
-    {/* <input type="text" placeholder="Search..." /> */}
     <DebounceInput 
       type="text"
       placeholder="Search"
@@ -16,8 +15,6 @@ return (
       debounceTimeout={300}
       onChange={handleSearch}
       />
-    
-    <i className="search link icon"></i>
 
   </div>
 
