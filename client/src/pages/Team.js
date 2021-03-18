@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import Table from "../components/Table";
 import API from "../utils/API";
 
-const Team = ({ season, page, setPage }) => {
+const Team = ({ season, page, setPage, searchTerm }) => {
 
   const [tableData, setTableData] = useState([]);
   const [sortField, setSortField] = useState("");
@@ -11,50 +11,76 @@ const Team = ({ season, page, setPage }) => {
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    if (season === "All Time") {
-      loadAllTeamStats();
-    }
-    else {
-      loadTeamStatsBySeason(season);
-    }
-  }, [season]);
-
-  useEffect(() => {
     setPage("teams")
   }, [page]);
   
-  function loadTeamStatsBySeason(season) {
+  useEffect(() => {
+    searchTeam(searchTerm)
+  }, [searchTerm, season]);
+
+  function searchTeam(searchTerm) {
+    if (searchTerm !== "" && season === "All Time") {
+      API.searchTeam(searchTerm)
+        .then(players => {
+          const searchedPlayers = players.data;
+          formatAllTeams(searchedPlayers);
+        })
+    }
+    else if (searchTerm !== "" && season !== "All Time") {
+      API.searchTeamBySeason(season, searchTerm) 
+        .then(players => {
+          const searchedPlayers = players.data;
+          formatTeamsBySeason(searchedPlayers);
+        })       
+    }
+    else if (searchTerm === "" && season === "All Time") {
+      loadAllTeams();
+    }   
+    else if (searchTerm === "" && season !== "All Time") {
+      loadTeamsBySeason(season);
+    }
+  }
+
+  function loadTeamsBySeason(season) {
     setIsLoading(true);
     API.getTeamsBySeason(season)
       .then(teams => {
         const allTeams = teams.data;
-
-        const currentSeasonTeams = allTeams.map((team) => {
-          return {
-            _id: team._id,
-            name: team.name,
-            wins: team.wins,
-            losses: team.losses,
-            sol: team.sol,
-            points: team.points,
-            goalsFor: team.goalsFor,
-            goalsAgainst: team.goalsAgainst,
-            goalDiff: team.goalsFor - team.goalsAgainst
-          }
-        })
-        setTableData(currentSeasonTeams);
-        setSortField("points");
-        setSortDirection("descending");
-        setCurrentSeason(season);
-        setIsLoading(false);
+        formatTeamsBySeason(allTeams);
       })  
-  }
+    }
 
-  const loadAllTeamStats = () => {
+  function loadAllTeams (allTeams) {
     setIsLoading(true);
     API.getAllTeams()
       .then(teams => {
         const allTeams = teams.data;
+        formatAllTeams(allTeams);
+      })  
+    }
+
+    function formatTeamsBySeason(allTeams) {
+      const currentSeasonTeams = allTeams.map((team) => {
+        return {
+          _id: team._id,
+          name: team.name,
+          wins: team.wins,
+          losses: team.losses,
+          sol: team.sol,
+          points: team.points,
+          goalsFor: team.goalsFor,
+          goalsAgainst: team.goalsAgainst,
+          goalDiff: team.goalsFor - team.goalsAgainst
+        }
+      })
+      setTableData(currentSeasonTeams);
+      setSortField("points");
+      setSortDirection("descending");
+      setCurrentSeason(season);
+      setIsLoading(false);
+  }
+
+    function formatAllTeams (allTeams) {
         const allTimeTeams = allTeams.map((team) => {
           return {
             key: team._id,
@@ -75,8 +101,7 @@ const Team = ({ season, page, setPage }) => {
         setSortDirection("descending");
         setCurrentSeason(season);
         setIsLoading(false);
-      })  
-  }
+      }
 
 
   return (
@@ -91,6 +116,7 @@ const Team = ({ season, page, setPage }) => {
       setSortDirection={setSortDirection}
       isLoading={isLoading}
       setIsLoading={setIsLoading}
+      searchTerm={searchTerm}
     />
   );
 };

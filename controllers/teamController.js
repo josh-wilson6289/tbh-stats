@@ -17,6 +17,25 @@ module.exports = {
     .catch(err => res.status(422).json(err));
   },
   
+  searchTeam: function (req, res) {
+    db.Team.aggregate([
+      { $match: {name: {$regex: req.query.search, $options: "i"}}}
+    ])
+    .sort({ points: -1 })
+    .then(dbTeam => res.json(dbTeam))
+    .catch(err => res.status(422).json(err));
+  },
+
+  searchTeamBySeason: function (req, res) {
+    db.Team.aggregate([
+      { $match: {"season": req.query.season }},
+      { $match: {name: {$regex: req.query.search, $options: "i"}}}
+    ])
+    .sort({ points: -1 })
+    .then(dbTeam => res.json(dbTeam))
+    .catch(err => res.status(422).json(err));
+  },
+  
   create: function (req, res) {
     db.Team.create(req.body)
       .then(dbTeam => res.json(dbTeam))

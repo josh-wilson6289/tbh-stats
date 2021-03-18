@@ -11,11 +11,11 @@ export default {
   },
 
   searchPlayer: function(search) {
-    return axios.get("/api/search", {params: {search: search}});
+    return axios.get("/api/searchPlayer", {params: {search: search}});
   },
   
   searchPlayerBySeason: function(season, search) {
-    return axios.get("/api/search/" + season, {params: {season: season, search: search}});
+    return axios.get("/api/searchPlayer/" + season, {params: {season: season, search: search}});
   },
   // one player by id
   getPlayer: function(id) {
@@ -29,6 +29,15 @@ export default {
   getAllTeams: function () {
     return axios.get("/api/team");
   },
+
+  searchTeam: function (search) {
+    return axios.get("/api/searchTeam", {params: {search: search}});
+  },
+
+  searchTeamBySeason: function(season, search) {
+    return axios.get("/api/searchTeam", + season, {params: {season: season, search: search}});
+  },
+
   // get single team info
   getTeam: function(id) {
     return axios.get("/api/team" + id);

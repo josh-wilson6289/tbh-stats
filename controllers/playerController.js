@@ -23,8 +23,6 @@ module.exports = {
       { $addFields: {fullName: {$concat: ["$firstName", " ", "$lastName"]}}},
       { $match: {fullName: {$regex: req.query.search, $options: "i"}}}
     ])
-    
-    
     // .find( { $or: [{ firstName: req.query.search}, {lastName: req.query.search} ]})
     .sort({lastName: 1 })
     .then(dbPlayer => res.json(dbPlayer))
