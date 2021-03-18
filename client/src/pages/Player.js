@@ -2,23 +2,13 @@ import React, { useState, useEffect } from "react";
 import Table from "../components/Table";
 import API from "../utils/API";
 
-const Player = ({ season, page, setPage, searchTerm, isSearching, setIsSearching }) => {
+const Player = ({ season, page, setPage, searchTerm }) => {
 
   const [tableData, setTableData] = useState([]);
-  const [sortField, setSortField] = useState("");
-  const [sortDirection, setSortDirection] = useState("");
+  const [sortField, setSortField] = useState("points");
+  const [sortDirection, setSortDirection] = useState("descending");
   const [currentSeason, setCurrentSeason] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-
-  // Checks season, then loads stats
-  useEffect(() => {
-    if (season === "All Time") {
-      loadPlayerCareerStats();
-    }
-    else {
-      loadPlayerStatsBySeason(season);
-    }
-  }, [season]);
 
   // sets page to be passed down through props
   useEffect(() => {
@@ -28,7 +18,7 @@ const Player = ({ season, page, setPage, searchTerm, isSearching, setIsSearching
   // Checks for a search term, and loads the Search function
   useEffect(() => {
     searchPlayer(searchTerm)
-  }, [searchTerm]);
+  }, [searchTerm, season]);
   
   // Searches for players based on season or career page
   function searchPlayer(searchTerm) {
@@ -36,7 +26,6 @@ const Player = ({ season, page, setPage, searchTerm, isSearching, setIsSearching
       API.searchPlayer(searchTerm)
         .then(players => {
           const searchedPlayers = players.data;
-          console.log(players);  
           formatPlayersByCareer(searchedPlayers);
         })
     }
@@ -105,15 +94,14 @@ const Player = ({ season, page, setPage, searchTerm, isSearching, setIsSearching
       }
     })
       setTableData(currentSeasonPlayers);
+      setCurrentSeason(season);
       setSortField("points");
       setSortDirection("descending");
-      setCurrentSeason(season);
       setIsLoading(false);
   }
 
   // Takes the data array and formats it for career stats
   function formatPlayersByCareer(allPlayers) {
-    
     // filters out any seasons where the player is a goalie
     const removeGoalieSeasons = allPlayers.map((player) => {
         return {...player, seasons: player.seasons.filter((season) => season.goalie === false)}
@@ -142,9 +130,9 @@ const Player = ({ season, page, setPage, searchTerm, isSearching, setIsSearching
       }
     })
       setTableData(playerCareer);
+      setCurrentSeason(season);
       setSortField("points");
       setSortDirection("descending");
-      setCurrentSeason(season);
       setIsLoading(false);
   }
 
@@ -178,6 +166,7 @@ const Player = ({ season, page, setPage, searchTerm, isSearching, setIsSearching
       setSortDirection={setSortDirection}
       isLoading={isLoading}
       setIsLoading={setIsLoading}
+      searchTerm={searchTerm}
     />
   );
 };
