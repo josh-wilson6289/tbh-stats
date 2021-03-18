@@ -55,7 +55,6 @@ const Team = ({ season, page, setPage }) => {
     API.getAllTeams()
       .then(teams => {
         const allTeams = teams.data;
-        console.log(teams.data);
         const allTimeTeams = allTeams.map((team) => {
           return {
             key: team._id,
