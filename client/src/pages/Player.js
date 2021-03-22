@@ -5,8 +5,8 @@ import API from "../utils/API";
 const Player = ({ season, page, setPage, searchTerm }) => {
 
   const [tableData, setTableData] = useState([]);
-  const [sortField, setSortField] = useState("points");
-  const [sortDirection, setSortDirection] = useState("descending");
+  const [sortField, setSortField] = useState("");
+  const [sortDirection, setSortDirection] = useState("");
   const [currentSeason, setCurrentSeason] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
@@ -88,15 +88,16 @@ const Player = ({ season, page, setPage, searchTerm }) => {
         gamesPlayed: player.seasons[0].gamesPlayed,
         goals: player.seasons[0].goals,
         assists: player.seasons[0].assists,
-        points: player.seasons[0].goals + player.seasons[0].assists,
+        points: player.seasons[0].points,
         pim: player.seasons[0].pim,
         ppg: (player.seasons[0].goals + player.seasons[0].assists) / player.seasons[0].gamesPlayed
       }
     })
       setTableData(currentSeasonPlayers);
-      setCurrentSeason(season);
       setSortField("points");
+      setSortDirection("");
       setSortDirection("descending");
+      setCurrentSeason(season);
       setIsLoading(false);
   }
 
@@ -124,15 +125,16 @@ const Player = ({ season, page, setPage, searchTerm }) => {
         gamesPlayed: player.seasons[0].gamesPlayed,
         goals: player.seasons[0].goals,
         assists: player.seasons[0].assists,
-        points: player.seasons[0].goals + player.seasons[0].assists,
+        points: player.seasons[0].points,
         pim: player.seasons[0].pim,
         ppg: (player.seasons[0].goals + player.seasons[0].assists) / player.seasons[0].gamesPlayed
       }
     })
       setTableData(playerCareer);
-      setCurrentSeason(season);
       setSortField("points");
+      setSortDirection("");
       setSortDirection("descending");
+      setCurrentSeason(season);
       setIsLoading(false);
   }
 
@@ -152,7 +154,6 @@ const Player = ({ season, page, setPage, searchTerm }) => {
     });
     return result;
   };
-
 
   return (
     <Table

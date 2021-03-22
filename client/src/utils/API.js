@@ -31,11 +31,11 @@ export default {
   },
 
   searchTeam: function (search) {
-    return axios.get("/api/searchTeam", {params: {search: search}});
+    return axios.get("/api/searchTeam/", {params: {search: search}});
   },
 
   searchTeamBySeason: function(season, search) {
-    return axios.get("/api/searchTeam", + season, {params: {season: season, search: search}});
+    return axios.get("/api/searchTeam/" + season, {params: {season: season, search: search}});
   },
 
   // get single team info

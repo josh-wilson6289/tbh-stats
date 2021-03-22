@@ -92,6 +92,7 @@ const Goalie = ({ season, page, setPage, searchTerm }) => {
     // sets table data state
     setTableData(currentSeasonGoalies);
     setSortField("winPerc");
+    setSortDirection("");
     setSortDirection("descending");
     setCurrentSeason(season)
     setIsLoading(false);
@@ -128,6 +129,7 @@ const Goalie = ({ season, page, setPage, searchTerm }) => {
     })
     setTableData(goalieCareer);
     setSortField("winPerc");
+    setSortDirection("");
     setSortDirection("descending");
     setCurrentSeason(season);
     setIsLoading(false);

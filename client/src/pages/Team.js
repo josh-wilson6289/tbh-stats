@@ -75,6 +75,7 @@ const Team = ({ season, page, setPage, searchTerm }) => {
       })
       setTableData(currentSeasonTeams);
       setSortField("points");
+      setSortDirection("");
       setSortDirection("descending");
       setCurrentSeason(season);
       setIsLoading(false);
@@ -98,6 +99,7 @@ const Team = ({ season, page, setPage, searchTerm }) => {
         })
         setTableData(allTimeTeams);
         setSortField("points");
+        setSortDirection("");
         setSortDirection("descending");
         setCurrentSeason(season);
         setIsLoading(false);

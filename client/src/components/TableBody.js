@@ -9,6 +9,7 @@ import AllTimeTeamRow from "./AllTimeTeamRow";
 const TableBody = ({ tableData, page, season }) => {
 
 let renderedData;
+let rank=1;
 
 if (page === "players" && season !== "All Time") {  
   renderedData = tableData.map((data) => {
@@ -16,6 +17,7 @@ if (page === "players" && season !== "All Time") {
       <PlayerRow 
         key={data._id}
         _id={data._id}
+        rank={rank++}
         firstName={data.firstName}
         lastName={data.lastName}
         team={data.team}
