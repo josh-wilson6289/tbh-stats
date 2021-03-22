@@ -11,6 +11,7 @@ const Table = ({ tableData, setTableData, sortField, setSortField, sortDirection
 
   const handleSort = (e) => {
     e.preventDefault();
+    console.log("sort");
     setIsLoading(true)
     const field = e.target.getAttribute("value");
     setSortField(field);

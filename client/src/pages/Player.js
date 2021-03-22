@@ -88,7 +88,7 @@ const Player = ({ season, page, setPage, searchTerm }) => {
         gamesPlayed: player.seasons[0].gamesPlayed,
         goals: player.seasons[0].goals,
         assists: player.seasons[0].assists,
-        points: player.seasons[0].goals + player.seasons[0].assists,
+        points: player.seasons[0].points,
         pim: player.seasons[0].pim,
         ppg: (player.seasons[0].goals + player.seasons[0].assists) / player.seasons[0].gamesPlayed
       }
@@ -124,7 +124,7 @@ const Player = ({ season, page, setPage, searchTerm }) => {
         gamesPlayed: player.seasons[0].gamesPlayed,
         goals: player.seasons[0].goals,
         assists: player.seasons[0].assists,
-        points: player.seasons[0].goals + player.seasons[0].assists,
+        points: player.seasons[0].points,
         pim: player.seasons[0].pim,
         ppg: (player.seasons[0].goals + player.seasons[0].assists) / player.seasons[0].gamesPlayed
       }
@@ -152,7 +152,6 @@ const Player = ({ season, page, setPage, searchTerm }) => {
     });
     return result;
   };
-
 
   return (
     <Table
