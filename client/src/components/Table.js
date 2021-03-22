@@ -11,7 +11,6 @@ const Table = ({ tableData, setTableData, sortField, setSortField, sortDirection
 
   const handleSort = (e) => {
     e.preventDefault();
-    console.log("sort");
     setIsLoading(true)
     const field = e.target.getAttribute("value");
     setSortField(field);
@@ -31,7 +30,7 @@ const Table = ({ tableData, setTableData, sortField, setSortField, sortDirection
   }
 
   const sortData = (tableData, field, sortDirection) => {
-  let sortedData = [...tableData];
+    let sortedData = [...tableData];
    if (sortDirection === "ascending") {
      sortedData.sort((a, b) => {
        if (a[field] < b[field]) {
@@ -66,6 +65,7 @@ const Table = ({ tableData, setTableData, sortField, setSortField, sortDirection
     <div>
     <div className="container">
   <h1 className="ui center aligned header">{season}</h1>
+  <h3 className="ui center aligned header">{`${sortField}`}</h3>
   </div>
   <br></br>
   <div className="container-fluid">

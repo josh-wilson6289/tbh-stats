@@ -5,8 +5,8 @@ import API from "../utils/API";
 const Player = ({ season, page, setPage, searchTerm }) => {
 
   const [tableData, setTableData] = useState([]);
-  const [sortField, setSortField] = useState("points");
-  const [sortDirection, setSortDirection] = useState("descending");
+  const [sortField, setSortField] = useState("");
+  const [sortDirection, setSortDirection] = useState("");
   const [currentSeason, setCurrentSeason] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
@@ -94,9 +94,10 @@ const Player = ({ season, page, setPage, searchTerm }) => {
       }
     })
       setTableData(currentSeasonPlayers);
-      setCurrentSeason(season);
       setSortField("points");
+      setSortDirection("");
       setSortDirection("descending");
+      setCurrentSeason(season);
       setIsLoading(false);
   }
 
@@ -130,9 +131,10 @@ const Player = ({ season, page, setPage, searchTerm }) => {
       }
     })
       setTableData(playerCareer);
-      setCurrentSeason(season);
       setSortField("points");
+      setSortDirection("");
       setSortDirection("descending");
+      setCurrentSeason(season);
       setIsLoading(false);
   }
 

@@ -125,6 +125,17 @@ const playerSeed = [
         assists: 2,
         pim: 0,
         points: 7
+      },
+      {
+        season: "Q3 2018",
+        current: false,
+        goalie: false,
+        team: "Gang Green",
+        gamesPlayed: 8,
+        goals: 9,
+        assists: 6,
+        pim: 0,
+        points: 15
       }
     ]
   },
@@ -219,6 +230,17 @@ const playerSeed = [
         assists: 3,
         pim: 0,
         points: 4
+      },
+      {
+        season: "Q3 2018",
+        current: false,
+        goalie: false,
+        team: "The Revengers",
+        gamesPlayed: 17,
+        goals: 5,
+        assists: 10,
+        pim: 0,
+        points: 15
       }
     ]
   },
@@ -291,6 +313,17 @@ const playerSeed = [
         assists: 2,
         pim: 4,
         points: 2
+      },
+      {
+        season: "Q3 2018",
+        current: false,
+        goalie: false,
+        team: "Gang Green",
+        gamesPlayed: 16,
+        goals: 3,
+        assists: 9,
+        pim: 0,
+        points: 12
       }
     ]
   },
@@ -364,8 +397,7 @@ const playerSeed = [
         losses: 6,
         sol: 0,
         ga: 30,
-        so: 0,
-        points: null
+        so: 0
       },
       {
         season: "Q1 2020",
@@ -377,8 +409,7 @@ const playerSeed = [
         losses: 2,
         sol: 0,
         ga: 28,
-        so: 1,
-        points: null
+        so: 1
       },
       {
         season: "Q4 2019",
@@ -390,8 +421,7 @@ const playerSeed = [
         losses: 5,
         sol: 0,
         ga: 44,
-        so: 0,
-        points: null
+        so: 0
       },
       {
         season: "Q3 2019",
@@ -403,8 +433,7 @@ const playerSeed = [
         losses: 3,
         sol: 0,
         ga: 22,
-        so: 0,
-        points: null
+        so: 0
       },
       {
         season: "Q2 2019",
@@ -416,8 +445,7 @@ const playerSeed = [
         losses: 3,
         sol: 0,
         ga: 19,
-        so: 1,
-        points: null
+        so: 1
       },
       {
         season: "Q1 2019",
@@ -429,8 +457,7 @@ const playerSeed = [
         losses: 0,
         sol: 1,
         ga: 8,
-        so: 1,
-        points: null
+        so: 1
       },
       {
         season: "Q4 2018",
@@ -442,8 +469,19 @@ const playerSeed = [
         losses: 2,
         sol: 0,
         ga: 34,
-        so: 0,
-        points: null
+        so: 0
+      },
+      {
+        season: "Q3 2018",
+        current: false,
+        goalie: true,
+        team: "Gang Green",
+        gamesPlayed: 12,
+        wins: 7,
+        losses: 5,
+        sol: 0,
+        ga: 44,
+        so: 1
       }
     ]
   },
@@ -516,6 +554,17 @@ const playerSeed = [
         assists: 5,
         pim: 0,
         points: 19
+      },
+      {
+        season: "Q3 2018",
+        current: false,
+        goalie: false,
+        team: "The Revengers",
+        gamesPlayed: 16,
+        goals: 18,
+        assists: 9,
+        pim: 0,
+        points: 27
       }
     ]
   },
@@ -811,8 +860,7 @@ const playerSeed = [
         losses: 3,
         sol: 0,
         ga: 21,
-        so: 0,
-        points: null
+        so: 0
       },
       {
         season: "Q1 2020",
@@ -824,8 +872,7 @@ const playerSeed = [
         losses: 10,
         sol: 0,
         ga: 58,
-        so: 0,
-        points: null
+        so: 0
       },
       {
         season: "Q4 2019",
@@ -837,8 +884,7 @@ const playerSeed = [
         losses: 7,
         sol: 0,
         ga: 56,
-        so: 0,
-        points: null
+        so: 0
       },
       {
         season: "Q3 2019",
@@ -850,8 +896,7 @@ const playerSeed = [
         losses: 3,
         sol: 0,
         ga: 34,
-        so: 0,
-        points: null
+        so: 0
       },
       {
         season: "Q2 2019",
@@ -885,6 +930,17 @@ const playerSeed = [
         assists: 6,
         pim: 0,
         points: 7
+      },
+      {
+        season: "Q3 2018",
+        current: false,
+        goalie: false,
+        team: "Blue By Yous",
+        gamesPlayed: 17,
+        goals: 1,
+        assists: 12,
+        pim: 0,
+        points: 13
       }
     ]
   },
@@ -957,6 +1013,17 @@ const playerSeed = [
         assists: 7,
         pim: 0,
         points: 16
+      },
+      {
+        season: "Q3 2018",
+        current: false,
+        goalie: false,
+        team: "The Revengers",
+        gamesPlayed: 9,
+        goals: 5,
+        assists: 9,
+        pim: 0,
+        points: 14
       }
     ]
   },
@@ -1007,6 +1074,17 @@ const playerSeed = [
         assists: 6,
         pim: 0,
         points: 25
+      },
+      {
+        season: "Q3 2018",
+        current: false,
+        goalie: false,
+        team: "Red Army",
+        gamesPlayed: 17,
+        goals: 11,
+        assists: 8,
+        pim: 0,
+        points: 19
       }
     ]
   },
@@ -1262,6 +1340,17 @@ const playerSeed = [
         assists: 2,
         pim: 0,
         points: 2
+      },
+      {
+        season: "Q3 2018",
+        current: false,
+        goalie: false,
+        team: "Blue By Yous",
+        gamesPlayed: 8,
+        goals: 3,
+        assists: 0,
+        pim: 0,
+        points: 3
       }
     ]
   },
@@ -1318,8 +1407,7 @@ const playerSeed = [
         losses: 0,
         sol: 1,
         ga: 9,
-        so: 0,
-        points: null
+        so: 0
       }
     ]
   },
@@ -1392,6 +1480,17 @@ const playerSeed = [
         assists: 14,
         pim: 0,
         points: 36
+      },
+      {
+        season: "Q3 2018",
+        current: false,
+        goalie: false,
+        team: "Blue By Yous",
+        gamesPlayed: 17,
+        goals: 42,
+        assists: 10,
+        pim: 0,
+        points: 52
       }
     ]
   },
@@ -1464,6 +1563,17 @@ const playerSeed = [
         assists: 10,
         pim: 2,
         points: 30
+      },
+      {
+        season: "Q3 2018",
+        current: false,
+        goalie: false,
+        team: "Gang Green",
+        gamesPlayed: 12,
+        goals: 15,
+        assists: 13,
+        pim: 0,
+        points: 28
       }
     ]
   },
@@ -1581,6 +1691,17 @@ const playerSeed = [
         assists: 0,
         pim: 0,
         points: 0
+      },
+      {
+        season: "Q3 2018",
+        current: false,
+        goalie: false,
+        team: "Gang Green",
+        gamesPlayed: 13,
+        goals: 2,
+        assists: 3,
+        pim: 0,
+        points: 5
       }
     ]
   },
@@ -1653,6 +1774,17 @@ const playerSeed = [
         assists: 1,
         pim: 0,
         points: 3
+      },
+      {
+        season: "Q3 2018",
+        current: true,
+        goalie: false,
+        team: "The Revengers",
+        gamesPlayed: 15,
+        goals: 3,
+        assists: 2,
+        pim: 0,
+        points: 5
       }
     ]
   },
@@ -1753,6 +1885,17 @@ const playerSeed = [
         assists: 7,
         pim: 0,
         points: 12
+      },
+      {
+        season: "Q3 2018",
+        current: false,
+        goalie: false,
+        team: "Red Army",
+        gamesPlayed: 12,
+        goals: 10,
+        assists: 5,
+        pim: 0,
+        points: 15
       }
     ]
   },
@@ -1770,8 +1913,7 @@ const playerSeed = [
         losses: 3,
         sol: 0,
         ga: 15,
-        so: 0,
-        points: null
+        so: 0
       },
       {
         season: "Q1 2020",
@@ -1783,8 +1925,7 @@ const playerSeed = [
         losses: 3,
         sol: 0,
         ga: 21,
-        so: 2,
-        points: null
+        so: 2
       },
       {
         season: "Q4 2019",
@@ -1796,8 +1937,7 @@ const playerSeed = [
         losses: 5,
         sol: 0,
         ga: 45,
-        so: 0,
-        points: null
+        so: 0
       },
       {
         season: "Q3 2019",
@@ -1809,8 +1949,7 @@ const playerSeed = [
         losses: 3,
         sol: 0,
         ga: 26,
-        so: 1,
-        points: null
+        so: 1
       },
       {
         season: "Q2 2019",
@@ -1822,8 +1961,7 @@ const playerSeed = [
         losses: 1,
         sol: 0,
         ga: 14,
-        so: 0,
-        points: null
+        so: 0
       },
       {
         season: "Q1 2019",
@@ -1835,8 +1973,7 @@ const playerSeed = [
         losses: 1,
         sol: 0,
         ga: 8,
-        so: 1,
-        points: null
+        so: 1
       },
       {
         season: "Q4 2018",
@@ -1848,8 +1985,7 @@ const playerSeed = [
         losses: 5,
         sol: 1,
         ga: 33,
-        so: 0,
-        points: null
+        so: 0
       }
     ]
   },
@@ -2079,6 +2215,17 @@ const playerSeed = [
         assists: 3,
         pim: 0,
         points: 4
+      },
+      {
+        season: "Q3 2018",
+        current: false,
+        goalie: false,
+        team: "Gang Green",
+        gamesPlayed: 11,
+        goals: 0,
+        assists: 2,
+        pim: 0,
+        points: 2
       }
     ]
   },
@@ -2152,8 +2299,7 @@ const playerSeed = [
         losses: 3,
         sol: 0,
         ga: 19,
-        so: 0,
-        points: null
+        so: 0
       },
       {
         season: "Q2 2019",
@@ -2187,8 +2333,7 @@ const playerSeed = [
         losses: 2,
         sol: 0,
         ga: 24,
-        so: 0,
-        points: null
+        so: 0
       }
     ]
   },
@@ -2339,6 +2484,17 @@ const playerSeed = [
         assists: 0,
         pim: 4,
         points: 3
+      },
+      {
+        season: "Q3 2018",
+        current: false,
+        goalie: false,
+        team: "Gang Green",
+        gamesPlayed: 16,
+        goals: 5,
+        assists: 7,
+        pim: 0,
+        points: 12
       }
     ]
   },
@@ -2411,6 +2567,17 @@ const playerSeed = [
         assists: 11,
         pim: 0,
         points: 18
+      },
+      {
+        season: "Q3 2018",
+        current: false,
+        goalie: false,
+        team: "Blue By Yous",
+        gamesPlayed: 10,
+        goals: 6,
+        assists: 8,
+        pim: 0,
+        points: 14
       }
     ]
   },
@@ -2439,8 +2606,7 @@ const playerSeed = [
         losses: 5,
         sol: 0,
         ga: 46,
-        so: 0,
-        points: null
+        so: 0
       },
       {
         season: "Q3 2019",
@@ -2452,8 +2618,7 @@ const playerSeed = [
         losses: 8,
         sol: 1,
         ga: 52,
-        so: 0,
-        points: null
+        so: 0
       },
       {
         season: "Q2 2019",
@@ -2465,8 +2630,7 @@ const playerSeed = [
         losses: 6,
         sol: 0,
         ga: 25,
-        so: 0,
-        points: null
+        so: 0
       },
       {
         season: "Q2 2019",
@@ -2478,8 +2642,7 @@ const playerSeed = [
         losses: 4,
         sol: 0,
         ga: 19,
-        so: 0,
-        points: null
+        so: 0
       },
       {
         season: "Q4 2018",
@@ -2508,8 +2671,7 @@ const playerSeed = [
         losses: 2,
         sol: 0,
         ga: 23,
-        so: 1,
-        points: null
+        so: 1
       },
       {
         season: "Q4 2019",
@@ -2521,8 +2683,7 @@ const playerSeed = [
         losses: 4,
         sol: 0,
         ga: 29,
-        so: 0,
-        points: null
+        so: 0
       },
       {
         season: "Q2 2019",
@@ -2534,8 +2695,7 @@ const playerSeed = [
         losses: 4,
         sol: 0,
         ga: 32,
-        so: 0,
-        points: null
+        so: 0
       },
       {
         season: "Q1 2019",
@@ -2547,8 +2707,7 @@ const playerSeed = [
         losses: 2,
         sol: 0,
         ga: 11,
-        so: 0,
-        points: null
+        so: 0
       },
       {
         season: "Q4 2018",
@@ -2560,9 +2719,20 @@ const playerSeed = [
         losses: 5,
         sol: 0,
         ga: 36,
-        so: 0,
-        points: null
-      }
+        so: 0
+      },
+      {
+        season: "Q3 2018",
+        current: false,
+        goalie: true,
+        team: "Blue By Yous",
+        gamesPlayed: 12,
+        wins: 7,
+        losses: 5,
+        sol: 0,
+        ga: 46,
+        so: 2
+      },
     ]
   },
   {
@@ -2634,6 +2804,17 @@ const playerSeed = [
         assists: 5,
         pim: 0,
         points: 8
+      },
+      {
+        season: "Q3 2018",
+        current: false,
+        goalie: false,
+        team: "Gang Green",
+        gamesPlayed: 14,
+        goals: 4,
+        assists: 7,
+        pim: 0,
+        points: 11
       }
     ]
   },
@@ -2829,6 +3010,17 @@ const playerSeed = [
         assists: 1,
         pim: 0,
         points: 1
+      },
+      {
+        season: "Q3 2018",
+        current: false,
+        goalie: false,
+        team: "Red Army",
+        gamesPlayed: 16,
+        goals: 0,
+        assists: 3,
+        pim: 0,
+        points: 3
       }
     ]
   },
@@ -3213,6 +3405,17 @@ const playerSeed = [
         assists: 3,
         pim: 0,
         points: 10
+      },
+      {
+        season: "Q3 2018",
+        current: false,
+        goalie: false,
+        team: "Red Army",
+        gamesPlayed: 11,
+        goals: 3,
+        assists: 3,
+        pim: 0,
+        points: 6
       }
     ]
   },
@@ -3263,6 +3466,17 @@ const playerSeed = [
         assists: 6,
         pim: 0,
         points: 11
+      },
+      {
+        season: "Q3 2018",
+        current: false,
+        goalie: false,
+        team: "Gang Green",
+        gamesPlayed: 15,
+        goals: 16,
+        assists: 7,
+        pim: 0,
+        points: 23
       }
     ]
   },
@@ -3302,8 +3516,7 @@ const playerSeed = [
         losses: 0,
         sol: 0,
         ga: 4,
-        so: 0,
-        points: null
+        so: 0
       },
       {
         season: "Q1 2019",
@@ -3387,6 +3600,17 @@ const playerSeed = [
         assists: 2,
         pim: 0,
         points: 3
+      },
+      {
+        season: "Q3 2018",
+        current: true,
+        goalie: false,
+        team: "The Revengers",
+        gamesPlayed: 10,
+        goals: 0,
+        assists: 1,
+        pim: 0,
+        points: 1
       }
     ]
   },
@@ -3493,6 +3717,17 @@ const playerSeed = [
         assists: 5,
         pim: 0,
         points: 12
+      },
+      {
+        season: "Q3 2018",
+        current: false,
+        goalie: false,
+        team: "Blue By Yous",
+        gamesPlayed: 11,
+        goals: 1,
+        assists: 6,
+        pim: 0,
+        points: 7
       }
     ]
   },
@@ -3643,6 +3878,17 @@ const playerSeed = [
         assists: 2,
         pim: 0,
         points: 2
+      },
+      {
+        season: "Q3 2018",
+        current: false,
+        goalie: false,
+        team: "Red Army",
+        gamesPlayed: 9,
+        goals: 0,
+        assists: 1,
+        pim: 0,
+        points: 1
       }
     ]
   },
@@ -3839,8 +4085,7 @@ const playerSeed = [
         losses: 3,
         sol: 1,
         ga: 22,
-        so: 1,
-        points: null
+        so: 1
       }
     ]
   },
@@ -3986,6 +4231,17 @@ const playerSeed = [
         assists: 1,
         pim: 0,
         points: 1
+      },
+      {
+        season: "Q3 2018",
+        current: false,
+        goalie: false,
+        team: "Blue By Yous",
+        gamesPlayed: 3,
+        goals: 1,
+        assists: 1,
+        pim: 0,
+        points: 2
       }
     ]
   },
@@ -4003,6 +4259,17 @@ const playerSeed = [
         assists: 4,
         pim: 8,
         points: 10
+      },
+      {
+        season: "Q3 2018",
+        current: false,
+        goalie: false,
+        team: "Red Army",
+        gamesPlayed: 11,
+        goals: 8,
+        assists: 4,
+        pim: 0,
+        points: 12
       }
     ]
   },
@@ -4070,6 +4337,17 @@ const playerSeed = [
         assists: 4,
         pim: 0,
         points: 8
+      },
+      {
+        season: "Q3 2018",
+        current: false,
+        goalie: false,
+        team: "Red Army",
+        gamesPlayed: 17,
+        goals: 7,
+        assists: 9,
+        pim: 0,
+        points: 16
       }
     ]
   },
@@ -4109,6 +4387,17 @@ const playerSeed = [
         assists: 2,
         pim: 0,
         points: 3
+      },
+      {
+        season: "Q3 2018",
+        current: true,
+        goalie: false,
+        team: "The Revengers",
+        gamesPlayed: 6,
+        goals: 1,
+        assists: 0,
+        pim: 0,
+        points: 1
       }
     ]
   },
@@ -4283,6 +4572,17 @@ const playerSeed = [
         assists: 2,
         pim: 0,
         points: 2
+      },
+      {
+        season: "Q3 2018",
+        current: false,
+        goalie: false,
+        team: "Blue By Yous",
+        gamesPlayed: 15,
+        goals: 1,
+        assists: 2,
+        pim: 0,
+        points: 3
       }
     ]
   },
@@ -4351,8 +4651,7 @@ const playerSeed = [
         losses: 0,
         sol: 0,
         ga: 5,
-        so: 0,
-        points: null
+        so: 0
       },
       {
         season: "Q1 2019",
@@ -4364,8 +4663,7 @@ const playerSeed = [
         losses: 1,
         sol: 1,
         ga: 9,
-        so: 0,
-        points: null
+        so: 0
       },
       {
         season: "Q4 2018",
@@ -4377,8 +4675,30 @@ const playerSeed = [
         losses: 4,
         sol: 0,
         ga: 29,
-        so: 1,
-        points: null
+        so: 1
+      },
+      {
+        season: "Q3 2018",
+        current: false,
+        goalie: true,
+        team: "The Revengers",
+        gamesPlayed: 6,
+        wins: 4,
+        losses: 2,
+        sol: 0,
+        ga: 25,
+        so: 2
+      },
+      {
+        season: "Q3 2018",
+        current: true,
+        goalie: false,
+        team: "The Revengers",
+        gamesPlayed: 7,
+        goals: 1,
+        assists: 0,
+        pim: 0,
+        points: 1
       }
     ]
   },
@@ -4497,6 +4817,17 @@ const playerSeed = [
         assists: 1,
         pim: 0,
         points: 2
+      },
+      {
+        season: "Q3 2018",
+        current: true,
+        goalie: false,
+        team: "The Revengers",
+        gamesPlayed: 1,
+        goals: 0,
+        assists: 0,
+        pim: 0,
+        points: 0
       }
     ]
   },
@@ -4632,8 +4963,7 @@ const playerSeed = [
         losses: 3,
         sol: 2,
         ga: 27,
-        so: 0,
-        points: null
+        so: 0
       }
     ]
   },
@@ -4651,6 +4981,17 @@ const playerSeed = [
         assists: 1,
         pim: 2,
         points: 1
+      },
+      {
+        season: "Q3 2018",
+        current: false,
+        goalie: false,
+        team: "Blue By Yous",
+        gamesPlayed: 10,
+        goals: 0,
+        assists: 0,
+        pim: 0,
+        points: 0
       }
     ]
   },
@@ -4668,6 +5009,17 @@ const playerSeed = [
         assists: 9,
         pim: 0,
         points: 16
+      },
+      {
+        season: "Q3 2018",
+        current: false,
+        goalie: false,
+        team: "Blue By Yous",
+        gamesPlayed: 6,
+        goals: 3,
+        assists: 5,
+        pim: 0,
+        points: 8
       }
     ]
   },
@@ -4702,6 +5054,58 @@ const playerSeed = [
         assists: 1,
         pim: 0,
         points: 1
+      }
+    ]
+  },
+  {
+    firstName: "Taylor",
+    lastName: "Hudler",
+    seasons: [
+      {
+        season: "Q3 2018",
+        current: false,
+        goalie: true,
+        team: "Red Army",
+        gamesPlayed: 12,
+        wins: 4,
+        losses: 8,
+        sol: 0,
+        ga: 55,
+        so: 0
+      }
+    ]
+  },
+  {
+    firstName: "Michael",
+    lastName: "Reisman",
+    seasons: [
+      {
+        season: "Q3 2018",
+        current: true,
+        goalie: false,
+        team: "The Revengers",
+        gamesPlayed: 8,
+        goals: 7,
+        assists: 3,
+        pim: 0,
+        points: 10
+      }
+    ]
+  },
+  {
+    firstName: "Craig",
+    lastName: "Di Sefano",
+    seasons: [
+      {
+        season: "Q3 2018",
+        current: true,
+        goalie: false,
+        team: "The Revengers",
+        gamesPlayed: 4,
+        goals: 1,
+        assists: 2,
+        pim: 0,
+        points: 3
       }
     ]
   }

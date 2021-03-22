@@ -9,6 +9,7 @@ let columns = [];
 const setHeaders = (page) => {
   if (page === "players" && season === "All Time") {
     columns = [
+      {name: "", value: "rank"},
       {name: "Player", value: "lastName"}, 
       {name: "Games Played", value: "gamesPlayed"},
       {name: "Goals", value: "goals"},
@@ -20,6 +21,7 @@ const setHeaders = (page) => {
   }
   else if (page === "players" && season !== "All Time") {
     columns = [
+      {name: "", value: "rank"},
       {name: "Player", value: "lastName"}, 
       {name: "Team", value: "team"},
       {name: "Games Played", value: "gamesPlayed"},
@@ -32,6 +34,7 @@ const setHeaders = (page) => {
   }
   else if (page === "goalies" && season === "All Time") {
     columns = [
+      {name: "", value: "rank"},
       {name: "Player", value: "lastName"},
       {name: "Games Played", value: "gamesPlayed"},
       {name: "Record", value: "wins"},
@@ -43,6 +46,7 @@ const setHeaders = (page) => {
   }
   else if (page ==="goalies" && season !== "All Time") {
     columns = [
+      {name: "", value: "rank"},
       {name: "Player", value: "lastName"},
       {name: "Team", value: "team"},
       {name: "Games Played", value: "gamesPlayed"},
@@ -55,6 +59,7 @@ const setHeaders = (page) => {
   }
   else if (page === "teams" && season !== "All Time") {
     columns = [
+      {name: "Rank", value: "rank"},
       {name: "Team", value: "name"},
       {name: "Record", value: "wins"},
       {name: "Points", value: "points"},
@@ -65,6 +70,7 @@ const setHeaders = (page) => {
   }
   else {
     columns = [
+      {name: "", value: "rank"},
       {name: "Team", value: "name"},
       {name: "Season", value: "season"},
       {name: "Record", value: "wins"},

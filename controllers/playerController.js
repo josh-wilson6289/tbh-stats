@@ -6,14 +6,14 @@ module.exports = {
     db.Player.aggregate([
       { $match: { "seasons.season": req.params.season }}   
     ])
-      .sort({ points: -1 })
+      .sort({ lastName: 1 })
       .then(dbPlayer => res.json(dbPlayer))
       .catch(err => res.status(422).json(err));
   },
 
   findAllPlayers: function(req, res) {
     db.Player.find(req.query)
-    .sort({ points: -1 })
+    .sort({ lastName: 1 })
     .then(dbPlayer => res.json(dbPlayer))
     .catch(err => res.status(422).json(err));
   },
@@ -23,7 +23,7 @@ module.exports = {
       { $addFields: {fullName: {$concat: ["$firstName", " ", "$lastName"]}}},
       { $match: {fullName: {$regex: req.query.search, $options: "i"}}}
     ])
-    .sort({ points: -1 })
+    .sort({ lastName: 1 })
     .then(dbPlayer => res.json(dbPlayer))
     .catch(err => res.status(422).json(err));
   },
@@ -34,7 +34,7 @@ module.exports = {
       { $addFields: {fullName: {$concat: ["$firstName", " ", "$lastName"]}}}, 
       { $match: {fullName: {$regex: req.query.search, $options: "i"}}}
     ]) 
-    .sort({ points: -1 })
+    .sort({ lastName: 1 })
     .then(dbPlayer => res.json(dbPlayer))
     .catch(err => res.status(422).json(err));
   },
