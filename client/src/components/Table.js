@@ -65,7 +65,6 @@ const Table = ({ tableData, setTableData, sortField, setSortField, sortDirection
     <div>
     <div className="container">
   <h1 className="ui center aligned header">{season}</h1>
-  <h3 className="ui center aligned header">{`${sortField}`}</h3>
   </div>
   <br></br>
   <div className="container-fluid">
