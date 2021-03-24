@@ -110,7 +110,7 @@ const Team = ({ season, page, setPage, searchTerm }) => {
 
   return (
     <div>
-    {season === "2015"
+    {season === "2015" || season === "Q3 2018"
     ? <NoStats stat="team"/>
     : <Table
       tableData={tableData} 
