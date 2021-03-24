@@ -14,12 +14,23 @@ const setHeaders = (page) => {
       {name: "Games Played", value: "gamesPlayed"},
       {name: "Goals", value: "goals"},
       {name: "Assists", value: "assists"},
-      {name: "Points", value: "Points"},
+      {name: "Points", value: "points"},
       {name: "PIM", value: "pim"},
       {name: "PPG", value: "ppg"},
     ]
   }
-  else if (page === "players" && season !== "All Time") {
+  else if (page === "players" && season === "2015") {
+    columns = [
+      {name: "", value: "rank"},
+      {name: "Player", value: "lastName"}, 
+      {name: "Games Played", value: "gamesPlayed"},
+      {name: "Goals", value: "goals"},
+      {name: "Assists", value: "assists"},
+      {name: "Points", value: "points"},
+      {name: "PPG", value: "ppg"}
+    ]
+  }
+  else if (page === "players" && (season !== "All Time" || season !== "2015")) {
     columns = [
       {name: "", value: "rank"},
       {name: "Player", value: "lastName"}, 

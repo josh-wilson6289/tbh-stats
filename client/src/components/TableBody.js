@@ -5,13 +5,53 @@ import TeamRow from "./TeamRow";
 import CareerPlayerRow from "./CareerPlayerRow";
 import CareerGoalieRow from "./CareerGoalieRow";
 import AllTimeTeamRow from "./AllTimeTeamRow";
+import PlayerRow2015 from "./PlayerRow2015";
+import NoStats from "./NoStats";
 
 const TableBody = ({ tableData, page, season }) => {
 
 let renderedData;
 let rank=1;
 
-if (page === "players" && season !== "All Time") {  
+
+if (page === "players" && season === "All Time") {
+  renderedData = tableData.map((data) => {
+    return (
+      <CareerPlayerRow 
+      key={data._id}
+      _id={data._id}
+      rank={rank++}
+      firstName={data.firstName}
+      lastName={data.lastName}
+      gamesPlayed={data.gamesPlayed}
+      goals={data.goals}
+      assists={data.assists}
+      points={data.points}
+      pim={data.pim}
+      ppg={Math.round(100*data.ppg)/100}
+      />
+    )
+  })
+}
+else if (page === "players" && season === "2015") {
+  renderedData = tableData.map((data) => {
+    return (
+      <PlayerRow2015 
+      key={data._id}
+      _id={data._id}
+      rank={rank++}
+      firstName={data.firstName}
+      lastName={data.lastName}
+      gamesPlayed={data.gamesPlayed}
+      goals={data.goals}
+      assists={data.assists}
+      points={data.points}
+      ppg={Math.round(100*data.ppg)/100}
+      />
+    )
+  })
+}
+else if (page === "players" && (season !== "All Time" || "2015")) {  
   renderedData = tableData.map((data) => {
     return (
       <PlayerRow 
@@ -30,25 +70,6 @@ if (page === "players" && season !== "All Time") {
       />
     );
 });
-}
-else if (page === "players" && season === "All Time") {
-  renderedData = tableData.map((data) => {
-    return (
-      <CareerPlayerRow 
-      key={data._id}
-      _id={data._id}
-      rank={rank++}
-      firstName={data.firstName}
-      lastName={data.lastName}
-      gamesPlayed={data.gamesPlayed}
-      goals={data.goals}
-      assists={data.assists}
-      points={data.points}
-      pim={data.pim}
-      ppg={Math.round(100*data.ppg)/100}
-      />
-    )
-  })
 }
 else if (page === "goalies" && season !== "All Time") {
   renderedData = tableData.map((data) => {
@@ -112,7 +133,7 @@ else if (page === "teams" && season !== "All Time") {
     )
   })
 }
-else {
+else if (page === "teams" && season === "All Time") {
   renderedData = tableData.map((data) => {
     return (
       <AllTimeTeamRow 

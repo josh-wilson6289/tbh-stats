@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from "react";
 import Table from "../components/Table";
 import API from "../utils/API";
+import NoStats from "../components/NoStats";
+import "../style.css";
 
 const Team = ({ season, page, setPage, searchTerm }) => {
 
@@ -107,7 +109,10 @@ const Team = ({ season, page, setPage, searchTerm }) => {
 
 
   return (
-    <Table
+    <div>
+    {season === "2015"
+    ? <NoStats stat="team"/>
+    : <Table
       tableData={tableData} 
       setTableData={setTableData}
       season={currentSeason}
@@ -119,7 +124,8 @@ const Team = ({ season, page, setPage, searchTerm }) => {
       isLoading={isLoading}
       setIsLoading={setIsLoading}
       searchTerm={searchTerm}
-    />
+    />}
+    </div>
   );
 };
 
