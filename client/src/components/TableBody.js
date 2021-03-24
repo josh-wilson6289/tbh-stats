@@ -37,6 +37,7 @@ else if (page === "players" && season === "All Time") {
       <CareerPlayerRow 
       key={data._id}
       _id={data._id}
+      rank={rank++}
       firstName={data.firstName}
       lastName={data.lastName}
       gamesPlayed={data.gamesPlayed}
@@ -55,6 +56,7 @@ else if (page === "goalies" && season !== "All Time") {
       <GoalieRow 
         key={data._id}
         _id={data._id}
+        rank={rank++}
         firstName={data.firstName}
         lastName={data.lastName}
         team={data.team}
@@ -77,6 +79,7 @@ else if (page === "goalies" && season === "All Time") {
       <CareerGoalieRow 
         key={data._id}
         _id={data._id}
+        rank={rank++}
         firstName={data.firstName}
         lastName={data.lastName}
         gamesPlayed={data.gamesPlayed}
@@ -98,6 +101,7 @@ else if (page === "teams" && season !== "All Time") {
       <TeamRow 
         key={data._id}
         name={data.name}
+        rank={rank++}
         record={`${data.wins}-${data.losses}-${data.sol}`}
         points={data.points}
         goalsFor={data.goalsFor}
@@ -113,6 +117,7 @@ else {
     return (
       <AllTimeTeamRow 
         key={data._id}
+        rank={rank++}
         name={data.name}
         season={data.season}
         record={`${data.wins}-${data.losses}-${data.sol}`}

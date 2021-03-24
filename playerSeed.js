@@ -9,11 +9,11 @@ const playerSeed = [
         current: true,
         goalie: false,
         team: "North Kariya",
-        gamesPlayed: 7,
-        goals: 3,
-        assists: 4,
+        gamesPlayed: 9,
+        goals: 4,
+        assists: 6,
         pim: 2,
-        points: 7
+        points: 10
       },
       {
         season: "Q1 2020",
@@ -59,11 +59,11 @@ const playerSeed = [
         current: true,
         goalie: false,
         team: "North Kariya",
-        gamesPlayed: 6,
-        goals: 8,
-        assists: 3,
+        gamesPlayed: 8,
+        goals: 9,
+        assists: 7,
         pim: 2,
-        points: 11
+        points: 16
       }
     ]
   },
@@ -76,11 +76,11 @@ const playerSeed = [
         current: true,
         goalie: false,
         team: "North Kariya",
-        gamesPlayed: 7,
-        goals: 2,
+        gamesPlayed: 9,
+        goals: 4,
         assists: 2,
         pim: 0,
-        points: 4
+        points: 6
       },
       {
         season: "Q1 2020",
@@ -148,11 +148,11 @@ const playerSeed = [
         current: true,
         goalie: false,
         team: "North Kariya",
-        gamesPlayed: 6,
-        goals: 2,
-        assists: 3,
+        gamesPlayed: 8,
+        goals: 4,
+        assists: 4,
         pim: 2,
-        points: 5
+        points: 8
       },
       {
         season: "Q1 2020",
@@ -253,7 +253,7 @@ const playerSeed = [
         current: true,
         goalie: false,
         team: "North Kariya",
-        gamesPlayed: 5,
+        gamesPlayed: 9,
         goals: 0,
         assists: 1,
         pim: 6,
@@ -336,11 +336,11 @@ const playerSeed = [
         current: true,
         goalie: false,
         team: "North Kariya",
-        gamesPlayed: 7,
+        gamesPlayed: 9,
         goals: 0,
-        assists: 0,
+        assists: 1,
         pim: 0,
-        points: 0
+        points: 1
       }
     ]
   },
@@ -353,7 +353,7 @@ const playerSeed = [
         current: true,
         goalie: false,
         team: "North Kariya",
-        gamesPlayed: 7,
+        gamesPlayed: 9,
         goals: 2,
         assists: 0,
         pim: 0,
@@ -392,11 +392,11 @@ const playerSeed = [
         current: true,
         goalie: true,
         team: "North Kariya",
-        gamesPlayed: 7,
-        wins: 1,
-        losses: 6,
+        gamesPlayed: 9,
+        wins: 2,
+        losses: 7,
         sol: 0,
-        ga: 30,
+        ga: 38,
         so: 0
       },
       {
@@ -494,11 +494,11 @@ const playerSeed = [
         current: true,
         goalie: false,
         team: "Los Greengoes",
-        gamesPlayed: 7,
-        goals: 6,
-        assists: 5,
+        gamesPlayed: 9,
+        goals: 10,
+        assists: 8,
         pim: 2,
-        points: 11
+        points: 18
       },
       {
         season: "Q1 2020",
@@ -577,11 +577,11 @@ const playerSeed = [
         current: true,
         goalie: false,
         team: "Los Greengoes",
-        gamesPlayed: 7,
-        goals: 8,
+        gamesPlayed: 8,
+        goals: 11,
         assists: 8,
         pim: 2,
-        points: 16
+        points: 19
       }
     ]
   },
@@ -594,11 +594,11 @@ const playerSeed = [
         current: true,
         goalie: false,
         team: "Los Greengoes",
-        gamesPlayed: 6,
-        goals: 2,
-        assists: 3,
-        pim: 6,
-        points: 5
+        gamesPlayed: 8,
+        goals: 4,
+        assists: 4,
+        pim: 8,
+        points: 8
       },
       {
         season: "Q1 2020",
@@ -677,11 +677,11 @@ const playerSeed = [
         current: true,
         goalie: false,
         team: "Los Greengoes",
-        gamesPlayed: 7,
-        goals: 6,
-        assists: 3,
+        gamesPlayed: 9,
+        goals: 7,
+        assists: 6,
         pim: 2,
-        points: 9
+        points: 13
       },
       {
         season: "Q1 2020",
@@ -777,7 +777,7 @@ const playerSeed = [
         current: true,
         goalie: false,
         team: "Los Greengoes",
-        gamesPlayed: 7,
+        gamesPlayed: 9,
         goals: 1,
         assists: 1,
         pim: 4,
@@ -838,7 +838,7 @@ const playerSeed = [
         current: true,
         goalie: false,
         team: "Los Greengoes",
-        gamesPlayed: 7,
+        gamesPlayed: 9,
         goals: 0,
         assists: 0,
         pim: 2,
@@ -855,11 +855,11 @@ const playerSeed = [
         current: true,
         goalie: true,
         team: "Los Greengoes",
-        gamesPlayed: 7,
-        wins: 4,
+        gamesPlayed: 9,
+        wins: 6,
         losses: 3,
         sol: 0,
-        ga: 21,
+        ga: 26,
         so: 0
       },
       {
@@ -953,11 +953,11 @@ const playerSeed = [
         current: true,
         goalie: false,
         team: "The Gray Borques",
-        gamesPlayed: 7,
-        goals: 6,
+        gamesPlayed: 8,
+        goals: 7,
         assists: 8,
         pim: 0,
-        points: 14
+        points: 15
       },
       {
         season: "Q4 2019",
@@ -1036,11 +1036,11 @@ const playerSeed = [
         current: true,
         goalie: false,
         team: "The Gray Borques",
-        gamesPlayed: 7,
-        goals: 11,
-        assists: 5,
+        gamesPlayed: 8,
+        goals: 13,
+        assists: 6,
         pim: 2,
-        points: 16
+        points: 19
       },
       {
         season: "Q1 2020",
@@ -1097,7 +1097,7 @@ const playerSeed = [
         current: true,
         goalie: false,
         team: "The Gray Borques",
-        gamesPlayed: 6,
+        gamesPlayed: 7,
         goals: 2,
         assists: 2,
         pim: 0,
@@ -1180,7 +1180,7 @@ const playerSeed = [
         current: true,
         goalie: false,
         team: "The Gray Borques",
-        gamesPlayed: 7,
+        gamesPlayed: 9,
         goals: 1,
         assists: 2,
         pim: 0,
@@ -1252,10 +1252,10 @@ const playerSeed = [
         current: true,
         goalie: false,
         team: "The Gray Borques",
-        gamesPlayed: 6,
+        gamesPlayed: 8,
         goals: 0,
         assists: 1,
-        pim: 0,
+        pim: 4,
         points: 1
       }
     ]
@@ -1269,11 +1269,11 @@ const playerSeed = [
         current: true,
         goalie: false,
         team: "The Gray Borques",
-        gamesPlayed: 4,
+        gamesPlayed: 5,
         goals: 1,
-        assists: 0,
+        assists: 1,
         pim: 0,
-        points: 1
+        points: 2
       },
       {
         season: "Q1 2020",
@@ -1363,9 +1363,9 @@ const playerSeed = [
         current: true,
         goalie: false,
         team: "The Gray Borques",
-        gamesPlayed: 7,
+        gamesPlayed: 9,
         goals: 0,
-        assists: 0,
+        assists: 1,
         pim: 0,
         points: 0
       },
@@ -1402,11 +1402,11 @@ const playerSeed = [
         current: true,
         goalie: true,
         team: "The Gray Borques",
-        gamesPlayed: 6,
+        gamesPlayed: 8,
         wins: 5,
-        losses: 0,
+        losses: 2,
         sol: 1,
-        ga: 9,
+        ga: 21,
         so: 0
       }
     ]
@@ -1420,11 +1420,11 @@ const playerSeed = [
         current: true,
         goalie: false,
         team: "Gritty Goons",
-        gamesPlayed: 7,
-        goals: 11,
-        assists: 7,
+        gamesPlayed: 9,
+        goals: 15,
+        assists: 10,
         pim: 0,
-        points: 18
+        points: 25
       },
       {
         season: "Q1 2020",
@@ -1503,11 +1503,11 @@ const playerSeed = [
         current: true,
         goalie: false,
         team: "Gritty Goons",
-        gamesPlayed: 6,
-        goals: 11,
-        assists: 4,
+        gamesPlayed: 8,
+        goals: 16,
+        assists: 6,
         pim: 0,
-        points: 15
+        points: 22
       },
       {
         season: "Q4 2019",
@@ -1586,11 +1586,11 @@ const playerSeed = [
         current: true,
         goalie: false,
         team: "Gritty Goons",
-        gamesPlayed: 7,
+        gamesPlayed: 9,
         goals: 2,
-        assists: 3,
+        assists: 4,
         pim: 2,
-        points: 5
+        points: 6
       },
       {
         season: "Q1 2020",
@@ -1653,11 +1653,11 @@ const playerSeed = [
         current: true,
         goalie: false,
         team: "Gritty Goons",
-        gamesPlayed: 6,
+        gamesPlayed: 7,
         goals: 0,
-        assists: 2,
+        assists: 3,
         pim: 4,
-        points: 2
+        points: 3
       },
       {
         season: "Q1 2020",
@@ -1714,10 +1714,10 @@ const playerSeed = [
         current: true,
         goalie: false,
         team: "Gritty Goons",
-        gamesPlayed: 7,
+        gamesPlayed: 9,
         goals: 0,
         assists: 1,
-        pim: 0,
+        pim: 2,
         points: 1
       },
       {
@@ -1797,11 +1797,11 @@ const playerSeed = [
         current: true,
         goalie: false,
         team: "Gritty Goons",
-        gamesPlayed: 6,
+        gamesPlayed: 8,
         goals: 0,
-        assists: 1,
+        assists: 2,
         pim: 0,
-        points: 1
+        points: 2
       }
     ]
   },
@@ -1814,7 +1814,7 @@ const playerSeed = [
         current: true,
         goalie: false,
         team: "Gritty Goons",
-        gamesPlayed: 7,
+        gamesPlayed: 8,
         goals: 0,
         assists: 3,
         pim: 0,
@@ -1908,11 +1908,11 @@ const playerSeed = [
         current: true,
         goalie: true,
         team: "Gritty Goons",
-        gamesPlayed: 4,
-        wins: 1,
-        losses: 3,
+        gamesPlayed: 7,
+        wins: 3,
+        losses: 4,
         sol: 0,
-        ga: 15,
+        ga: 27,
         so: 0
       },
       {
@@ -3367,7 +3367,7 @@ const playerSeed = [
         current: true,
         goalie: false,
         team: "Gritty Goons",
-        gamesPlayed: 1,
+        gamesPlayed: 3,
         goals: 0,
         assists: 0,
         pim: 0,
@@ -5032,11 +5032,11 @@ const playerSeed = [
         current: true,
         goalie: false,
         team: "North Kariya",
-        gamesPlayed: 2,
-        goals: 1,
-        assists: 0,
+        gamesPlayed: 4,
+        goals: 5,
+        assists: 1,
         pim: 0,
-        points: 1
+        points: 6
       }
     ]
   },
@@ -5049,11 +5049,11 @@ const playerSeed = [
         current: true,
         goalie: false,
         team: "North Kariya",
-        gamesPlayed: 2,
-        goals: 0,
-        assists: 1,
+        gamesPlayed: 4,
+        goals: 2,
+        assists: 2,
         pim: 0,
-        points: 1
+        points: 4
       }
     ]
   },
@@ -5106,6 +5106,23 @@ const playerSeed = [
         assists: 2,
         pim: 0,
         points: 3
+      }
+    ]
+  },
+  {
+    firstName: "Ryan",
+    lastName: "Schmidt",
+    seasons: [
+      {
+        season: "Q1 2021",
+        current: true,
+        goalie: false,
+        team: "The Gray Borques",
+        gamesPlayed: 2,
+        goals: 1,
+        assists: 0,
+        pim: 2,
+        points: 1
       }
     ]
   }
