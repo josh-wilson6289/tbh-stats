@@ -28,7 +28,7 @@ if (page === "players" && season === "All Time") {
       assists={data.assists}
       points={data.points}
       pim={data.pim}
-      ppg={Math.round(100*data.ppg)/100}
+      ppg={(Math.round(100*data.ppg)/100).toFixed(2)}
       />
     )
   })
@@ -46,7 +46,7 @@ else if (page === "players" && season === "2015") {
       goals={data.goals}
       assists={data.assists}
       points={data.points}
-      ppg={Math.round(100*data.ppg)/100}
+      ppg={(Math.round(100*data.ppg)/100).toFixed(2)}
       />
     )
   })
@@ -66,7 +66,7 @@ else if (page === "players" && (season !== "All Time" || "2015")) {
         assists={data.assists}
         points={data.points}
         pim={data.pim}
-        ppg={Math.round(100*data.ppg)/100}
+        ppg={(Math.round(100*data.ppg)/100).toFixed(2)}
       />
     );
 });
