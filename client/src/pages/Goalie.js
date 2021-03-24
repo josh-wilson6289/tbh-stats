@@ -86,7 +86,7 @@ const Goalie = ({ season, page, setPage, searchTerm }) => {
         sol: goalie.seasons[0].sol,
         winPerc: (goalie.seasons[0].wins / goalie.seasons[0].gamesPlayed) * 100,
         ga: goalie.seasons[0].ga,
-        gaa: goalie.seasons[0].ga / goalie.seasons[0].gamesPlayed,
+        gaa: (goalie.seasons[0].ga / goalie.seasons[0].gamesPlayed),
         so: goalie.seasons[0].so
       }
     })
@@ -124,7 +124,7 @@ const Goalie = ({ season, page, setPage, searchTerm }) => {
         sol: goalie.seasons[0].sol,
         winPerc: (goalie.seasons[0].wins / goalie.seasons[0].gamesPlayed) * 100,
         ga: goalie.seasons[0].ga,
-        gaa: goalie.seasons[0].ga / goalie.seasons[0].gamesPlayed,
+        gaa: (goalie.seasons[0].ga / goalie.seasons[0].gamesPlayed).toFixed(10),
         so: goalie.seasons[0].so
       }
     })
