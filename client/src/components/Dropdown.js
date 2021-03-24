@@ -43,7 +43,7 @@ const SeasonsDropdown = ({ handleSeason }) => (
         <Dropdown.Item>
           <Dropdown text='2015'>
             <Dropdown.Menu>
-              <Dropdown.Item seasonvalue="2015" onClick={handleSeason}>Austin Street Hockey</Dropdown.Item>
+              <Dropdown.Item seasonvalue="2015" onClick={handleSeason}>Full Year</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
         </Dropdown.Item>

@@ -98,7 +98,9 @@ setHeaders(page);
 const renderedHeaders = columns.map((column) => {
   return ( 
     <th scope="col" onClick={handleSort} value={column.value} key={column.name}>{column.name}
-    <Caret handleSort={handleSort} sortDirection={sortDirection} sortField={sortField} value={column.value}/></th>
+    {column.name !== "" &&
+    <Caret handleSort={handleSort} sortDirection={sortDirection} sortField={sortField} value={column.value}/>
+    } </th>
   );
 });
 

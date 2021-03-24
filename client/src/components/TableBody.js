@@ -87,7 +87,7 @@ else if (page === "goalies" && season !== "All Time") {
         sol={data.sol}
         winPerc={Math.round(100*data.winPerc)/100 + "%"}
         ga={data.ga}
-        gaa={Math.round(100*data.gaa)/100}
+        gaa={(Math.round(100*data.gaa)/100).toFixed(2)}
         so={data.so}
         season={season}
       />
@@ -109,7 +109,7 @@ else if (page === "goalies" && season === "All Time") {
         sol={data.sol}
         winPerc={Math.round(100*data.winPerc)/100 + "%"}
         ga={data.ga}
-        gaa={Math.round(100*data.gaa)/100}
+        gaa={(Math.round(100*data.gaa)/100).toFixed(2)}
         so={data.so}
         season={season}
       />
