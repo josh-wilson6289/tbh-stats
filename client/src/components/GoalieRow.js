@@ -1,11 +1,12 @@
 import React from "react";
 import "../style.css";
 
-const GoalieRow = ({ _id, firstName, lastName, gamesPlayed, team, wins, losses, sol, winPerc, ga, gaa, so }) => {
+const GoalieRow = ({ _id, rank, firstName, lastName, gamesPlayed, team, wins, losses, sol, winPerc, ga, gaa, so }) => {
   return (
 
     <tr>
-      <th scope="row">{`${firstName} ${lastName}`}</th>
+      <th scope="row">{rank}</th>
+      <td>{`${firstName} ${lastName}`}</td>
       <td>{team}</td>
       <td>{gamesPlayed}</td>
       <td>{`${wins}-${losses}-${sol}`}</td>

@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const AllTimeTeamRow = ({ _id, name, season, record, points, goalsFor, goalsAgainst, goalDiff}) => {
+const AllTimeTeamRow = ({ _id, rank, name, season, record, points, goalsFor, goalsAgainst, goalDiff}) => {
   
   const checkGoalDiff = (goalDiff) => {
     if (goalDiff > 0) {
@@ -14,7 +14,8 @@ const AllTimeTeamRow = ({ _id, name, season, record, points, goalsFor, goalsAgai
   checkGoalDiff(goalDiff);
   return (
   <tr>
-  <th scope="row">{name}</th>
+  <th scope="row">{rank}</th>
+  <td>{name}</td>
   <td>{season}</td>
   <td>{record}</td>
   <td>{points}</td>

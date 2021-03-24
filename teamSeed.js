@@ -2,50 +2,51 @@
   {
     name: "The Gray Borques",
     season: "Q1 2021",
-    gamesPlayed: 7,
+    gamesPlayed: 9,
     wins: 5,
-    losses: 1,
-    sol: 1,
+    losses: 2,
+    sow: 0,
+    sol: 2,
     points: 17,
-    goalsFor: 21,
-    goalsAgainst: 13
+    goalsFor: 25,
+    goalsAgainst: 25
    
   },
   {
     name: "Los Greengoes",
     season: "Q1 2021",
-    gamesPlayed: 7,
-    wins: 4,
+    gamesPlayed: 9,
+    wins: 6,
     losses: 3,
     sow: 1,
     sol: 0,
-    points: 11,
-    goalsFor: 25,
-    goalsAgainst: 21
+    points: 17,
+    goalsFor: 37,
+    goalsAgainst: 25
   },
   {
     name: "Gritty Goons",
     season: "Q1 2021",
-    gamesPlayed: 7,
-    wins: 4,
-    losses: 3,
+    gamesPlayed: 9,
+    wins: 5,
+    losses: 4,
     sow: 1,
     sol: 0,
-    points: 11,
-    goalsFor: 25,
-    goalsAgainst: 25
+    points: 14,
+    goalsFor: 33,
+    goalsAgainst: 35
   },
   {
     name: "North Kariya",
     season: "Q1 2021",
-    gamesPlayed: 7,
-    wins: 1,
-    losses: 6,
+    gamesPlayed: 9,
+    wins: 2,
+    losses: 7,
     sow: 0,
     sol: 0,
     points: 3,
-    goalsFor: 18,
-    goalsAgainst: 30
+    goalsFor: 28,
+    goalsAgainst: 38
   },
   {
     name: "Pinkie and the Brian...Chambers",

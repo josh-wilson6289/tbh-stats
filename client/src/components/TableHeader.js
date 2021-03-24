@@ -14,7 +14,7 @@ const setHeaders = (page) => {
       {name: "Games Played", value: "gamesPlayed"},
       {name: "Goals", value: "goals"},
       {name: "Assists", value: "assists"},
-      {name: "Points", value: "points"},
+      {name: "Points", value: "Points"},
       {name: "PIM", value: "pim"},
       {name: "PPG", value: "ppg"},
     ]
@@ -59,7 +59,7 @@ const setHeaders = (page) => {
   }
   else if (page === "teams" && season !== "All Time") {
     columns = [
-      {name: "Rank", value: "rank"},
+      {name: "", value: "rank"},
       {name: "Team", value: "name"},
       {name: "Record", value: "wins"},
       {name: "Points", value: "points"},

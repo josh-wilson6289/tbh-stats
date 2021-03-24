@@ -1,8 +1,9 @@
-const CareerPlayerRow = ({ _id, firstName, lastName, gamesPlayed, team, goals, assists, points, pim, ppg }) => {
+const CareerPlayerRow = ({ _id, rank, firstName, lastName, gamesPlayed, team, goals, assists, points, pim, ppg }) => {
 
   return (
     <tr>
-      <th scope="row">{`${firstName} ${lastName}`}</th>
+      <th scope="row">{rank}</th>
+      <td>{`${firstName} ${lastName}`}</td>
       <td>{gamesPlayed}</td>
       <td>{goals}</td>
       <td>{assists}</td>
