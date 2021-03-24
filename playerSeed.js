@@ -1,5 +1,5 @@
 
-const playerSeed = [
+[
   {
     firstName: "Sydnie",
     lastName: "Fiocca",
@@ -136,6 +136,15 @@ const playerSeed = [
         assists: 6,
         pim: 0,
         points: 15
+      },
+      {
+        season: "2015",
+        current: false,
+        goalie: false,
+        gamesPlayed: 14,
+        goals: 11,
+        assists: 6,
+        points: 17
       }
     ]
   },
@@ -953,11 +962,11 @@ const playerSeed = [
         current: true,
         goalie: false,
         team: "The Gray Borques",
-        gamesPlayed: 8,
-        goals: 7,
-        assists: 8,
-        pim: 0,
-        points: 15
+        gamesPlayed: 7,
+        goals: 8,
+        assists: 15,
+        pim: 2,
+        points: 19
       },
       {
         season: "Q4 2019",
@@ -1024,9 +1033,18 @@ const playerSeed = [
         assists: 9,
         pim: 0,
         points: 14
+      },
+      {
+        season: "2015",
+        current: false,
+        goalie: false,
+        gamesPlayed: 32,
+        goals: 26,
+        assists: 31,
+        points: 57
       }
     ]
-  },
+  },   
   {
     firstName: "Conor",
     lastName: "Barney",
@@ -1240,6 +1258,15 @@ const playerSeed = [
         assists: 2,
         pim: 2,
         points: 3
+      },
+      {
+        season: "2015",
+        current: false,
+        goalie: false,
+        gamesPlayed: 2,
+        goals: 0,
+        assists: 1,
+        points: 1
       }
     ]
   },
@@ -1574,6 +1601,15 @@ const playerSeed = [
         assists: 13,
         pim: 0,
         points: 28
+      },
+      {
+        season: "2015",
+        current: false,
+        goalie: false,
+        gamesPlayed: 8,
+        goals: 16,
+        assists: 3,
+        points: 19
       }
     ]
   },
@@ -1896,6 +1932,15 @@ const playerSeed = [
         assists: 5,
         pim: 0,
         points: 15
+      },
+      {
+        season: "2015",
+        current: false,
+        goalie: false,
+        gamesPlayed: 30,
+        goals: 42,
+        assists: 30,
+        points: 72
       }
     ]
   },
@@ -2578,6 +2623,15 @@ const playerSeed = [
         assists: 8,
         pim: 0,
         points: 14
+      },
+      {
+        season: "2015",
+        current: false,
+        goalie: false,
+        gamesPlayed: 20,
+        goals: 11,
+        assists: 13,
+        points: 24
       }
     ]
   },
@@ -3728,6 +3782,15 @@ const playerSeed = [
         assists: 6,
         pim: 0,
         points: 7
+      },
+      {
+        season: "2015",
+        current: false,
+        goalie: false,
+        gamesPlayed: 16,
+        goals: 10,
+        assists: 17,
+        points: 27
       }
     ]
   },
@@ -3889,6 +3952,15 @@ const playerSeed = [
         assists: 1,
         pim: 0,
         points: 1
+      },
+      {
+        season: "2015",
+        current: false,
+        goalie: false,
+        gamesPlayed: 34,
+        goals: 20,
+        assists: 6,
+        points: 26
       }
     ]
   },
@@ -4242,6 +4314,15 @@ const playerSeed = [
         assists: 1,
         pim: 0,
         points: 2
+      },
+      {
+        season: "2015",
+        current: false,
+        goalie: false,
+        gamesPlayed: 24,
+        goals: 14,
+        assists: 10,
+        points: 24
       }
     ]
   },
@@ -4270,6 +4351,15 @@ const playerSeed = [
         assists: 4,
         pim: 0,
         points: 12
+      },
+      {
+        season: "2015",
+        current: false,
+        goalie: false,
+        gamesPlayed: 20,
+        goals: 15,
+        assists: 13,
+        points: 28
       }
     ]
   },
@@ -4699,6 +4789,15 @@ const playerSeed = [
         assists: 0,
         pim: 0,
         points: 1
+      },
+      {
+        season: "2015",
+        current: false,
+        goalie: false,
+        gamesPlayed: 23,
+        goals: 19,
+        assists: 16,
+        points: 35
       }
     ]
   },
@@ -4992,6 +5091,15 @@ const playerSeed = [
         assists: 0,
         pim: 0,
         points: 0
+      },
+      {
+        season: "2015",
+        current: false,
+        goalie: false,
+        gamesPlayed: 26,
+        goals: 1,
+        assists: 6,
+        points: 7
       }
     ]
   },
@@ -5089,6 +5197,15 @@ const playerSeed = [
         assists: 3,
         pim: 0,
         points: 10
+      },
+      {
+        season: "2015",
+        current: false,
+        goalie: false,
+        gamesPlayed: 22,
+        goals: 16,
+        assists: 13,
+        points: 29
       }
     ]
   },
@@ -5125,5 +5242,96 @@ const playerSeed = [
         points: 1
       }
     ]
+  },
+  {
+  firstName: "Andy",
+  lastName: "Pareti",
+  seasons: [
+    {
+      season: "2015",
+      current: false,
+      goalie: false,
+      gamesPlayed: 12,
+      goals: 15,
+      assists: 8,
+      points: 23
+    }
+  ]
+  },
+  {
+    firstName: "Austin",
+    lastName: "Hudson",
+    seasons: [
+      {
+        season: "2015",
+        current: false,
+        goalie: false,
+        gamesPlayed: 24,
+        goals: 24,
+        assists: 11,
+        points: 35
+      }
+    ]
+  },
+  {
+    firstName: "David",
+    lastName: "De La Pena",
+    seasons: [
+      {
+        season: "2015",
+        current: false,
+        goalie: false,
+        gamesPlayed: 10,
+        goals: 3,
+        assists: 6,
+        points: 9
+      }
+    ]
+  },
+  {
+    firstName: "Eddie",
+    lastName: "Palumbo",
+    seasons: [
+      {
+        season: "2015",
+        current: false,
+        goalie: false,
+        gamesPlayed: 20,
+        goals: 3,
+        assists: 3,
+        points: 6
+      }
+    ]
+  },
+  {
+    firstName: "Sean",
+    lastName: "Meyer",
+    seasons: [
+      {
+        season: "2015",
+        current: false,
+        goalie: false,
+        gamesPlayed: 8,
+        goals: 9,
+        assists: 2,
+        points: 11
+        }
+      ]
+  },
+  {
+    firstName: "Shawn",
+    lastName: "Snyder",
+    seasons: [
+      {
+        season: "2015",
+        current: false,
+        goalie: false,
+        gamesPlayed: 30,
+        goals: 5,
+        assists: 18,
+        points: 23
+      }
+    ]
   }
 ]
+  

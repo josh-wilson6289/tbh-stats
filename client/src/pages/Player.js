@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Table from "../components/Table";
 import API from "../utils/API";
+import NoStats from "../components/NoStats";
 
 const Player = ({ season, page, setPage, searchTerm }) => {
 
@@ -156,19 +157,23 @@ const Player = ({ season, page, setPage, searchTerm }) => {
   };
 
   return (
-    <Table
-      tableData={tableData} 
-      setTableData={setTableData}
-      season={currentSeason}
-      page={page}
-      sortField={sortField}
-      setSortField={setSortField}
-      sortDirection={sortDirection}
-      setSortDirection={setSortDirection}
-      isLoading={isLoading}
-      setIsLoading={setIsLoading}
-      searchTerm={searchTerm}
-    />
+    <div>    
+ <Table
+    tableData={tableData} 
+    setTableData={setTableData}
+    season={currentSeason}
+    page={page}
+    sortField={sortField}
+    setSortField={setSortField}
+    sortDirection={sortDirection}
+    setSortDirection={setSortDirection}
+    isLoading={isLoading}
+    setIsLoading={setIsLoading}
+    searchTerm={searchTerm}
+  />
+  </div>
+
+  
   );
 };
 

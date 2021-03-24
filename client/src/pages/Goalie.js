@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Table from "../components/Table";
 import API from "../utils/API";
+import NoStats from "../components/NoStats";
 
 const Goalie = ({ season, page, setPage, searchTerm }) => {
 
@@ -151,7 +152,10 @@ const Goalie = ({ season, page, setPage, searchTerm }) => {
   };
 
   return (
-    <Table
+    <div>
+    {season === "2015"
+    ? <NoStats stat="goalie"/>
+    : <Table
       tableData={tableData} 
       setTableData={setTableData}
       season={currentSeason}
@@ -162,7 +166,8 @@ const Goalie = ({ season, page, setPage, searchTerm }) => {
       setSortDirection={setSortDirection}
       isLoading={isLoading}
       setIsLoading={setIsLoading}
-    />
+    />}
+    </div>
   );
 };
 

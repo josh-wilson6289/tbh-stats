@@ -2,7 +2,11 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const playerSchema = new mongoose.Schema({
-  name: {
+  firstName: {
+    type: String,
+    required: true
+  },
+  lastName: {
     type: String,
     required: true
   },
@@ -21,8 +25,7 @@ const playerSchema = new mongoose.Schema({
         required: true
       },
       team: {
-        type: String,
-        required: true
+        type: String
       },
       gamesPlayed: {
         type: Number,
