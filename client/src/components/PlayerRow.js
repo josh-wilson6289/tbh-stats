@@ -1,10 +1,14 @@
 import React from "react";
 
 
-const PlayerRow = ({ _id, rank, firstName, lastName, gamesPlayed, team, goals, assists, points, pim, ppg }) => {
+const PlayerRow = ({ _id, rank, firstName, lastName, gamesPlayed, team, goals, assists, points, pim, ppg, launchModal }) => {
+
+  const handleModal = () => {
+    launchModal(_id)
+  }
 
   return (
-    <tr>
+    <tr onClick={handleModal}>
       <th scope="row">{rank}</th>
       <td>{`${firstName} ${lastName}`}</td>
       <td>{team}</td>
