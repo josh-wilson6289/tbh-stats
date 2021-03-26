@@ -5,8 +5,10 @@ router.route("/")
   .get(playerController.findAllPlayers)
   .post(playerController.create);
 
-  router.route("/:season")
+  router.route("/season/:season")
   .get(playerController.findPlayersBySeason);
 
+  router.route("/:id")
+  .get(playerController.findById);
 
 module.exports = router;

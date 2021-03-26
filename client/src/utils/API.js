@@ -3,7 +3,7 @@ import axios from "axios";
 export default {
   // all players for given season
   getPlayersBySeason: function (season) {
-    return axios.get("/api/player/" + season, {params: {season: season}});
+    return axios.get("/api/player/season/" + season, {params: {season: season}});
   },
 
   getAllPlayers: function () {
