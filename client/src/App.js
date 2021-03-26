@@ -9,6 +9,7 @@ import Goalie from "./pages/Goalie";
 import Team from "./pages/Team";
 import "./style.css";
 
+
 export default () => {
 
 const [season, setSeason] = useState("Q1 2021");
@@ -31,7 +32,6 @@ const handleSearch = (e) => {
   <Router>
 
     <Jumbotron />
-
       <Navbar 
         handleSeason={handleSeason}
         page={page}
@@ -45,8 +45,7 @@ const handleSearch = (e) => {
             season={season}
             page={page}
             setPage={setPage}
-            searchTerm={searchTerm}
-
+            searchTerm={searchTerm} 
           />
         </Route>
         <Route exact path={"/goalies"}>
@@ -62,7 +61,7 @@ const handleSearch = (e) => {
             season={season}
             page={page}
             setPage={setPage}
-            searchTerm={searchTerm}
+            searchTerm={searchTerm} 
           />
         </Route>
       </Switch>
@@ -71,9 +70,10 @@ const handleSearch = (e) => {
       <br></br>
  
       <Footer />
-
+        
   </Router>
   </div>
+
   </div>
   );
 };

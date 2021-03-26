@@ -86,7 +86,7 @@ const Table = ({ tableData, setTableData, sortField, setSortField, sortDirection
   <TableBody 
     tableData={tableData} 
     page={page} 
-    season={season} 
+    season={season}
   />
 
   </table>}

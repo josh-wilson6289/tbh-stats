@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import PlayerRow from "./PlayerRow";
 import GoalieRow from "./GoalieRow";
 import TeamRow from "./TeamRow";
@@ -7,21 +7,12 @@ import CareerGoalieRow from "./CareerGoalieRow";
 import AllTimeTeamRow from "./AllTimeTeamRow";
 import PlayerRow2015 from "./PlayerRow2015";
 import API from "../utils/API";
+import PlayerModal from "./PlayerModal";
 
 const TableBody = ({ tableData, page, season }) => {
 
 let renderedData;
 let rank=1;
-
-function launchModal(_id) {
-  console.log(_id);
-  console.log("click")
-  API.getPlayer(_id)
-    .then(player => {
-      const searchedPlayer = player.data;
-      console.log(searchedPlayer);
-    })
-}
 
 if (page === "players" && season === "All Time") {
   renderedData = tableData.map((data) => {
@@ -76,7 +67,6 @@ else if (page === "players" && (season !== "All Time" || "2015")) {
         points={data.points}
         pim={data.pim}
         ppg={(Math.round(100*data.ppg)/100).toFixed(2)}
-        launchModal={launchModal}
       />
     );
 });
