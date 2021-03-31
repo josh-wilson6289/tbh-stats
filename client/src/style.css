@@ -90,7 +90,6 @@ body {
   margin-top: 50px;
   margin-right: auto;
   margin-left: auto;
-
   text-align: center;
 }
 
@@ -149,7 +148,6 @@ body {
   size: 10px;
 }
 
-
 .footer-social {
   float: right;
   position: relative;
@@ -188,27 +186,28 @@ body {
   margin-top: 0 !important;
 }
 
-.table {
+.main {
   border: #dee2e6 solid 1px;
-  margin-top: 20px;
+  margin-top: 20px !important;
 }
 
-tr {
+.main tr {
   border: #dee2e6 solid 1px;
 }
 
-.table thead th {
+.main table thead th {
   border-bottom: 2px solid #dee2e6;
 }
-th {
+
+.main th {
   border: #dee2e6 solid 1px;  
 }
 
-td {
+.main td {
   border: #dee2e6 solid 1px;
 }
 
-thead {
+.main thead {
   background-color: #eceff1;
 }
 
@@ -216,21 +215,9 @@ thead {
   background-color: #eceff1 !important;
 }
 
-.no-stats {
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-}
-
 .btn-primary {
   background-color: #8e2742 !important;
   border-color: #8e2742 !important; 
-}
-
-.modal-title {
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
 }
 
 .modal-header .close {
@@ -238,3 +225,22 @@ thead {
   float: right !important;
 }
 
+.centered-text {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.modal-header {
+  border: 0 none !important;
+}
+
+.modal-footer {
+  border: 0 none !important;
+}
+
+.modal-background {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}

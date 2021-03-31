@@ -70,7 +70,7 @@ const Table = ({ tableData, setTableData, sortField, setSortField, sortDirection
   <div className="container-fluid">
     {isLoading ?
       <Spinner /> :
-<table className="table table-hover">
+<table className="main table table-hover">
 <thead>
 
   <TableHeader 
