@@ -221,3 +221,20 @@ thead {
   margin-left: auto;
   text-align: center;
 }
+
+.btn-primary {
+  background-color: #8e2742 !important;
+  border-color: #8e2742 !important; 
+}
+
+.modal-title {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.modal-header .close {
+  margin: 0 !important;
+  float: right !important;
+}
+
