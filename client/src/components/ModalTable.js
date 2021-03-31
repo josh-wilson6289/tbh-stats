@@ -22,30 +22,30 @@ const ModalTable = ({ player }) => {
   const careerRow = careerStats.map((season) => {
     return (
       <tr>
-      <th scope="row">{season.season}</th>
+      <td>{season.season}</td>
       <td>{season.team}</td>
-      <td>{season.gamesPlayed}</td>
-      <td>{season.goals}</td>
-      <td>{season.assists}</td>
-      <td>{season.points}</td>
-      <td>{season.pim}</td>
-      <td>{season.ppg}</td>
+      <td className="centered-text">{season.gamesPlayed}</td>
+      <td className="centered-text">{season.goals}</td>
+      <td className="centered-text">{season.assists}</td>
+      <td className="centered-text">{season.points}</td>
+      <td className="centered-text">{season.pim}</td>
+      <td className="centered-text">{season.ppg}</td>
       </tr>
     )
   })
   console.log(careerRow);
   return (
-    <table className="table">
+    <table className="table modal-table">
     <thead>
       <tr>
         <th scope="col">Season</th>
         <th scope="col">Team</th>
-        <th scope="col">Games Played</th>
-        <th scope="col">Goals</th>
-        <th scope="col">Assists</th>
-        <th scope="col">Points</th>
-        <th scope="col">PIM</th>
-        <th scope="col">PPG</th>
+        <th className="centered-text" scope="col">Games Played</th>
+        <th className="centered-text" scope="col">Goals</th>
+        <th className="centered-text" scope="col">Assists</th>
+        <th className="centered-text" scope="col">Points</th>
+        <th className="centered-text" scope="col">PIM</th>
+        <th className="centered-text" scope="col">PPG</th>
       </tr>
     </thead>
     <tbody>

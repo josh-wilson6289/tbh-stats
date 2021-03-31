@@ -239,8 +239,49 @@ body {
   border: 0 none !important;
 }
 
-.modal-background {
+.background-video {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
 }
+
+.modal-stats {
+  padding: 1px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-table td {
+  color: black;
+  font-weight: bolder;
+  font-size: 14px;
+  border: none !important;
+}
+
+.modal-table th {
+  color: black;
+  font-weight: bolder;
+  border: none !important;
+  font-size: 17px;
+}
+
+.modal-pic {
+  border: 1px solid black;
+}
+
+.image-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;
+}
+
+.video {
+  z-index: 1
+}
+
+.overlay {
+  position: absolute;
+  top: 100px;
+  z-index: 2147483647;
+}
+
