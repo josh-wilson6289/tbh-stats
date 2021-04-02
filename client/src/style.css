@@ -323,8 +323,9 @@ body {
   height: auto;
 }
 
-
-
+.title {
+  font-size: 2em;
+}
 
 
 

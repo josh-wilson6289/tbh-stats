@@ -18,7 +18,7 @@ const PlayerModal = (props) => {
       scrollable
     >
       <Modal.Header closeButton>
-      <h1 className="centered-text" id="player-name">{`${props.player.firstName} ${props.player.lastName}`}</h1>
+      <h1 className="centered-text title" id="player-name">{`${props.player.firstName} ${props.player.lastName}`}</h1>
       </Modal.Header>
       <Modal.Body>  
       <div className="video-wrapper">  
