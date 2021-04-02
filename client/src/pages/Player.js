@@ -91,7 +91,7 @@ const Player = ({ season, page, setPage, searchTerm }) => {
         assists: player.seasons[0].assists,
         points: player.seasons[0].points,
         pim: player.seasons[0].pim,
-        ppg: (player.seasons[0].goals + player.seasons[0].assists) / player.seasons[0].gamesPlayed
+        ppg: player.seasons[0].points / player.seasons[0].gamesPlayed
       }
     })
       setTableData(currentSeasonPlayers);

@@ -9,9 +9,7 @@ import Background from "../Images/absurdity.png";
 
 const PlayerModal = (props) => {   
 
-  
   return (
-
     <Modal
       {...props}
       size="xl"
@@ -19,7 +17,7 @@ const PlayerModal = (props) => {
       centered
       scrollable
     >
-      <Modal.Header closeButton style={{backgroundImage: `url(${Background})`}}>
+      <Modal.Header closeButton>
       <h1 className="centered-text" id="player-name">{`${props.player.firstName} ${props.player.lastName}`}</h1>
       </Modal.Header>
       <Modal.Body>  
@@ -33,9 +31,6 @@ const PlayerModal = (props) => {
            </div>
            </div>
            <div className="row">
-          <div className="col-sm-12">
-            <h2 className="centered-text">Career</h2>
-          </div>
           <div className="modal-stats zindex-1">
             <ModalTable player={props.player} />
             </div>
@@ -48,7 +43,7 @@ const PlayerModal = (props) => {
       </div>
       </Modal.Body>
 
-      <Modal.Footer style={{backgroundImage: `url(${Background})`}}>
+      <Modal.Footer>
         <div className="modal-btn">
         <Button onClick={props.onHide}>Close</Button>
         </div>

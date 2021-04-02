@@ -1,8 +1,8 @@
 import React from "react";
 
 const ModalTable = ({ player }) => {
-
-  const seasonStats = player.seasons.map((season) => {
+  console.log(player);
+  const playerSeasonStats = player.seasons.map((season) => {
     return {
       key: season.season,
       season: season.season,
@@ -12,17 +12,29 @@ const ModalTable = ({ player }) => {
       assists: season.assists,
       points: season.points,
       pim: season.pim,
-      ppg: season.ppg,
-      goalie: season.goalie
+      ppg: (season.points / season.gamesPlayed).toFixed(2),
+      goalie: season.goalie,
+      wins: season.wins,
+      losses: season.losses,
+      sol: season.sol,
+      winPerc: ((season.wins / season.gamesPlayed) * 100).toFixed(2) + "%",
+      ga: season.ga,
+      gaa: (season.ga / season.gamesPlayed).toFixed(2),
+      so: season.so
     }
   })
+  
+  const filterGoalies = playerSeasonStats.filter((season) => season.goalie === false);
+  const filterPlayers = playerSeasonStats.filter((season) => season.goalie === true);
 
-  console.log(seasonStats);
-  const seasonsRow = seasonStats.map((season) => {
+  console.log(filterGoalies);
+  console.log(filterPlayers);
+
+  const playerSeasonsRow = filterGoalies.map((season) => {
     return (
       <tr>
       <td>{season.season}</td>
-      <td>{season.team}</td>
+      <td>{!season.team ? "N/A" : season.team}</td>
       <td className="centered-text">{season.gamesPlayed}</td>
       <td className="centered-text">{season.goals}</td>
       <td className="centered-text">{season.assists}</td>
@@ -33,7 +45,26 @@ const ModalTable = ({ player }) => {
     )
   })
 
+  const goalieSeasonsRow = filterPlayers.map((season) => {
+    return (
+    <tr>
+      <td>{season.season}</td>
+      <td>{season.team}</td>
+      <td className="centered-text">{season.gamesPlayed}</td>
+      <td className="centered-text">{`${season.wins}-${season.losses}-${season.sol}`}</td>
+      <td className="centered-text">{season.winPerc}</td>
+      <td className="centered-text">{season.ga}</td>
+      <td className="centered-text">{season.gaa}</td>
+      <td className="centered-text">{season.so}</td>
+    </tr>
+    )
+  })
+
   return (
+      <div>
+        {playerSeasonsRow.length > 0 &&
+        <div>
+        <h2 className="centered-text">Player Stats</h2>
     <table className="table modal-table table-responsive-sm">
       <div className="bg"></div>
     <thead>
@@ -49,9 +80,37 @@ const ModalTable = ({ player }) => {
       </tr>
     </thead>
     <tbody>
-     {seasonsRow}
+     {playerSeasonsRow}
     </tbody>
   </table>
+  </div>
+}
+  <div>
+    {goalieSeasonsRow.length > 0 &&
+    <div>
+      <h2 className="centered-text">Goalie Stats</h2>
+      <table className="table modal-table table-responsive-sm">
+      <div className="bg"></div>
+    <thead>
+      <tr>
+        <th scope="col">Season</th>
+        <th scope="col">Team</th>
+        <th className="centered-text" scope="col">GP</th>
+        <th className="centered-text" scope="col">Record</th>
+        <th className="centered-text" scope="col">Win%</th>
+        <th className="centered-text" scope="col">GA</th>
+        <th className="centered-text" scope="col">GAA</th>
+        <th className="centered-text" scope="col">SO</th>
+      </tr>
+    </thead>
+    <tbody>
+     {goalieSeasonsRow}
+    </tbody>
+  </table>
+    </div>
+    }
+  </div>
+</div>
   );
 };
 
