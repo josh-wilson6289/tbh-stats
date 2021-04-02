@@ -1,4 +1,5 @@
 import React from "react";
+import "../style.css";
 
 const ModalTable = ({ player }) => {
   console.log(player);
@@ -64,7 +65,7 @@ const ModalTable = ({ player }) => {
       <div>
         {playerSeasonsRow.length > 0 &&
         <div>
-        <h2 className="centered-text">Player Stats</h2>
+        <h2 className="centered-text title">Player Stats</h2>
     <table className="table modal-table table-responsive-sm">
       <div className="bg"></div>
     <thead>
@@ -88,7 +89,7 @@ const ModalTable = ({ player }) => {
   <div>
     {goalieSeasonsRow.length > 0 &&
     <div>
-      <h2 className="centered-text">Goalie Stats</h2>
+      <h2 className="centered-text title">Goalie Stats</h2>
       <table className="table modal-table table-responsive-sm">
       <div className="bg"></div>
     <thead>

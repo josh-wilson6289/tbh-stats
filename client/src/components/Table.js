@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import TableHeader from "./TableHeader";
 import TableBody from "./TableBody";
 import Spinner from "./Spinner";
+import "../style.css";
 
 const Table = ({ tableData, setTableData, sortField, setSortField, sortDirection, setSortDirection, season, page, isLoading, setIsLoading, searchTerm }) => {
 
@@ -64,7 +65,7 @@ const Table = ({ tableData, setTableData, sortField, setSortField, sortDirection
   return (
     <div>
     <div className="container">
-  <h1 className="ui center aligned header">{season}</h1>
+  <h1 className="centered-text title">{season}</h1>
   </div>
   <br></br>
   <div className="container-fluid">
