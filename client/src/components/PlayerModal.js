@@ -4,8 +4,8 @@ import Button from "react-bootstrap/Button";
 import "../style.css";
 import PersonPlaceholder from "../Images/PersonPlaceholder.png";
 import ModalTable from "./ModalTable";
-import TBH from "../Images/TBHCard.png";
 import TBHVideo from "../Images/TBHVideo.mp4";
+import Background from "../Images/absurdity.png";
 
 const PlayerModal = (props) => {   
 
@@ -17,16 +17,14 @@ const PlayerModal = (props) => {
       size="xl"
       aria-labelledby="contained-modal-title-vcenter"
       centered
+      scrollable
     >
-    <video className="background-video" autoPlay loop muted>
-      <source src={TBHVideo} type="video/mp4" />
-      <div className="overlay">
-      <Modal.Header closeButton>
-      <h1 className="centered-text">{`${props.player.firstName} ${props.player.lastName}`}</h1>
+      <Modal.Header closeButton style={{backgroundImage: `url(${Background})`}}>
+      <h1 className="centered-text" id="player-name">{`${props.player.firstName} ${props.player.lastName}`}</h1>
       </Modal.Header>
-      <div className="player-card-modal">
-      <Modal.Body>      
-       <div className="container-fluid">
+      <Modal.Body>  
+      <div className="video-wrapper">  
+       <div className="modal-stats zindex-2">
          <div className="row">
            <div className="image-container">
            <div className="col-md-4" className="centered-text">
@@ -35,22 +33,27 @@ const PlayerModal = (props) => {
            </div>
            </div>
            <div className="row">
-          <div className="col-sm-12 modal-stats">
+          <div className="col-sm-12">
             <h2 className="centered-text">Career</h2>
+          </div>
+          <div className="modal-stats zindex-1">
             <ModalTable player={props.player} />
+            </div>
           </div>
          </div>
-       </div>
-
-      </Modal.Body>
+      
+      <video className="background-video" autoPlay loop muted>
+      <source src={TBHVideo} type="video/mp4" />  
+       </video>
       </div>
-      <Modal.Footer>
+      </Modal.Body>
+
+      <Modal.Footer style={{backgroundImage: `url(${Background})`}}>
         <div className="modal-btn">
         <Button onClick={props.onHide}>Close</Button>
         </div>
       </Modal.Footer>
-      </div>
-    </video>
+
     </Modal>
 
   );

@@ -1,12 +1,13 @@
 import React from "react";
 import TbhLogo from "../Images/tbh-logo.png";
+import Background from "../Images/absurdity.png";
 
 
 
 const Jumbotron = () => {
 
   return (
-    <div id="jumbo" className="jumbotron jumbotron-fluid">
+    <div id="jumbo" className="jumbotron jumbotron-fluid" style={{backgroundImage: `url(${Background})`}}>
       <div className="container-fluid">
         <div className="row">
           <div className="col-12"></div>

@@ -1,10 +1,8 @@
 import React from "react";
 
 const ModalTable = ({ player }) => {
-  console.log(player);
-  console.log(player.seasons)
 
-  const careerStats = player.seasons.map((season) => {
+  const seasonStats = player.seasons.map((season) => {
     return {
       key: season.season,
       season: season.season,
@@ -14,12 +12,13 @@ const ModalTable = ({ player }) => {
       assists: season.assists,
       points: season.points,
       pim: season.pim,
-      ppg: season.ppg
+      ppg: season.ppg,
+      goalie: season.goalie
     }
   })
-  console.log(careerStats);
 
-  const careerRow = careerStats.map((season) => {
+  console.log(seasonStats);
+  const seasonsRow = seasonStats.map((season) => {
     return (
       <tr>
       <td>{season.season}</td>
@@ -33,23 +32,24 @@ const ModalTable = ({ player }) => {
       </tr>
     )
   })
-  console.log(careerRow);
+
   return (
-    <table className="table modal-table">
+    <table className="table modal-table table-responsive-sm">
+      <div className="bg"></div>
     <thead>
       <tr>
         <th scope="col">Season</th>
         <th scope="col">Team</th>
-        <th className="centered-text" scope="col">Games Played</th>
-        <th className="centered-text" scope="col">Goals</th>
-        <th className="centered-text" scope="col">Assists</th>
-        <th className="centered-text" scope="col">Points</th>
+        <th className="centered-text" scope="col">GP</th>
+        <th className="centered-text" scope="col">G</th>
+        <th className="centered-text" scope="col">A</th>
+        <th className="centered-text" scope="col">P</th>
         <th className="centered-text" scope="col">PIM</th>
         <th className="centered-text" scope="col">PPG</th>
       </tr>
     </thead>
     <tbody>
-     {careerRow}
+     {seasonsRow}
     </tbody>
   </table>
   );

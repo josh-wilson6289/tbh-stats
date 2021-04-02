@@ -11,10 +11,10 @@ const setHeaders = (page) => {
     columns = [
       {name: "", value: "rank"},
       {name: "Player", value: "lastName"}, 
-      {name: "Games Played", value: "gamesPlayed"},
-      {name: "Goals", value: "goals"},
-      {name: "Assists", value: "assists"},
-      {name: "Points", value: "points"},
+      {name: "GP", value: "gamesPlayed"},
+      {name: "G", value: "goals"},
+      {name: "A", value: "assists"},
+      {name: "P", value: "points"},
       {name: "PIM", value: "pim"},
       {name: "PPG", value: "ppg"},
     ]
@@ -23,10 +23,10 @@ const setHeaders = (page) => {
     columns = [
       {name: "", value: "rank"},
       {name: "Player", value: "lastName"}, 
-      {name: "Games Played", value: "gamesPlayed"},
-      {name: "Goals", value: "goals"},
-      {name: "Assists", value: "assists"},
-      {name: "Points", value: "points"},
+      {name: "GP", value: "gamesPlayed"},
+      {name: "G", value: "goals"},
+      {name: "A", value: "assists"},
+      {name: "P", value: "points"},
       {name: "PPG", value: "ppg"}
     ]
   }
@@ -35,10 +35,10 @@ const setHeaders = (page) => {
       {name: "", value: "rank"},
       {name: "Player", value: "lastName"}, 
       {name: "Team", value: "team"},
-      {name: "Games Played", value: "gamesPlayed"},
-      {name: "Goals", value: "goals"},
-      {name: "Assists", value: "assists"},
-      {name: "Points", value: "points"},
+      {name: "GP", value: "gamesPlayed"},
+      {name: "G", value: "goals"},
+      {name: "A", value: "assists"},
+      {name: "P", value: "points"},
       {name: "PIM", value: "pim"},
       {name: "PPG", value: "ppg"},
     ]
@@ -47,12 +47,12 @@ const setHeaders = (page) => {
     columns = [
       {name: "", value: "rank"},
       {name: "Player", value: "lastName"},
-      {name: "Games Played", value: "gamesPlayed"},
+      {name: "GP", value: "gamesPlayed"},
       {name: "Record", value: "wins"},
-      {name: "Win Percentage", value: "winPerc"},
-      {name: "Goals Against", value: "ga"},
+      {name: "Win %", value: "winPerc"},
+      {name: "GA", value: "ga"},
       {name: "GAA", value: "gaa"},
-      {name: "Shutouts", value: "so"}
+      {name: "SO", value: "so"}
     ]
   }
   else if (page ==="goalies" && season !== "All Time") {
@@ -60,12 +60,12 @@ const setHeaders = (page) => {
       {name: "", value: "rank"},
       {name: "Player", value: "lastName"},
       {name: "Team", value: "team"},
-      {name: "Games Played", value: "gamesPlayed"},
+      {name: "GP", value: "gamesPlayed"},
       {name: "Record", value: "wins"},
-      {name: "Win Percentage", value: "winPerc"},
-      {name: "Goals Against", value: "ga"},
+      {name: "Win %", value: "winPerc"},
+      {name: "GA", value: "ga"},
       {name: "GAA", value: "gaa"},
-      {name: "Shutouts", value: "so"}
+      {name: "SO", value: "so"}
     ]
   }
   else if (page === "teams" && season !== "All Time") {
@@ -73,10 +73,10 @@ const setHeaders = (page) => {
       {name: "", value: "rank"},
       {name: "Team", value: "name"},
       {name: "Record", value: "wins"},
-      {name: "Points", value: "points"},
-      {name: "Goals For", value: "goalsFor"},
-      {name: "Goals Against", value: "goalsAgainst"},
-      {name: "Goal Differential", value: "goalDiff"}
+      {name: "P", value: "points"},
+      {name: "GF", value: "goalsFor"},
+      {name: "GA", value: "goalsAgainst"},
+      {name: "GD", value: "goalDiff"}
     ]
   }
   else {
@@ -85,10 +85,10 @@ const setHeaders = (page) => {
       {name: "Team", value: "name"},
       {name: "Season", value: "season"},
       {name: "Record", value: "wins"},
-      {name: "Points", value: "points"},
-      {name: "Goals For", value: "goalsFor"},
-      {name: "Goals Against", value: "goalsAgainst"},
-      {name: "Goal Differential", value: "goalDiff"}
+      {name: "P", value: "points"},
+      {name: "GF", value: "goalsFor"},
+      {name: "GA", value: "goalsAgainst"},
+      {name: "GD", value: "goalDiff"}
     ]
   }
 }

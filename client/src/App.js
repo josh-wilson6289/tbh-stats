@@ -8,6 +8,7 @@ import Player from "./pages/Player";
 import Goalie from "./pages/Goalie";
 import Team from "./pages/Team";
 import "./style.css";
+import TBHVideo from "./Images/TBHVideo.mp4";
 
 
 export default () => {
@@ -68,7 +69,7 @@ const handleSearch = (e) => {
 
       <br></br>
       <br></br>
- 
+
       <Footer />
         
   </Router>

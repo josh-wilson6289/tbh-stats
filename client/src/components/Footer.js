@@ -1,11 +1,11 @@
 import React from "react";
 import "../style.css";
-
+import Background from "../Images/absurdity.png";
 
 const Footer = () => {
   
   return (
-<div className="footer container-fluid">
+<div className="footer container-fluid" style={{backgroundImage: `url(${Background})`}}>
  <div className="row justify-content-center">
       <div className="col-md-12">
         <a href="/" className="logo-footer">

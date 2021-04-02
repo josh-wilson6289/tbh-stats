@@ -61,11 +61,10 @@ body {
 }
 
 .jumbotron {
-  background-color: #8e2742 !important;
   margin-bottom: 3%;
   width: 100% !important;
   clear: both;
-  
+  background-color: #8e2742;
 }
 
 .jumbotron .logo {
@@ -220,9 +219,17 @@ body {
   border-color: #8e2742 !important; 
 }
 
-.modal-header .close {
+.modal-content {
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+.close {
   margin: 0 !important;
   float: right !important;
+  padding: 0 !important;
+  opacity: 75%;
+  line-height: 1;
 }
 
 .centered-text {
@@ -233,22 +240,50 @@ body {
 
 .modal-header {
   border: 0 none !important;
+  background-color: #8e2742;
 }
 
 .modal-footer {
   border: 0 none !important;
-}
-
-.background-video {
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  background-color: black;
 }
 
 .modal-stats {
-  padding: 1px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: auto;
+}
+
+.zindex-1 {
+  position: relative;
+  z-index: 1;
+}
+
+.zindex-2 {
+  position: relative;
+  z-index: 2;
+}
+
+.modal-table {
+  border: 1px solid black;
+  position: relative;
+  z-index: 2;
+}
+
+.bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  opacity: 60%;
+  width: 100%;
+  height: 100%;
 }
 
 .modal-table td {
@@ -267,21 +302,32 @@ body {
 
 .modal-pic {
   border: 1px solid black;
+  height: 250px;
 }
 
-.image-container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 50px;
+.video-wrapper {
+  position: relative;
+  /* padding-bottom: 56.25%; */
+  overflow: hidden;
+  height: auto;
+  max-width: 100%;
+  border: 1px solid black;
+  z-index: 0;
 }
 
-.video {
-  z-index: 1
-}
-
-.overlay {
+.background-video {
   position: absolute;
-  top: 100px;
-  z-index: 2147483647;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
 }
+
+
+
+
+
+
+
+
 
