@@ -29,6 +29,7 @@
     "if-env": "^1.0.4",
     "mongoose": "^5.8.11",
     "normalize.css": "^8.0.1",
+    "react-bootstrap": "^1.5.2",
     "react-debounce-input": "^3.2.3",
     "react-router-dom": "^5.2.0",
     "semantic-ui-css": "^2.4.1",

@@ -1,8 +1,6 @@
 import React from "react";
 import TbhLogo from "../Images/tbh-logo.png";
 
-
-
 const Jumbotron = () => {
 
   return (

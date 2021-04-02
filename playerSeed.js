@@ -1718,6 +1718,28 @@
         points: 1
       },
       {
+        season: "Q2 2019",
+        current: false,
+        goalie: false,
+        team: "Dekes of Hazard",
+        gamesPlayed: 6,
+        goals: 1,
+        assists: 0,
+        pim: 0,
+        points: 1
+      },
+      {
+        season: "Q1 2019",
+        current: false,
+        goalie: false,
+        team: "Blue Wave",
+        gamesPlayed: 5,
+        goals: 1,
+        assists: 0,
+        pim: 0,
+        points: 1
+      },
+      {
         season: "Q4 2018",
         current: false,
         goalie: false,

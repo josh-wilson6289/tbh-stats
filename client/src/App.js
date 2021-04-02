@@ -8,6 +8,8 @@ import Player from "./pages/Player";
 import Goalie from "./pages/Goalie";
 import Team from "./pages/Team";
 import "./style.css";
+import TBHVideo from "./Images/TBHVideo.mp4";
+
 
 export default () => {
 
@@ -31,7 +33,6 @@ const handleSearch = (e) => {
   <Router>
 
     <Jumbotron />
-
       <Navbar 
         handleSeason={handleSeason}
         page={page}
@@ -45,8 +46,7 @@ const handleSearch = (e) => {
             season={season}
             page={page}
             setPage={setPage}
-            searchTerm={searchTerm}
-
+            searchTerm={searchTerm} 
           />
         </Route>
         <Route exact path={"/goalies"}>
@@ -62,18 +62,19 @@ const handleSearch = (e) => {
             season={season}
             page={page}
             setPage={setPage}
-            searchTerm={searchTerm}
+            searchTerm={searchTerm} 
           />
         </Route>
       </Switch>
 
       <br></br>
       <br></br>
- 
-      <Footer />
 
+      <Footer />
+        
   </Router>
   </div>
+
   </div>
   );
 };

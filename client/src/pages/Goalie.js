@@ -67,10 +67,14 @@ const Goalie = ({ season, page, setPage, searchTerm }) => {
     const filteredPlayersBySeason = allPlayers.map((player) => {
       return {...player, seasons: player.seasons.filter((seasons) => seasons.season === season)}
     })
+ 
+    const checkFillInGoalies = filteredPlayersBySeason.map((player) => {
+      return {...player, seasons: player.seasons.filter((seasons) => seasons.goalie === true)}
+    })
     
-    // filters out all except goalies
-    const goaliesBySeason = filteredPlayersBySeason.filter(player => player.seasons[0].goalie === true);
-
+    console.log(checkFillInGoalies);
+    const goaliesBySeason = checkFillInGoalies.filter(player => player.seasons[0]);
+    
     // removes the seasons array, sets goalie data
     const currentSeasonGoalies = goaliesBySeason.map((goalie) => {
       return {

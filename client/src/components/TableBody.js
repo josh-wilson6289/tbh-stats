@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import PlayerRow from "./PlayerRow";
 import GoalieRow from "./GoalieRow";
 import TeamRow from "./TeamRow";
@@ -6,13 +6,13 @@ import CareerPlayerRow from "./CareerPlayerRow";
 import CareerGoalieRow from "./CareerGoalieRow";
 import AllTimeTeamRow from "./AllTimeTeamRow";
 import PlayerRow2015 from "./PlayerRow2015";
-import NoStats from "./NoStats";
+import API from "../utils/API";
+import PlayerModal from "./PlayerModal";
 
 const TableBody = ({ tableData, page, season }) => {
 
 let renderedData;
 let rank=1;
-
 
 if (page === "players" && season === "All Time") {
   renderedData = tableData.map((data) => {
@@ -28,7 +28,7 @@ if (page === "players" && season === "All Time") {
       assists={data.assists}
       points={data.points}
       pim={data.pim}
-      ppg={(Math.round(100*data.ppg)/100).toFixed(2)}
+      ppg={(data.ppg).toFixed(2)}
       />
     )
   })
@@ -46,7 +46,7 @@ else if (page === "players" && season === "2015") {
       goals={data.goals}
       assists={data.assists}
       points={data.points}
-      ppg={(Math.round(100*data.ppg)/100).toFixed(2)}
+      ppg={(data.ppg).toFixed(2)}
       />
     )
   })
@@ -66,7 +66,7 @@ else if (page === "players" && (season !== "All Time" || "2015")) {
         assists={data.assists}
         points={data.points}
         pim={data.pim}
-        ppg={(Math.round(100*data.ppg)/100).toFixed(2)}
+        ppg={(data.ppg).toFixed(2)}
       />
     );
 });
