@@ -72,7 +72,6 @@ const Goalie = ({ season, page, setPage, searchTerm }) => {
       return {...player, seasons: player.seasons.filter((seasons) => seasons.goalie === true)}
     })
     
-    console.log(checkFillInGoalies);
     const goaliesBySeason = checkFillInGoalies.filter(player => player.seasons[0]);
     
     // removes the seasons array, sets goalie data

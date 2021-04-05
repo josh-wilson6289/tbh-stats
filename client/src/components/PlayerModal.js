@@ -8,7 +8,6 @@ import TBHVideo from "../Images/TBHVideo.mp4";
 import Background from "../Images/absurdity.png";
 
 const PlayerModal = (props) => {   
-
   return (
     <Modal
       {...props}
@@ -17,6 +16,7 @@ const PlayerModal = (props) => {
       centered
       scrollable
     >
+
       <Modal.Header closeButton>
       <h1 className="centered-text title" id="player-name">{`${props.player.firstName} ${props.player.lastName}`}</h1>
       </Modal.Header>
@@ -37,8 +37,9 @@ const PlayerModal = (props) => {
           </div>
          </div>
       
-      <video className="background-video" autoPlay loop muted>
-      <source src={TBHVideo} type="video/mp4" />  
+      <video className="background-video" autoPlay loop muted playsinline>
+      <source src={TBHVideo} type="video/mp4" /> 
+      Your browser does not support HTML5 video. 
        </video>
       </div>
       </Modal.Body>
