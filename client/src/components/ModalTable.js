@@ -114,7 +114,7 @@ const ModalTable = ({ player }) => {
       <td className="centered-text">{combinePlayerSeasons.assists}</td>
       <td className="centered-text">{combinePlayerSeasons.points}</td>
       <td className="centered-text">{combinePlayerSeasons.pim}</td>
-      <td className="centered-text">{(combinePlayerSeasons.gamesPlayed / combinePlayerSeasons.points).toFixed(2)}</td>
+      <td className="centered-text">{(combinePlayerSeasons.points / combinePlayerSeasons.gamesPlayed).toFixed(2)}</td>
      </tr>
     </tbody>
   </table>
