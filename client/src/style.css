@@ -274,7 +274,7 @@ body {
 }
 
 .bg {
-  opacity: 60% !important;
+  opacity: .6 !important;
   position: absolute;
   z-index: -1;
   top: 0;
