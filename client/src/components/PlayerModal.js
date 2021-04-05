@@ -26,6 +26,7 @@ const PlayerModal = (props) => {
          <div className="row">
            <div className="image-container">
            <div className="col-md-4" className="centered-text">
+             <br></br>
              <img className="modal-pic" src={PersonPlaceholder} alt="placeholder"></img>
            </div>
            </div>
@@ -37,7 +38,7 @@ const PlayerModal = (props) => {
           </div>
          </div>
       
-      <video className="background-video" autoPlay loop muted playsinline>
+      <video className="background-video" autoPlay loop muted playsInline>
       <source src={TBHVideo} type="video/mp4" /> 
       Your browser does not support HTML5 video. 
        </video>

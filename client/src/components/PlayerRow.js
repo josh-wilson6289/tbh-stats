@@ -12,7 +12,6 @@ const PlayerRow = ({ _id, rank, firstName, lastName, gamesPlayed, team, goals, a
     API.getPlayer(_id)
       .then(result => {
         const player = result.data;
-        console.log(player);
         setPlayerRes(player);
       }) 
   }
