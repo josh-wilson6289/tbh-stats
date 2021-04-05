@@ -19,11 +19,9 @@ const ModalTable = ({ player }) => {
     return result;
   };
 
-
   const separatePlayerStats = player.seasons.filter((season) => season.goalie === false);
   const separateGoalieStats = player.seasons.filter((season) => season.goalie === true);
   
-  console.log(separatePlayerStats);
   const combinePlayerSeasons = addObjValues(separatePlayerStats);
   const combineGoalieSeasons = addObjValues(separateGoalieStats);
 
@@ -55,7 +53,7 @@ const ModalTable = ({ player }) => {
 
   const playerSeasonsRow = filterGoalies.map((season) => {
     return (
-      <tr>
+      <tr key={season.season}>
       <td>{season.season}</td>
       <td>{!season.team ? "N/A" : season.team}</td>
       <td className="centered-text">{season.gamesPlayed}</td>
@@ -72,7 +70,7 @@ const ModalTable = ({ player }) => {
 
   const goalieSeasonsRow = filterPlayers.map((season) => {
     return (
-    <tr>
+    <tr key={season.season}>
       <td>{season.season}</td>
       <td>{season.team}</td>
       <td className="centered-text">{season.gamesPlayed}</td>
@@ -90,8 +88,9 @@ const ModalTable = ({ player }) => {
         {playerSeasonsRow.length > 0 &&
         <div>
         <h2 className="centered-text title">Player Stats</h2>
+          <br></br>
     <table className="table modal-table table-responsive-sm">
-      <div className="bg"></div>
+      <tr className="bg"></tr>
     <thead>
       <tr>
         <th scope="col">Season</th>
@@ -118,15 +117,17 @@ const ModalTable = ({ player }) => {
      </tr>
     </tbody>
   </table>
+  <br></br>
   </div>
 }
   <div>
     {goalieSeasonsRow.length > 0 &&
     <div>
       <h2 className="centered-text title">Goalie Stats</h2>
+      <br></br>
       <div className="table-responsive">
-      <table className="table modal-table">
-      <div className="bg"></div>
+      <table className="table modal-table table-responsive-sm">
+      <tr className="bg"></tr>
     <thead>
       <tr>
         <th scope="col">Season</th>
