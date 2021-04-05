@@ -297,7 +297,7 @@ body {
   color: black;
   font-weight: bolder;
   border: none !important;
-  font-size: 17px;
+  font-size: 14px;
 }
 
 .modal-pic {
@@ -320,7 +320,7 @@ body {
   top: 0;
   left: 0;
   width: auto;
-  height: auto;
+  height: 100%;
 }
 
 .title {

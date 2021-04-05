@@ -2,7 +2,31 @@ import React from "react";
 import "../style.css";
 
 const ModalTable = ({ player }) => {
-  console.log(player);
+  
+  function addObjValues(data) {
+    const result = {};
+
+    data.forEach(season => {
+      for (let [key, value] of Object.entries(season)) {
+        if (result[key]) {
+          result[key]+= value;
+        }
+        else {
+          result[key] = value;
+        }
+      }
+    });
+    return result;
+  };
+
+
+  const separatePlayerStats = player.seasons.filter((season) => season.goalie === false);
+  const separateGoalieStats = player.seasons.filter((season) => season.goalie === true);
+  
+  console.log(separatePlayerStats);
+  const combinePlayerSeasons = addObjValues(separatePlayerStats);
+  const combineGoalieSeasons = addObjValues(separateGoalieStats);
+
   const playerSeasonStats = player.seasons.map((season) => {
     return {
       key: season.season,
@@ -28,8 +52,6 @@ const ModalTable = ({ player }) => {
   const filterGoalies = playerSeasonStats.filter((season) => season.goalie === false);
   const filterPlayers = playerSeasonStats.filter((season) => season.goalie === true);
 
-  console.log(filterGoalies);
-  console.log(filterPlayers);
 
   const playerSeasonsRow = filterGoalies.map((season) => {
     return (
@@ -45,6 +67,8 @@ const ModalTable = ({ player }) => {
       </tr>
     )
   })
+
+  
 
   const goalieSeasonsRow = filterPlayers.map((season) => {
     return (
@@ -62,7 +86,7 @@ const ModalTable = ({ player }) => {
   })
 
   return (
-      <div>
+  <div>
         {playerSeasonsRow.length > 0 &&
         <div>
         <h2 className="centered-text title">Player Stats</h2>
@@ -82,6 +106,16 @@ const ModalTable = ({ player }) => {
     </thead>
     <tbody>
      {playerSeasonsRow}
+    <tr>
+      <td>Career</td>
+      <td>{separatePlayerStats.length} {separatePlayerStats.length > 1 ? "Seasons" : "Season"}</td>
+      <td className="centered-text">{combinePlayerSeasons.gamesPlayed}</td>
+      <td className="centered-text">{combinePlayerSeasons.goals}</td>
+      <td className="centered-text">{combinePlayerSeasons.assists}</td>
+      <td className="centered-text">{combinePlayerSeasons.points}</td>
+      <td className="centered-text">{combinePlayerSeasons.pim}</td>
+      <td className="centered-text">{(combinePlayerSeasons.gamesPlayed / combinePlayerSeasons.points).toFixed(2)}</td>
+     </tr>
     </tbody>
   </table>
   </div>
@@ -90,7 +124,8 @@ const ModalTable = ({ player }) => {
     {goalieSeasonsRow.length > 0 &&
     <div>
       <h2 className="centered-text title">Goalie Stats</h2>
-      <table className="table modal-table table-responsive-sm">
+      <div className="table-responsive">
+      <table className="table modal-table">
       <div className="bg"></div>
     <thead>
       <tr>
@@ -106,8 +141,19 @@ const ModalTable = ({ player }) => {
     </thead>
     <tbody>
      {goalieSeasonsRow}
+     <tr>
+      <td>Career</td>
+      <td>{separateGoalieStats.length} {separatePlayerStats.length > 1 ? "Seasons" : "Season"}</td>
+      <td className="centered-text">{combineGoalieSeasons.gamesPlayed}</td>
+      <td className="centered-text">{`${combineGoalieSeasons.wins}-${combineGoalieSeasons.losses}-${combineGoalieSeasons.sol}`}</td>
+      <td className="centered-text">{((combineGoalieSeasons.wins / combineGoalieSeasons.gamesPlayed) *100).toFixed(2)}%</td>
+      <td className="centered-text">{combineGoalieSeasons.ga}</td>
+      <td className="centered-text">{(combineGoalieSeasons.ga / combineGoalieSeasons.gamesPlayed).toFixed(2)}</td>
+      <td className="centered-text">{combineGoalieSeasons.so}</td>
+     </tr>
     </tbody>
   </table>
+  </div>
     </div>
     }
   </div>
