@@ -13,7 +13,7 @@ import TBHVideo from "./Images/TBHVideo.mp4";
 
 export default () => {
 
-const [season, setSeason] = useState("Q1 2021");
+const [season, setSeason] = useState("Q2 2021");
 const [page, setPage] = useState("players");
 const [searchTerm, setSearchTerm] = useState("");
 

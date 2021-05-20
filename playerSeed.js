@@ -5,8 +5,19 @@
     lastName: "Fiocca",
     seasons: [
       {
-        season: "Q1 2021",
+        season: "Q2 2021",
         current: true,
+        goalie: false,
+        team: "District 5 Ducks",
+        gamesPlayed: 6,
+        goals: 3,
+        assists: 5,
+        pim: 0,
+        points: 8
+      },
+      {
+        season: "Q1 2021",
+        current: false,
         goalie: false,
         team: "North Kariya",
         gamesPlayed: 9,
@@ -55,8 +66,19 @@
     lastName: "Hall",
     seasons: [
       {
-        season: "Q1 2021",
+        season: "Q2 2021",
         current: true,
+        goalie: false,
+        team: "The Martians",
+        gamesPlayed: 4,
+        goals: 4,
+        assists: 9,
+        pim: 0,
+        points: 13
+      },
+      {
+        season: "Q1 2021",
+        current: false,
         goalie: false,
         team: "North Kariya",
         gamesPlayed: 8,
@@ -73,7 +95,7 @@
     seasons: [
       {
         season: "Q1 2021",
-        current: true,
+        current: false,
         goalie: false,
         team: "North Kariya",
         gamesPlayed: 9,
@@ -153,8 +175,19 @@
     lastName: "Counts",
     seasons: [
       {
-        season: "Q1 2021",
+        season: "Q2 2021",
         current: true,
+        goalie: false,
+        team: "Cobra High",
+        gamesPlayed: 5,
+        goals: 0,
+        assists: 3,
+        pim: 6,
+        points: 3
+      },
+      {
+        season: "Q1 2021",
+        current: false,
         goalie: false,
         team: "North Kariya",
         gamesPlayed: 8,
@@ -258,8 +291,19 @@
     lastName: "Stelzel",
     seasons: [
       {
-        season: "Q1 2021",
+        season: "Q2 2021",
         current: true,
+        goalie: false,
+        team: "District 5 Ducks",
+        gamesPlayed: 6,
+        goals: 0,
+        assists: 0,
+        pim: 2,
+        points: 0
+      },
+      {
+        season: "Q1 2021",
+        current: false,
         goalie: false,
         team: "North Kariya",
         gamesPlayed: 9,
@@ -341,8 +385,19 @@
     lastName: "Egan",
     seasons: [
       {
-        season: "Q1 2021",
+        season: "Q2 2021",
         current: true,
+        goalie: false,
+        team: "The Martians",
+        gamesPlayed: 5,
+        goals: 3,
+        assists: 2,
+        pim: 2,
+        points: 5
+      },
+      {
+        season: "Q1 2021",
+        current: false,
         goalie: false,
         team: "North Kariya",
         gamesPlayed: 9,
@@ -359,7 +414,7 @@
     seasons: [
       {
         season: "Q1 2021",
-        current: true,
+        current: false,
         goalie: false,
         team: "North Kariya",
         gamesPlayed: 9,
@@ -397,8 +452,20 @@
     lastName: "Boland",
     seasons: [
       {
-        season: "Q1 2021",
+        season: "Q2 2021",
         current: true,
+        goalie: true,
+        team: "The Martians",
+        gamesPlayed: 5,
+        wins: 2,
+        losses: 3,
+        sol: 0,
+        ga: 24,
+        so: 0
+      },
+      {
+        season: "Q1 2021",
+        current: false,
         goalie: true,
         team: "North Kariya",
         gamesPlayed: 9,
@@ -499,8 +566,19 @@
     lastName: "Landers",
     seasons: [
       {
-        season: "Q1 2021",
+        season: "Q2 2021",
         current: true,
+        goalie: false,
+        team: "Left You On Red",
+        gamesPlayed: 6,
+        goals: 7,
+        assists: 9,
+        pim: 2,
+        points: 16
+      },
+      {
+        season: "Q1 2021",
+        current: false,
         goalie: false,
         team: "Los Greengoes",
         gamesPlayed: 9,
@@ -582,8 +660,19 @@
     lastName: "Thistle",
     seasons: [
       {
-        season: "Q1 2021",
+        season: "Q2 2021",
         current: true,
+        goalie: false,
+        team: "Drunk Pigeons",
+        gamesPlayed: 6,
+        goals: 2,
+        assists: 6,
+        pim: 0,
+        points: 8
+      },
+      {
+        season: "Q1 2021",
+        current: false,
         goalie: false,
         team: "Los Greengoes",
         gamesPlayed: 8,
@@ -599,8 +688,19 @@
     lastName: "Hofmeister",
     seasons: [
       {
-        season: "Q1 2021",
+        season: "Q2 2021",
         current: true,
+        goalie: false,
+        team: "The Martians",
+        gamesPlayed: 5,
+        goals: 9,
+        assists: 3,
+        pim: 8,
+        points: 12
+      },
+      {
+        season: "Q1 2021",
+        current: false,
         goalie: false,
         team: "Los Greengoes",
         gamesPlayed: 8,
@@ -682,8 +782,19 @@
     lastName: "Krein",
     seasons: [
       {
-        season: "Q1 2021",
+        season: "Q2 2021",
         current: true,
+        goalie: false,
+        team: "Cobra High",
+        gamesPlayed: 5,
+        goals: 3,
+        assists: 1,
+        pim: 0,
+        points: 4
+      },
+      {
+        season: "Q1 2021",
+        current: false,
         goalie: false,
         team: "Los Greengoes",
         gamesPlayed: 9,
@@ -766,7 +877,7 @@
     seasons: [
       {
         season: "Q1 2021",
-        current: true,
+        current: false,
         goalie: false,
         team: "Los Greengoes",
         gamesPlayed: 3,
@@ -782,8 +893,19 @@
     lastName: "Davidovich",
     seasons: [
       {
-        season: "Q1 2021",
+        season: "Q2 2021",
         current: true,
+        goalie: false,
+        team: "The Martians",
+        gamesPlayed: 3,
+        goals: 1,
+        assists: 0,
+        pim: 0,
+        points: 1
+      },
+      {
+        season: "Q1 2021",
+        current: false,
         goalie: false,
         team: "Los Greengoes",
         gamesPlayed: 9,
@@ -843,8 +965,19 @@
     lastName: "Ingenito",
     seasons: [
       {
-        season: "Q1 2021",
+        season: "Q2 2021",
         current: true,
+        goalie: false,
+        team: "District 5 Ducks",
+        gamesPlayed: 5,
+        goals: 0,
+        assists: 1,
+        pim: 6,
+        points: 1
+      },
+      {
+        season: "Q1 2021",
+        current: false,
         goalie: false,
         team: "Los Greengoes",
         gamesPlayed: 9,
@@ -860,8 +993,20 @@
     lastName: "Reyes",
     seasons: [
       {
-        season: "Q1 2021",
+        season: "Q2 2021",
         current: true,
+        goalie: true,
+        team: "Left You On Red",
+        gamesPlayed: 6,
+        wins: 5,
+        losses: 1,
+        sol: 0,
+        ga: 14,
+        so: 0
+      },
+      {
+        season: "Q1 2021",
+        current: false,
         goalie: true,
         team: "Los Greengoes",
         gamesPlayed: 9,
@@ -958,8 +1103,19 @@
     lastName: "Ortiz",
     seasons: [
       {
-        season: "Q1 2021",
+        season: "Q2 2021",
         current: true,
+        goalie: false,
+        team: "Left You On Red",
+        gamesPlayed: 6,
+        goals: 6,
+        assists: 7,
+        pim: 0,
+        points: 13
+      },
+      {
+        season: "Q1 2021",
+        current: false,
         goalie: false,
         team: "The Gray Borques",
         gamesPlayed: 7,
@@ -1051,7 +1207,7 @@
     seasons: [
       {
         season: "Q1 2021",
-        current: true,
+        current: false,
         goalie: false,
         team: "The Gray Borques",
         gamesPlayed: 8,
@@ -1111,8 +1267,19 @@
     lastName: "Jacque",
     seasons: [
       {
-        season: "Q1 2021",
+        season: "Q2 2021",
         current: true,
+        goalie: false,
+        team: "Drunk Pigeons",
+        gamesPlayed: 4,
+        goals: 2,
+        assists: 1,
+        pim: 2,
+        points: 3
+      },
+      {
+        season: "Q1 2021",
+        current: false,
         goalie: false,
         team: "The Gray Borques",
         gamesPlayed: 7,
@@ -1194,8 +1361,19 @@
     lastName: "Duplantis",
     seasons: [
       {
-        season: "Q1 2021",
+        season: "Q2 2021",
         current: true,
+        goalie: false,
+        team: "The Martians",
+        gamesPlayed: 4,
+        goals: 0,
+        assists: 1,
+        pim: 0,
+        points: 1
+      },
+      {
+        season: "Q1 2021",
+        current: false,
         goalie: false,
         team: "The Gray Borques",
         gamesPlayed: 9,
@@ -1276,7 +1454,7 @@
     seasons: [
       {
         season: "Q1 2021",
-        current: true,
+        current: false,
         goalie: false,
         team: "The Gray Borques",
         gamesPlayed: 8,
@@ -1292,8 +1470,19 @@
     lastName: "Sunstrom",
     seasons: [
       {
-        season: "Q1 2021",
+        season: "Q2 2021",
         current: true,
+        goalie: false,
+        team: "District 5 Ducks",
+        gamesPlayed: 5,
+        goals: 4,
+        assists: 1,
+        pim: 0,
+        points: 5
+      },
+      {
+        season: "Q1 2021",
+        current: false,
         goalie: false,
         team: "The Gray Borques",
         gamesPlayed: 5,
@@ -1386,8 +1575,19 @@
     lastName: "Kelsey",
     seasons: [
       {
-        season: "Q1 2021",
+        season: "Q2 2021",
         current: true,
+        goalie: false,
+        team: "Cobra High",
+        gamesPlayed: 5,
+        goals: 2,
+        assists: 1,
+        pim: 2,
+        points: 3
+      },
+      {
+        season: "Q1 2021",
+        current: false,
         goalie: false,
         team: "The Gray Borques",
         gamesPlayed: 9,
@@ -1425,8 +1625,20 @@
     lastName: "Brown",
     seasons: [
       {
-        season: "Q1 2021",
+        season: "Q2 2021",
         current: true,
+        goalie: true,
+        team: "Cobra High",
+        gamesPlayed: 6,
+        wins: 2,
+        losses: 4,
+        sol: 0,
+        ga: 24,
+        so: 0
+      },
+      {
+        season: "Q1 2021",
+        current: false,
         goalie: true,
         team: "The Gray Borques",
         gamesPlayed: 8,
@@ -1443,8 +1655,19 @@
     lastName: "Brandimarto",
     seasons: [
       {
-        season: "Q1 2021",
+        season: "Q2 2021",
         current: true,
+        goalie: false,
+        team: "Cobra High",
+        gamesPlayed: 11,
+        goals: 6,
+        assists: 4,
+        pim: 0,
+        points: 15
+      },
+      {
+        season: "Q1 2021",
+        current: false,
         goalie: false,
         team: "Gritty Goons",
         gamesPlayed: 9,
@@ -1526,8 +1749,19 @@
     lastName: "Bobst",
     seasons: [
       {
-        season: "Q1 2021",
+        season: "Q2 2021",
         current: true,
+        goalie: false,
+        team: "District 5 Ducks",
+        gamesPlayed: 6,
+        goals: 1,
+        assists: 5,
+        pim: 0,
+        points: 6
+      },
+      {
+        season: "Q1 2021",
+        current: false,
         goalie: false,
         team: "Gritty Goons",
         gamesPlayed: 8,
@@ -1618,8 +1852,19 @@
     lastName: "Heffelfinger",
     seasons: [
       {
-        season: "Q1 2021",
+        season: "Q2 2021",
         current: true,
+        goalie: false,
+        team: "Cobra High",
+        gamesPlayed: 6,
+        goals: 0,
+        assists: 2,
+        pim: 2,
+        points: 2
+      },
+      {
+        season: "Q1 2021",
+        current: false,
         goalie: false,
         team: "Gritty Goons",
         gamesPlayed: 9,
@@ -1668,8 +1913,19 @@
     lastName: "Lewellen",
     seasons: [
       {
-        season: "Q1 2021",
+        season: "Q2 2021",
         current: true,
+        goalie: false,
+        team: "Left You On Red",
+        gamesPlayed: 6,
+        goals: 1,
+        assists: 0,
+        pim: 0,
+        points: 1
+      },
+      {
+        season: "Q1 2021",
+        current: false,
         goalie: false,
         team: "Gritty Goons",
         gamesPlayed: 7,
@@ -1685,8 +1941,19 @@
     lastName: "Kerr",
     seasons: [
       {
-        season: "Q1 2021",
+        season: "Q2 2021",
         current: true,
+        goalie: false,
+        team: "Drunk Pigeons",
+        gamesPlayed: 6,
+        goals: 1,
+        assists: 0,
+        pim: 0,
+        points: 1
+      },
+      {
+        season: "Q1 2021",
+        current: false,
         goalie: false,
         team: "Gritty Goons",
         gamesPlayed: 7,
@@ -1768,8 +2035,19 @@
     lastName: "Yelle",
     seasons: [
       {
-        season: "Q1 2021",
+        season: "Q2 2021",
         current: true,
+        goalie: false,
+        team: "Left You On Red",
+        gamesPlayed: 6,
+        goals: 3,
+        assists: 1,
+        pim: 0,
+        points: 4
+      },
+      {
+        season: "Q1 2021",
+        current: false,
         goalie: false,
         team: "Gritty Goons",
         gamesPlayed: 9,
@@ -1835,7 +2113,7 @@
       },
       {
         season: "Q3 2018",
-        current: true,
+        current: false,
         goalie: false,
         team: "The Revengers",
         gamesPlayed: 15,
@@ -1851,8 +2129,19 @@
     lastName: "Pollock",
     seasons: [
       {
-        season: "Q1 2021",
+        season: "Q2 2021",
         current: true,
+        goalie: false,
+        team: "District 5 Ducks",
+        gamesPlayed: 6,
+        goals: 1,
+        assists: 0,
+        pim: 0,
+        points: 1
+      },
+      {
+        season: "Q1 2021",
+        current: false,
         goalie: false,
         team: "Gritty Goons",
         gamesPlayed: 8,
@@ -1868,8 +2157,19 @@
     lastName: "Skemp",
     seasons: [
       {
-        season: "Q1 2021",
+        season: "Q2 2021",
         current: true,
+        goalie: false,
+        team: "The Martians",
+        gamesPlayed: 4,
+        goals: 2,
+        assists: 4,
+        pim: 2,
+        points: 6
+      },
+      {
+        season: "Q1 2021",
+        current: false,
         goalie: false,
         team: "Gritty Goons",
         gamesPlayed: 8,
@@ -1971,8 +2271,20 @@
     lastName: "Dennard",
     seasons: [
       {
-        season: "Q1 2021",
+        season: "Q2 2021",
         current: true,
+        goalie: true,
+        team: "District 5 Ducks",
+        gamesPlayed: 6,
+        wins: 3,
+        losses: 2,
+        sol: 1,
+        ga: 13,
+        so: 0
+      },
+      {
+        season: "Q1 2021",
+        current: false,
         goalie: true,
         team: "Gritty Goons",
         gamesPlayed: 7,
@@ -2061,6 +2373,17 @@
     lastName: "Garay",
     seasons: [
       {
+        season: "Q2 2021",
+        current: true,
+        goalie: false,
+        team: "Cobra High",
+        gamesPlayed: 6,
+        goals: 0,
+        assists: 0,
+        pim: 0,
+        points: 0
+      },
+      {
         season: "Q1 2020",
         current: false,
         goalie: false,
@@ -2108,8 +2431,19 @@
   },
   {
     firstName: "Trevor",
-    lastName: "Don",
+    lastName: "Donohue",
     seasons: [
+      {
+        season: "Q2 2021",
+        current: true,
+        goalie: false,
+        team: "Left You On Red",
+        gamesPlayed: 6,
+        goals: 3,
+        assists: 2,
+        pim: 0,
+        points: 5
+      },
       {
         season: "Q1 2020",
         current: false,
@@ -2174,7 +2508,7 @@
     seasons: [
       {
         season: "Q1 2021",
-        current: true,
+        current: false,
         goalie: false,
         team: "The Gray Borques",
         gamesPlayed: 1,
@@ -2738,6 +3072,18 @@
     lastName: "Montesano",
     seasons: [
       {
+        season: "Q2 2021",
+        current: true,
+        goalie: true,
+        team: "Drunk Pigeons",
+        gamesPlayed: 3,
+        wins: 1,
+        losses: 2,
+        sol: 0,
+        ga: 14,
+        so: 0
+      },
+      {
         season: "Q1 2020",
         current: false,
         goalie: true,
@@ -2815,6 +3161,17 @@
     firstName: "Toby",
     lastName: "Nunn",
     seasons: [
+      {
+        season: "Q2 2021",
+        current: true,
+        goalie: false,
+        team: "Cobra High",
+        gamesPlayed: 6,
+        goals: 1,
+        assists: 1,
+        pim: 2,
+        points: 2
+      },
       {
         season: "Q1 2020",
         current: false,
@@ -2982,6 +3339,17 @@
     firstName: "Jon",
     lastName: "Allain",
     seasons: [
+      {
+        season: "Q2 2021",
+        current: true,
+        goalie: false,
+        team: "The Martians",
+        gamesPlayed: 1,
+        goals: 1,
+        assists: 0,
+        pim: 0,
+        points: 1
+      },
       {
         season: "Q1 2020",
         current: false,
@@ -3210,6 +3578,17 @@
     firstName: "Avi",
     lastName: "Hanel",
     seasons: [
+      {
+        season: "Q2 2021",
+        current: true,
+        goalie: false,
+        team: "District 5 Ducks",
+        gamesPlayed: 5,
+        goals: 2,
+        assists: 0,
+        pim: 0,
+        points: 2
+      },
       {
         season: "Q1 2020",
         current: false,
@@ -3440,7 +3819,7 @@
     seasons: [
       {
         season: "Q1 2021",
-        current: true,
+        current: false,
         goalie: false,
         team: "Gritty Goons",
         gamesPlayed: 3,
@@ -3679,7 +4058,7 @@
       },
       {
         season: "Q3 2018",
-        current: true,
+        current: false,
         goalie: false,
         team: "The Revengers",
         gamesPlayed: 10,
@@ -4502,7 +4881,7 @@
       },
       {
         season: "Q3 2018",
-        current: true,
+        current: false,
         goalie: false,
         team: "The Revengers",
         gamesPlayed: 6,
@@ -4635,6 +5014,17 @@
     firstName: "Kelly",
     lastName: "Vann",
     seasons: [
+      {
+        season: "Q2 2021",
+        current: true,
+        goalie: false,
+        team: "Cobra High",
+        gamesPlayed: 2,
+        goals: 0,
+        assists: 0,
+        pim: 0,
+        points: 0
+      },
       {
         season: "Q2 2019",
         current: false,
@@ -4803,7 +5193,7 @@
       },
       {
         season: "Q3 2018",
-        current: true,
+        current: false,
         goalie: false,
         team: "The Revengers",
         gamesPlayed: 7,
@@ -4941,7 +5331,7 @@
       },
       {
         season: "Q3 2018",
-        current: true,
+        current: false,
         goalie: false,
         team: "The Revengers",
         gamesPlayed: 1,
@@ -5158,8 +5548,19 @@
     lastName: "Christiano",
     seasons: [
       {
-        season: "Q1 2021",
+        season: "Q2 2021",
         current: true,
+        goalie: false,
+        team: "District 5 Ducks",
+        gamesPlayed: 4,
+        goals: 4,
+        assists: 1,
+        pim: 0,
+        points: 5
+      },
+      {
+        season: "Q1 2021",
+        current: false,
         goalie: false,
         team: "North Kariya",
         gamesPlayed: 4,
@@ -5175,8 +5576,19 @@
     lastName: "Wynn",
     seasons: [
       {
-        season: "Q1 2021",
+        season: "Q2 2021",
         current: true,
+        goalie: false,
+        team: "Left You On Red",
+        gamesPlayed: 6,
+        goals: 5,
+        assists: 2,
+        pim: 4,
+        points: 7
+      },
+      {
+        season: "Q1 2021",
+        current: false,
         goalie: false,
         team: "North Kariya",
         gamesPlayed: 4,
@@ -5211,7 +5623,7 @@
     seasons: [
       {
         season: "Q3 2018",
-        current: true,
+        current: false,
         goalie: false,
         team: "The Revengers",
         gamesPlayed: 8,
@@ -5237,7 +5649,7 @@
     seasons: [
       {
         season: "Q3 2018",
-        current: true,
+        current: false,
         goalie: false,
         team: "The Revengers",
         gamesPlayed: 4,
@@ -5253,8 +5665,19 @@
     lastName: "Schmidt",
     seasons: [
       {
-        season: "Q1 2021",
+        season: "Q2 2021",
         current: true,
+        goalie: false,
+        team: "Drunk Pigeons",
+        gamesPlayed: 7,
+        goals: 4,
+        assists: 1,
+        pim: 0,
+        points: 5
+      },
+      {
+        season: "Q1 2021",
+        current: false,
         goalie: false,
         team: "The Gray Borques",
         gamesPlayed: 2,
@@ -5475,7 +5898,160 @@
         points: 3
       }
     ]
+  },
+  {
+    firstName: "TJ",
+    lastName: "Harrison",
+    seasons: [
+      {
+        season: "Q2 2021",
+        current: true,
+        goalie: false,
+        team: "The Martians",
+        gamesPlayed: 5,
+        goals: 3,
+        assists: 2,
+        pim: 0,
+        points: 5
+      }
+    ]
+  },
+  {
+    firstName: "Aiden",
+    lastName: "Stelzel",
+    seasons: [
+      {
+        season: "Q2 2021",
+        current: true,
+        goalie: false,
+        team: "Left You On Red",
+        gamesPlayed: 6,
+        goals: 0,
+        assists: 0,
+        pim: 2,
+        points: 0
+      }
+    ]
+  },
+  {
+    firstName: "Trip",
+    lastName: "Driscoll",
+    seasons: [
+      {
+        season: "Q2 2021",
+        current: true,
+        goalie: false,
+        team: "Left You On Red",
+        gamesPlayed: 5,
+        goals: 0,
+        assists: 2,
+        pim: 0,
+        points: 2
+      }
+    ]
+  },
+  {
+    firstName: "Alex",
+    lastName: "Piwczynski",
+    seasons: [
+      {
+        season: "Q2 2021",
+        current: true,
+        goalie: false,
+        team: "Drunk Pigeons",
+        gamesPlayed: 7,
+        goals: 6,
+        assists: 5,
+        pim: 2,
+        points: 11
+      }
+    ]
+  },
+  {
+    firstName: "Tyler",
+    lastName: "Kartchner",
+    seasons: [
+      {
+        season: "Q2 2021",
+        current: true,
+        goalie: false,
+        team: "Drunk Pigeons",
+        gamesPlayed: 6,
+        goals: 1,
+        assists: 2,
+        pim: 0,
+        points: 3
+      }
+    ]
+  },
+  {
+    firstName: "Billy",
+    lastName: "Downing",
+    seasons: [
+      {
+        season: "Q2 2021",
+        current: true,
+        goalie: false,
+        team: "Drunk Pigeons",
+        gamesPlayed: 4,
+        goals: 0,
+        assists: 0,
+        pim: 2,
+        points: 0
+      }
+    ]
+  },
+  {
+    firstName: "Anthony",
+    lastName: "Aurecchione",
+    seasons: [
+      {
+        season: "Q2 2021",
+        current: true,
+        goalie: false,
+        team: "Drunk Pigeons",
+        gamesPlayed: 5,
+        goals: 0,
+        assists: 0,
+        pim: 0,
+        points: 0
+      }
+    ]
+  },
+  {
+    firstName: "Connor",
+    lastName: "Jones",
+    seasons: [
+      {
+        season: "Q2 2021",
+        current: true,
+        goalie: false,
+        team: "Drunk Pigeons",
+        gamesPlayed: 5,
+        goals: 0,
+        assists: 1,
+        pim: 0,
+        points: 1
+      }
+    ]
+  },
+  {
+    firstName: "Benji",
+    lastName: "Boudreaux",
+    seasons: [
+      {
+        season: "Q2 2021",
+        current: true,
+        goalie: true,
+        team: "Drunk Pigeons",
+        gamesPlayed: 1,
+        wins: 1,
+        losses: 0,
+        sol: 0,
+        ga: 2,
+        so: 0
+      }
+    ]
   }
-
 ]
   
