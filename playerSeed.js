@@ -1659,7 +1659,7 @@
         current: true,
         goalie: false,
         team: "Cobra High",
-        gamesPlayed: 11,
+        gamesPlayed: 6,
         goals: 6,
         assists: 4,
         pim: 0,
