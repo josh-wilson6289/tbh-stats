@@ -144,7 +144,7 @@ const ModalTable = ({ player }) => {
      {goalieSeasonsRow}
      <tr>
       <td>Career</td>
-      <td>{separateGoalieStats.length} {separatePlayerStats.length > 1 ? "Seasons" : "Season"}</td>
+      <td>{separateGoalieStats.length} {separateGoalieStats.length > 1 ? "Seasons" : "Season"}</td>
       <td className="centered-text">{combineGoalieSeasons.gamesPlayed}</td>
       <td className="centered-text">{`${combineGoalieSeasons.wins}-${combineGoalieSeasons.losses}-${combineGoalieSeasons.sol}`}</td>
       <td className="centered-text">{((combineGoalieSeasons.wins / combineGoalieSeasons.gamesPlayed) *100).toFixed(2)}%</td>
