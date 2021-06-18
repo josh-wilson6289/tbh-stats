@@ -9,11 +9,11 @@
         current: true,
         goalie: false,
         team: "District 5 Ducks",
-        gamesPlayed: 6,
-        goals: 3,
-        assists: 5,
-        pim: 0,
-        points: 8
+        gamesPlayed: 11,
+        goals: 5,
+        assists: 8,
+        pim: 4,
+        points: 13
       },
       {
         season: "Q1 2021",
@@ -70,11 +70,11 @@
         current: true,
         goalie: false,
         team: "The Martians",
-        gamesPlayed: 4,
-        goals: 4,
-        assists: 9,
-        pim: 0,
-        points: 13
+        gamesPlayed: 11,
+        goals: 12,
+        assists: 21,
+        pim: 2,
+        points: 33
       },
       {
         season: "Q1 2021",
@@ -179,11 +179,11 @@
         current: true,
         goalie: false,
         team: "Cobra High",
-        gamesPlayed: 5,
+        gamesPlayed: 11,
         goals: 0,
-        assists: 3,
+        assists: 5,
         pim: 6,
-        points: 3
+        points: 5
       },
       {
         season: "Q1 2021",
@@ -295,11 +295,11 @@
         current: true,
         goalie: false,
         team: "District 5 Ducks",
-        gamesPlayed: 6,
+        gamesPlayed: 7,
         goals: 0,
-        assists: 0,
-        pim: 2,
-        points: 0
+        assists: 1,
+        pim: 4,
+        points: 1
       },
       {
         season: "Q1 2021",
@@ -389,11 +389,11 @@
         current: true,
         goalie: false,
         team: "The Martians",
-        gamesPlayed: 5,
-        goals: 3,
-        assists: 2,
+        gamesPlayed: 12,
+        goals: 9,
+        assists: 3,
         pim: 2,
-        points: 5
+        points: 12
       },
       {
         season: "Q1 2021",
@@ -412,6 +412,17 @@
     firstName: "Noah",
     lastName: "Jakobovits",
     seasons: [
+      {
+        season: "Q2 2021",
+        current: true,
+        goalie: false,
+        team: "District 5 Ducks",
+        gamesPlayed: 6,
+        goals: 1,
+        assists: 1,
+        pim: 2,
+        points: 2
+      },
       {
         season: "Q1 2021",
         current: false,
@@ -456,11 +467,11 @@
         current: true,
         goalie: true,
         team: "The Martians",
-        gamesPlayed: 5,
-        wins: 2,
-        losses: 3,
+        gamesPlayed: 12,
+        wins: 8,
+        losses: 4,
         sol: 0,
-        ga: 24,
+        ga: 44,
         so: 0
       },
       {
@@ -570,11 +581,11 @@
         current: true,
         goalie: false,
         team: "Left You On Red",
-        gamesPlayed: 6,
-        goals: 7,
-        assists: 9,
+        gamesPlayed: 12,
+        goals: 18,
+        assists: 12,
         pim: 2,
-        points: 16
+        points: 30
       },
       {
         season: "Q1 2021",
@@ -664,11 +675,11 @@
         current: true,
         goalie: false,
         team: "Drunk Pigeons",
-        gamesPlayed: 6,
-        goals: 2,
-        assists: 6,
+        gamesPlayed: 11,
+        goals: 8,
+        assists: 9,
         pim: 0,
-        points: 8
+        points: 17
       },
       {
         season: "Q1 2021",
@@ -692,11 +703,11 @@
         current: true,
         goalie: false,
         team: "The Martians",
-        gamesPlayed: 5,
-        goals: 9,
-        assists: 3,
-        pim: 8,
-        points: 12
+        gamesPlayed: 11,
+        goals: 14,
+        assists: 4,
+        pim: 12,
+        points: 18
       },
       {
         season: "Q1 2021",
@@ -786,11 +797,11 @@
         current: true,
         goalie: false,
         team: "Cobra High",
-        gamesPlayed: 5,
-        goals: 3,
-        assists: 1,
+        gamesPlayed: 10,
+        goals: 5,
+        assists: 3,
         pim: 0,
-        points: 4
+        points: 8
       },
       {
         season: "Q1 2021",
@@ -897,11 +908,11 @@
         current: true,
         goalie: false,
         team: "The Martians",
-        gamesPlayed: 3,
+        gamesPlayed: 10,
         goals: 1,
-        assists: 0,
+        assists: 1,
         pim: 0,
-        points: 1
+        points: 2
       },
       {
         season: "Q1 2021",
@@ -969,7 +980,7 @@
         current: true,
         goalie: false,
         team: "District 5 Ducks",
-        gamesPlayed: 5,
+        gamesPlayed: 8,
         goals: 0,
         assists: 1,
         pim: 6,
@@ -997,11 +1008,11 @@
         current: true,
         goalie: true,
         team: "Left You On Red",
-        gamesPlayed: 6,
-        wins: 5,
-        losses: 1,
+        gamesPlayed: 12,
+        wins: 9,
+        losses: 3,
         sol: 0,
-        ga: 14,
+        ga: 32,
         so: 0
       },
       {
@@ -1107,11 +1118,11 @@
         current: true,
         goalie: false,
         team: "Left You On Red",
-        gamesPlayed: 6,
-        goals: 6,
-        assists: 7,
+        gamesPlayed: 12,
+        goals: 9,
+        assists: 9,
         pim: 0,
-        points: 13
+        points: 18
       },
       {
         season: "Q1 2021",
@@ -1206,6 +1217,17 @@
     lastName: "Barney",
     seasons: [
       {
+        season: "Q2 2021",
+        current: true,
+        goalie: false,
+        team: "The Martians",
+        gamesPlayed: 7,
+        goals: 3,
+        assists: 2,
+        pim: 2,
+        points: 5
+      },
+      {
         season: "Q1 2021",
         current: false,
         goalie: false,
@@ -1271,7 +1293,7 @@
         current: true,
         goalie: false,
         team: "Drunk Pigeons",
-        gamesPlayed: 4,
+        gamesPlayed: 6,
         goals: 2,
         assists: 1,
         pim: 2,
@@ -1365,11 +1387,11 @@
         current: true,
         goalie: false,
         team: "The Martians",
-        gamesPlayed: 4,
+        gamesPlayed: 11,
         goals: 0,
-        assists: 1,
+        assists: 2,
         pim: 0,
-        points: 1
+        points: 2
       },
       {
         season: "Q1 2021",
@@ -1474,11 +1496,11 @@
         current: true,
         goalie: false,
         team: "District 5 Ducks",
-        gamesPlayed: 5,
-        goals: 4,
+        gamesPlayed: 8,
+        goals: 5,
         assists: 1,
-        pim: 0,
-        points: 5
+        pim: 2,
+        points: 6
       },
       {
         season: "Q1 2021",
@@ -1579,11 +1601,11 @@
         current: true,
         goalie: false,
         team: "Cobra High",
-        gamesPlayed: 5,
-        goals: 2,
+        gamesPlayed: 9,
+        goals: 1,
         assists: 1,
         pim: 2,
-        points: 3
+        points: 2
       },
       {
         season: "Q1 2021",
@@ -1629,11 +1651,11 @@
         current: true,
         goalie: true,
         team: "Cobra High",
-        gamesPlayed: 6,
-        wins: 2,
-        losses: 4,
-        sol: 0,
-        ga: 24,
+        gamesPlayed: 10,
+        wins: 3,
+        losses: 6,
+        sol: 1,
+        ga: 33,
         so: 0
       },
       {
@@ -1659,11 +1681,11 @@
         current: true,
         goalie: false,
         team: "Cobra High",
-        gamesPlayed: 6,
-        goals: 6,
-        assists: 4,
+        gamesPlayed: 10,
+        goals: 14,
+        assists: 7,
         pim: 0,
-        points: 15
+        points: 21
       },
       {
         season: "Q1 2021",
@@ -1753,11 +1775,11 @@
         current: true,
         goalie: false,
         team: "District 5 Ducks",
-        gamesPlayed: 6,
-        goals: 1,
-        assists: 5,
+        gamesPlayed: 12,
+        goals: 6,
+        assists: 11,
         pim: 0,
-        points: 6
+        points: 17
       },
       {
         season: "Q1 2021",
@@ -1856,7 +1878,7 @@
         current: true,
         goalie: false,
         team: "Cobra High",
-        gamesPlayed: 6,
+        gamesPlayed: 11,
         goals: 0,
         assists: 2,
         pim: 2,
@@ -1917,11 +1939,11 @@
         current: true,
         goalie: false,
         team: "Left You On Red",
-        gamesPlayed: 6,
-        goals: 1,
-        assists: 0,
-        pim: 0,
-        points: 1
+        gamesPlayed: 12,
+        goals: 2,
+        assists: 1,
+        pim: 2,
+        points: 3
       },
       {
         season: "Q1 2021",
@@ -1945,11 +1967,11 @@
         current: true,
         goalie: false,
         team: "Drunk Pigeons",
-        gamesPlayed: 6,
-        goals: 1,
-        assists: 0,
+        gamesPlayed: 10,
+        goals: 2,
+        assists: 1,
         pim: 0,
-        points: 1
+        points: 3
       },
       {
         season: "Q1 2021",
@@ -2039,11 +2061,11 @@
         current: true,
         goalie: false,
         team: "Left You On Red",
-        gamesPlayed: 6,
-        goals: 3,
-        assists: 1,
+        gamesPlayed: 12,
+        goals: 4,
+        assists: 3,
         pim: 0,
-        points: 4
+        points: 7
       },
       {
         season: "Q1 2021",
@@ -2133,11 +2155,11 @@
         current: true,
         goalie: false,
         team: "District 5 Ducks",
-        gamesPlayed: 6,
+        gamesPlayed: 10,
         goals: 1,
-        assists: 0,
+        assists: 1,
         pim: 0,
-        points: 1
+        points: 2
       },
       {
         season: "Q1 2021",
@@ -2161,11 +2183,11 @@
         current: true,
         goalie: false,
         team: "The Martians",
-        gamesPlayed: 4,
-        goals: 2,
-        assists: 4,
+        gamesPlayed: 9,
+        goals: 5,
+        assists: 7,
         pim: 2,
-        points: 6
+        points: 12
       },
       {
         season: "Q1 2021",
@@ -2275,11 +2297,11 @@
         current: true,
         goalie: true,
         team: "District 5 Ducks",
-        gamesPlayed: 6,
-        wins: 3,
-        losses: 2,
-        sol: 1,
-        ga: 13,
+        gamesPlayed: 12,
+        wins: 6,
+        losses: 4,
+        sol: 2,
+        ga: 33,
         so: 0
       },
       {
@@ -2377,7 +2399,7 @@
         current: true,
         goalie: false,
         team: "Cobra High",
-        gamesPlayed: 6,
+        gamesPlayed: 9,
         goals: 0,
         assists: 0,
         pim: 0,
@@ -2438,11 +2460,11 @@
         current: true,
         goalie: false,
         team: "Left You On Red",
-        gamesPlayed: 6,
-        goals: 3,
-        assists: 2,
+        gamesPlayed: 12,
+        goals: 5,
+        assists: 10,
         pim: 0,
-        points: 5
+        points: 15
       },
       {
         season: "Q1 2020",
@@ -2793,6 +2815,17 @@
     lastName: "Hauser",
     seasons: [
       {
+        season: "Q2 2021",
+        current: true,
+        goalie: false,
+        team: "Drunk Pigeons",
+        gamesPlayed: 5,
+        goals: 0,
+        assists: 2,
+        pim: 2,
+        points: 0
+      },
+      {
         season: "Q1 2020",
         current: false,
         goalie: false,
@@ -2904,6 +2937,17 @@
     lastName: "Wilson",
     seasons: [
       {
+        season: "Q2 2021",
+        current: true,
+        goalie: false,
+        team: "Cobra High",
+        gamesPlayed: 5,
+        goals: 4,
+        assists: 0,
+        pim: 0,
+        points: 0
+      },
+      {
         season: "Q1 2020",
         current: false,
         goalie: false,
@@ -2996,6 +3040,17 @@
     lastName: "Alexis",
     seasons: [
       {
+        season: "Q2 2021",
+        current: true,
+        goalie: false,
+        team: "The Martians",
+        gamesPlayed: 6,
+        goals: 0,
+        assists: 0,
+        pim: 0,
+        points: 0
+      },
+      {
         season: "Q1 2020",
         current: false,
         goalie: false,
@@ -3076,11 +3131,11 @@
         current: true,
         goalie: true,
         team: "Drunk Pigeons",
-        gamesPlayed: 3,
+        gamesPlayed: 5,
         wins: 1,
-        losses: 2,
-        sol: 0,
-        ga: 14,
+        losses: 3,
+        sol: 1,
+        ga: 19,
         so: 0
       },
       {
@@ -3166,11 +3221,11 @@
         current: true,
         goalie: false,
         team: "Cobra High",
-        gamesPlayed: 6,
+        gamesPlayed: 11,
         goals: 1,
-        assists: 1,
-        pim: 2,
-        points: 2
+        assists: 2,
+        pim: 16,
+        points: 3
       },
       {
         season: "Q1 2020",
@@ -3344,11 +3399,11 @@
         current: true,
         goalie: false,
         team: "The Martians",
-        gamesPlayed: 1,
-        goals: 1,
-        assists: 0,
+        gamesPlayed: 6,
+        goals: 3,
+        assists: 2,
         pim: 0,
-        points: 1
+        points: 5
       },
       {
         season: "Q1 2020",
@@ -3583,11 +3638,11 @@
         current: true,
         goalie: false,
         team: "District 5 Ducks",
-        gamesPlayed: 5,
-        goals: 2,
-        assists: 0,
+        gamesPlayed: 9,
+        goals: 3,
+        assists: 1,
         pim: 0,
-        points: 2
+        points: 4
       },
       {
         season: "Q1 2020",
@@ -3718,6 +3773,17 @@
     lastName: "Fikac",
     seasons: [
       {
+        season: "Q2 2021",
+        current: true,
+        goalie: false,
+        team: "Left You On Red",
+        gamesPlayed: 4,
+        goals: 1,
+        assists: 0,
+        pim: 0,
+        points: 1
+      },
+      {
         season: "Q1 2020",
         current: false,
         goalie: false,
@@ -3817,6 +3883,17 @@
     firstName: "Brandon",
     lastName: "Fisher",
     seasons: [
+      {
+        season: "Q2 2021",
+        current: true,
+        goalie: false,
+        team: "Left You On Red",
+        gamesPlayed: 5,
+        goals: 4,
+        assists: 1,
+        pim: 4,
+        points: 5
+      },
       {
         season: "Q1 2021",
         current: false,
@@ -4073,6 +4150,17 @@
     firstName: "Drew",
     lastName: "Glapa",
     seasons: [
+      {
+        season: "Q2 2021",
+        current: true,
+        goalie: false,
+        team: "District 5 Ducks",
+        gamesPlayed: 4,
+        goals: 0,
+        assists: 0,
+        pim: 0,
+        points: 0
+      },
       {
         season: "Q4 2019",
         current: false,
@@ -4386,6 +4474,17 @@
     firstName: "Paul",
     lastName: "Cauduro",
     seasons: [
+      {
+        season: "Q2 2021",
+        current: true,
+        goalie: false,
+        team: "Cobra High",
+        gamesPlayed: 12,
+        goals: 0,
+        assists: 1,
+        pim: 0,
+        points: 1
+      },
       {
         season: "Q4 2019",
         current: false,
@@ -5019,11 +5118,11 @@
         current: true,
         goalie: false,
         team: "Cobra High",
-        gamesPlayed: 2,
-        goals: 0,
-        assists: 0,
+        gamesPlayed: 7,
+        goals: 1,
+        assists: 1,
         pim: 0,
-        points: 0
+        points: 2
       },
       {
         season: "Q2 2019",
@@ -5217,6 +5316,17 @@
     firstName: "Eric",
     lastName: "Hiatt",
     seasons: [
+      {
+        season: "Q2 2021",
+        current: true,
+        goalie: false,
+        team: "Cobra High",
+        gamesPlayed: 3,
+        goals: 0,
+        assists: 0,
+        pim: 0,
+        points: 0
+      },
       {
         season: "Q1 2019",
         current: false,
@@ -5545,18 +5655,18 @@
   },
   {
     firstName: "Brandon",
-    lastName: "Christiano",
+    lastName: "Cristiano",
     seasons: [
       {
         season: "Q2 2021",
         current: true,
         goalie: false,
         team: "District 5 Ducks",
-        gamesPlayed: 4,
-        goals: 4,
-        assists: 1,
+        gamesPlayed: 10,
+        goals: 12,
+        assists: 7,
         pim: 0,
-        points: 5
+        points: 17
       },
       {
         season: "Q1 2021",
@@ -5580,11 +5690,11 @@
         current: true,
         goalie: false,
         team: "Left You On Red",
-        gamesPlayed: 6,
+        gamesPlayed: 9,
         goals: 5,
-        assists: 2,
-        pim: 4,
-        points: 7
+        assists: 3,
+        pim: 6,
+        points: 8
       },
       {
         season: "Q1 2021",
@@ -5669,11 +5779,11 @@
         current: true,
         goalie: false,
         team: "Drunk Pigeons",
-        gamesPlayed: 7,
-        goals: 4,
-        assists: 1,
+        gamesPlayed: 12,
+        goals: 5,
+        assists: 2,
         pim: 0,
-        points: 5
+        points: 7
       },
       {
         season: "Q1 2021",
@@ -5908,11 +6018,11 @@
         current: true,
         goalie: false,
         team: "The Martians",
-        gamesPlayed: 5,
-        goals: 3,
-        assists: 2,
+        gamesPlayed: 12,
+        goals: 4,
+        assists: 4,
         pim: 0,
-        points: 5
+        points: 8
       }
     ]
   },
@@ -5925,11 +6035,11 @@
         current: true,
         goalie: false,
         team: "Left You On Red",
-        gamesPlayed: 6,
+        gamesPlayed: 12,
         goals: 0,
-        assists: 0,
-        pim: 2,
-        points: 0
+        assists: 1,
+        pim: 4,
+        points: 1
       }
     ]
   },
@@ -5942,7 +6052,7 @@
         current: true,
         goalie: false,
         team: "Left You On Red",
-        gamesPlayed: 5,
+        gamesPlayed: 6,
         goals: 0,
         assists: 2,
         pim: 0,
@@ -5959,11 +6069,11 @@
         current: true,
         goalie: false,
         team: "Drunk Pigeons",
-        gamesPlayed: 7,
-        goals: 6,
-        assists: 5,
-        pim: 2,
-        points: 11
+        gamesPlayed: 12,
+        goals: 13,
+        assists: 7,
+        pim: 12,
+        points: 20
       }
     ]
   },
@@ -5976,11 +6086,11 @@
         current: true,
         goalie: false,
         team: "Drunk Pigeons",
-        gamesPlayed: 6,
-        goals: 1,
+        gamesPlayed: 10,
+        goals: 3,
         assists: 2,
         pim: 0,
-        points: 3
+        points: 5
       }
     ]
   },
@@ -5993,11 +6103,11 @@
         current: true,
         goalie: false,
         team: "Drunk Pigeons",
-        gamesPlayed: 4,
+        gamesPlayed: 9,
         goals: 0,
-        assists: 0,
+        assists: 4,
         pim: 2,
-        points: 0
+        points: 4
       }
     ]
   },
@@ -6010,7 +6120,7 @@
         current: true,
         goalie: false,
         team: "Drunk Pigeons",
-        gamesPlayed: 5,
+        gamesPlayed: 10,
         goals: 0,
         assists: 0,
         pim: 0,
@@ -6027,7 +6137,7 @@
         current: true,
         goalie: false,
         team: "Drunk Pigeons",
-        gamesPlayed: 5,
+        gamesPlayed: 9,
         goals: 0,
         assists: 1,
         pim: 0,
@@ -6044,11 +6154,11 @@
         current: true,
         goalie: true,
         team: "Drunk Pigeons",
-        gamesPlayed: 1,
-        wins: 1,
-        losses: 0,
+        gamesPlayed: 4,
+        wins: 2,
+        losses: 2,
         sol: 0,
-        ga: 2,
+        ga: 17,
         so: 0
       }
     ]
