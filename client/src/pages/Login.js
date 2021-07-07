@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 const Login = ({page, setPage}) => {
   useEffect(() => {
-    setPage("/login")
+    setPage("login")
   }, [page])
   
   return (

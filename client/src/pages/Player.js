@@ -100,7 +100,10 @@ const Player = ({ season, page, setPage, searchTerm, handleSearch, handleSeason 
       setSortDirection("descending");
       setCurrentSeason(season);
       setIsLoading(false);
+      console.log(currentSeasonPlayers);
   }
+
+
 
   // Takes the data array and formats it for career stats
   function formatPlayersByCareer(allPlayers) {

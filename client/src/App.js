@@ -75,7 +75,10 @@ const handleSearch = (e) => {
       <br></br>
       <br></br>
 
-      <Footer />
+      <Footer 
+      page={page}
+      setPage={setPage}
+      />
         
   </Router>
   </div>

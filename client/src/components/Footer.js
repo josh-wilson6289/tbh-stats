@@ -3,7 +3,7 @@ import Button from "./Button";
 import { Link } from "react-router-dom";
 import "../style.css";
 
-const Footer = () => {
+const Footer = (page) => {
   
   return (
 <div className="footer container-fluid">
@@ -46,13 +46,6 @@ const Footer = () => {
       </div>
   </div>
 </div>
-
-            
-   
-
-
-
-
   );
 };
 

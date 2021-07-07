@@ -1616,7 +1616,7 @@
         goals: 0,
         assists: 1,
         pim: 0,
-        points: 0
+        points: 1
       },
       {
         season: "Q1 2020",
@@ -2823,7 +2823,7 @@
         goals: 0,
         assists: 2,
         pim: 2,
-        points: 0
+        points: 2
       },
       {
         season: "Q1 2020",
@@ -2945,7 +2945,7 @@
         goals: 4,
         assists: 0,
         pim: 0,
-        points: 0
+        points: 4
       },
       {
         season: "Q1 2020",
