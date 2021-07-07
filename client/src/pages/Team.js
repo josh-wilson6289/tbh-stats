@@ -2,9 +2,10 @@ import React, {useState, useEffect} from "react";
 import Table from "../components/Table";
 import API from "../utils/API";
 import NoStats from "../components/NoStats";
+import Navbar from "../components/Navbar";
 import "../style.css";
 
-const Team = ({ season, page, setPage, searchTerm }) => {
+const Team = ({ season, page, setPage, searchTerm, handleSearch, handleSeason }) => {
 
   const [tableData, setTableData] = useState([]);
   const [sortField, setSortField] = useState("");
@@ -110,6 +111,11 @@ const Team = ({ season, page, setPage, searchTerm }) => {
 
   return (
     <div>
+      <Navbar 
+      handleSeason={handleSeason}
+      page={page}
+      handleSearch={handleSearch}
+      />   
     {season === "2015" || season === "Q3 2018"
     ? <NoStats stat="team"/>
     : <Table

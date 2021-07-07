@@ -1,17 +1,30 @@
 import React from "react";
+import Button from "../components/Button";
 import TbhLogo from "../Images/tbh-logo.png";
+import "../style.css";
+
 
 const Jumbotron = () => {
 
   return (
     <div id="jumbo" className="jumbotron jumbotron-fluid">
       <div className="container-fluid">
+        <div className="row justify-content-end">
+          <div className="col-1">
+        <Button name="Admin Login" type="btn btn-outline-light"/>
+        </div>
+        </div>
         <div className="row">
-          <div className="col-12"></div>
+    <div className="col-12">
     <a href="/">
     <img src={TbhLogo} alt="Texas Ball Hockey Logo" id="tbh-logo" className="logo"></img>
     </a>
-         </div>
+    </div>
+    </div>
+    
+    
+    
+       
     </div>
     </div>
   );

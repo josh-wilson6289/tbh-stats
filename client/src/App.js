@@ -7,6 +7,7 @@ import Table from "./components/Table";
 import Player from "./pages/Player";
 import Goalie from "./pages/Goalie";
 import Team from "./pages/Team";
+import Login from "./pages/Login";
 import "./style.css";
 import TBHVideo from "./Images/TBHVideo.mp4";
 
@@ -33,12 +34,6 @@ const handleSearch = (e) => {
   <Router>
 
     <Jumbotron />
-      <Navbar 
-        handleSeason={handleSeason}
-        page={page}
-        handleSearch={handleSearch}
-        />
-  
       <div className="row"></div>
       <Switch>
         <Route exact path={["/", "/players"]}>
@@ -46,7 +41,9 @@ const handleSearch = (e) => {
             season={season}
             page={page}
             setPage={setPage}
-            searchTerm={searchTerm} 
+            searchTerm={searchTerm}
+            handleSeason={handleSeason}
+            handleSearch={handleSearch} 
           />
         </Route>
         <Route exact path={"/goalies"}>
@@ -55,6 +52,8 @@ const handleSearch = (e) => {
             page={page}
             setPage={setPage}
             searchTerm={searchTerm}
+            handleSeason={handleSeason}
+            handleSearch={handleSearch}
           />
         </Route>
         <Route exact path="/teams">
@@ -63,6 +62,14 @@ const handleSearch = (e) => {
             page={page}
             setPage={setPage}
             searchTerm={searchTerm} 
+            handleSeason={handleSeason}
+            handleSearch={handleSearch}
+          />
+        </Route>
+        <Route exact path="/login">
+          <Login
+            page={page}
+            setPage={setPage}
           />
         </Route>
       </Switch>

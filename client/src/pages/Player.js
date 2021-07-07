@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
+import Navbar from "../components/Navbar";
 import Table from "../components/Table";
 import API from "../utils/API";
-import NoStats from "../components/NoStats";
 
-const Player = ({ season, page, setPage, searchTerm }) => {
+const Player = ({ season, page, setPage, searchTerm, handleSearch, handleSeason }) => {
 
   const [tableData, setTableData] = useState([]);
   const [sortField, setSortField] = useState("");
@@ -157,7 +157,12 @@ const Player = ({ season, page, setPage, searchTerm }) => {
   };
 
   return (
-    <div>    
+    <div> 
+    <Navbar 
+      handleSeason={handleSeason}
+      page={page}
+      handleSearch={handleSearch}
+      />   
  <Table
     tableData={tableData} 
     setTableData={setTableData}

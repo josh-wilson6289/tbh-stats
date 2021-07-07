@@ -26,7 +26,6 @@ return (
       className={page === "teams" ? "active item" : "item"}
       tablevalue="teams">Team
     </Link>
- 
 
  <Dropdown handleSeason={handleSeason} />
  </div>
@@ -42,7 +41,7 @@ return (
   </div>
   </div>
 </nav>
-
+ 
   );
 };
 

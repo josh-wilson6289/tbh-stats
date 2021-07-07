@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import Table from "../components/Table";
 import API from "../utils/API";
 import NoStats from "../components/NoStats";
+import Navbar from "../components/Navbar";
 
-const Goalie = ({ season, page, setPage, searchTerm }) => {
+const Goalie = ({ season, page, setPage, searchTerm, handleSearch, handleSeason }) => {
 
   const [tableData, setTableData] = useState([]);
   const [sortField, setSortField] = useState("");
@@ -156,9 +157,16 @@ const Goalie = ({ season, page, setPage, searchTerm }) => {
 
   return (
     <div>
+    <Navbar 
+      handleSeason={handleSeason}
+      page={page}
+      handleSearch={handleSearch}
+    />   
     {season === "2015"
     ? <NoStats stat="goalie"/>
-    : <Table
+    :
+
+    <Table
       tableData={tableData} 
       setTableData={setTableData}
       season={currentSeason}
@@ -171,6 +179,7 @@ const Goalie = ({ season, page, setPage, searchTerm }) => {
       setIsLoading={setIsLoading}
     />}
     </div>
+    
   );
 };
 
