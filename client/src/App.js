@@ -1,15 +1,13 @@
 import React, {useState} from "react";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
-import Navbar from "./components/Navbar";
 import Jumbotron from "./components/Jumbotron";
 import Footer from "./components/Footer";
-import Table from "./components/Table";
 import Player from "./pages/Player";
 import Goalie from "./pages/Goalie";
 import Team from "./pages/Team";
 import Login from "./pages/Login";
 import "./style.css";
-import TBHVideo from "./Images/TBHVideo.mp4";
+
 
 
 export default () => {

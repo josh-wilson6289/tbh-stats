@@ -1,4 +1,6 @@
 import React from "react";
+import Button from "./Button";
+import { Link } from "react-router-dom";
 import "../style.css";
 
 const Footer = () => {
@@ -33,6 +35,14 @@ const Footer = () => {
                 </li>
               </ul>
           </div>
+          <div className="row justify-content-end">
+          <div className="col-1">
+            <Link 
+              to="/login">
+            <Button name="Admin Login" type="btn btn-outline-light" />
+            </Link>
+        </div>
+        </div>
       </div>
   </div>
 </div>

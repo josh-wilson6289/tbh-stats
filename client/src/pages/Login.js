@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-const Login = ({page}) => {
+const Login = ({page, setPage}) => {
+  useEffect(() => {
+    setPage("/login")
+  }, [page])
+  
   return (
 <div className="row justify-content-center">
   <div className="col-6">
