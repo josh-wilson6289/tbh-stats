@@ -45,9 +45,5 @@ export default {
   // create team
   createTeam: function (teamData) {
     return axios.post("/api/team", teamData);
-  },
-
-  getUsers: function () {
-    return axios.get("/api/user");
   }
 };

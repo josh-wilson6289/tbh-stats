@@ -64,6 +64,9 @@ const handleSearch = (e) => {
             handleSearch={handleSearch}
           />
         </Route>
+        <Route exact path="/admin">
+          <Admin />
+        </Route>
       </Switch>
 
       <br></br>
