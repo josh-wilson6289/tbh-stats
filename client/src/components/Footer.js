@@ -1,6 +1,5 @@
 import React from "react";
-import Button from "./Button";
-import { Link } from "react-router-dom";
+import LoginButton from "./LoginButton";
 import "../style.css";
 
 const Footer = (page) => {
@@ -37,10 +36,7 @@ const Footer = (page) => {
           </div>
           <div className="row justify-content-end">
           <div className="col-1">
-            <Link 
-              to="/login">
-            <Button name="Admin Login" type="btn btn-outline-light" />
-            </Link>
+            <LoginButton />
         </div>
         </div>
       </div>

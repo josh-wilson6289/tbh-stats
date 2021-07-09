@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const Login = ({page, setPage}) => {
+const Admin = ({page, setPage}) => {
   useEffect(() => {
     setPage("login")
   }, [page])
@@ -24,4 +24,4 @@ const Login = ({page, setPage}) => {
   );
 };
 
-export default Login;
+export default Admin;

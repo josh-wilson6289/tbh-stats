@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import Player from "./pages/Player";
 import Goalie from "./pages/Goalie";
 import Team from "./pages/Team";
-import Login from "./pages/Login";
+import Admin from "./pages/Admin";
 import "./style.css";
 
 
@@ -64,21 +64,12 @@ const handleSearch = (e) => {
             handleSearch={handleSearch}
           />
         </Route>
-        <Route exact path="/login">
-          <Login
-            page={page}
-            setPage={setPage}
-          />
-        </Route>
       </Switch>
 
       <br></br>
       <br></br>
 
-      <Footer 
-      page={page}
-      setPage={setPage}
-      />
+      <Footer />
         
   </Router>
   </div>
