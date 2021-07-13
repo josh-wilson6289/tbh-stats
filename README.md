@@ -26,5 +26,5 @@ In order to run this app locally, you'll first need to download MongoDB and Node
 [Semantic-UI](https://semantic-ui.com/)
 
 ## Deployed App
-[TBH Stats](https://tbh-stats.herokuapp.com/)
+[TBH Stats](https://texasballhockey-stats.com/)
 
