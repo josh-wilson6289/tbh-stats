@@ -5,6 +5,17 @@
     lastName: "Fiocca",
     seasons: [
       {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Maroon Fivehole",
+        gamesPlayed: 2,
+        goals: 0,
+        assists: 1,
+        pim: 0,
+        points: 1
+      },
+      {
         season: "Q2 2021",
         champion: false,
         goalie: false,
@@ -66,6 +77,17 @@
     lastName: "Hall",
     seasons: [
       {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Blind Cellymanders",
+        gamesPlayed: 2,
+        goals: 0,
+        assists: 3,
+        pim: 2,
+        points: 3
+      },
+      {
         season: "Q2 2021",
         champion: false,
         goalie: false,
@@ -93,6 +115,17 @@
     firstName: "Max",
     lastName: "Lee",
     seasons: [
+      {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Blue Bombers",
+        gamesPlayed: 1,
+        goals: 1,
+        assists: 0,
+        pim: 0,
+        points: 1
+      },
       {
         season: "Q1 2021",
         champion: false,
@@ -174,6 +207,17 @@
     firstName: "Eric",
     lastName: "Counts",
     seasons: [
+      {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Blue Bombers",
+        gamesPlayed: 2,
+        goals: 1,
+        assists: 0,
+        pim: 0,
+        points: 1
+      },
       {
         season: "Q2 2021",
         champion: false,
@@ -291,6 +335,17 @@
     lastName: "Stelzel",
     seasons: [
       {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Maroon Fivehole",
+        gamesPlayed: 2,
+        goals: 0,
+        assists: 0,
+        pim: 4,
+        points: 0
+      },
+      {
         season: "Q2 2021",
         champion: false,
         goalie: false,
@@ -385,6 +440,17 @@
     lastName: "Egan",
     seasons: [
       {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Blue Bombers",
+        gamesPlayed: 2,
+        goals: 3,
+        assists: 0,
+        pim: 0,
+        points: 3
+      },
+      {
         season: "Q2 2021",
         champion: false,
         goalie: false,
@@ -412,6 +478,17 @@
     firstName: "Noah",
     lastName: "Jakobovits",
     seasons: [
+      {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Clockwork Orange",
+        gamesPlayed: 2,
+        goals: 0,
+        assists: 0,
+        pim: 0,
+        points: 0
+      },
       {
         season: "Q2 2021",
         champion: false,
@@ -462,6 +539,18 @@
     firstName: "Nick",
     lastName: "Boland",
     seasons: [
+      {
+        season: "Q3 2021",
+        champion: false,
+        goalie: true,
+        team: "Blind Cellymanders",
+        gamesPlayed: 2,
+        wins: 2,
+        losses: 0,
+        sol: 0,
+        ga: 2,
+        so: 0
+      },
       {
         season: "Q2 2021",
         champion: false,
@@ -576,6 +665,17 @@
     firstName: "Ryan",
     lastName: "Landers",
     seasons: [
+      {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Maroon Fivehole",
+        gamesPlayed: 1,
+        goals: 1,
+        assists: 1,
+        pim: 0,
+        points: 2
+      },
       {
         season: "Q2 2021",
         champion: false,
@@ -699,6 +799,17 @@
     lastName: "Hofmeister",
     seasons: [
       {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Blind Cellymanders",
+        gamesPlayed: 1,
+        goals: 0,
+        assists: 1,
+        pim: 0,
+        points: 1
+      },
+      {
         season: "Q2 2021",
         champion: false,
         goalie: false,
@@ -792,6 +903,17 @@
     firstName: "Mike",
     lastName: "Krein",
     seasons: [
+      {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Blind Cellymanders",
+        gamesPlayed: 2,
+        goals: 3,
+        assists: 0,
+        pim: 0,
+        points: 3
+      },
       {
         season: "Q2 2021",
         champion: false,
@@ -1003,6 +1125,18 @@
     firstName: "Matt",
     lastName: "Reyes",
     seasons: [
+      {
+        season: "Q3 2021",
+        champion: false,
+        goalie: true,
+        team: "Clockwork Orange",
+        gamesPlayed: 2,
+        wins: 0,
+        losses: 2,
+        sol: 0,
+        ga: 10,
+        so: 0
+      },
       {
         season: "Q2 2021",
         champion: false,
@@ -1383,6 +1517,17 @@
     lastName: "Duplantis",
     seasons: [
       {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Clockwork Orange",
+        gamesPlayed: 2,
+        goals: 1,
+        assists: 0,
+        pim: 0,
+        points: 1
+      },
+      {
         season: "Q2 2021",
         champion: false,
         goalie: false,
@@ -1492,6 +1637,17 @@
     lastName: "Sunstrom",
     seasons: [
       {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Clockwork Orange",
+        gamesPlayed: 2,
+        goals: 0,
+        assists: 0,
+        pim: 0,
+        points: 0
+      },
+      {
         season: "Q2 2021",
         champion: false,
         goalie: false,
@@ -1597,6 +1753,17 @@
     lastName: "Kelsey",
     seasons: [
       {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Blind Cellymanders",
+        gamesPlayed: 2,
+        goals: 1,
+        assists: 1,
+        pim: 0,
+        points: 2
+      },
+      {
         season: "Q2 2021",
         champion: false,
         goalie: false,
@@ -1676,6 +1843,17 @@
     firstName: "Mike",
     lastName: "Brandimarto",
     seasons: [
+      {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Blue Bombers",
+        gamesPlayed: 2,
+        goals: 6,
+        assists: 4,
+        pim: 0,
+        points: 10
+      },
       {
         season: "Q2 2021",
         champion: false,
@@ -1770,6 +1948,17 @@
     firstName: "Andrew",
     lastName: "Bobst",
     seasons: [
+      {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Clockwork Orange",
+        gamesPlayed: 2,
+        goals: 0,
+        assists: 0,
+        pim: 0,
+        points: 0
+      },
       {
         season: "Q2 2021",
         champion: false,
@@ -1935,6 +2124,17 @@
     lastName: "Lewellen",
     seasons: [
       {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Blue Bombers",
+        gamesPlayed: 2,
+        goals: 0,
+        assists: 1,
+        pim: 0,
+        points: 1
+      },
+      {
         season: "Q2 2021",
         champion: false,
         goalie: false,
@@ -1962,6 +2162,17 @@
     firstName: "Jamie",
     lastName: "Kerr",
     seasons: [
+      {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Clockwork Orange",
+        gamesPlayed: 1,
+        goals: 0,
+        assists: 0,
+        pim: 0,
+        points: 0
+      },
       {
         season: "Q2 2021",
         champion: false,
@@ -2057,6 +2268,17 @@
     lastName: "Yelle",
     seasons: [
       {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Blue Bombers",
+        gamesPlayed: 1,
+        goals: 0,
+        assists: 0,
+        pim: 0,
+        points: 0
+      },
+      {
         season: "Q2 2021",
         champion: false,
         goalie: false,
@@ -2151,6 +2373,17 @@
     lastName: "Pollock",
     seasons: [
       {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Blue Bombers",
+        gamesPlayed: 1,
+        goals: 0,
+        assists: 0,
+        pim: 0,
+        points: 0
+      },
+      {
         season: "Q2 2021",
         champion: false,
         goalie: false,
@@ -2178,6 +2411,17 @@
     firstName: "Dan",
     lastName: "Skemp",
     seasons: [
+      {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Blue Bombers",
+        gamesPlayed: 1,
+        goals: 0,
+        assists: 4,
+        pim: 0,
+        points: 4
+      },
       {
         season: "Q2 2021",
         champion: false,
@@ -2293,6 +2537,18 @@
     lastName: "Dennard",
     seasons: [
       {
+        season: "Q3 2021",
+        champion: false,
+        goalie: true,
+        team: "Blue Bombers",
+        gamesPlayed: 2,
+        wins: 2,
+        losses: 0,
+        sol: 0,
+        ga: 6,
+        so: 0
+      },
+      {
         season: "Q2 2021",
         champion: false,
         goalie: true,
@@ -2395,6 +2651,17 @@
     lastName: "Garay",
     seasons: [
       {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Clockwork Orange",
+        gamesPlayed: 2,
+        goals: 0,
+        assists: 0,
+        pim: 0,
+        points: 0
+      },
+      {
         season: "Q2 2021",
         champion: false,
         goalie: false,
@@ -2455,6 +2722,17 @@
     firstName: "Trevor",
     lastName: "Donohue",
     seasons: [
+      {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Maroon Fivehole",
+        gamesPlayed: 2,
+        goals: 0,
+        assists: 0,
+        pim: 0,
+        points: 0
+      },
       {
         season: "Q2 2021",
         champion: false,
@@ -2815,6 +3093,17 @@
     lastName: "Hauser",
     seasons: [
       {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Maroon Fivehole",
+        gamesPlayed: 2,
+        goals: 3,
+        assists: 0,
+        pim: 0,
+        points: 3
+      },
+      {
         season: "Q2 2021",
         champion: false,
         goalie: false,
@@ -2937,6 +3226,17 @@
     lastName: "Wilson",
     seasons: [
       {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Clockwork Orange",
+        gamesPlayed: 2,
+        goals: 0,
+        assists: 0,
+        pim: 0,
+        points: 0
+      },
+      {
         season: "Q2 2021",
         champion: false,
         goalie: false,
@@ -3040,6 +3340,17 @@
     lastName: "Alexis",
     seasons: [
       {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Blind Cellymanders",
+        gamesPlayed: 1,
+        goals: 0,
+        assists: 0,
+        pim: 0,
+        points: 0
+      },
+      {
         season: "Q2 2021",
         champion: false,
         goalie: false,
@@ -3126,6 +3437,18 @@
     firstName: "Jeff",
     lastName: "Montesano",
     seasons: [
+      {
+        season: "Q3 2021",
+        champion: false,
+        goalie: true,
+        team: "Maroon Fivehole",
+        gamesPlayed: 2,
+        wins: 0,
+        losses: 2,
+        sol: 0,
+        ga: 15,
+        so: 0
+      },
       {
         season: "Q2 2021",
         champion: false,
@@ -3394,6 +3717,17 @@
     firstName: "Jon",
     lastName: "Allain",
     seasons: [
+      {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Blind Cellymanders",
+        gamesPlayed: 2,
+        goals: 3,
+        assists: 0,
+        pim: 0,
+        points: 3
+      },
       {
         season: "Q2 2021",
         champion: false,
@@ -4150,6 +4484,17 @@
     firstName: "Drew",
     lastName: "Glapa",
     seasons: [
+      {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Clockwork Orange",
+        gamesPlayed: 2,
+        goals: 0,
+        assists: 1,
+        pim: 0,
+        points: 1
+      },
       {
         season: "Q2 2021",
         champion: false,
@@ -5658,6 +6003,17 @@
     lastName: "Cristiano",
     seasons: [
       {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Blue Bombers",
+        gamesPlayed: 2,
+        goals: 4,
+        assists: 3,
+        pim: 0,
+        points: 7
+      },
+      {
         season: "Q2 2021",
         champion: false,
         goalie: false,
@@ -5685,6 +6041,17 @@
     firstName: "Eric",
     lastName: "Wynn",
     seasons: [
+      {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Clockwork Orange",
+        gamesPlayed: 1,
+        goals: 0,
+        assists: 0,
+        pim: 0,
+        points: 0
+      },
       {
         season: "Q2 2021",
         champion: false,
@@ -5774,6 +6141,17 @@
     firstName: "Ryan",
     lastName: "Schmidt",
     seasons: [
+      {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Clockwork Orange",
+        gamesPlayed: 1,
+        goals: 0,
+        assists: 0,
+        pim: 0,
+        points: 0
+      },
       {
         season: "Q2 2021",
         champion: false,
@@ -6014,6 +6392,17 @@
     lastName: "Harrison",
     seasons: [
       {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Blind Cellymanders",
+        gamesPlayed: 2,
+        goals: 2,
+        assists: 1,
+        pim: 0,
+        points: 3
+      },
+      {
         season: "Q2 2021",
         champion: false,
         goalie: false,
@@ -6030,6 +6419,17 @@
     firstName: "Aiden",
     lastName: "Stelzel",
     seasons: [
+      {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Maroon Fivehole",
+        gamesPlayed: 2,
+        goals: 0,
+        assists: 1,
+        pim: 0,
+        points: 1
+      },
       {
         season: "Q2 2021",
         champion: false,
@@ -6162,6 +6562,142 @@
         so: 0
       }
     ]
+  },
+  {
+    firstName: "Hayden",
+    lastName: "Potash-Kooyman",
+    seasons: [
+    {
+      season: "Q3 2021",
+      champion: false,
+      goalie: false,
+      team: "Blue Bombers",
+      gamesPlayed: 1,
+      goals: 1,
+      assists: 0,
+      pim: 0,
+      points: 1
+    }
+    ]
+  },
+  {
+    firstName: "Prahar",
+    lastName: "Shah",
+    seasons: [
+    {
+      season: "Q3 2021",
+      champion: false,
+      goalie: false,
+      team: "Blue Bombers",
+      gamesPlayed: 1,
+      goals: 0,
+      assists: 0,
+      pim: 0,
+      points: 0
+    }
+    ]
+  },
+  {
+    firstName: "Zachary",
+    lastName: "Arruda",
+    seasons: [
+      {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Maroon Fivehole",
+        gamesPlayed: 2,
+        goals: 2,
+        assists: 2,
+        pim: 0,
+        points: 4
+      }
+    ]
+  },
+  {
+    firstName: "Rob",
+    lastName: "Wallace",
+    seasons: [
+      {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Maroon Fivehole",
+        gamesPlayed: 2,
+        goals: 1,
+        assists: 0,
+        pim: 0,
+        points: 0
+      }
+    ]
+  },
+  {
+    firstName: "Drake",
+    lastName: "Shields",
+    seasons: [
+      {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Maroon Fivehole",
+        gamesPlayed: 1,
+        goals: 0,
+        assists: 1,
+        pim: 0,
+        points: 1
+      }
+    ]
+  },
+  {
+    firstName: "Gleb",
+    lastName: "Tchainikov",
+    seasons: [
+      {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Maroon Fivehole",
+        gamesPlayed: 1,
+        goals: 0,
+        assists: 0,
+        pim: 0,
+        points: 0
+      }
+    ]
+  },
+  {
+    firstName: "Travis",
+    lastName: "Schautteet",
+    seasons: [
+      {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Blind Cellymanders",
+        gamesPlayed: 2,
+        goals: 0,
+        assists: 2,
+        pim: 0,
+        points: 2
+      }
+    ]
+  },
+  {
+    firstName: "Sunny",
+    lastName: "Mags",
+    seasons: [
+      {
+        season: "Q3 2021",
+        champion: false,
+        goalie: false,
+        team: "Blind Cellymanders",
+        gamesPlayed: 1,
+        goals: 0,
+        assists: 0,
+        pim: 0,
+        points: 0
+      }
+    ]
   }
 ]
-  
+

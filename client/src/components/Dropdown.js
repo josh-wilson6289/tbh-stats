@@ -13,6 +13,7 @@ const SeasonsDropdown = ({ handleSeason }) => (
             <Dropdown.Menu>
               <Dropdown.Item seasonvalue="Q1 2021" onClick={handleSeason}>Q1</Dropdown.Item>
               <Dropdown.Item seasonvalue="Q2 2021" onClick={handleSeason}>Q2</Dropdown.Item>
+              <Dropdown.Item seasonvalue="Q3 2021" onClick={handleSeason}>Q3</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
         </Dropdown.Item>
