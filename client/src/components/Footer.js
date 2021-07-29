@@ -41,8 +41,8 @@ const Footer = (page) => {
   </div>
   <div className="row justify-content-center">
     <div className="col-5">
-    <LoginButton />
-    <LogoutButton />
+    {/* <LoginButton />
+    <LogoutButton /> */}
     </div>
   </div>
   </div>

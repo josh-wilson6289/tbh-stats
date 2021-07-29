@@ -74,12 +74,12 @@ const {user, isAuthenticated, isLoading } = useAuth0;
       <br></br>
 
 
-      <h3>User is {isAuthenticated ? "logged in" : "not logged in"}</h3>
+      {/* <h3>User is {isAuthenticated ? "logged in" : "not logged in"}</h3>
     {
       <pre style={{ textAlign: "start "}}>
       {JSON.stringify(user, null, 2)}
       </pre>
-    }
+    } */}
       <Footer />
         
   </Router>
