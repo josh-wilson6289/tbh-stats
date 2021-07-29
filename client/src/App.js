@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
-import { useAuth0 } from "@auth0/auth0-react";
+// import { useAuth0 } from "@auth0/auth0-react";
 import Jumbotron from "./components/Jumbotron";
 import Footer from "./components/Footer";
 import Player from "./pages/Player";
@@ -25,7 +25,7 @@ const handleSearch = (e) => {
   setSearchTerm(e.target.value)
 }
 
-const {user, isAuthenticated, isLoading } = useAuth0;
+// const {user, isAuthenticated, isLoading } = useAuth0;
 
   return (
     <div>
@@ -65,9 +65,9 @@ const {user, isAuthenticated, isLoading } = useAuth0;
             handleSearch={handleSearch}
           />
         </Route>
-        <Route exact path="/admin">
+        {/* <Route exact path="/admin">
           <Admin />
-        </Route>
+        </Route> */}
       </Switch>
 
       <br></br>
