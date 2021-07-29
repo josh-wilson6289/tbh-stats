@@ -16,7 +16,7 @@ const playerSchema = new mongoose.Schema({
         type: String,
         required: true
       },
-      current: {
+      champion: {
         type: Boolean,
         required: true
       },

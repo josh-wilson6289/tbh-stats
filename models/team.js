@@ -10,6 +10,10 @@ const teamSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  champion: {
+    type: Boolean,
+    required: false
+  },
   wins: {
     type: Number,
     default: 0

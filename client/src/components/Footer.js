@@ -1,5 +1,6 @@
 import React from "react";
 import LoginButton from "./LoginButton";
+import LogoutButton from "./LogoutButton";
 import "../style.css";
 
 const Footer = (page) => {
@@ -7,17 +8,20 @@ const Footer = (page) => {
   return (
 <div className="footer container-fluid">
  <div className="row justify-content-center">
-      <div className="col-md-12">
+    <div className="col-12">
         <a href="/" className="logo-footer">
           <img className="responsive" src="http://texasballhockey.com/wp-content/themes/tbh-new-flex/img/logo.png" alt="Texas Ball Hockey"></img>
         </a>
+    </div>
+    <div className="row justify-content-center">
         <div className="location">
                 <p className="location">
                   3918 Gattis School Rd #102
                   Round Rock, TX 78664
                 </p>
         </div>
-          
+        </div>
+        <div className="row justify-content-center">
           <div className="footer-social">
               <ul>
                 <li>
@@ -34,12 +38,13 @@ const Footer = (page) => {
                 </li>
               </ul>
           </div>
-          <div className="row justify-content-end">
-          <div className="col-1">
-            <LoginButton />
-        </div>
-        </div>
-      </div>
+  </div>
+  <div className="row justify-content-center">
+    <div className="col-5">
+    <LoginButton />
+    <LogoutButton />
+    </div>
+  </div>
   </div>
 </div>
   );

@@ -6,7 +6,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "District 5 Ducks",
         gamesPlayed: 11,
@@ -17,7 +17,7 @@
       },
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: false,
         team: "North Kariya",
         gamesPlayed: 9,
@@ -28,7 +28,7 @@
       },
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Solo Cups",
         gamesPlayed: 10,
@@ -39,7 +39,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Pink Cobras",
         gamesPlayed: 11,
@@ -50,7 +50,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Purple Reign",
         gamesPlayed: 9,
@@ -67,7 +67,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "The Martians",
         gamesPlayed: 11,
@@ -78,7 +78,7 @@
       },
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: false,
         team: "North Kariya",
         gamesPlayed: 8,
@@ -95,7 +95,7 @@
     seasons: [
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: false,
         team: "North Kariya",
         gamesPlayed: 9,
@@ -106,7 +106,7 @@
       },
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Empire Strikes Black",
         gamesPlayed: 10,
@@ -117,7 +117,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Black Magic Badgers",
         gamesPlayed: 7,
@@ -128,7 +128,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Baby Got Black",
         gamesPlayed: 4,
@@ -139,7 +139,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Toby's Red Rockets",
         gamesPlayed: 5,
@@ -150,7 +150,7 @@
       },
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Gang Green",
         gamesPlayed: 8,
@@ -161,7 +161,7 @@
       },
       {
         season: "2015",
-        current: false,
+        champion: false,
         goalie: false,
         gamesPlayed: 14,
         goals: 11,
@@ -176,7 +176,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "Cobra High",
         gamesPlayed: 11,
@@ -187,7 +187,7 @@
       },
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: false,
         team: "North Kariya",
         gamesPlayed: 8,
@@ -198,7 +198,7 @@
       },
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Solo Cups",
         gamesPlayed: 9,
@@ -209,7 +209,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Pink Cobras",
         gamesPlayed: 11,
@@ -220,7 +220,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Spray Tan Aftermath",
         gamesPlayed: 5,
@@ -231,7 +231,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Gritty's Goons",
         gamesPlayed: 8,
@@ -242,7 +242,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Second Worst Team in Texas",
         gamesPlayed: 6,
@@ -253,7 +253,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Worst Team in Texas",
         gamesPlayed: 2,
@@ -264,7 +264,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Victorious Secret",
         gamesPlayed: 3,
@@ -275,7 +275,7 @@
       },
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Revengers",
         gamesPlayed: 17,
@@ -292,7 +292,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "District 5 Ducks",
         gamesPlayed: 7,
@@ -303,7 +303,7 @@
       },
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: false,
         team: "North Kariya",
         gamesPlayed: 9,
@@ -314,7 +314,7 @@
       },
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Empire Strikes Black",
         gamesPlayed: 9,
@@ -325,7 +325,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Nick's Wonder Friends",
         gamesPlayed: 8,
@@ -336,7 +336,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Goldmembers",
         gamesPlayed: 6,
@@ -347,7 +347,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Richards Le Rouge",
         gamesPlayed: 5,
@@ -358,7 +358,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Toby's Red Rockets",
         gamesPlayed: 2,
@@ -369,7 +369,7 @@
       },
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Gang Green",
         gamesPlayed: 16,
@@ -386,7 +386,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "The Martians",
         gamesPlayed: 12,
@@ -397,7 +397,7 @@
       },
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: false,
         team: "North Kariya",
         gamesPlayed: 9,
@@ -414,7 +414,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "District 5 Ducks",
         gamesPlayed: 6,
@@ -425,7 +425,7 @@
       },
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: false,
         team: "North Kariya",
         gamesPlayed: 9,
@@ -436,7 +436,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Ashholes",
         gamesPlayed: 5,
@@ -447,7 +447,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Agent Orange",
         gamesPlayed: 9,
@@ -464,7 +464,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: true,
         team: "The Martians",
         gamesPlayed: 12,
@@ -476,7 +476,7 @@
       },
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: true,
         team: "North Kariya",
         gamesPlayed: 9,
@@ -488,7 +488,7 @@
       },
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: true,
         team: "Blue Cross Blue Shield",
         gamesPlayed: 9,
@@ -500,7 +500,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: true,
         team: "Nick's Wonder Friends",
         gamesPlayed: 11,
@@ -512,7 +512,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: true,
         team: "Ashholes",
         gamesPlayed: 9,
@@ -524,7 +524,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: true,
         team: "The Second Worst Team in Texas",
         gamesPlayed: 7,
@@ -536,7 +536,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: true,
         team: "The Worst Team in Texas",
         gamesPlayed: 5,
@@ -548,7 +548,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: true,
         team: "Puckin Spice",
         gamesPlayed: 10,
@@ -560,7 +560,7 @@
       },
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: true,
         team: "Gang Green",
         gamesPlayed: 12,
@@ -578,7 +578,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "Left You On Red",
         gamesPlayed: 12,
@@ -589,7 +589,7 @@
       },
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Los Greengoes",
         gamesPlayed: 9,
@@ -600,7 +600,7 @@
       },
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Blue Cross Blue Shield",
         gamesPlayed: 8,
@@ -611,7 +611,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Nick's Wonder Friends",
         gamesPlayed: 4,
@@ -622,7 +622,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Black Magic Badgers",
         gamesPlayed: 7,
@@ -633,7 +633,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Baby Got Black",
         gamesPlayed: 4,
@@ -644,7 +644,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Puckin Spice",
         gamesPlayed: 8,
@@ -655,7 +655,7 @@
       },
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Revengers",
         gamesPlayed: 16,
@@ -672,7 +672,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "Drunk Pigeons",
         gamesPlayed: 11,
@@ -683,7 +683,7 @@
       },
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Los Greengoes",
         gamesPlayed: 8,
@@ -700,7 +700,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "The Martians",
         gamesPlayed: 11,
@@ -711,7 +711,7 @@
       },
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Los Greengoes",
         gamesPlayed: 8,
@@ -722,7 +722,7 @@
       },
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Empire Strikes Black",
         gamesPlayed: 7,
@@ -733,7 +733,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Red Army",
         gamesPlayed: 7,
@@ -744,7 +744,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Goldmembers",
         gamesPlayed: 7,
@@ -755,7 +755,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Agent Orange",
         gamesPlayed: 8,
@@ -766,7 +766,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Cocks",
         gamesPlayed: 5,
@@ -777,7 +777,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Puckin Spice",
         gamesPlayed: 8,
@@ -794,7 +794,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "Cobra High",
         gamesPlayed: 10,
@@ -805,7 +805,7 @@
       },
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Los Greengoes",
         gamesPlayed: 9,
@@ -816,7 +816,7 @@
       },
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Blades of Teal",
         gamesPlayed: 10,
@@ -827,7 +827,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Spray Tan Aftermath",
         gamesPlayed: 10,
@@ -838,7 +838,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Gritty's Goons",
         gamesPlayed: 9,
@@ -849,7 +849,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Pucks Capacitors",
         gamesPlayed: 7,
@@ -860,7 +860,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Cocks",
         gamesPlayed: 5,
@@ -871,7 +871,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Toby's Red Rockets",
         gamesPlayed: 7,
@@ -888,7 +888,7 @@
     seasons: [
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Los Greengoes",
         gamesPlayed: 3,
@@ -905,7 +905,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "The Martians",
         gamesPlayed: 10,
@@ -916,7 +916,7 @@
       },
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Los Greengoes",
         gamesPlayed: 9,
@@ -927,7 +927,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Goldmembers",
         gamesPlayed: 8,
@@ -938,7 +938,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Agent Orange",
         gamesPlayed: 8,
@@ -949,7 +949,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Cocks",
         gamesPlayed: 4,
@@ -960,7 +960,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Puckin Spice",
         gamesPlayed: 5,
@@ -977,7 +977,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "District 5 Ducks",
         gamesPlayed: 8,
@@ -988,7 +988,7 @@
       },
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Los Greengoes",
         gamesPlayed: 9,
@@ -1005,7 +1005,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: true,
         team: "Left You On Red",
         gamesPlayed: 12,
@@ -1017,7 +1017,7 @@
       },
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: true,
         team: "Los Greengoes",
         gamesPlayed: 9,
@@ -1029,7 +1029,7 @@
       },
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: true,
         team: "The Empire Strikes Black",
         gamesPlayed: 10,
@@ -1041,7 +1041,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: true,
         team: "Pink Cobras",
         gamesPlayed: 11,
@@ -1053,7 +1053,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: true,
         team: "Goldmembers",
         gamesPlayed: 9,
@@ -1065,7 +1065,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Black Magic Badgers",
         gamesPlayed: 8,
@@ -1076,7 +1076,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Baby Got Black",
         gamesPlayed: 5,
@@ -1087,7 +1087,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Puckin Spice",
         gamesPlayed: 10,
@@ -1098,7 +1098,7 @@
       },
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Blue By Yous",
         gamesPlayed: 17,
@@ -1115,7 +1115,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "Left You On Red",
         gamesPlayed: 12,
@@ -1126,7 +1126,7 @@
       },
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Gray Borques",
         gamesPlayed: 7,
@@ -1137,7 +1137,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Gold on the Ceiling",
         gamesPlayed: 10,
@@ -1148,7 +1148,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Purple Reign",
         gamesPlayed: 6,
@@ -1159,7 +1159,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Second Worst Team in Texas",
         gamesPlayed: 6,
@@ -1170,7 +1170,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Worst Team in Texas",
         gamesPlayed: 4,
@@ -1181,7 +1181,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Victorious Secret",
         gamesPlayed: 9,
@@ -1192,7 +1192,7 @@
       },
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Revengers",
         gamesPlayed: 9,
@@ -1203,7 +1203,7 @@
       },
       {
         season: "2015",
-        current: false,
+        champion: false,
         goalie: false,
         gamesPlayed: 32,
         goals: 26,
@@ -1218,7 +1218,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "The Martians",
         gamesPlayed: 7,
@@ -1229,7 +1229,7 @@
       },
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Gray Borques",
         gamesPlayed: 8,
@@ -1240,7 +1240,7 @@
       },
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Blades of Teal",
         gamesPlayed: 4,
@@ -1251,7 +1251,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Blue Wave",
         gamesPlayed: 4,
@@ -1262,7 +1262,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Coors Light Silver Bullet Love Train",
         gamesPlayed: 10,
@@ -1273,7 +1273,7 @@
       },
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Red Army",
         gamesPlayed: 17,
@@ -1290,7 +1290,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "Drunk Pigeons",
         gamesPlayed: 6,
@@ -1301,7 +1301,7 @@
       },
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Gray Borques",
         gamesPlayed: 7,
@@ -1312,7 +1312,7 @@
       },
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Solo Cups",
         gamesPlayed: 6,
@@ -1323,7 +1323,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Pink Cobras",
         gamesPlayed: 9,
@@ -1334,7 +1334,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Ashholes",
         gamesPlayed: 7,
@@ -1345,7 +1345,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Dekes of Hazzard",
         gamesPlayed: 3,
@@ -1356,7 +1356,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Richards Le Rouge",
         gamesPlayed: 3,
@@ -1367,7 +1367,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Labattshitcrazies",
         gamesPlayed: 5,
@@ -1384,7 +1384,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "The Martians",
         gamesPlayed: 11,
@@ -1395,7 +1395,7 @@
       },
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Gray Borques",
         gamesPlayed: 9,
@@ -1406,7 +1406,7 @@
       },
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Blades of Teal",
         gamesPlayed: 10,
@@ -1417,7 +1417,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Gritty's Goons",
         gamesPlayed: 9,
@@ -1428,7 +1428,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Second Worst Team in Texas",
         gamesPlayed: 4,
@@ -1439,7 +1439,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Silver Foxes",
         gamesPlayed: 5,
@@ -1450,7 +1450,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Victorious Secret",
         gamesPlayed: 4,
@@ -1461,7 +1461,7 @@
       },
       {
         season: "2015",
-        current: false,
+        champion: false,
         goalie: false,
         gamesPlayed: 2,
         goals: 0,
@@ -1476,7 +1476,7 @@
     seasons: [
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Gray Borques",
         gamesPlayed: 8,
@@ -1493,7 +1493,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "District 5 Ducks",
         gamesPlayed: 8,
@@ -1504,7 +1504,7 @@
       },
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Gray Borques",
         gamesPlayed: 5,
@@ -1515,7 +1515,7 @@
       },
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Empire Strikes Black",
         gamesPlayed: 8,
@@ -1526,7 +1526,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Pink Cobras",
         gamesPlayed: 10,
@@ -1537,7 +1537,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Ashholes",
         gamesPlayed: 6,
@@ -1548,7 +1548,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Dekes of Hazzard",
         gamesPlayed: 7,
@@ -1559,7 +1559,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Richards Le Rouge",
         gamesPlayed: 4,
@@ -1570,7 +1570,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Labattshitcrazies",
         gamesPlayed: 3,
@@ -1581,7 +1581,7 @@
       },
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Blue By Yous",
         gamesPlayed: 8,
@@ -1598,7 +1598,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "Cobra High",
         gamesPlayed: 9,
@@ -1609,7 +1609,7 @@
       },
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Gray Borques",
         gamesPlayed: 9,
@@ -1620,7 +1620,7 @@
       },
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Empire Strikes Black",
         gamesPlayed: 10,
@@ -1631,7 +1631,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Nick's Wonder Friends",
         gamesPlayed: 11,
@@ -1648,7 +1648,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: true,
         team: "Cobra High",
         gamesPlayed: 10,
@@ -1660,7 +1660,7 @@
       },
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: true,
         team: "The Gray Borques",
         gamesPlayed: 8,
@@ -1678,7 +1678,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "Cobra High",
         gamesPlayed: 10,
@@ -1689,7 +1689,7 @@
       },
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Gritty Goons",
         gamesPlayed: 9,
@@ -1700,7 +1700,7 @@
       },
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Solo Cups",
         gamesPlayed: 4,
@@ -1711,7 +1711,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Red Army",
         gamesPlayed: 10,
@@ -1722,7 +1722,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Gritty's Goons",
         gamesPlayed: 8,
@@ -1733,7 +1733,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Cocks",
         gamesPlayed: 5,
@@ -1744,7 +1744,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Puckin Spice",
         gamesPlayed: 10,
@@ -1755,7 +1755,7 @@
       },
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Blue By Yous",
         gamesPlayed: 17,
@@ -1772,7 +1772,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "District 5 Ducks",
         gamesPlayed: 12,
@@ -1783,7 +1783,7 @@
       },
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Gritty Goons",
         gamesPlayed: 8,
@@ -1794,7 +1794,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Gold on the Ceiling",
         gamesPlayed: 11,
@@ -1805,7 +1805,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Ashholes",
         gamesPlayed: 8,
@@ -1816,7 +1816,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Dekes of Hazzard",
         gamesPlayed: 3,
@@ -1827,7 +1827,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Silver Foxes",
         gamesPlayed: 4,
@@ -1838,7 +1838,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Victorious Secret",
         gamesPlayed: 9,
@@ -1849,7 +1849,7 @@
       },
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Gang Green",
         gamesPlayed: 12,
@@ -1860,7 +1860,7 @@
       },
       {
         season: "2015",
-        current: false,
+        champion: false,
         goalie: false,
         gamesPlayed: 8,
         goals: 16,
@@ -1875,7 +1875,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "Cobra High",
         gamesPlayed: 11,
@@ -1886,7 +1886,7 @@
       },
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Gritty Goons",
         gamesPlayed: 9,
@@ -1897,7 +1897,7 @@
       },
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Blades of Teal",
         gamesPlayed: 10,
@@ -1908,7 +1908,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Red Army",
         gamesPlayed: 10,
@@ -1919,7 +1919,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Purple Reign",
         gamesPlayed: 9,
@@ -1936,7 +1936,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "Left You On Red",
         gamesPlayed: 12,
@@ -1947,7 +1947,7 @@
       },
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Gritty Goons",
         gamesPlayed: 7,
@@ -1964,7 +1964,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "Drunk Pigeons",
         gamesPlayed: 10,
@@ -1975,7 +1975,7 @@
       },
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Gritty Goons",
         gamesPlayed: 7,
@@ -1986,7 +1986,7 @@
       },
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Empire Strikes Black",
         gamesPlayed: 9,
@@ -1997,7 +1997,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Gritty's Goons",
         gamesPlayed: 7,
@@ -2008,7 +2008,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Dekes of Hazard",
         gamesPlayed: 6,
@@ -2019,7 +2019,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Blue Wave",
         gamesPlayed: 5,
@@ -2030,7 +2030,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Toby's Red Rockets",
         gamesPlayed: 4,
@@ -2041,7 +2041,7 @@
       },
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Gang Green",
         gamesPlayed: 13,
@@ -2058,7 +2058,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "Left You On Red",
         gamesPlayed: 12,
@@ -2069,7 +2069,7 @@
       },
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Gritty Goons",
         gamesPlayed: 9,
@@ -2080,7 +2080,7 @@
       },
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Solo Cups",
         gamesPlayed: 10,
@@ -2091,7 +2091,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Spray Tan Aftermath",
         gamesPlayed: 9,
@@ -2102,7 +2102,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Purple Reign",
         gamesPlayed: 9,
@@ -2113,7 +2113,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Agent Orange",
         gamesPlayed: 7,
@@ -2124,7 +2124,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Puckin Spice",
         gamesPlayed: 8,
@@ -2135,7 +2135,7 @@
       },
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Revengers",
         gamesPlayed: 15,
@@ -2152,7 +2152,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "District 5 Ducks",
         gamesPlayed: 10,
@@ -2163,7 +2163,7 @@
       },
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Gritty Goons",
         gamesPlayed: 8,
@@ -2180,7 +2180,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "The Martians",
         gamesPlayed: 9,
@@ -2191,7 +2191,7 @@
       },
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Gritty Goons",
         gamesPlayed: 8,
@@ -2202,7 +2202,7 @@
       },
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Pinkie and the Brian...Chambers",
         gamesPlayed: 5,
@@ -2213,7 +2213,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Nick's Wonder Friends",
         gamesPlayed: 9,
@@ -2224,7 +2224,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Purple Reign",
         gamesPlayed: 7,
@@ -2235,7 +2235,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Second Worst Team in Texas",
         gamesPlayed: 5,
@@ -2246,7 +2246,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Worst Team in Texas",
         gamesPlayed: 5,
@@ -2257,7 +2257,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Black Squoose",
         gamesPlayed: 6,
@@ -2268,7 +2268,7 @@
       },
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Red Army",
         gamesPlayed: 12,
@@ -2279,7 +2279,7 @@
       },
       {
         season: "2015",
-        current: false,
+        champion: false,
         goalie: false,
         gamesPlayed: 30,
         goals: 42,
@@ -2294,7 +2294,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: true,
         team: "District 5 Ducks",
         gamesPlayed: 12,
@@ -2306,7 +2306,7 @@
       },
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: true,
         team: "Gritty Goons",
         gamesPlayed: 7,
@@ -2318,7 +2318,7 @@
       },
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: true,
         team: "The Solo Cups",
         gamesPlayed: 9,
@@ -2330,7 +2330,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: true,
         team: "Red Army",
         gamesPlayed: 10,
@@ -2342,7 +2342,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: true,
         team: "Gritty's Goons",
         gamesPlayed: 9,
@@ -2354,7 +2354,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: true,
         team: "Agent Orange",
         gamesPlayed: 7,
@@ -2366,7 +2366,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: true,
         team: "The Cocks",
         gamesPlayed: 5,
@@ -2378,7 +2378,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: true,
         team: "Labbatshitcrazies",
         gamesPlayed: 7,
@@ -2396,7 +2396,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "Cobra High",
         gamesPlayed: 9,
@@ -2407,7 +2407,7 @@
       },
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Pinkie and the Brian...Chambers",
         gamesPlayed: 9,
@@ -2418,7 +2418,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Nick's Wonder Friends",
         gamesPlayed: 10,
@@ -2429,7 +2429,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Goldmembers",
         gamesPlayed: 9,
@@ -2440,7 +2440,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Second Worst Team in Texas",
         gamesPlayed: 5,
@@ -2457,7 +2457,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "Left You On Red",
         gamesPlayed: 12,
@@ -2468,7 +2468,7 @@
       },
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Pinkie and the Brian...Chambers",
         gamesPlayed: 9,
@@ -2479,7 +2479,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Nick's Wonder Friends",
         gamesPlayed: 11,
@@ -2496,7 +2496,7 @@
     seasons: [
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Pinkie and the Brian...Chambers",
         gamesPlayed: 5,
@@ -2513,7 +2513,7 @@
     seasons: [
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Pinkie and the Brian...Chambers",
         gamesPlayed: 9,
@@ -2530,7 +2530,7 @@
     seasons: [
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Gray Borques",
         gamesPlayed: 1,
@@ -2541,7 +2541,7 @@
       },
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Pinkie and the Brian...Chambers",
         gamesPlayed: 8,
@@ -2558,7 +2558,7 @@
     seasons: [
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Pinkie and the Brian...Chambers",
         gamesPlayed: 8,
@@ -2569,7 +2569,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Spray Tan Aftermath",
         gamesPlayed: 4,
@@ -2586,7 +2586,7 @@
     seasons: [
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Pinkie and the Brian...Chambers",
         gamesPlayed: 7,
@@ -2597,7 +2597,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Nick's Wonder Friends",
         gamesPlayed: 8,
@@ -2608,7 +2608,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Pucks Capacitors",
         gamesPlayed: 4,
@@ -2619,7 +2619,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Blue Wave",
         gamesPlayed: 5,
@@ -2630,7 +2630,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Labattshitcrazies",
         gamesPlayed: 4,
@@ -2641,7 +2641,7 @@
       },
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Gang Green",
         gamesPlayed: 11,
@@ -2658,7 +2658,7 @@
     seasons: [
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Pinkie and the Brian...Chambers",
         gamesPlayed: 6,
@@ -2669,7 +2669,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Gold on the Ceiling",
         gamesPlayed: 7,
@@ -2680,7 +2680,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Victorious Secret",
         gamesPlayed: 1,
@@ -2697,7 +2697,7 @@
     seasons: [
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Pinkie and the Brian...Chambers",
         gamesPlayed: 3,
@@ -2714,7 +2714,7 @@
     seasons: [
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: true,
         team: "Pinkie and the Brian...Chambers",
         gamesPlayed: 6,
@@ -2726,7 +2726,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Dekes of Hazzard",
         gamesPlayed: 4,
@@ -2737,7 +2737,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Richards Le Rouge",
         gamesPlayed: 5,
@@ -2748,7 +2748,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: true,
         team: "Victorious Secret",
         gamesPlayed: 8,
@@ -2766,7 +2766,7 @@
     seasons: [
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Blades of Teal",
         gamesPlayed: 6,
@@ -2777,7 +2777,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Spray Tan Aftermath",
         gamesPlayed: 3,
@@ -2788,7 +2788,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Goldmembers",
         gamesPlayed: 6,
@@ -2799,7 +2799,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Agent Orange",
         gamesPlayed: 6,
@@ -2816,7 +2816,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "Drunk Pigeons",
         gamesPlayed: 5,
@@ -2827,7 +2827,7 @@
       },
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Blades of Teal",
         gamesPlayed: 7,
@@ -2838,7 +2838,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Red Army",
         gamesPlayed: 10,
@@ -2849,7 +2849,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Goldmembers",
         gamesPlayed: 8,
@@ -2860,7 +2860,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Agent Orange",
         gamesPlayed: 9,
@@ -2871,7 +2871,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Blue Wave",
         gamesPlayed: 5,
@@ -2882,7 +2882,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Toby's Red Rockets",
         gamesPlayed: 4,
@@ -2899,7 +2899,7 @@
     seasons: [
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Blades of Teal",
         gamesPlayed: 9,
@@ -2910,7 +2910,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Purple Reign",
         gamesPlayed: 8,
@@ -2921,7 +2921,7 @@
       },
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Gang Green",
         gamesPlayed: 16,
@@ -2938,7 +2938,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "Cobra High",
         gamesPlayed: 5,
@@ -2949,7 +2949,7 @@
       },
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Blades of Teal",
         gamesPlayed: 9,
@@ -2960,7 +2960,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Nick's Wonder Friends",
         gamesPlayed: 10,
@@ -2971,7 +2971,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Ashholes",
         gamesPlayed: 8,
@@ -2982,7 +2982,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Pucks Capacitors",
         gamesPlayed: 6,
@@ -2993,7 +2993,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Silver Foxes",
         gamesPlayed: 4,
@@ -3004,7 +3004,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Coors Light Silver Bullet Love Train",
         gamesPlayed: 8,
@@ -3015,7 +3015,7 @@
       },
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Blue By Yous",
         gamesPlayed: 10,
@@ -3026,7 +3026,7 @@
       },
       {
         season: "2015",
-        current: false,
+        champion: false,
         goalie: false,
         gamesPlayed: 20,
         goals: 11,
@@ -3041,7 +3041,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "The Martians",
         gamesPlayed: 6,
@@ -3052,7 +3052,7 @@
       },
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Blades of Teal",
         gamesPlayed: 9,
@@ -3063,7 +3063,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: true,
         team: "Spray Tan Aftermath",
         gamesPlayed: 9,
@@ -3075,7 +3075,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: true,
         team: "Purple Reign",
         gamesPlayed: 9,
@@ -3087,7 +3087,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: true,
         team: "Dekes of Hazzard",
         gamesPlayed: 7,
@@ -3099,7 +3099,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: true,
         team: "Blue Wave",
         gamesPlayed: 5,
@@ -3111,7 +3111,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Labattshitcrazies",
         gamesPlayed: 5,
@@ -3128,7 +3128,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: true,
         team: "Drunk Pigeons",
         gamesPlayed: 5,
@@ -3140,7 +3140,7 @@
       },
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: true,
         team: "Blades of Teal",
         gamesPlayed: 6,
@@ -3152,7 +3152,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: true,
         team: "Gold on the Ceiling",
         gamesPlayed: 8,
@@ -3164,7 +3164,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: true,
         team: "Pucks Capacitors",
         gamesPlayed: 5,
@@ -3176,7 +3176,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: true,
         team: "Silver Foxes",
         gamesPlayed: 4,
@@ -3188,7 +3188,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: true,
         team: "Toby's Red Rockets",
         gamesPlayed: 7,
@@ -3200,7 +3200,7 @@
       },
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: true,
         team: "Blue By Yous",
         gamesPlayed: 12,
@@ -3218,7 +3218,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "Cobra High",
         gamesPlayed: 11,
@@ -3229,7 +3229,7 @@
       },
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Empire Strikes Black",
         gamesPlayed: 9,
@@ -3240,7 +3240,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Red Army",
         gamesPlayed: 9,
@@ -3251,7 +3251,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Gritty's Goons",
         gamesPlayed: 6,
@@ -3262,7 +3262,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Dekes of Hazzard",
         gamesPlayed: 7,
@@ -3273,7 +3273,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Richards Le Rouge",
         gamesPlayed: 5,
@@ -3284,7 +3284,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Toby's Red Rockets",
         gamesPlayed: 6,
@@ -3295,7 +3295,7 @@
       },
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Gang Green",
         gamesPlayed: 14,
@@ -3312,7 +3312,7 @@
     seasons: [
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Empire Strikes Black",
         gamesPlayed: 9,
@@ -3329,7 +3329,7 @@
     seasons: [
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Empire Strikes Black",
         gamesPlayed: 10,
@@ -3340,7 +3340,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Blue Wave",
         gamesPlayed: 4,
@@ -3351,7 +3351,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Toby's Red Rockets",
         gamesPlayed: 2,
@@ -3368,7 +3368,7 @@
     seasons: [
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Empire Strikes Black",
         gamesPlayed: 4,
@@ -3379,7 +3379,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Dekes of Hazzard",
         gamesPlayed: 7,
@@ -3396,7 +3396,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "The Martians",
         gamesPlayed: 6,
@@ -3407,7 +3407,7 @@
       },
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Solo Cups",
         gamesPlayed: 9,
@@ -3418,7 +3418,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Pink Cobras",
         gamesPlayed: 10,
@@ -3429,7 +3429,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Purple Reign",
         gamesPlayed: 8,
@@ -3446,7 +3446,7 @@
     seasons: [
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Solo Cups",
         gamesPlayed: 9,
@@ -3457,7 +3457,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Spray Tan Aftermath",
         gamesPlayed: 10,
@@ -3468,7 +3468,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Ashholes",
         gamesPlayed: 8,
@@ -3479,7 +3479,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Pucks Capacitors",
         gamesPlayed: 6,
@@ -3490,7 +3490,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Silver Foxes",
         gamesPlayed: 5,
@@ -3501,7 +3501,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Coors Light Silver Bullet Love Train",
         gamesPlayed: 5,
@@ -3512,7 +3512,7 @@
       },
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Red Army",
         gamesPlayed: 16,
@@ -3529,7 +3529,7 @@
     seasons: [
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Solo Cups",
         gamesPlayed: 10,
@@ -3546,7 +3546,7 @@
     seasons: [
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Solo Cups",
         gamesPlayed: 10,
@@ -3557,7 +3557,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Spray Tan Aftermath",
         gamesPlayed: 9,
@@ -3574,7 +3574,7 @@
     seasons: [
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Blue Cross Blue Shield",
         gamesPlayed: 9,
@@ -3585,7 +3585,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Gold on the Ceiling",
         gamesPlayed: 11,
@@ -3596,7 +3596,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Purple Reign",
         gamesPlayed: 3,
@@ -3607,7 +3607,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Second Worst Team in Texas",
         gamesPlayed: 3,
@@ -3618,7 +3618,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Worst Team in Texas",
         gamesPlayed: 5,
@@ -3635,7 +3635,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "District 5 Ducks",
         gamesPlayed: 9,
@@ -3646,7 +3646,7 @@
       },
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Blue Cross Blue Shield",
         gamesPlayed: 8,
@@ -3657,7 +3657,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Nick's Wonder Friends",
         gamesPlayed: 8,
@@ -3668,7 +3668,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Gritty's Goons",
         gamesPlayed: 9,
@@ -3679,7 +3679,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Second Worst Team in Texas",
         gamesPlayed: 6,
@@ -3690,7 +3690,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Worst Team in Texas",
         gamesPlayed: 5,
@@ -3707,7 +3707,7 @@
     seasons: [
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Blue Cross Blue Shield",
         gamesPlayed: 9,
@@ -3718,7 +3718,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Pink Cobras",
         gamesPlayed: 9,
@@ -3729,7 +3729,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Ashholes",
         gamesPlayed: 8,
@@ -3740,7 +3740,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Pucks Capacitors",
         gamesPlayed: 6,
@@ -3757,7 +3757,7 @@
     seasons: [
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Blue Cross Blue Shield",
         gamesPlayed: 9,
@@ -3774,7 +3774,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "Left You On Red",
         gamesPlayed: 4,
@@ -3785,7 +3785,7 @@
       },
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Blue Cross Blue Shield",
         gamesPlayed: 7,
@@ -3796,7 +3796,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Pink Cobras",
         gamesPlayed: 9,
@@ -3807,7 +3807,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Goldmembers",
         gamesPlayed: 7,
@@ -3818,7 +3818,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Agent Orange",
         gamesPlayed: 5,
@@ -3829,7 +3829,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Cocks",
         gamesPlayed: 4,
@@ -3840,7 +3840,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Coors Light Silver Bullet Love Train",
         gamesPlayed: 2,
@@ -3857,7 +3857,7 @@
     seasons: [
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Blue Cross Blue Shield",
         gamesPlayed: 9,
@@ -3868,7 +3868,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Gritty's Goons",
         gamesPlayed: 9,
@@ -3885,7 +3885,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "Left You On Red",
         gamesPlayed: 5,
@@ -3896,7 +3896,7 @@
       },
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Gritty Goons",
         gamesPlayed: 3,
@@ -3907,7 +3907,7 @@
       },
       {
         season: "Q1 2020",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Blue Cross Blue Shield",
         gamesPlayed: 3,
@@ -3918,7 +3918,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Second Worst Team in Texas",
         gamesPlayed: 1,
@@ -3929,7 +3929,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Coors Light Silver Bullet Love Train",
         gamesPlayed: 6,
@@ -3940,7 +3940,7 @@
       },
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Red Army",
         gamesPlayed: 11,
@@ -3957,7 +3957,7 @@
     seasons: [
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Pink Cobras",
         gamesPlayed: 10,
@@ -3968,7 +3968,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Dekes of Hazzard",
         gamesPlayed: 8,
@@ -3979,7 +3979,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Richards Le Rouge",
         gamesPlayed: 5,
@@ -3990,7 +3990,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Black Squoose",
         gamesPlayed: 5,
@@ -4001,7 +4001,7 @@
       },
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Gang Green",
         gamesPlayed: 15,
@@ -4018,7 +4018,7 @@
     seasons: [
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Spray Tan Aftermath",
         gamesPlayed: 6,
@@ -4029,7 +4029,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Black Magic Badgers",
         gamesPlayed: 6,
@@ -4040,7 +4040,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: true,
         team: "Black Magic Badgers",
         gamesPlayed: 2,
@@ -4052,7 +4052,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Baby Got Black",
         gamesPlayed: 5,
@@ -4063,7 +4063,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Black Squoose",
         gamesPlayed: 9,
@@ -4080,7 +4080,7 @@
     seasons: [
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Spray Tan Aftermath",
         gamesPlayed: 9,
@@ -4091,7 +4091,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Ashholes",
         gamesPlayed: 9,
@@ -4102,7 +4102,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Agent Orange",
         gamesPlayed: 8,
@@ -4113,7 +4113,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Cocks",
         gamesPlayed: 4,
@@ -4124,7 +4124,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Coors Light Silver Bullet Love Train",
         gamesPlayed: 4,
@@ -4135,7 +4135,7 @@
       },
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Revengers",
         gamesPlayed: 10,
@@ -4152,7 +4152,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "District 5 Ducks",
         gamesPlayed: 4,
@@ -4163,7 +4163,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Gold on the Ceiling",
         gamesPlayed: 9,
@@ -4174,7 +4174,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Goldmembers",
         gamesPlayed: 9,
@@ -4191,7 +4191,7 @@
     seasons: [
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Gold on the Ceiling",
         gamesPlayed: 7,
@@ -4202,7 +4202,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Ashholes",
         gamesPlayed: 7,
@@ -4219,7 +4219,7 @@
     seasons: [
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Gold on the Ceiling",
         gamesPlayed: 6,
@@ -4230,7 +4230,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Second Worst Team in Texas",
         gamesPlayed: 3,
@@ -4241,7 +4241,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Blue Wave",
         gamesPlayed: 4,
@@ -4252,7 +4252,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Black Squoose",
         gamesPlayed: 6,
@@ -4263,7 +4263,7 @@
       },
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Blue By Yous",
         gamesPlayed: 11,
@@ -4274,7 +4274,7 @@
       },
       {
         season: "2015",
-        current: false,
+        champion: false,
         goalie: false,
         gamesPlayed: 16,
         goals: 10,
@@ -4289,7 +4289,7 @@
     seasons: [
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Gold on the Ceiling",
         gamesPlayed: 7,
@@ -4300,7 +4300,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Purple Reign",
         gamesPlayed: 9,
@@ -4317,7 +4317,7 @@
     seasons: [
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Red Army",
         gamesPlayed: 7,
@@ -4328,7 +4328,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Purple Reign",
         gamesPlayed: 9,
@@ -4339,7 +4339,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Pucks Capacitors",
         gamesPlayed: 3,
@@ -4350,7 +4350,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Baby Got Black",
         gamesPlayed: 5,
@@ -4361,7 +4361,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Victorious Secret",
         gamesPlayed: 4,
@@ -4378,7 +4378,7 @@
     seasons: [
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Red Army",
         gamesPlayed: 7,
@@ -4389,7 +4389,7 @@
       },
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Gritty's Goons",
         gamesPlayed: 8,
@@ -4400,7 +4400,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Agent Orange",
         gamesPlayed: 7,
@@ -4411,7 +4411,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Cocks",
         gamesPlayed: 4,
@@ -4422,7 +4422,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Victorious Secret",
         gamesPlayed: 4,
@@ -4433,7 +4433,7 @@
       },
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Red Army",
         gamesPlayed: 9,
@@ -4444,7 +4444,7 @@
       },
       {
         season: "2015",
-        current: false,
+        champion: false,
         goalie: false,
         gamesPlayed: 34,
         goals: 20,
@@ -4459,7 +4459,7 @@
     seasons: [
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Red Army",
         gamesPlayed: 6,
@@ -4476,7 +4476,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "Cobra High",
         gamesPlayed: 12,
@@ -4487,7 +4487,7 @@
       },
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Red Army",
         gamesPlayed: 10,
@@ -4498,7 +4498,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Pucks Capacitors",
         gamesPlayed: 7,
@@ -4509,7 +4509,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Silver Foxes",
         gamesPlayed: 4,
@@ -4520,7 +4520,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Labattshitcrazies",
         gamesPlayed: 3,
@@ -4537,7 +4537,7 @@
     seasons: [
       {
         season: "Q4 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Nick's Wonder Friends",
         gamesPlayed: 5,
@@ -4554,7 +4554,7 @@
     seasons: [
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Purple Reign",
         gamesPlayed: 8,
@@ -4565,7 +4565,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Dekes of Hazzard",
         gamesPlayed: 8,
@@ -4576,7 +4576,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Blue Wave",
         gamesPlayed: 5,
@@ -4593,7 +4593,7 @@
     seasons: [
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Purple Reign",
         gamesPlayed: 8,
@@ -4610,7 +4610,7 @@
     seasons: [
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Gritty's Goons",
         gamesPlayed: 6,
@@ -4621,7 +4621,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Second Worst Team in Texas",
         gamesPlayed: 3,
@@ -4638,7 +4638,7 @@
     seasons: [
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Gritty's Goons",
         gamesPlayed: 8,
@@ -4649,7 +4649,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: true,
         team: "Richards Le Rouge",
         gamesPlayed: 5,
@@ -4667,7 +4667,7 @@
     seasons: [
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Goldmembers",
         gamesPlayed: 7,
@@ -4678,7 +4678,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Agent Orange",
         gamesPlayed: 7,
@@ -4689,7 +4689,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Cocks",
         gamesPlayed: 4,
@@ -4700,7 +4700,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Black Squoose",
         gamesPlayed: 3,
@@ -4717,7 +4717,7 @@
     seasons: [
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Goldmembers",
         gamesPlayed: 8,
@@ -4728,7 +4728,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Agent Orange",
         gamesPlayed: 7,
@@ -4745,7 +4745,7 @@
     seasons: [
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Goldmembers",
         gamesPlayed: 3,
@@ -4762,7 +4762,7 @@
     seasons: [
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Goldmembers",
         gamesPlayed: 6,
@@ -4773,7 +4773,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Dekes of Hazzard",
         gamesPlayed: 6,
@@ -4784,7 +4784,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Silver Foxes",
         gamesPlayed: 4,
@@ -4795,7 +4795,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Toby's Red Rockets",
         gamesPlayed: 2,
@@ -4806,7 +4806,7 @@
       },
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Blue By Yous",
         gamesPlayed: 3,
@@ -4817,7 +4817,7 @@
       },
       {
         season: "2015",
-        current: false,
+        champion: false,
         goalie: false,
         gamesPlayed: 24,
         goals: 14,
@@ -4832,7 +4832,7 @@
     seasons: [
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Ashholes",
         gamesPlayed: 8,
@@ -4843,7 +4843,7 @@
       },
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Red Army",
         gamesPlayed: 11,
@@ -4854,7 +4854,7 @@
       },
       {
         season: "2015",
-        current: false,
+        champion: false,
         goalie: false,
         gamesPlayed: 20,
         goals: 15,
@@ -4869,7 +4869,7 @@
     seasons: [
       {
         season: "Q3 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Ashholes",
         gamesPlayed: 9,
@@ -4880,7 +4880,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Agent Orange",
         gamesPlayed: 3,
@@ -4897,7 +4897,7 @@
     seasons: [
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Pucks Capacitors",
         gamesPlayed: 6,
@@ -4908,7 +4908,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Silver Foxes",
         gamesPlayed: 4,
@@ -4919,7 +4919,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Labattshitcrazies",
         gamesPlayed: 4,
@@ -4930,7 +4930,7 @@
       },
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Red Army",
         gamesPlayed: 17,
@@ -4947,7 +4947,7 @@
     seasons: [
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Pucks Capacitors",
         gamesPlayed: 4,
@@ -4958,7 +4958,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Silver Foxes",
         gamesPlayed: 3,
@@ -4969,7 +4969,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Coors Light Silver Bullet Love Train",
         gamesPlayed: 6,
@@ -4980,7 +4980,7 @@
       },
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Revengers",
         gamesPlayed: 6,
@@ -4997,7 +4997,7 @@
     seasons: [
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Pucks Capacitors",
         gamesPlayed: 2,
@@ -5008,7 +5008,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Baby Got Black",
         gamesPlayed: 5,
@@ -5025,7 +5025,7 @@
     seasons: [
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Pucks Capacitors",
         gamesPlayed: 2,
@@ -5042,7 +5042,7 @@
     seasons: [
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Dekes of Hazzard",
         gamesPlayed: 4,
@@ -5053,7 +5053,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Richards Le Rouge",
         gamesPlayed: 5,
@@ -5064,7 +5064,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Labattshitcrazies",
         gamesPlayed: 7,
@@ -5081,7 +5081,7 @@
     seasons: [
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Black Magic Badgers",
         gamesPlayed: 1,
@@ -5098,7 +5098,7 @@
     seasons: [
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Black Magic Badgers",
         gamesPlayed: 3,
@@ -5115,7 +5115,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "Cobra High",
         gamesPlayed: 7,
@@ -5126,7 +5126,7 @@
       },
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Black Magic Badgers",
         gamesPlayed: 8,
@@ -5137,7 +5137,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Baby Got Black",
         gamesPlayed: 5,
@@ -5154,7 +5154,7 @@
     seasons: [
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Black Magic Badgers",
         gamesPlayed: 5,
@@ -5165,7 +5165,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Baby Got Black",
         gamesPlayed: 5,
@@ -5176,7 +5176,7 @@
       },
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Blue By Yous",
         gamesPlayed: 15,
@@ -5193,7 +5193,7 @@
     seasons: [
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Black Magic Badgers",
         gamesPlayed: 4,
@@ -5210,7 +5210,7 @@
     seasons: [
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Black Magic Badgers",
         gamesPlayed: 2,
@@ -5227,7 +5227,7 @@
     seasons: [
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Black Magic Badgers",
         gamesPlayed: 2,
@@ -5244,7 +5244,7 @@
     seasons: [
       {
         season: "Q2 2019",
-        current: false,
+        champion: false,
         goalie: true,
         team: "Black Magic Badgers",
         gamesPlayed: 3,
@@ -5256,7 +5256,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: true,
         team: "Baby Got Black",
         gamesPlayed: 5,
@@ -5268,7 +5268,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: true,
         team: "Coors Light Silver Bullet Love Train",
         gamesPlayed: 5,
@@ -5280,7 +5280,7 @@
       },
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: true,
         team: "The Revengers",
         gamesPlayed: 6,
@@ -5292,7 +5292,7 @@
       },
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Revengers",
         gamesPlayed: 7,
@@ -5303,7 +5303,7 @@
       },
       {
         season: "2015",
-        current: false,
+        champion: false,
         goalie: false,
         gamesPlayed: 23,
         goals: 19,
@@ -5318,7 +5318,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "Cobra High",
         gamesPlayed: 3,
@@ -5329,7 +5329,7 @@
       },
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Blue Wave",
         gamesPlayed: 4,
@@ -5340,7 +5340,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Coors Light Silver Bullet Love Train",
         gamesPlayed: 5,
@@ -5357,7 +5357,7 @@
     seasons: [
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Blue Wave",
         gamesPlayed: 5,
@@ -5368,7 +5368,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Victorious Secret",
         gamesPlayed: 1,
@@ -5385,7 +5385,7 @@
     seasons: [
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Worst Team in Texas",
         gamesPlayed: 3,
@@ -5402,7 +5402,7 @@
     seasons: [
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Worst Team in Texas",
         gamesPlayed: 5,
@@ -5419,7 +5419,7 @@
     seasons: [
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Worst Team in Texas",
         gamesPlayed: 4,
@@ -5430,7 +5430,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Black Squoose",
         gamesPlayed: 1,
@@ -5441,7 +5441,7 @@
       },
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Revengers",
         gamesPlayed: 1,
@@ -5458,7 +5458,7 @@
     seasons: [
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Cocks",
         gamesPlayed: 3,
@@ -5469,7 +5469,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Puckin Spice",
         gamesPlayed: 2,
@@ -5486,7 +5486,7 @@
     seasons: [
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Richards Le Rouge",
         gamesPlayed: 5,
@@ -5497,7 +5497,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Black Squoose",
         gamesPlayed: 0,
@@ -5514,7 +5514,7 @@
     seasons: [
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Richards Le Rouge",
         gamesPlayed: 2,
@@ -5525,7 +5525,7 @@
       },
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Toby's Red Rockets",
         gamesPlayed: 2,
@@ -5542,7 +5542,7 @@
     seasons: [
       {
         season: "Q1 2019",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Silver Foxes",
         gamesPlayed: 3,
@@ -5559,7 +5559,7 @@
     seasons: [
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Black Squoose",
         gamesPlayed: 8,
@@ -5576,7 +5576,7 @@
     seasons: [
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: true,
         team: "Black Squoose",
         gamesPlayed: 6,
@@ -5594,7 +5594,7 @@
     seasons: [
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Puckin Spice",
         gamesPlayed: 4,
@@ -5605,7 +5605,7 @@
       },
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Blue By Yous",
         gamesPlayed: 10,
@@ -5616,7 +5616,7 @@
       },
       {
         season: "2015",
-        current: false,
+        champion: false,
         goalie: false,
         gamesPlayed: 26,
         goals: 1,
@@ -5631,7 +5631,7 @@
     seasons: [
       {
         season: "Q4 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Victorious Secret",
         gamesPlayed: 9,
@@ -5642,7 +5642,7 @@
       },
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "Blue By Yous",
         gamesPlayed: 6,
@@ -5659,7 +5659,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "District 5 Ducks",
         gamesPlayed: 10,
@@ -5670,7 +5670,7 @@
       },
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: false,
         team: "North Kariya",
         gamesPlayed: 4,
@@ -5687,7 +5687,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "Left You On Red",
         gamesPlayed: 9,
@@ -5698,7 +5698,7 @@
       },
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: false,
         team: "North Kariya",
         gamesPlayed: 4,
@@ -5715,7 +5715,7 @@
     seasons: [
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: true,
         team: "Red Army",
         gamesPlayed: 12,
@@ -5733,7 +5733,7 @@
     seasons: [
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Revengers",
         gamesPlayed: 8,
@@ -5744,7 +5744,7 @@
       },
       {
         season: "2015",
-        current: false,
+        champion: false,
         goalie: false,
         gamesPlayed: 22,
         goals: 16,
@@ -5759,7 +5759,7 @@
     seasons: [
       {
         season: "Q3 2018",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Revengers",
         gamesPlayed: 4,
@@ -5776,7 +5776,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "Drunk Pigeons",
         gamesPlayed: 12,
@@ -5787,7 +5787,7 @@
       },
       {
         season: "Q1 2021",
-        current: false,
+        champion: false,
         goalie: false,
         team: "The Gray Borques",
         gamesPlayed: 2,
@@ -5804,7 +5804,7 @@
   seasons: [
     {
       season: "2015",
-      current: false,
+      champion: false,
       goalie: false,
       gamesPlayed: 12,
       goals: 15,
@@ -5819,7 +5819,7 @@
     seasons: [
       {
         season: "2015",
-        current: false,
+        champion: false,
         goalie: false,
         gamesPlayed: 24,
         goals: 24,
@@ -5834,7 +5834,7 @@
     seasons: [
       {
         season: "2015",
-        current: false,
+        champion: false,
         goalie: false,
         gamesPlayed: 10,
         goals: 3,
@@ -5849,7 +5849,7 @@
     seasons: [
       {
         season: "2015",
-        current: false,
+        champion: false,
         goalie: false,
         gamesPlayed: 20,
         goals: 3,
@@ -5864,7 +5864,7 @@
     seasons: [
       {
         season: "2015",
-        current: false,
+        champion: false,
         goalie: false,
         gamesPlayed: 8,
         goals: 9,
@@ -5879,7 +5879,7 @@
     seasons: [
       {
         season: "2015",
-        current: false,
+        champion: false,
         goalie: false,
         gamesPlayed: 30,
         goals: 5,
@@ -5894,7 +5894,7 @@
     seasons: [
       {
         season: "2015",
-        current: false,
+        champion: false,
         goalie: false,
         gamesPlayed: 6,
         goals: 0,
@@ -5909,7 +5909,7 @@
     seasons: [
       {
         season: "2015",
-        current: false,
+        champion: false,
         goalie: false,
         gamesPlayed: 6,
         goals: 5,
@@ -5925,7 +5925,7 @@
     seasons: [
       {
         season: "2015",
-        current: false,
+        champion: false,
         goalie: false,
         gamesPlayed: 2,
         goals: 0,
@@ -5940,7 +5940,7 @@
     seasons: [
       {
         season: "2015",
-        current: false,
+        champion: false,
         goalie: false,
         gamesPlayed: 2,
         goals: 5,
@@ -5955,7 +5955,7 @@
     seasons: [
       {
         season: "2015",
-        current: false,
+        champion: false,
         goalie: false,
         gamesPlayed: 6,
         goals: 0,
@@ -5970,7 +5970,7 @@
     seasons: [
       {
         season: "2015",
-        current: false,
+        champion: false,
         goalie: false,
         gamesPlayed: 12,
         goals: 0,
@@ -5985,7 +5985,7 @@
     seasons: [
       {
         season: "2015",
-        current: false,
+        champion: false,
         goalie: false,
         gamesPlayed: 6,
         goals: 3,
@@ -6000,7 +6000,7 @@
     seasons: [
       {
         season: "2015",
-        current: false,
+        champion: false,
         goalie: false,
         gamesPlayed: 2,
         goals: 1,
@@ -6015,7 +6015,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "The Martians",
         gamesPlayed: 12,
@@ -6032,7 +6032,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "Left You On Red",
         gamesPlayed: 12,
@@ -6049,7 +6049,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "Left You On Red",
         gamesPlayed: 6,
@@ -6066,7 +6066,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "Drunk Pigeons",
         gamesPlayed: 12,
@@ -6083,7 +6083,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "Drunk Pigeons",
         gamesPlayed: 10,
@@ -6100,7 +6100,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "Drunk Pigeons",
         gamesPlayed: 9,
@@ -6117,7 +6117,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "Drunk Pigeons",
         gamesPlayed: 10,
@@ -6134,7 +6134,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: false,
         team: "Drunk Pigeons",
         gamesPlayed: 9,
@@ -6151,7 +6151,7 @@
     seasons: [
       {
         season: "Q2 2021",
-        current: true,
+        champion: false,
         goalie: true,
         team: "Drunk Pigeons",
         gamesPlayed: 4,
