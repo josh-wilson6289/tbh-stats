@@ -1,19 +1,17 @@
 import React, {useState} from "react";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import { useAuth0 } from "@auth0/auth0-react";
 import Jumbotron from "./components/Jumbotron";
 import Footer from "./components/Footer";
-import Table from "./components/Table";
 import Player from "./pages/Player";
 import Goalie from "./pages/Goalie";
 import Team from "./pages/Team";
+import Admin from "./pages/Admin";
 import "./style.css";
-import TBHVideo from "./Images/TBHVideo.mp4";
-
 
 export default () => {
 
-const [season, setSeason] = useState("Q2 2021");
+const [season, setSeason] = useState("Q3 2021");
 const [page, setPage] = useState("players");
 const [searchTerm, setSearchTerm] = useState("");
 
@@ -27,18 +25,14 @@ const handleSearch = (e) => {
   setSearchTerm(e.target.value)
 }
 
+const {user, isAuthenticated, isLoading } = useAuth0;
+
   return (
     <div>
     <div className="container-fluid"> 
   <Router>
 
     <Jumbotron />
-      <Navbar 
-        handleSeason={handleSeason}
-        page={page}
-        handleSearch={handleSearch}
-        />
-  
       <div className="row"></div>
       <Switch>
         <Route exact path={["/", "/players"]}>
@@ -46,7 +40,9 @@ const handleSearch = (e) => {
             season={season}
             page={page}
             setPage={setPage}
-            searchTerm={searchTerm} 
+            searchTerm={searchTerm}
+            handleSeason={handleSeason}
+            handleSearch={handleSearch} 
           />
         </Route>
         <Route exact path={"/goalies"}>
@@ -55,6 +51,8 @@ const handleSearch = (e) => {
             page={page}
             setPage={setPage}
             searchTerm={searchTerm}
+            handleSeason={handleSeason}
+            handleSearch={handleSearch}
           />
         </Route>
         <Route exact path="/teams">
@@ -63,13 +61,25 @@ const handleSearch = (e) => {
             page={page}
             setPage={setPage}
             searchTerm={searchTerm} 
+            handleSeason={handleSeason}
+            handleSearch={handleSearch}
           />
+        </Route>
+        <Route exact path="/admin">
+          <Admin />
         </Route>
       </Switch>
 
       <br></br>
       <br></br>
 
+
+      {/* <h3>User is {isAuthenticated ? "logged in" : "not logged in"}</h3>
+    {
+      <pre style={{ textAlign: "start "}}>
+      {JSON.stringify(user, null, 2)}
+      </pre>
+    } */}
       <Footer />
         
   </Router>

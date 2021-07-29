@@ -147,13 +147,14 @@ body {
   size: 10px;
 }
 
-.footer-social {
+/* .footer-social {
   float: right;
   position: relative;
   left: -50%;
   text-align: left;
-}
-.footer .footer-social ul {
+  
+} */
+/* .footer .footer-social ul {
   list-style: none;
   position: relative;
   left: 50%;
@@ -171,8 +172,11 @@ body {
   background: transparent;
   color: white;
   text-decoration: none;
-}
+} */
 
+.footer .footer-social li {
+  display: inline-block;
+}
 .fab {
   font-family: "Font Awesome 5 Brands";
   padding: 10px;
@@ -328,8 +332,10 @@ body {
   font-weight: bold;
 }
 
+#login-btn {
+  margin: 10px;
+}
 
-
-
-
-
+#logout-btn {
+  margin: 10px;
+}

@@ -17,6 +17,4 @@ router.route("/search/:season")
 router.route("/:id")
   .get(playerController.findById);
 
-
-
 module.exports = router;

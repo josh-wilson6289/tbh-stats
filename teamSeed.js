@@ -1,67 +1,125 @@
 [
   {
+    name: "Blue Bombers",
+    season: "Q3 2021",
+    champion: false,
+    gamesPlayed: 3,
+    wins: 2,
+    losses: 0,
+    sow: 0,
+    sol: 0,
+    points: 6,
+    goalsFor: 16,
+    goalsAgainst: 6
+  },
+  {
+    name: "Blind Cellymanders",
+    season: "Q3 2021",
+    champion: false,
+    gamesPlayed: 2,
+    wins: 2,
+    losses: 0,
+    sow: 0,
+    sol: 0,
+    points: 6,
+    goalsFor: 9,
+    goalsAgainst: 2
+  },
+  {
+    name: "Maroon Fivehole",
+    season: "Q3 2021",
+    champion: false,
+    gamesPlayed: 2,
+    wins: 0,
+    losses: 2,
+    sow: 0,
+    sol: 0,
+    points: 0,
+    goalsFor: 7,
+    goalsAgainst: 15
+  },
+  {
+    name: "Clockwork Orange",
+    season: "Q3 2021",
+    champion: false,
+    gamesPlayed: 2,
+    wins: 0,
+    losses: 2,
+    sow: 0,
+    sol: 0,
+    points: 0,
+    goalsFor: 1,
+    goalsAgainst: 10
+  },
+  {
     name: "Left You On Red",
     season: "Q2 2021",
-    gamesPlayed: 6,
-    wins: 5,
-    losses: 1,
+    champion: false,
+    gamesPlayed: 7,
+    wins: 9,
+    losses: 3,
     sow: 2,
     sol: 0,
-    points: 13,
-    goalsFor: 27,
-    goalsAgainst: 14
+    points: 25,
+    goalsFor: 50,
+    goalsAgainst: 32
   },
   {
     name: "District 5 Ducks",
     season: "Q2 2021",
-    gamesPlayed: 6,
-    wins: 3,
-    losses: 3,
-    sow: 0,
-    sol: 1,
-    points: 10,
-    goalsFor: 15,
-    goalsAgainst: 14
+    champion: false,
+    gamesPlayed: 12,
+    wins: 6,
+    losses: 4,
+    sow: 1,
+    sol: 2,
+    points: 19,
+    goalsFor: 35,
+    goalsAgainst: 35
   },
   {
     name: "Drunk Pigeons",
     season: "Q2 2021",
-    gamesPlayed: 7,
-    wins: 3,
-    losses: 4,
+    champion: false,
+    gamesPlayed: 12,
+    wins: 4,
+    losses: 6,
     sow: 0,
-    sol: 1,
-    points: 10,
-    goalsFor: 18,
-    goalsAgainst: 24
+    sol: 2,
+    points: 14,
+    goalsFor: 35,
+    goalsAgainst: 45
   },
   {
     name: "The Martians",
     season: "Q2 2021",
-    gamesPlayed: 5,
-    wins: 2,
-    losses: 3,
-    sow: 0,
+    champion: false,
+    gamesPlayed: 12,
+    wins: 8,
+    losses: 4,
+    sow: 2,
     sol: 0,
-    points: 6,
-    goalsFor: 23,
-    goalsAgainst: 24
+    points: 22,
+    goalsFor: 53,
+    goalsAgainst: 44
   },
   {
     name: "Cobra High",
     season: "Q2 2021",
-    gamesPlayed: 6,
-    wins: 2,
-    losses: 4,
+    champion: false,
+    gamesPlayed: 12,
+    wins: 3,
+    losses: 8,
     sow: 0,
-    sol: 0,
-    points: 6,
-    goalsFor: 17,
-    goalsAgainst: 24
+    sol: 1,
+    points: 10,
+    goalsFor: 28,
+    goalsAgainst: 45
   },
   {
     name: "The Gray Borques",
     season: "Q1 2021",
+    champion: false,
     gamesPlayed: 9,
     wins: 5,
     losses: 2,
@@ -75,6 +133,7 @@
   {
     name: "Los Greengoes",
     season: "Q1 2021",
+    champion: false,
     gamesPlayed: 9,
     wins: 6,
     losses: 3,
@@ -87,6 +146,7 @@
   {
     name: "Gritty Goons",
     season: "Q1 2021",
+    champion: false,
     gamesPlayed: 9,
     wins: 5,
     losses: 4,
@@ -99,6 +159,7 @@
   {
     name: "North Kariya",
     season: "Q1 2021",
+    champion: false,
     gamesPlayed: 9,
     wins: 2,
     losses: 7,
@@ -111,6 +172,7 @@
   {
     name: "Pinkie and the Brian...Chambers",
     season: "Q1 2020",
+    champion: false,
     gamesPlayed: 9,
     wins: 4,
     losses: 5,
@@ -123,6 +185,7 @@
   {
     name: "Blades of Teal",
     season: "Q1 2020",
+    champion: false,
     gamesPlayed: 10,
     wins: 8,
     losses: 2,
@@ -135,6 +198,7 @@
   {
     name: "Blue Cross Blue Shield",
     season: "Q1 2020",
+    champion: false,
     gamesPlayed: 9,
     wins: 7,
     losses: 2,
@@ -147,6 +211,7 @@
   {
     name: "The Solo Cups",
     season: "Q1 2020",
+    champion: false,
     gamesPlayed: 10,
     wins: 5,
     losses: 5,
@@ -159,6 +224,7 @@
   {
     name: "The Empire Strikes Black",
     season: "Q1 2020",
+    champion: false,
     gamesPlayed: 10,
     wins: 0,
     losses: 10,
@@ -172,6 +238,7 @@
   {
     name: "Nick's Wonder Friends",
     season: "Q4 2019",
+    champion: false,
     gamesPlayed: 12,
     wins: 7,
     losses: 5,
@@ -184,6 +251,7 @@
   {
     name: "Red Army",
     season: "Q4 2019",
+    champion: false,
     gamesPlayed: 12,
     wins: 7,
     losses: 5,
@@ -196,6 +264,7 @@
   {
     name: "Gold on the Ceiling",
     season: "Q4 2019",
+    champion: false,
     gamesPlayed: 12,
     wins: 6,
     losses: 5,
@@ -208,6 +277,7 @@
   {
     name: "Pink Cobras",
     season: "Q4 2019",
+    champion: false,
     gamesPlayed: 12,
     wins: 5,
     losses: 7,
@@ -220,6 +290,7 @@
   {
     name: "Spray Tan Aftermath",
     season: "Q4 2019",
+    champion: false,
     gamesPlayed: 12,
     wins: 5,
     losses: 7,
@@ -232,6 +303,7 @@
   {
     name: "Ashholes",
     season: "Q3 2019",
+    champion: false,
     gamesPlayed: 9,
     wins: 6,
     losses: 3,
@@ -244,6 +316,7 @@
   {
     name: "Goldmembers",
     season: "Q3 2019",
+    champion: false,
     gamesPlayed: 9,
     wins: 6,
     losses: 3,
@@ -256,6 +329,7 @@
   {
     name: "Gritty's Goons",
     season: "Q3 2019",
+    champion: false,
     gamesPlayed: 9,
     wins: 6,
     losses: 3,
@@ -268,6 +342,7 @@
   {
     name: "Purple Reign",
     season: "Q3 2019",
+    champion: false,
     gamesPlayed: 9,
     wins: 0,
     losses: 8,
@@ -280,6 +355,7 @@
   {
     name: "Agent Orange",
     season: "Q2 2019",
+    champion: false,
     gamesPlayed: 11,
     wins: 7,
     losses: 3,
@@ -292,6 +368,7 @@
   {
     name: "Black Magic Badgers",
     season: "Q2 2019",
+    champion: false,
     gamesPlayed: 11,
     wins: 7,
     losses: 4,
@@ -304,6 +381,7 @@
   {
     name: "The Second Worst Team in Texas",
     season: "Q2 2019",
+    champion: false,
     gamesPlayed: 11,
     wins: 7,
     losses: 4,
@@ -316,6 +394,7 @@
   {
     name: "Pucks Capacitors",
     season: "Q2 2019",
+    champion: false,
     gamesPlayed: 11,
     wins: 5,
     losses: 6,
@@ -328,6 +407,7 @@
   {
     name: "Dekes of Hazzard",
     season: "Q2 2019",
+    champion: false,
     gamesPlayed: 11,
     wins: 2,
     losses: 9,
@@ -340,6 +420,7 @@
   {
     name: "The Worst Team in Texas",
     season: "Q1 2019",
+    champion: false,
     gamesPlayed: 10,
     wins: 9,
     losses: 1,
@@ -352,6 +433,7 @@
   {
     name: "The Cocks",
     season: "Q1 2019",
+    champion: false,
     gamesPlayed: 10,
     wins: 8,
     losses: 2,
@@ -364,6 +446,7 @@
   {
     name: "Baby Got Black",
     season: "Q1 2019",
+    champion: false,
     gamesPlayed: 10,
     wins: 6,
     losses: 3,
@@ -376,6 +459,7 @@
   {
     name: "Silver Foxes",
     season: "Q1 2019",
+    champion: false,
     gamesPlayed: 10,
     wins: 4,
     losses: 6,
@@ -388,6 +472,7 @@
   {
     name: "Richards Le Rouge",
     season: "Q1 2019",
+    champion: false,
     gamesPlayed: 10,
     wins: 2,
     losses: 8,
@@ -400,6 +485,7 @@
   {
     name: "Blue Wave",
     season: "Q1 2019",
+    champion: false,
     gamesPlayed: 10,
     wins: 1,
     losses: 9,
@@ -412,6 +498,7 @@
   {
     name: "Puckin Spice",
     season: "Q4 2018",
+    champion: false,
     gamesPlayed: 10,
     wins: 8,
     losses: 2,
@@ -424,6 +511,7 @@
   {
     name: "Victorious Secret",
     season: "Q4 2018",
+    champion: false,
     gamesPlayed: 10,
     wins: 7,
     losses: 3,
@@ -436,6 +524,7 @@
   {
     name: "Coors Light Silver Bullet Love Train",
     season: "Q4 2018",
+    champion: false,
     gamesPlayed: 10,
     wins: 5,
     losses: 5,
@@ -448,6 +537,7 @@
   {
     name: "Black Squoose",
     season: "Q4 2018",
+    champion: false,
     gamesPlayed: 10,
     wins: 4,
     losses: 4,
@@ -460,6 +550,7 @@
   {
     name: "Toby's Red Rockets",
     season: "Q4 2018",
+    champion: false,
     gamesPlayed: 10,
     wins: 3,
     losses: 6,
@@ -472,6 +563,7 @@
   {
     name: "Labattschitcrazies",
     season: "Q4 2018",
+    champion: false,
     gamesPlayed: 10,
     wins: 2,
     losses: 5,

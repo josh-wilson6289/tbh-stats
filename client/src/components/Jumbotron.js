@@ -1,5 +1,8 @@
 import React from "react";
 import TbhLogo from "../Images/tbh-logo.png";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import "../style.css";
+
 
 const Jumbotron = () => {
 
@@ -7,11 +10,16 @@ const Jumbotron = () => {
     <div id="jumbo" className="jumbotron jumbotron-fluid">
       <div className="container-fluid">
         <div className="row">
-          <div className="col-12"></div>
+    <div className="col-12">
     <a href="/">
     <img src={TbhLogo} alt="Texas Ball Hockey Logo" id="tbh-logo" className="logo"></img>
     </a>
-         </div>
+    </div>
+    </div>
+    
+    
+    
+       
     </div>
     </div>
   );
