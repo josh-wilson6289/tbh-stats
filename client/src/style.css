@@ -201,6 +201,10 @@ body {
   max-width: 110px;
 }
 
+.dropdown {
+  
+}
+
 .modal-content {
   border: 3px solid black;
   border-radius: 10px;
@@ -310,7 +314,7 @@ body {
   font-weight: bold;
 }
 
-#login-message {
+.login-message {
   font-size: 2.5em;
   margin-bottom: 10px;
   text-align: center;

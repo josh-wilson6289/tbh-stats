@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import Dropdown from "./Dropdown";
 import Search from "./Search";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";

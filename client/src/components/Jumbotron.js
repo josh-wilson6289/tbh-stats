@@ -1,6 +1,5 @@
 import React from "react";
 import TbhLogo from "../Images/tbh-logo.png";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import "../style.css";
 
 
@@ -16,10 +15,6 @@ const Jumbotron = () => {
     </a>
     </div>
     </div>
-    
-    
-    
-       
     </div>
     </div>
   );

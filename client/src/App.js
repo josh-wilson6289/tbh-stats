@@ -25,7 +25,8 @@ const handleSearch = (e) => {
   setSearchTerm(e.target.value)
 }
 
-const {error} = useAuth0();
+// need to do error handling here to redirect if there's an error
+const { error } = useAuth0();
 
   return (
     <div>
@@ -66,7 +67,10 @@ const {error} = useAuth0();
           />
         </Route>
         <Route exact path="/admin">
-          <Admin />
+          <Admin 
+            page={page} 
+            setPage={setPage}
+            />
         </Route>
       </Switch>
 

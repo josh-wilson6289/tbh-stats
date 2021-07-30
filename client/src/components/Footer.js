@@ -1,9 +1,10 @@
 import React from "react";
+import { BroswerRouter as Router, Route, Switch, Link } from "react-router-dom";
 import Button from "./Button";
 import { useAuth0 } from "@auth0/auth0-react";
 import "../style.css";
 
-const Footer = (page) => {
+const Footer = () => {
   
 const { isAuthenticated, loginWithPopup, logout } = useAuth0();
 
@@ -41,14 +42,19 @@ const { isAuthenticated, loginWithPopup, logout } = useAuth0();
               </ul>
           </div>
   </div>
-
   <div className="row justify-content-center">
     <div className="col-5">
       {
         isAuthenticated ? 
+        <Link 
+          to="/admin">
         <Button cName="btn btn-outline-light" onClick={logout} name="Admin Logout"/> 
+        </Link>
         : 
+        <Link
+          to="/admin">
         <Button cName="btn btn-outline-light" onClick={loginWithPopup} name="Admin Login"/>
+        </Link>
       }
     </div>
   </div>
