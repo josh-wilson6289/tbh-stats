@@ -102,6 +102,7 @@ body {
 .footer a {
   color: #fff;
 }
+
 .th {
   text-align: center;
 }
@@ -137,6 +138,7 @@ body {
   margin-left: auto;
   text-align: center;
 }
+
 .pages {
   padding: 5px;
   float: right;
@@ -147,36 +149,10 @@ body {
   size: 10px;
 }
 
-/* .footer-social {
-  float: right;
-  position: relative;
-  left: -50%;
-  text-align: left;
-  
-} */
-/* .footer .footer-social ul {
-  list-style: none;
-  position: relative;
-  left: 50%;
-}
-
-.footer .footer-social li {
-  font-size: 20px;
-  margin: 10px;
-  float: left;
-  text-align: center;
-}
-
-.footer .footer-social a {
-  background-color: transparent;
-  background: transparent;
-  color: white;
-  text-decoration: none;
-} */
-
 .footer .footer-social li {
   display: inline-block;
 }
+
 .fab {
   font-family: "Font Awesome 5 Brands";
   padding: 10px;
@@ -221,6 +197,8 @@ body {
 .btn-primary {
   background-color: #8e2742 !important;
   border-color: #8e2742 !important; 
+  margin: 10px;
+  max-width: 110px;
 }
 
 .modal-content {
@@ -332,10 +310,12 @@ body {
   font-weight: bold;
 }
 
-#login-btn {
-  margin: 10px;
+#login-message {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
-#logout-btn {
-  margin: 10px;
+#admin {
+  padding: 5%;
 }

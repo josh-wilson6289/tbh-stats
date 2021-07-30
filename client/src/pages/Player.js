@@ -100,7 +100,6 @@ const Player = ({ season, page, setPage, searchTerm, handleSearch, handleSeason 
       setSortDirection("descending");
       setCurrentSeason(season);
       setIsLoading(false);
-      console.log(currentSeasonPlayers);
   }
 
 

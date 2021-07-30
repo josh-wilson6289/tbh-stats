@@ -1,10 +1,12 @@
 import React from "react";
-import LoginButton from "./LoginButton";
-import LogoutButton from "./LogoutButton";
+import Button from "./Button";
+import { useAuth0 } from "@auth0/auth0-react";
 import "../style.css";
 
 const Footer = (page) => {
   
+const { isAuthenticated, loginWithPopup, logout } = useAuth0();
+
   return (
 <div className="footer container-fluid">
  <div className="row justify-content-center">
@@ -39,10 +41,15 @@ const Footer = (page) => {
               </ul>
           </div>
   </div>
+
   <div className="row justify-content-center">
     <div className="col-5">
-    <LoginButton />
-    <LogoutButton />
+      {
+        isAuthenticated ? 
+        <Button cName="btn btn-outline-light" onClick={logout} name="Admin Logout"/> 
+        : 
+        <Button cName="btn btn-outline-light" onClick={loginWithPopup} name="Admin Login"/>
+      }
     </div>
   </div>
   </div>
