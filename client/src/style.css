@@ -201,10 +201,6 @@ body {
   max-width: 110px;
 }
 
-.dropdown {
-  
-}
-
 .modal-content {
   border: 3px solid black;
   border-radius: 10px;
@@ -322,4 +318,12 @@ body {
 
 #admin {
   padding: 5%;
+}
+
+.dropdown-menu {
+  max-width: 10px;
+}
+
+.dropdown-item {
+  text-align: start;
 }
