@@ -5,7 +5,7 @@ const AdminDropdown = ({ cName, chooseSeason, name, options }) => {
 
   const menu = options.map((option) => {
     return (
-    <li><a className="dropdown-item" onClick={chooseSeason} seasonValue={option}>{option}</a></li>
+    <li key={option}><a className="dropdown-item" onClick={chooseSeason} value={option}>{option}</a></li>
     )
   });
 

@@ -72,6 +72,7 @@ const { error } = useAuth0();
             setPage={setPage}
             />
         </Route>
+
       </Switch>
 
       <br></br>
