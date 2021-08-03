@@ -327,3 +327,16 @@ body {
 .dropdown-item {
   text-align: start;
 }
+
+#add-game {
+  display: none;
+}
+
+#add-season {
+  display: none;
+}
+
+#edit-stats {
+  display: none;
+}
+

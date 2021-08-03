@@ -48,12 +48,12 @@ const { isAuthenticated, loginWithPopup, logout } = useAuth0();
         isAuthenticated ? 
         <Link 
           to="/admin">
-        <Button cName="btn btn-outline-light" onClick={logout} name="Admin Logout"/> 
+        <Button cName="btn btn-outline-light" click={logout} name="Admin Logout"/> 
         </Link>
         : 
         <Link
           to="/admin">
-        <Button cName="btn btn-outline-light" onClick={loginWithPopup} name="Admin Login"/>
+        <Button cName="btn btn-outline-light" click={loginWithPopup} name="Admin Login"/>
         </Link>
       }
     </div>

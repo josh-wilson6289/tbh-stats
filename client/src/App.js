@@ -9,6 +9,7 @@ import Team from "./pages/Team";
 import Admin from "./pages/Admin";
 import "./style.css";
 
+
 export default () => {
 
 const [season, setSeason] = useState("Q3 2021");
@@ -72,14 +73,11 @@ const { error } = useAuth0();
             setPage={setPage}
             />
         </Route>
-
       </Switch>
 
       <br></br>
       <br></br>
-
       <Footer />
-        
   </Router>
   </div>
 

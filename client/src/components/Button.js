@@ -2,11 +2,10 @@ import React from "react";
 import "../style.css";
 
 
-const Button = ({ cName, onClick, name }) => {
-
+const Button = ({ cName, click, name }) => {
 
   return (
-    <button type="button" className={cName} onClick={onClick}>{name}</button>
+    <button type="button" className={cName} onClick={click}>{name}</button>
   );
 };
 
