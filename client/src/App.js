@@ -7,8 +7,10 @@ import Player from "./pages/Player";
 import Goalie from "./pages/Goalie";
 import Team from "./pages/Team";
 import Admin from "./pages/Admin";
+import AddGame from "./pages/AddGame";
+import AddSeason from "./pages/AddSeason";
+import EditStats from "./pages/EditStats";
 import "./style.css";
-
 
 export default () => {
 
@@ -74,7 +76,24 @@ const { error } = useAuth0();
             />
         </Route>
       </Switch>
-
+      <Route exact path="/admin/addgame">
+        <AddGame
+          page={page}
+          setPage={setPage}
+        />
+      </Route>
+      <Route exact path="/admin/addseason">
+        <AddSeason
+          page={page}
+          setPage={setPage}
+        />
+      </Route>
+      <Route exact path="/admin/editstats">
+        <EditStats
+          page={page}
+          setPage={setPage}
+        />
+      </Route>
       <br></br>
       <br></br>
       <Footer />

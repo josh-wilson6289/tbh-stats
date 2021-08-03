@@ -328,15 +328,8 @@ body {
   text-align: start;
 }
 
-#add-game {
-  display: none;
+.txt-center {
+  margin-top: 50px;
+  text-align: center;
+  width: 25%;
 }
-
-#add-season {
-  display: none;
-}
-
-#edit-stats {
-  display: none;
-}
-
