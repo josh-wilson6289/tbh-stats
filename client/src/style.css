@@ -197,9 +197,13 @@ body {
 .btn-primary {
   background-color: #8e2742 !important;
   border-color: #8e2742 !important; 
-  margin: 10px;
-  max-width: 110px;
+  margin-top: 10px;
 }
+
+.btn-outline-light {
+  margin: 10px;
+}
+
 
 .modal-content {
   border: 3px solid black;
@@ -332,4 +336,9 @@ body {
   margin-top: 50px;
   text-align: center;
   width: 25%;
+}
+
+.admin-btn {
+  max-width: 125px;
+  margin-top: 10px;
 }

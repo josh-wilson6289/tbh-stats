@@ -6,23 +6,21 @@ import "../style.css";
 
 const Admin = ({ page, setPage }) => {
 
-  const [isLoading, setIsLoading] = useState(false);
-
   useEffect(() => {
     setPage("admin")
   }, [page]);
 
-  const {user, isAuthenticated, loginWithPopup, logout} = useContext(AuthContext);
-  
+  const {user, isAuthenticated, loginWithPopup, logout, isLoading } = useContext(AuthContext);
+
   return (
     <div id="admin">
     <div className="container">
     <div id="login-content">
     {isAuthenticated ? 
-      <AdminLanding user={user} isLoading={isLoading} setIsLoading={setIsLoading} />
+      <AdminLanding user={user} />
      : 
-      <AdminLogin loginWithPopup={loginWithPopup}/>
-  }
+      <AdminLogin loginWithPopup={loginWithPopup} isLoading={isLoading}/>
+    }
   </div>
   </div>
   </div>

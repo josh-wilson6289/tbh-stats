@@ -49,7 +49,7 @@ const Footer = () => {
         <div>
         <Link 
           to="/admin">
-        <Button cName="btn btn-outline-light" click={logout} name="Admin Logout"/> 
+        <Button cName="btn btn-outline-light" click={logout} name="Logout"/> 
         </Link>
         <Link to="/admin">
           <Button cName="btn btn-outline-light" name="Edit Stats" />

@@ -1,13 +1,28 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { AuthContext } from "../utils/context";
+import AdminLogin from "../components/AdminLogin";
 import "../style.css";
 
-const AddSeason = () => {
+const AddSeason = ({page, setPage}) => {
+
+  useEffect(() => {
+    setPage("addseason")
+  }, [page]);
 
   const {user, isAuthenticated, loginWithPopup, logout} = useContext(AuthContext);
 
   return (
-    <h1>Add Season</h1>
+    <div id="addseason">
+    <div className="container">
+    <div id="addseason-content">
+    {isAuthenticated ? 
+      <h1>Add a Season</h1>
+     : 
+      <AdminLogin loginWithPopup={loginWithPopup}/>
+  }
+  </div>
+  </div>
+  </div>
   );
 };
 

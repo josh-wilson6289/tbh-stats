@@ -21,8 +21,6 @@ const AdminLanding = ({user}) => {
   //       });
   // }
   
-console.log(user);
-
   return (
   <div>
     <div className="row justify-content-center">

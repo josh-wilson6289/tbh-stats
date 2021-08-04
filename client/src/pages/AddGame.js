@@ -1,13 +1,28 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { AuthContext } from "../utils/context";
+import AdminLogin from "../components/AdminLogin";
 import "../style.css";
 
-const AddGame = () => {
+const AddGame = ({page, setPage}) => {
 
-  const {user, isAuthenticated, loginWithPopup, logout} = useContext(AuthContext);
+  useEffect(() => {
+    setPage("addgame")
+  }, [page]);
+
+  const {isAuthenticated, loginWithPopup} = useContext(AuthContext);
 
   return (
-    <h1>Add Game</h1>
+    <div id="addGame">
+    <div className="container">
+    <div id="addgame-content">
+    {isAuthenticated ? 
+      <h1>Add a Game</h1>
+     : 
+      <AdminLogin loginWithPopup={loginWithPopup}/>
+  }
+  </div>
+  </div>
+  </div>
   );
 };
 

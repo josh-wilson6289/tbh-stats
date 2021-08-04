@@ -30,7 +30,7 @@ const handleSearch = (e) => {
   setSearchTerm(e.target.value)
 }
 
-const { user, isAuthenticated, loginWithPopup, logout } = useAuth0();
+const { user, isAuthenticated, loginWithPopup, logout, isLoading } = useAuth0();
 
 // need to do error handling here to redirect if there's an error
 const { error } = useAuth0();
@@ -77,10 +77,6 @@ const { error } = useAuth0();
           <Admin 
             page={page} 
             setPage={setPage}
-            user={user} 
-            isAuthenticated={isAuthenticated}
-            loginWithPopup={loginWithPopup}
-            logout={logout}
             />
         </Route>
       <Route exact path="/admin/addgame">
