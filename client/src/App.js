@@ -1,6 +1,8 @@
 import React, {useState} from "react";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
+import AuthenticationProvider from "./utils/AuthenticationProvider";
+import { AuthContext } from "./utils/context";
 import Jumbotron from "./components/Jumbotron";
 import Footer from "./components/Footer";
 import Player from "./pages/Player";
@@ -28,6 +30,8 @@ const handleSearch = (e) => {
   setSearchTerm(e.target.value)
 }
 
+const { user, isAuthenticated, loginWithPopup, logout } = useAuth0();
+
 // need to do error handling here to redirect if there's an error
 const { error } = useAuth0();
 
@@ -35,10 +39,10 @@ const { error } = useAuth0();
     <div>
     <div className="container-fluid"> 
   <Router>
-
     <Jumbotron />
       <div className="row"></div>
       <Switch>
+        <AuthContext.Provider value={{user, isAuthenticated, loginWithPopup, logout}}>
         <Route exact path={["/", "/players"]}>
           <Player 
             season={season}
@@ -73,9 +77,12 @@ const { error } = useAuth0();
           <Admin 
             page={page} 
             setPage={setPage}
+            user={user} 
+            isAuthenticated={isAuthenticated}
+            loginWithPopup={loginWithPopup}
+            logout={logout}
             />
         </Route>
-      </Switch>
       <Route exact path="/admin/addgame">
         <AddGame
           page={page}
@@ -96,8 +103,12 @@ const { error } = useAuth0();
       </Route>
       <br></br>
       <br></br>
-      <Footer />
+      <Footer 
+      />
+      </AuthContext.Provider>
+      </Switch>
   </Router>
+
   </div>
 
   </div>

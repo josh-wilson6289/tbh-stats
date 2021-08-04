@@ -1,13 +1,13 @@
-import React from "react";
+import React, {useContext} from "react";
 import { BroswerRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { AuthContext } from "../utils/context";
 import Button from "./Button";
-import { useAuth0 } from "@auth0/auth0-react";
 import "../style.css";
 
 const Footer = () => {
   
-const { isAuthenticated, loginWithPopup, logout } = useAuth0();
-
+  const {user, isAuthenticated, loginWithPopup, logout} = useContext(AuthContext);
+  
   return (
 <div className="footer container-fluid">
  <div className="row justify-content-center">
@@ -46,10 +46,15 @@ const { isAuthenticated, loginWithPopup, logout } = useAuth0();
     <div className="col-5">
       {
         isAuthenticated ? 
+        <div>
         <Link 
           to="/admin">
         <Button cName="btn btn-outline-light" click={logout} name="Admin Logout"/> 
         </Link>
+        <Link to="/admin">
+          <Button cName="btn btn-outline-light" name="Edit Stats" />
+        </Link>
+        </div>
         : 
         <Link
           to="/admin">

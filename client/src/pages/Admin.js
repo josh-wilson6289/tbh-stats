@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { BrowserRouter as Link } from "react-router-dom";
-import { useAuth0 } from "@auth0/auth0-react";
+import React, { useState, useEffect, useContext } from "react";
+import { AuthContext } from "../utils/context";
 import AdminLanding from "../components/AdminLanding";
 import AdminLogin from "../components/AdminLogin";
 import "../style.css";
@@ -13,7 +12,7 @@ const Admin = ({ page, setPage }) => {
     setPage("admin")
   }, [page]);
 
-  const { user, isAuthenticated, loginWithPopup, logout } = useAuth0();
+  const {user, isAuthenticated, loginWithPopup, logout} = useContext(AuthContext);
   
   return (
     <div id="admin">
