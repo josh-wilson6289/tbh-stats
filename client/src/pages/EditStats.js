@@ -19,16 +19,34 @@ const EditStats = ({page, setPage}) => {
   }, [page]);
 
     const chooseSeason = (e) => {
-      console.log("chooseSeason called");
     e.preventDefault();
     let season = (e.target.getAttribute("value"));
     setSeason(season)
     API.getPlayersBySeason(season)
       .then(players => {
         const allPlayers = players.data
-        console.log(allPlayers)
+        formatPlayersBySeason(allPlayers);
         });
   }
+
+// Takes the data array and formats it for given season
+function formatPlayersBySeason(allPlayers) {
+  // filters through the seasons array, and returns only the season being viewed currently
+  // that way, when rendering the playerRow the current season will always be at index [0]
+  const filteredPlayersBySeason = allPlayers.map((player) => {
+    return {...player, seasons: player.seasons.filter((seasons) => seasons.season === season)}
+  })
+  console.log(filteredPlayersBySeason)
+  setEditData(filteredPlayersBySeason);
+}
+
+const playerList = editData.map((player) => {
+  return (
+    <ul>
+      <li>{`${player.firstName} ${player.lastName}`}</li>
+    </ul> 
+  );
+});
 
   return (
     <div id="editstats">
@@ -40,6 +58,10 @@ const EditStats = ({page, setPage}) => {
       <br></br>
       <div className="centered-text">
       <AdminDropdown cName="btn btn-primary dropdown-toggle" chooseSeason={chooseSeason} name="Choose Season" options={seasonOptions}/>
+      </div>
+      <br></br>
+      <div>
+      {playerList}
       </div>
       </div>
      : 
