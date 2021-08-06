@@ -1,5 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import { AuthContext } from "../utils/context";
+import API from "../utils/API";
 import AdminLogin from "../components/AdminLogin";
 import "../style.css";
 
