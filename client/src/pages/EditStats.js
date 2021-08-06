@@ -8,7 +8,7 @@ import "../style.css";
 const EditStats = ({page, setPage}) => {
 
   const [editData, setEditData] = useState([]);
-  const [season, setSeason] = useState("Q3 2021")
+  const [season, setSeason] = useState("")
   
   const seasonOptions = ["2015", "Q3 2018", "Q4 2018", "Q1 2019", "Q2 2019", "Q3 2019", "Q4 2019", "Q1 2020", "Q1 2021", "Q2 2021", "Q3 2021"]
   const {user, isAuthenticated, loginWithPopup, logout} = useContext(AuthContext);
@@ -20,31 +20,29 @@ const EditStats = ({page, setPage}) => {
 
     const chooseSeason = (e) => {
     e.preventDefault();
-    let season = (e.target.getAttribute("value"));
-    setSeason(season)
-    API.getPlayersBySeason(season)
+    let chosenSeason = (e.target.getAttribute("value"));
+    API.getPlayersBySeason(chosenSeason)
       .then(players => {
-        const allPlayers = players.data
-        formatPlayersBySeason(allPlayers);
+        const allPlayers = players.data;
+        formatPlayersBySeason(allPlayers, chosenSeason);
         });
   }
 
 // Takes the data array and formats it for given season
-function formatPlayersBySeason(allPlayers) {
+function formatPlayersBySeason(allPlayers, season) {
   // filters through the seasons array, and returns only the season being viewed currently
   // that way, when rendering the playerRow the current season will always be at index [0]
   const filteredPlayersBySeason = allPlayers.map((player) => {
     return {...player, seasons: player.seasons.filter((seasons) => seasons.season === season)}
   })
-  console.log(filteredPlayersBySeason)
+  console.log(season);
+  console.log(filteredPlayersBySeason);
   setEditData(filteredPlayersBySeason);
 }
 
 const playerList = editData.map((player) => {
   return (
-    <ul>
-      <li>{`${player.firstName} ${player.lastName}`}</li>
-    </ul> 
+      <li key={player._id}>{`${player.firstName} ${player.lastName}`}</li>
   );
 });
 
@@ -54,15 +52,17 @@ const playerList = editData.map((player) => {
       <div>
       <div className="row">
       <h1 className="centered-text title">Edit Stats</h1>
+      <h1 className="centered-text">{season}</h1>
       </div>
       <br></br>
       <div className="centered-text">
       <AdminDropdown cName="btn btn-primary dropdown-toggle" chooseSeason={chooseSeason} name="Choose Season" options={seasonOptions}/>
       </div>
       <br></br>
-      <div>
+
+      <ul>
       {playerList}
-      </div>
+      </ul>
       </div>
      : 
       <AdminLogin />
