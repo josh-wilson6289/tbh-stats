@@ -1,5 +1,44 @@
 [
   {
+    name: "Navy",
+    season: "Q1 2022",
+    champion: false,
+    gamesPlayed: 6,
+    wins: 2,
+    losses: 4,
+    sow: 1,
+    sol: 0,
+    points: 5,
+    goalsFor: 16,
+    goalsAgainst: 30
+  },
+  {
+    name: "Maroon",
+    season: "Q1 2022",
+    champion: true,
+    gamesPlayed: 6,
+    wins: 3,
+    losses: 2,
+    sow: 0,
+    sol: 1,
+    points: 10,
+    goalsFor: 20,
+    goalsAgainst: 16
+  },
+  {
+    name: "Silver",
+    season: "Q1 2022",
+    champion: false,
+    gamesPlayed: 6,
+    wins: 4,
+    losses: 2,
+    sow: 0,
+    sol: 0,
+    points: 12,
+    goalsFor: 25,
+    goalsAgainst: 17
+  },
+  {
     name: "Blue Bombers",
     season: "Q3 2021",
     champion: false,
