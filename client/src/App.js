@@ -11,7 +11,7 @@ import "./style.css";
 
 export default () => {
 
-const [season, setSeason] = useState("Q3 2021");
+const [season, setSeason] = useState("Q1 2022");
 const [page, setPage] = useState("players");
 const [searchTerm, setSearchTerm] = useState("");
 

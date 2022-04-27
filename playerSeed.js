@@ -5,6 +5,29 @@
     lastName: "Fiocca",
     seasons: [
       {
+        season: "Q1 2022",
+        champion: false,
+        goalie: true,
+        team: "Free Agent",
+        gamesPlayed: 2,
+        wins: 0,
+        losses: 0,
+        sol: 0,
+        ga: 7,
+        so: 0
+      },
+      {
+        season: "Q1 2022",
+        champion: false,
+        goalie: false,
+        team: "Navy",
+        gamesPlayed: 5,
+        goals: 2,
+        assists: 4,
+        pim: 0,
+        points: 6
+      },
+      {
         season: "Q3 2021",
         champion: false,
         goalie: false,
@@ -76,6 +99,17 @@
     firstName: "Josh",
     lastName: "Hall",
     seasons: [
+      {
+        season: "Q1 2022",
+        champion: false,
+        goalie: false,
+        team: "Navy",
+        gamesPlayed: 5,
+        goals: 4,
+        assists: 5,
+        pim: 0,
+        points: 9
+      },
       {
         season: "Q3 2021",
         champion: false,
@@ -335,6 +369,17 @@
     lastName: "Stelzel",
     seasons: [
       {
+        season: "Q1 2022",
+        champion: true,
+        goalie: false,
+        team: "Maroon",
+        gamesPlayed: 4,
+        goals: 0,
+        assists: 0,
+        pim: 0,
+        points: 0
+      },
+      {
         season: "Q3 2021",
         champion: false,
         goalie: false,
@@ -439,6 +484,17 @@
     firstName: "Max",
     lastName: "Egan",
     seasons: [
+      {
+        season: "Q1 2022",
+        champion: true,
+        goalie: false,
+        team: "Maroon",
+        gamesPlayed: 6,
+        goals: 2,
+        assists: 2,
+        pim: 0,
+        points: 4
+      },
       {
         season: "Q3 2021",
         champion: false,
@@ -666,6 +722,17 @@
     lastName: "Landers",
     seasons: [
       {
+        season: "Q1 2022",
+        champion: true,
+        goalie: false,
+        team: "Maroon",
+        gamesPlayed: 6,
+        goals: 8,
+        assists: 7,
+        pim: 0,
+        points: 15
+      },
+      {
         season: "Q3 2021",
         champion: false,
         goalie: false,
@@ -770,6 +837,17 @@
     firstName: "Michael",
     lastName: "Thistle",
     seasons: [
+      {
+        season: "Q1 2022",
+        champion: false,
+        goalie: false,
+        team: "Silver",
+        gamesPlayed: 3,
+        goals: 2,
+        assists: 1,
+        pim: 0,
+        points: 3
+      },
       {
         season: "Q2 2021",
         champion: false,
@@ -904,6 +982,17 @@
     lastName: "Krein",
     seasons: [
       {
+        season: "Q1 2022",
+        champion: true,
+        goalie: false,
+        team: "Maroon",
+        gamesPlayed: 5,
+        goals: 7,
+        assists: 4,
+        pim: 0,
+        points: 11
+      },
+      {
         season: "Q3 2021",
         champion: false,
         goalie: false,
@@ -1026,6 +1115,17 @@
     lastName: "Davidovich",
     seasons: [
       {
+        season: "Q1 2022",
+        champion: false,
+        goalie: false,
+        team: "Navy",
+        gamesPlayed: 6,
+        goals: 1,
+        assists: 0,
+        pim: 0,
+        points: 1
+      },
+      {
         season: "Q2 2021",
         champion: false,
         goalie: false,
@@ -1125,6 +1225,18 @@
     firstName: "Matt",
     lastName: "Reyes",
     seasons: [
+      {
+        season: "Q1 2022",
+        champion: false,
+        goalie: true,
+        team: "Free Agent",
+        gamesPlayed: 9,
+        wins: 0,
+        losses: 0,
+        sol: 0,
+        ga: 30,
+        so: 0
+      },
       {
         season: "Q3 2021",
         champion: false,
@@ -1637,6 +1749,17 @@
     lastName: "Sunstrom",
     seasons: [
       {
+        season: "Q1 2022",
+        champion: false,
+        goalie: false,
+        team: "Navy",
+        gamesPlayed: 1,
+        goals: 0,
+        assists: 0,
+        pim: 0,
+        points: 0
+      },
+      {
         season: "Q3 2021",
         champion: false,
         goalie: false,
@@ -1844,6 +1967,17 @@
     lastName: "Brandimarto",
     seasons: [
       {
+        season: "Q1 2022",
+        champion: false,
+        goalie: false,
+        team: "Silver",
+        gamesPlayed: 6,
+        goals: 13,
+        assists: 6,
+        pim: 0,
+        points: 19
+      },
+      {
         season: "Q3 2021",
         champion: false,
         goalie: false,
@@ -1948,6 +2082,17 @@
     firstName: "Andrew",
     lastName: "Bobst",
     seasons: [
+      {
+        season: "Q1 2022",
+        champion: false,
+        goalie: false,
+        team: "Navy",
+        gamesPlayed: 6,
+        goals: 6,
+        assists: 1,
+        pim: 0,
+        points: 7
+      },
       {
         season: "Q3 2021",
         champion: false,
@@ -2267,6 +2412,17 @@
     firstName: "Ray",
     lastName: "Yelle",
     seasons: [
+      {
+        season: "Q1 2022",
+        champion: false,
+        goalie: false,
+        team: "Silver",
+        gamesPlayed: 3,
+        goals: 0,
+        assists: 1,
+        pim: 0,
+        points: 1
+      },
       {
         season: "Q3 2021",
         champion: false,
@@ -2722,6 +2878,17 @@
     firstName: "Trevor",
     lastName: "Donohue",
     seasons: [
+      {
+        season: "Q1 2022",
+        champion: false,
+        goalie: false,
+        team: "Silver",
+        gamesPlayed: 4,
+        goals: 4,
+        assists: 2,
+        pim: 0,
+        points: 6
+      },
       {
         season: "Q3 2021",
         champion: false,
@@ -3225,6 +3392,17 @@
     firstName: "Josh",
     lastName: "Wilson",
     seasons: [
+      {
+        season: "Q1 2022",
+        champion: false,
+        goalie: false,
+        team: "Silver",
+        gamesPlayed: 6,
+        goals: 2,
+        assists: 5,
+        pim: 0,
+        points: 7
+      },
       {
         season: "Q3 2021",
         champion: false,
@@ -4089,6 +4267,17 @@
     firstName: "Brandon",
     lastName: "Hunt",
     seasons: [
+      {
+        season: "Q1 2022",
+        champion: false,
+        goalie: false,
+        team: "Silver",
+        gamesPlayed: 1,
+        goals: 0,
+        assists: 0,
+        pim: 0,
+        points: 0
+      },
       {
         season: "Q1 2020",
         champion: false,
@@ -6042,6 +6231,17 @@
     lastName: "Wynn",
     seasons: [
       {
+        season: "Q1 2022",
+        champion: true,
+        goalie: false,
+        team: "Maroon",
+        gamesPlayed: 6,
+        goals: 4,
+        assists: 1,
+        pim: 0,
+        points: 5
+      },
+      {
         season: "Q3 2021",
         champion: false,
         goalie: false,
@@ -6584,6 +6784,17 @@
     firstName: "Prahar",
     lastName: "Shah",
     seasons: [
+      {
+        season: "Q1 2022",
+        champion: false,
+        goalie: false,
+        team: "Silver",
+        gamesPlayed: 1,
+        goals: 0,
+        assists: 0,
+        pim: 0,
+        points: 0
+      },
     {
       season: "Q3 2021",
       champion: false,
@@ -6684,8 +6895,19 @@
   },
   {
     firstName: "Sunny",
-    lastName: "Mags",
+    lastName: "Mangs",
     seasons: [
+      {
+        season: "Q1 2022",
+        champion: true,
+        goalie: false,
+        team: "Maroon",
+        gamesPlayed: 4,
+        goals: 0,
+        assists: 2,
+        pim: 0,
+        points: 2
+      },
       {
         season: "Q3 2021",
         champion: false,
@@ -6696,6 +6918,109 @@
         assists: 0,
         pim: 0,
         points: 0
+      }
+    ]
+  },
+  {
+    firstName: "Kid",
+    lastName: "Lee",
+    seasons: [
+      {
+        season: "Q1 2022",
+        champion: false,
+        goalie: false,
+        team: "Navy",
+        gamesPlayed: 6,
+        goals: 0,
+        assists: 0,
+        pim: 0,
+        points: 0
+      }
+    ]
+  },
+  {
+    firstName: "James",
+    lastName: "Mang",
+    seasons: [
+      {
+        season: "Q1 2022",
+        champion: false,
+        goalie: false,
+        team: "Navy",
+        gamesPlayed: 4,
+        goals: 0,
+        assists: 1,
+        pim: 0,
+        points: 0
+      }
+    ]
+  },
+  {
+    firstName: "Brett",
+    lastName: "McGuinness",
+    seasons: [
+      {
+        season: "Q1 2022",
+        champion: false,
+        goalie: false,
+        team: "Navy",
+        gamesPlayed: 4,
+        goals: 2,
+        assists: 1,
+        pim: 0,
+        points: 3
+      }
+    ]
+  },
+  {
+    firstName: "Daniel",
+    lastName: "Smith",
+    seasons: [
+      {
+        season: "Q1 2022",
+        champion: true,
+        goalie: false,
+        team: "Maroon",
+        gamesPlayed: 6,
+        goals: 1,
+        assists: 6,
+        pim: 0,
+        points: 7
+      }
+    ]
+  },
+  {
+    firstName: "Sean",
+    lastName: "Kendall",
+    seasons: [
+      {
+        season: "Q1 2022",
+        champion: true,
+        goalie: false,
+        team: "Maroon",
+        gamesPlayed: 6,
+        goals: 0,
+        assists: 1,
+        pim: 0,
+        points: 1
+      }
+    ]
+  },
+  {
+    firstName: "Phillip",
+    lastName: "Groeb",
+    seasons: [
+      {
+        season: "Q1 2022",
+        champion: false,
+        goalie: true,
+        team: "Free Agent",
+        gamesPlayed: 7,
+        wins: 0,
+        losses: 0,
+        sol: 0,
+        ga: 25,
+        so: 0
       }
     ]
   }
