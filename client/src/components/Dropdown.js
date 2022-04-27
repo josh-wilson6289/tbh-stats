@@ -9,6 +9,13 @@ const SeasonsDropdown = ({ handleSeason }) => (
       <Dropdown.Menu>
         <Dropdown.Header>Seasons</Dropdown.Header>
         <Dropdown.Item>
+          <Dropdown text='2022'>
+            <Dropdown.Menu>
+              <Dropdown.Item seasonvalue="Q1 2022" onClick={handleSeason}>Q1</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+        </Dropdown.Item>
+        <Dropdown.Item>
           <Dropdown text='2021'>
             <Dropdown.Menu>
               <Dropdown.Item seasonvalue="Q1 2021" onClick={handleSeason}>Q1</Dropdown.Item>
